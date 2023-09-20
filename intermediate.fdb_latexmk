@@ -1,5 +1,5 @@
 # Fdb version 4
-["lualatex"] 1695182887 "/home/kawai/Soturon/grad-thesis2/intermediate/intermediate.tex" "intermediate.pdf" "intermediate" 1695182889 0
+["lualatex"] 1695183010 "/home/kawai/Soturon/grad-thesis2/intermediate/intermediate.tex" "intermediate.pdf" "intermediate" 1695183013 0
   "/home/kawai/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/haranoajigothic-medium.luc" 1695171311 1875369 563a49d56453118cc2bc098475a23186 ""
   "/home/kawai/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/haranoajimincho-regular.luc" 1695171308 1961878 305e540f3545673854903467c3d18712 ""
   "/home/kawai/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono9-regular.luc" 1695171309 81875 4186f491346ae8e27e9de854d6400326 ""
@@ -22,7 +22,7 @@
   "/home/kawai/.texlive2023/texmf-var/luatexja/ltj-cid-auto-adobe-japan1.luc" 1695171296 1643631 91cfe6be2985e96c1aa98a60c52fbe03 ""
   "/home/kawai/.texlive2023/texmf-var/luatexja/ltj-jisx0208.luc" 1695171309 93919 1f6dc76354e6e3b148c06f9f9254f22e ""
   "/home/kawai/.texlive2023/texmf-var/luatexja/ltj-kinsoku_default.luc" 1695171296 17654 e3e3c85f63c77f4caa824d338e2428e0 ""
-  "/home/kawai/Soturon/grad-thesis2/intermediate/intermediate.tex" 1695182883 4884 0f198881d5b41d163995ee2a729d8f59 ""
+  "/home/kawai/Soturon/grad-thesis2/intermediate/intermediate.tex" 1695183005 4881 1c64f80c0fc3de4b18a6e90ab23930ae ""
   "/usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf" 1677185994 4690004 f38d025815e65462ac61ddc6a192e733 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf" 1677185994 6355816 b639bf61ed5bcdb176671541b66519c7 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -211,8 +211,8 @@
   "figs/handmesh_rear2.png" 1695170923 42640 67f4fe11288adf46ba75adda91841636 ""
   "figs/spheregrap2.png" 1695208982 350334 87a189f59d2180272a363a0d5250175f ""
   "figs/spherereleace.png" 1695209044 352439 f0d04720c750f35882541bba8e84864c ""
-  "intermediate.aux" 1695182889 1268 cfcea6fd7c1cd7b6270537ce9f8ebe20 "lualatex"
-  "intermediate.tex" 1695182883 4884 0f198881d5b41d163995ee2a729d8f59 ""
+  "intermediate.aux" 1695183013 1268 cfcea6fd7c1cd7b6270537ce9f8ebe20 "lualatex"
+  "intermediate.tex" 1695183005 4881 1c64f80c0fc3de4b18a6e90ab23930ae ""
   (generated)
   "intermediate.aux"
   "intermediate.log"
