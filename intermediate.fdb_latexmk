@@ -1,5 +1,5 @@
 # Fdb version 4
-["lualatex"] 1695364185 "/home/kawai/Soturon/grad-thesis2/intermediate/intermediate.tex" "intermediate.pdf" "intermediate" 1695364188 0
+["lualatex"] 1695366949 "/home/kawai/Soturon/grad-thesis2/intermediate/intermediate.tex" "intermediate.pdf" "intermediate" 1695366951 0
   "/home/kawai/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/haranoajigothic-medium.luc" 1695171311 1875369 563a49d56453118cc2bc098475a23186 ""
   "/home/kawai/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/haranoajimincho-regular.luc" 1695171308 1961878 305e540f3545673854903467c3d18712 ""
   "/home/kawai/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono9-regular.luc" 1695171309 81875 4186f491346ae8e27e9de854d6400326 ""
@@ -22,7 +22,7 @@
   "/home/kawai/.texlive2023/texmf-var/luatexja/ltj-cid-auto-adobe-japan1.luc" 1695171296 1643631 91cfe6be2985e96c1aa98a60c52fbe03 ""
   "/home/kawai/.texlive2023/texmf-var/luatexja/ltj-jisx0208.luc" 1695171309 93919 1f6dc76354e6e3b148c06f9f9254f22e ""
   "/home/kawai/.texlive2023/texmf-var/luatexja/ltj-kinsoku_default.luc" 1695171296 17654 e3e3c85f63c77f4caa824d338e2428e0 ""
-  "/home/kawai/Soturon/grad-thesis2/intermediate/intermediate.tex" 1695364180 5753 a2f3b84810228364302c07ae3b9800a9 ""
+  "/home/kawai/Soturon/grad-thesis2/intermediate/intermediate.tex" 1695366940 5823 0678fc00165a873ffbe38ec26eee1cc5 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf" 1677185994 4690004 f38d025815e65462ac61ddc6a192e733 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf" 1677185994 6355816 b639bf61ed5bcdb176671541b66519c7 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -213,8 +213,8 @@
   "figs/handmeshLat_flont.png" 1695359536 105126 81045763d0f5cb694341c7e71fd6ea79 ""
   "figs/spheregrap2.png" 1695208982 350334 87a189f59d2180272a363a0d5250175f ""
   "figs/spherereleace.png" 1695209044 352439 f0d04720c750f35882541bba8e84864c ""
-  "intermediate.aux" 1695364187 1284 eae3d8dfc719cff9180724aeba1f864e "lualatex"
-  "intermediate.tex" 1695364180 5753 a2f3b84810228364302c07ae3b9800a9 ""
+  "intermediate.aux" 1695366951 1284 eae3d8dfc719cff9180724aeba1f864e "lualatex"
+  "intermediate.tex" 1695366940 5823 0678fc00165a873ffbe38ec26eee1cc5 ""
   (generated)
   "intermediate.aux"
   "intermediate.log"
