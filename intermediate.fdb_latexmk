@@ -1,5 +1,5 @@
 # Fdb version 4
-["lualatex"] 1695360483 "/home/kawai/Soturon/grad-thesis2/intermediate/intermediate.tex" "intermediate.pdf" "intermediate" 1695360486 0
+["lualatex"] 1695364185 "/home/kawai/Soturon/grad-thesis2/intermediate/intermediate.tex" "intermediate.pdf" "intermediate" 1695364188 0
   "/home/kawai/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/haranoajigothic-medium.luc" 1695171311 1875369 563a49d56453118cc2bc098475a23186 ""
   "/home/kawai/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/haranoajimincho-regular.luc" 1695171308 1961878 305e540f3545673854903467c3d18712 ""
   "/home/kawai/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono9-regular.luc" 1695171309 81875 4186f491346ae8e27e9de854d6400326 ""
@@ -22,7 +22,7 @@
   "/home/kawai/.texlive2023/texmf-var/luatexja/ltj-cid-auto-adobe-japan1.luc" 1695171296 1643631 91cfe6be2985e96c1aa98a60c52fbe03 ""
   "/home/kawai/.texlive2023/texmf-var/luatexja/ltj-jisx0208.luc" 1695171309 93919 1f6dc76354e6e3b148c06f9f9254f22e ""
   "/home/kawai/.texlive2023/texmf-var/luatexja/ltj-kinsoku_default.luc" 1695171296 17654 e3e3c85f63c77f4caa824d338e2428e0 ""
-  "/home/kawai/Soturon/grad-thesis2/intermediate/intermediate.tex" 1695360480 5615 80b3fd263e5cd5dddf2f2d9ffee3ffd8 ""
+  "/home/kawai/Soturon/grad-thesis2/intermediate/intermediate.tex" 1695364180 5753 a2f3b84810228364302c07ae3b9800a9 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf" 1677185994 4690004 f38d025815e65462ac61ddc6a192e733 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf" 1677185994 6355816 b639bf61ed5bcdb176671541b66519c7 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -117,6 +117,7 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty" 1656621545 62269 5c1837a5bc5db4c0d255eedc225ca44b ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1616101747 5582 a43dedf8e5ec418356f1e9dfe5d29fc3 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty" 1615845910 6149 2398eec4faa1ee24ff761581e580ecf1 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/setspace/setspace.sty" 1670275497 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/siunitx/siunitx.sty" 1680639137 313686 9c4b8658957e05916cb3b5e3b7eae3ed ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/sttools/stfloats.sty" 1633983922 24057 ff20efb65b128d27c08eac20ec07f540 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/svn-prov/svn-prov.sty" 1272330018 6852 44ea8d7e58290cde708a34ebf3953571 ""
@@ -212,8 +213,8 @@
   "figs/handmeshLat_flont.png" 1695359536 105126 81045763d0f5cb694341c7e71fd6ea79 ""
   "figs/spheregrap2.png" 1695208982 350334 87a189f59d2180272a363a0d5250175f ""
   "figs/spherereleace.png" 1695209044 352439 f0d04720c750f35882541bba8e84864c ""
-  "intermediate.aux" 1695360485 1284 eae3d8dfc719cff9180724aeba1f864e "lualatex"
-  "intermediate.tex" 1695360480 5615 80b3fd263e5cd5dddf2f2d9ffee3ffd8 ""
+  "intermediate.aux" 1695364187 1284 eae3d8dfc719cff9180724aeba1f864e "lualatex"
+  "intermediate.tex" 1695364180 5753 a2f3b84810228364302c07ae3b9800a9 ""
   (generated)
   "intermediate.aux"
   "intermediate.log"

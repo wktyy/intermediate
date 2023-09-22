@@ -10,7 +10,9 @@
 \usepackage{tabularx}
 \usepackage{subcaption}
 \usepackage{float}
+\usepackage{setspace}
 \usepackage{abstract}
+
 
 \title{仮想筋電義手の開発に関する研究}
 \author{河合 将暉}
@@ -27,7 +29,7 @@
 	訓練を行う必要がある．VRを用いた筋電義手トレーニングの効果につ
 	いては先行研究\cite{ref:1}\cite{ref:2}で検討されており，本研究
 	では仮想筋電義手モデルの見た目の違いによる訓練効果や幻肢痛緩
-	和の効果について着目し,3Dスキャナで取り込んだ仮想筋電義手モデル
+	和の効果について着目し3Dスキャナで取り込んだ仮想筋電義手モデル
 	を用いたVRトレーニングシステムの構成を目的とする．
 	\vspace{-10pt}
 
@@ -44,7 +46,7 @@
 		\begin{minipage}{0.292\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{figs/handboneLat.png}
-		\subcaption{ボーン構成}
+		\subcaption{ボーン背面}
 		\end{minipage}
 		\hspace{0.3pt}
 		\begin{minipage}{0.292\columnwidth}
@@ -67,12 +69,11 @@
 	\subsection{VRトレーニングシステムの構成}
 		後処理を施した仮想筋電義手モデルを総合開発環境``Unity''に
 		インポートし3Dモデルに立体感を与えるため``Reflex Shader2.2''
-		を用いてシェーディング処理を行った．VR空間上のオブジェクト
-		には物理演算をつけており，構成した仮想空間には枠組みの中に
-		動かせるオブジェクトとして球体・立方体・円柱の3Dモデルを用意し，
-		固定オブジェクトとして適当な高さの長方形3Dモデルを用意した．
-		Unityを用いて構成した仮想空間上のオブジェクト配置を図\refeq{fig:gamefield}
-		に示す．
+		を用いてシェーディングを行った．構成したVR空間は研究室の環境上で
+		60fpsで動作し,空間上のオブジェクトには物理演算をつけており，
+		枠組みの中に動かせるオブジェクトとして球体・立方体・円柱の3Dモデルを，
+		固定オブジェクトとして適当な高さの長方形3Dモデルを用意した．Unity
+		を用いて構成したVR空間上のオブジェクト配置を図\refeq{fig:gamefield}に示す．
 
 		\begin{figure}[H]
 		\centering
@@ -93,12 +94,11 @@
 		\end{figure}
 		\vspace{-20pt}
 
-		
 		仮想筋電義手モデルはマウスの動きに合わせて前後左右に移動できるように
 		構成し，図\refeq{fig:spheregrap}のように非固定オブジェクトと接触して
 		いるときに右クリックを押下している間オブジェクトを掴むことができる．
-		無保持状態と保持状態の手のアニメーションの遷移は0.5秒に設定しているが
-		実際に訓練する筋電義手に合わせた遷移時間に設定することも可能である．
+		無保持状態と保持状態の手のアニメーションの遷移時間は30fpsに設定しているが
+		実際に装着する筋電義手に合わせて遷移時間を変更することも可能である．
 
 		\begin{figure}[H]
 		\centering
@@ -125,11 +125,15 @@
 	ことと,腕の動きをVR上に変換するためのインタフェースをマウスを用いて
 	構成しているが,実際に上肢切断者を対象としてシミュレータを扱う場合，
 	マウスを使用できないことを考慮し，光変位センサ「First VR」を用いた
-	システム改善や適切なトレーニングシステムの構築および検討を行う予定である．
+	インタフェース改善や動作環境による入力遅延や誤差の改善,適切なトレーニング
+	システムの構築および検討を行う予定である．
 \vspace{-12pt}
+
 \begin{thebibliography}{99}%参考文献
+	\begin{spacing}{0.8}
+
 	\bibitem{ref:1}
-	芝軒 太郎 他:``VRを利用した筋電義手操作トレーニング
+	芝軒 太郎 他.``VRを利用した筋電義手操作トレーニング
 	システムの開発と仮想 Box and Block Test の実現''. 
 	JRSJ. 2012 July.
 
@@ -138,5 +142,7 @@
 	``Characteristics of Phantom Limb Pain Alleviated 
 	with Virtual Reality Rehabilitation''. 
 	Pain Med. 2019 May.
+
+	\end{spacing}
 \end{thebibliography}
 \end{document}
