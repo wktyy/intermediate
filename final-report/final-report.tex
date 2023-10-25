@@ -1,0 +1,127 @@
+\documentclass[report]{ltjsbook}
+%\usepackage[dvipdfmx]{color}
+\usepackage{booktabs}
+\usepackage{mathcomp}
+\usepackage{array}
+\usepackage{mathtools,amssymb}
+\usepackage{siunitx}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{listings,jvlisting}
+\lstset{
+	basicstyle={\ttfamily},
+	identifierstyle={\small},
+	commentstyle={\smallitshape},
+	keywordstyle={\small\bfseries},
+	ndkeywordstyle={\small},
+	stringstyle={\small\ttfamily},
+	frame={tb},
+	breaklines=true,
+	columns=[l]{fullflexible},
+	numbers=left,
+	xrightmargin=0zw,
+	xleftmargin=3zw,
+	numberstyle={\scriptsize},
+	stepnumber=1,
+	numbersep=1zw,
+	lineskip=-0.5ex,
+	tabsize=2
+}
+\renewcommand{\lstlistingname}{ソースコード}
+
+
+
+\title{仮想筋電義手の開発に関する研究}
+\author{神戸市立工業高等専門学校 \\ 電子工学科 河合 将暉}
+
+
+\begin{document}
+\maketitle
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+\clearpage
+
+\chapter{はじめに}
+
+\chapter{解説}
+	\section{EinScan HX}
+		\subsection{製品仕様}
+		\subsection{出力形式}
+	\section{Blender}
+		\subsection{スムージング}
+		\subsection{ボーン構成}
+		\subsection{ウェイトペイント}
+	\section{Unity}
+		\subsection{座標系}
+		\subsection{シェーダー}
+			\subsubsection{既存シェーダー}
+			\subsubsection{Reflex Shader 2.2}
+		\subsection{カメラ}
+		\subsection{C\#スクリプト}
+		\subsection{オブジェクト}
+		\subsection{衝突判定}
+		\subsection{ペアレント}
+		\subsection{コンストレイント}
+\clearpage
+		\subsection{物理演算}
+		\subsection{エディタ設定}
+		\subsection{プラグイン}
+			\subsubsection{FVRsdk}
+			\subsubsection{Xcharts}
+			\subsubsection{Android Logcat}
+			\subsubsection{XR Interaction Toolkit}
+			\subsubsection{Google VR}
+		\subsection{ビルド}
+			\subsubsection{iOS}
+			\subsubsection{Xcode}
+			\subsubsection{Android OS}
+	\section{FirstVR}
+		\subsection{デバイス構成}
+		\subsection{筋変位センサ}
+		\subsection{トラッキング・キャリブレーション}
+		\subsection{ジェスチャ認識}
+		\subsection{BLE通信}
+	\section{Meta Quest2}
+		\subsection{デバイス構成}
+	\section{rasberry py}
+	
+\chapter{研究内容}
+	\section{使用器具}
+	\section{3Dスキャナ}
+		\subsection{3Dモデルの取り込み}
+		\subsection{出力形式の選定}
+	\section{Blender}
+		\subsection{スムージング処理}
+		\subsection{ボーン配置}
+	\section{Unity}
+		\subsection{シェーダー選定}
+		\subsection{}
+\chapter{研究結果}
+\chapter{まとめ}
+\chapter{今後の課題}
+\begin{thebibliography}{99}
+
+	\bibitem{ref:1}
+	芝軒 太郎 他.``VRを利用した筋電義手操作トレーニング
+	システムの開発と仮想 Box and Block Test の実現''.
+	JRSJ. 2012 July.
+
+	\bibitem{ref:2}
+	Osumi M, et al.
+	``Characteristics of Phantom Limb Pain Alleviated
+	with Virtual Reality Rehabilitation''.
+	Pain Med. 2019 May.
+
+	\bibitem{ref:3}
+	H2L.Inc.,Tokyo106-0032,Japan;satoshi.hosono@h2l.jp
+
+	\bibitem{ref:4}
+	Tamon Miyake, etal``Gait Phase Detection Based on Muscle Deformation
+	with Static Standing-Based Calibration''.
+	MDPI. 2021 Feb
+
+\end{thebibliography}
+\end{document}
