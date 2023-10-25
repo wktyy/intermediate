@@ -13,25 +13,69 @@
 \usepackage{setspace}
 \usepackage{abstract}
 
+\title{仮想筋電義手の開発に関する研究}
+\author{河合 将暉}
+\adviser{戸崎 哲也}
+
+\thispagestyle{empty}
+\pagestyle{empty}
+
 \begin{document}
+\maketitle
+
 \section{はじめに}
+	中間報告までに構成したVRトレーニングシステムのインタフェースを
+	実際の上肢切断者にも使用可能にするため，筋変位センサであるFirstVR
+	を用いてVRトレーニングシステムの再構成およびその評価を行った．
 \section{解説}
+	\subsection{FirstVR}
+		FirstVRとは，H2L株式会社が提供する筋変位VRコントローラである．
+		コントローラに搭載されているセンサとしては，3軸ジャイロセンサ，
+		3軸加速度センサ，3軸磁気センサ，14チャンネルの光学筋変位センサ
+		が搭載されている．対応しているOSはiOS/Android OSに対応しており，
+		推奨スペックがiphone 7/GALAXY S8 となっている．OSとの通信は
+		BLE通信で行われており，Bluetooth®4.2が搭載されている．
+
+	\subsection{ジェスチャ認識}
+		FirstVRではジェスチャを認識することができ，その方式として，
+		特定のジェスチャをしている状態の筋変位値を閾値とすることで，
+		何もしていない状態とジェスチャを行っている状態を区別して
+		認識している．
+	\subsection{BLE通信}
+		BLE通信とは，Bluetooth Low Energyの略称であり，
+	\subsection{iOS/Android OSのビルド}
+
 \section{研究内容}
+	\subsection{FirstVRの接続確認}
+		まず，FirstVRとUbuntu22.04との接続を試みたが，接続できなかったため，
+		公式が提供しているiOSアプリケーションからFirstVRが初期動作不良ではないか
+		を確認した．確認後，アプリケーション上での通信・動作確認が行えたため，
+		Unity上でサンプルシーンをiOS用にビルドし，ビルドしたファイルをMacOSに
+		送信後，Xcodeでiphone13にアプリケーションを作成し，動作・接続確認をした．
+
+	\subsection{iOS/Android OSでのビルド}
+		
+	\subsection{サンプルシーンの検証}
+	\subsubsection{筋変位センサの測定}
+	\subsubsection{ジェスチャ認識機能の検証}
+	\subsubsection{キャリブレーション機能の検証}
+	\subsection{VRトレーニングシステムへの置換}
+	\subsection{iOS/AndroidOSでのシステム構成}
+	\subsection{Meta Quest2でのシステム構成}
+	\subsection{評価方法}
+
 \section{研究結果}
+\section{まとめと今後の課題}
 
 \begin{thebibliography}{99}%参考文献
 	\begin{spacing}{0.8}
 
 		\bibitem{ref:1}
-		芝軒 太郎 他.``VRを利用した筋電義手操作トレーニング
-		システムの開発と仮想 Box and Block Test の実現''.
-		JRSJ. 2012 July.
-
+			H2L.Inc.,Tokyo106-0032,Japan;satoshi.hosono@h2l.jp
 		\bibitem{ref:2}
-		Osumi M, et al.
-		``Characteristics of Phantom Limb Pain Alleviated
-		with Virtual Reality Rehabilitation''.
-		Pain Med. 2019 May.
+			Tamon Miyake, etal``Gait Phase Detection Based on Muscle Deformation
+			with Static Standing-Based Calibration''.
+			MDPI. 2021 Feb
 
 	\end{spacing}
 \end{thebibliography}
