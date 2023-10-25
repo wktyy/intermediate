@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2021.1.28)  23 OCT 2023 02:26
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2021.1.28)  26 OCT 2023 05:58
  system commands enabled.
  file:line:error style messages enabled.
-**d:/KCCT/D5/soturon/intermediate/intermediate
-(d:/KCCT/D5/soturon/intermediate/intermediate.tex
+**d:/KCCT/D5/soturon/intermediate/intermediate/intermediate
+(d:/KCCT/D5/soturon/intermediate/intermediate/intermediate.tex
 LaTeX2e <2020-10-01> patch level 4
 Lua module: luaotfload 2021-01-08 3.17 Lua based OpenType font support
 Lua module: lualibs 2020-12-30 2.73 ConTeXt Lua standard libraries.
@@ -617,9 +617,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (./abstract.sty) (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/patches/lltjp-array.sty
 Package: lltjp-array 2018/03/29 Patch to array for LuaTeX-ja
-) (./intermediate.aux)
-\openout1 = intermediate.aux
+)
+No file intermediate.aux.
 
+\openout1 = intermediate.aux
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
@@ -630,7 +631,7 @@ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 24.
- (c:/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
+(c:/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 24.
@@ -714,74 +715,43 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 11.09656pt on input line 27.
 (load cache: extra_lmroman10-bold.luc)
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 38.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 38.
+(Font)              scaled to size 9.24713pt on input line 30.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 38.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 38.
-<figs/handboneLat.png, id=1, 328.22626pt x 722.7pt>
-File: figs/handboneLat.png Graphic file (type png)
-<use figs/handboneLat.png>
-Package luatex.def Info: figs/handboneLat.png  used on input line 49.
-(luatex.def)             Requested size: 64.16432pt x 141.27328pt.
-(load cache: extra_lmroman9-regular.luc)
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 50.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 50.
-<figs/handmeshLat.png, id=2, 328.22626pt x 722.7pt>
-File: figs/handmeshLat.png Graphic file (type png)
-<use figs/handmeshLat.png>
-Package luatex.def Info: figs/handmeshLat.png  used on input line 55.
-(luatex.def)             Requested size: 64.16432pt x 141.27328pt.
-<figs/handmeshLat_flont.png, id=3, 328.22626pt x 722.7pt>
-File: figs/handmeshLat_flont.png Graphic file (type png)
-<use figs/handmeshLat_flont.png>
-Package luatex.def Info: figs/handmeshLat_flont.png  used on input line 61.
-(luatex.def)             Requested size: 64.16432pt x 141.27328pt.
-<figs/gamescreen.png, id=4, 1923.185pt x 943.525pt>
-File: figs/gamescreen.png Graphic file (type png)
-<use figs/gamescreen.png>
-Package luatex.def Info: figs/gamescreen.png  used on input line 83.
-(luatex.def)             Requested size: 114.48119pt x 56.16275pt.
-<figs/fieldup.png, id=5, 909.3975pt x 673.51625pt>
-File: figs/fieldup.png Graphic file (type png)
-<use figs/fieldup.png>
-Package luatex.def Info: figs/fieldup.png  used on input line 89.
-(luatex.def)             Requested size: 87.89275pt x 65.09462pt.
-<figs/spheregrap2.png, id=6, 895.09406pt x 413.29407pt>
-File: figs/spheregrap2.png Graphic file (type png)
-<use figs/spheregrap2.png>
-Package luatex.def Info: figs/spheregrap2.png  used on input line 108.
-(luatex.def)             Requested size: 87.89275pt x 40.58136pt.
-<figs/spherereleace.png, id=7, 898.10532pt x 417.05812pt>
-File: figs/spherereleace.png Graphic file (type png)
-<use figs/spherereleace.png>
-Package luatex.def Info: figs/spherereleace.png  used on input line 114.
-(luatex.def)             Requested size: 87.89275pt x 40.81096pt.
- [1{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              scaled to size 9.24713pt on input line 30.
 
 
-<./figs/handboneLat.png><./figs/handmeshLat.png><./figs/handmeshLat_flont.png><./figs/gamescreen.png><./figs/fieldup.png><./figs/spheregrap2.png><./figs/spherereleace.png>] [2
+LaTeX Warning: Citation `ref:1' on page 1 undefined on input line 30.
 
-] (./intermediate.aux))
+
+LaTeX Warning: Citation `ref:2' on page 1 undefined on input line 30.
+
+
+LaTeX Warning: Reference `fig:VRhand' on page 1 undefined on input line 43.
+
+
+LaTeX Warning: File `figs/handboneLat.png' not found on input line 49.
+
+
+d:/KCCT/D5/soturon/intermediate/intermediate/intermediate.tex:49: Package luatex.def Error: File `figs/handboneLat.png' not found: using draft setting.
+
+See the luatex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 ...[width = \columnwidth]{figs/handboneLat.png}
+                                                  
 
 Here is how much of LuaTeX's memory you used:
- 9729 strings out of 478824
- 305798,552014 words of node,token memory allocated
- 20462 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 5 glue, 327 kern, 1 glyph, 7989 attribute, 305 glue_spec, 416 attribute_list, 1 write, 57 user_defined nodes
-   avail lists: 1:22,2:74560,3:733,4:673,5:335,6:137,7:8493,8:3,9:4167,10:19,11:51
- 28813 multiletter control sequences out of 65536+600000
- 96 fonts using 34481743 bytes
- 127i,8n,128p,1246b,687s stack positions out of 5000i,500n,10000p,200000b,200000s
-<c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf>
-Output written on intermediate.pdf (2 pages, 1978635 bytes).
-
-PDF statistics: 67 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+ 9683 strings out of 478824
+ 125244,552014 words of node,token memory allocated
+ 51552 words of node memory still in use:
+   53 hlist, 4 vlist, 234 rule, 9 local_par, 3 dir, 2 math, 321 glue, 298 kern, 39 penalty, 422 glyph, 19530 attribute, 127 glue_spec, 1007 attribute_list, 5 temp, 7 if_stack, 5 write, 57 user_defined nodes
+   avail lists: 1:16,2:51,3:1,4:11,5:1,7:1,8:2,10:15
+ 28771 multiletter control sequences out of 65536+600000
+ 94 fonts using 31744375 bytes
+ 127i,7n,128p,1259b,382s stack positions out of 5000i,500n,10000p,200000b,200000s
+d:/KCCT/D5/soturon/intermediate/intermediate/intermediate.tex:49:  ==> Fatal error occurred, no output PDF file produced!

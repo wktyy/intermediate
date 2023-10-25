@@ -1,9 +1,0 @@
-# Fdb version 3
-["dvipdf"] 0 "d:/KCCT/D5/soturon/intermediate/abstract.dvi" "d:/KCCT/D5/soturon/intermediate/abstract.pdf" "d:/KCCT/D5/soturon/intermediate/abstract" 0
-  "d:/KCCT/D5/soturon/intermediate/abstract.dvi" 0 -1 0 "latex"
-  (generated)
-  "d:/KCCT/D5/soturon/intermediate/abstract.pdf"
-["latex"] 1695045815 "d:/KCCT/D5/soturon/intermediate/abstract.tex" "d:/KCCT/D5/soturon/intermediate/abstract.dvi" "abstract" 1695045815
-  (generated)
-  "d:/KCCT/D5/soturon/intermediate/abstract.dvi"
-  "d:/KCCT/D5/soturon/intermediate/abstract.log"
