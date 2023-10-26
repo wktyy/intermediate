@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2021.1.28)  26 OCT 2023 06:59
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2021.1.28)  27 OCT 2023 03:29
  system commands enabled.
  file:line:error style messages enabled.
 **d:/KCCT/D5/soturon/intermediate/final-report/final-report
@@ -784,47 +784,47 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 13.31586pt on input line 50.
 (load cache: extra_lmsans12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 51.
+(Font)              scaled to size 11.09656pt on input line 55.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 51.
+(Font)              scaled to size 11.09656pt on input line 55.
 [4
 
-] [5
+] [5] [6
 
 ]
 第3章
-[6
-
-]
-第4章
 [7
 
 ]
-第5章
+第4章
 [8
 
 ]
-第6章
+第5章
 [9
 
-] [10
+]
+第6章
+[10
+
+] [11
 
 ] (./final-report.aux))
 
 Here is how much of LuaTeX's memory you used:
- 11380 strings out of 478824
- 125244,552014 words of node,token memory allocated
- 24822 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 410 kern, 1 glyph, 9354 attribute, 537 glue_spec, 482 attribute_list, 1 write, 43 user_defined nodes
-   avail lists: 1:19,2:27022,3:483,4:514,5:84,6:98,7:2598,8:2,9:947,10:15,11:87
- 30454 multiletter control sequences out of 65536+600000
+ 11389 strings out of 478824
+ 156557,552014 words of node,token memory allocated
+ 25435 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 3 glue, 411 kern, 1 glyph, 9482 attribute, 600 glue_spec, 489 attribute_list, 1 write, 47 user_defined nodes
+   avail lists: 1:33,2:36080,3:480,4:508,5:99,6:98,7:3568,8:3,9:1379,10:15,11:93
+ 30463 multiletter control sequences out of 65536+600000
  104 fonts using 45437839 bytes
- 127i,6n,128p,1259b,396s stack positions out of 5000i,500n,10000p,200000b,200000s
-<c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
-Output written on final-report.pdf (11 pages, 83397 bytes).
+ 127i,9n,128p,1259b,626s stack positions out of 5000i,500n,10000p,200000b,200000s
+<c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on final-report.pdf (12 pages, 107475 bytes).
 
-PDF statistics: 89 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+PDF statistics: 96 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

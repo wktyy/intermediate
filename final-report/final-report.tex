@@ -48,8 +48,37 @@
 
 \chapter{解説}
 	\section{EinScan HX}
+		EinScan HXは株式会社サンステラが提供するハンディ3Dスキャナである．
+		主な使用用途としては，工業製品などの比較的大きな物をスキャンし，
+		リバースエンジニアリングや測定などに用いられている．
+		製品仕様については次項で解説する．
 		\subsection{製品仕様}
-		\subsection{出力形式}
+			EinScan HXの製品仕様について表\refeq{tab:EinScan}に示す．
+			\begin{table}[H]
+			\begin{center}
+			\caption{EinScan HXの製品仕様}
+			\label{tab:EinScan}
+			\begin{tabular}{c|cc} \toprule
+				スキャンモード&Rapidスキャン&レーザースキャン\\ \hline
+				スキャン精度&0.05\,mm&0.04\,mm\\
+				ポイント間隔&0.25～3.00\,mm&0.05～3.00\,mm\\
+				被写体長3D精度&±0.1\,mm&±0.06\,mm\\
+				シングルスキャン精度&$420 \time 440$\,mm&\\
+				光源&ブルーLED&ブルーレーザー7本\\
+				被写体深度&&\\
+				対象物との距離&&\\
+				テクスチャスキャン&&\\
+				安全性&&\\
+				データ出力&&\\
+				本体サイズ&&\\
+				本体重量&&\\
+				\bottomrule
+			\end{tabular}
+			\end{center}
+			\end{table}
+			ここで，被写体長3D精度というのはスキャン時に取得するポイントの
+			最大累積誤差を示したもので，より大きな物体をスキャンする際に
+			誤差として現れるものである．
 	\section{Blender}
 		\subsection{スムージング}
 		\subsection{ボーン構成}
@@ -81,8 +110,8 @@
 	\section{FirstVR}
 		\subsection{デバイス構成}
 		\subsection{筋変位センサ}
-		\subsection{トラッキング・キャリブレーション}
-		\subsection{ジェスチャ認識}
+		\subsection{トラッキング}
+		\subsection{キャリブレーション}
 		\subsection{BLE通信}
 	\section{Meta Quest2}
 		\subsection{デバイス構成}
@@ -122,6 +151,9 @@
 	Tamon Miyake, etal``Gait Phase Detection Based on Muscle Deformation
 	with Static Standing-Based Calibration''.
 	MDPI. 2021 Feb
+
+	\bibitem{ref:5}
+	株式会社サンステラ，https://www.einscan.jp/einscan-hx
 
 \end{thebibliography}
 \end{document}
