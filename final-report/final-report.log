@@ -1,42 +1,63 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2021.1.28)  27 OCT 2023 03:29
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.25)  28 OCT 2023 04:05
  system commands enabled.
  file:line:error style messages enabled.
-**d:/KCCT/D5/soturon/intermediate/final-report/final-report
-(d:/KCCT/D5/soturon/intermediate/final-report/final-report.tex
-LaTeX2e <2020-10-01> patch level 4
-Lua module: luaotfload 2021-01-08 3.17 Lua based OpenType font support
-Lua module: lualibs 2020-12-30 2.73 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2020-12-30 2.73 ConTeXt Lua libraries -- extended collection.
+**"c:/Users/kawai masaki/KCCT/soturon/intermediate/final-report/final-report"
+("c:/Users/kawai masaki/KCCT/soturon/intermediate/final-report/final-report.tex"
+LaTeX2e <2020-10-01> patch level 2
+Lua module: luaotfload-main 2020-09-02 3.15 luaotfload entry point
+Lua module: luaotfload-init 2020-09-02 3.15 luaotfload submodule / initialization
+Lua module: lualibs 2020-08-31 2.72 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2020-08-31 2.72 ConTeXt Lua libraries -- extended collection.
+Lua module: luaotfload-log 2020-09-02 3.15 luaotfload submodule / logging
+Lua module: luaotfload-parsers 2020-09-02 3.15 luaotfload submodule / parsers
+Lua module: luaotfload-configuration 2020-09-02 3.15 luaotfload submodule / config file reader
 luaotfload | conf : Root cache directory is "C:/texlive/2020/texmf-var/luatex-cache/generic/names".
-luaotfload | init : Loading fontloader "fontloader-2021-01-07.lua" from kpse-resolved path "c:/texlive/2020/texmf-dist/tex/luatex/luaotfload/fontloader-2021-01-07.lua".
+luaotfload | init : Loading fontloader "fontloader-2020-08-31.lua" from kpse-resolved path "c:/texlive/2020/texmf-dist/tex/luatex/luaotfload/fontloader-2020-08-31.lua".
 Lua-only attribute luaotfload@noligature = 1
 Lua-only attribute luaotfload@syllabe = 2
-luaotfload | init : Context OpenType loader version 0x1.8e76c8b439581p+1
+luaotfload | init : Context OpenType loader version 0x1.8e353f7ced917p+1
+Lua module: luaotfload-fallback 2020-09-02 3.15 luaotfload submodule / fallback
+Lua module: luaotfload-multiscript 2020-09-02 3.15 luaotfload submodule / multiscript
+Lua module: luaotfload-script 2020-09-02 3.15 luaotfload submodule / Script helpers
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' at position 1 in `glyph_stream_provider'.
+Lua module: luaotfload-loaders 2020-09-02 3.15 luaotfload submodule / callback handling
 Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua module: luaotfload-database 2020-09-02 3.15 luaotfload submodule / database
+Lua module: luaotfload-unicode 2020-09-02 3.15 luaotfload submodule / Unicode helpers
+Lua module: luaotfload-colors 2020-09-02 3.15 luaotfload submodule / color
 Lua-only attribute luaotfload_color_attribute = 3
+Lua module: luaotfload-resolvers 2020-09-02 3.15 luaotfload submodule / resolvers
 luaotfload | conf : Root cache directory is "C:/texlive/2020/texmf-var/luatex-cache/generic/names".
+Lua module: luaotfload-features 2020-09-02 3.15 luaotfload submodule / features
+Lua module: luaotfload-harf-define 2020-09-02 3.15 luaotfload submodule / HarfBuzz font loading
 Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_opentype_file'.
 Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_truetype_file'.
-Inserting `luaotfload.harf.finalize_vlist' at position 1 in `post_linebreak_filter'.
-Inserting `luaotfload.harf.finalize_hlist' at position 2 in `hpack_filter'.
-Inserting `luaotfload.cleanup_files' at position 1 in `wrapup_run'.
-Inserting `luaotfload.harf.finalize_unicode' at position 1 in `finish_pdffile'.
-Inserting `luaotfload.glyphinfo' at position 1 in `glyph_info'.
+Lua module: luaotfload-harf-plug 2020-09-02 3.15 luaotfload submodule / HarfBuzz shaping
+Inserting `Harf pre_output_filter callback' at position 1 in `pre_output_filter'.
+Inserting `Harf wrapup_run callback' at position 1 in `wrapup_run'.
+Inserting `Harf finish_pdffile callback' at position 1 in `finish_pdffile'.
+Inserting `Harf glyph_info callback' at position 1 in `glyph_info'.
+Lua module: luaotfload-letterspace 2020-09-02 3.15 luaotfload submodule / letterspacing
+Lua module: luaotfload-embolden 2020-09-02 3.15 luaotfload submodule / embolden
+Lua module: luaotfload-notdef 2020-09-02 3.15 luaotfload submodule / notdef
+Lua module: luaotfload-suppress 2020-09-02 3.15 luaotfload submodule / suppress
+Lua module: luaotfload-szss 2020-09-02 3.15 luaotfload submodule / Special feature handling
+Lua module: luaotfload-auxiliary 2020-09-02 3.15 luaotfload submodule / auxiliary functions
 Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
-Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'. L3 programming layer <2021-01-09> xparse <2020-03-03> (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/ltjsbook.cls
-Document Class: ltjsbook 2020/12/23 ltjsclasses 
+Lua module: luaotfload-tounicode 2020-09-02 3.15 luaotfload submodule / tounicode
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'. L3 programming layer <2020-12-07> xparse <2020-03-03> (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/ltjsreport.cls
+Document Class: ltjsreport 2020/05/30 ltjsclasses 
 (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/luatexja.sty
-Package: luatexja 2021-01-03 Japanese Typesetting with Lua(La)TeX
+Package: luatexja 2020-10-30 Japanese Typesetting with Lua(La)TeX
  (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
-Package: luatexja-core 2021-01-02 Core of LuaTeX-ja
+Package: luatexja-core 2020-09-27 Core of LuaTeX-ja
  (c:/texlive/2020/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
 Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
  (c:/texlive/2020/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
@@ -115,11 +136,11 @@ Custom whatsit box_boundary = 5
 Custom whatsit ja_al_boundary = 6(load cache: ltj-cid-auto-adobe-japan1.luc)
 Lua module: luatexja.charrange 2020-07-30 Handling the range of Japanese characters
 Lua module: luatexja.stack 2020-07-30 LuaTeX-ja stack system
-Inserting `ltj.create_dir_whatsit' at position 3 in `hpack_filter'.
-Inserting `ltj.create_dir_whatsit' at position 2 in `post_linebreak_filter'.
+Inserting `ltj.create_dir_whatsit' at position 2 in `hpack_filter'.
+Inserting `ltj.create_dir_whatsit' at position 1 in `post_linebreak_filter'.
 Inserting `ltj.direction' at position 1 in `vpack_filter'.
-Inserting `ltj.direction' at position 1 in `pre_output_filter'.
-Inserting `ltj.lineskip' at position 3 in `post_linebreak_filter'.
+Inserting `ltj.direction' at position 2 in `pre_output_filter'.
+Inserting `ltj.lineskip' at position 2 in `post_linebreak_filter'.
 Inserting `ltj.lineskip' at position 1 in `append_to_vlist_filter'.
 Lua module: luatexja.jfont 2020-10-05 Loader for Japanese fonts
 Removing  `luaotfload.define_font' from `define_font'.
@@ -157,25 +178,21 @@ Inserting `luaotfload.rewrite_fontname' at position 8 in `luaotfload.patch_font'
 Inserting `ltj.process_input_buffer' at position 1 in `process_input_buffer'.
 Inserting `ltj.hyphenate' at position 1 in `hyphenate'.
 Removing  `luaotfload.node_processor' from `hpack_filter'.
-Removing  `luaotfload.harf.finalize_hlist' from `hpack_filter'.
 Removing  `ltj.create_dir_whatsit' from `hpack_filter'.
 Inserting `ltj.set_stack_level' at position 1 in `hpack_filter'.
 Inserting `luaotfload.node_processor' at position 2 in `hpack_filter'.
-Inserting `luaotfload.harf.finalize_hlist' at position 3 in `hpack_filter'.
-Inserting `ltj.create_dir_whatsit' at position 4 in `hpack_filter'.
+Inserting `ltj.create_dir_whatsit' at position 3 in `hpack_filter'.
 Removing  `luaotfload.node_processor' from `pre_linebreak_filter'.
 Inserting `ltj.set_stack_level' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 2 in `pre_linebreak_filter'.
-Lua module: luatexja.jfmglue 2020-12-22 Insertion process of JFM glues, [x]kanjiskip and others
+Lua module: luatexja.jfmglue 2020-10-22 Insertion process of JFM glues, [x]kanjiskip and others
 Inserting `luatexja.beginpar.np_info' at position 1 in `luatexja.jfmglue.whatsit_getinfo'.
 Inserting `luatexja.beginpar.np_info_after' at position 1 in `luatexja.jfmglue.whatsit_after'.
 Inserting `ltj.mlist_to_hlist_pre' at position 1 in `pre_mlist_to_hlist_filter'.
 Inserting `ltj.main' at position 3 in `pre_linebreak_filter'.
-Removing  `luaotfload.harf.finalize_hlist' from `hpack_filter'.
 Removing  `ltj.create_dir_whatsit' from `hpack_filter'.
 Inserting `ltj.main' at position 3 in `hpack_filter'.
-Inserting `luaotfload.harf.finalize_hlist' at position 4 in `hpack_filter'.
-Inserting `ltj.create_dir_whatsit' at position 5 in `hpack_filter'.
+Inserting `ltj.create_dir_whatsit' at position 4 in `hpack_filter'.
 Removing  `ltj.set_stack_level' from `pre_linebreak_filter'.
 Removing  `luaotfload.node_processor' from `pre_linebreak_filter'.
 Removing  `ltj.main' from `pre_linebreak_filter'.
@@ -186,14 +203,12 @@ Inserting `ltj.main' at position 4 in `pre_linebreak_filter'.
 Removing  `ltj.set_stack_level' from `hpack_filter'.
 Removing  `luaotfload.node_processor' from `hpack_filter'.
 Removing  `ltj.main' from `hpack_filter'.
-Removing  `luaotfload.harf.finalize_hlist' from `hpack_filter'.
 Removing  `ltj.create_dir_whatsit' from `hpack_filter'.
 Inserting `ltj.adjust_icflag' at position 1 in `hpack_filter'.
 Inserting `ltj.set_stack_level' at position 2 in `hpack_filter'.
 Inserting `luaotfload.node_processor' at position 3 in `hpack_filter'.
 Inserting `ltj.main' at position 4 in `hpack_filter'.
-Inserting `luaotfload.harf.finalize_hlist' at position 5 in `hpack_filter'.
-Inserting `ltj.create_dir_whatsit' at position 6 in `hpack_filter'. (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/ltj-base.sty
+Inserting `ltj.create_dir_whatsit' at position 5 in `hpack_filter'. (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/ltj-base.sty
 Package: ltj-base 2020-08-04
 \ltj@tempcntb=\count178
 \ltj@tempcntc=\count179
@@ -208,31 +223,28 @@ Package: ltj-base 2020-08-04
 \ltj@zh@inner=\luafunction16
 \ltj@reset@globaldefs@inner=\luafunction17
 \ltj@restore@globaldefs@inner=\luafunction18
-\ltj@@disihb@inner=\luafunction19
-\ltj@@ihb@inner=\luafunction20
-\ltj@@fakeparbegin@inner=\luafunction21
-\ltj@@fakeboxbdd@inner=\luafunction22
-\ltj@@ins@xk@inner=\luafunction23
-\ltj@@ins@k@inner=\luafunction24
+\ltj@@ihb@inner=\luafunction19
+\ltj@@fakeparbegin@inner=\luafunction20
+\ltj@@fakeboxbdd@inner=\luafunction21
 \ltj@@stack=\count180
 \ltj@@group@level=\count181
-\ltjsetkanjiskip@inner=\luafunction25
-\ltjsetxkanjiskip@inner=\luafunction26
-\ltj@@getparam@one@inner=\luafunction27
-\ltj@alljachar@inner=\luafunction28
-\ltj@@lua@populate@insertwhatsit@inner=\luafunction29
-\ltj@@box@dirhook@inner=\luafunction30
-\ltj@@reset@badness@inner=\luafunction31
-\ltj@@lua@raisebox@inner=\luafunction32
-\ltj@@lua@shipout@inner=\luafunction33
-\ltj@@lua@unboxcheckdir@inner=\luafunction34
+\ltjsetkanjiskip@inner=\luafunction22
+\ltjsetxkanjiskip@inner=\luafunction23
+\ltj@@getparam@one@inner=\luafunction24
+\ltj@alljachar@inner=\luafunction25
+\ltj@@lua@populate@insertwhatsit@inner=\luafunction26
+\ltj@@box@dirhook@inner=\luafunction27
+\ltj@@reset@badness@inner=\luafunction28
+\ltj@@lua@raisebox@inner=\luafunction29
+\ltj@@lua@shipout@inner=\luafunction30
+\ltj@@lua@unboxcheckdir@inner=\luafunction31
 (load cache: ltj-kinsoku_default.luc) (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/ltj-latex.sty
-Package: ltj-latex 2020-12-29 LaTeX support of LuaTeX-ja
+Package: ltj-latex 2020-10-09 LaTeX support of LuaTeX-ja
  (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/patches/lltjfont.sty
-Package: lltjfont 2020-12-29 Patch to NFSS2 for LuaTeX-ja
+Package: lltjfont 2020-10-05 Patch to NFSS2 for LuaTeX-ja
  (c:/texlive/2020/texmf-dist/tex/latex/base/tuenc.def
 File: tuenc.def 2020/08/10 v2.0s Standard LaTeX file
-\@remove@tlig@@@@=\luafunction35
+\@remove@tlig@@@@=\luafunction32
 LaTeX Font Info:    Redeclaring font encoding TU on input line 106.
 )
 \Cht=\dimen142
@@ -250,29 +262,29 @@ LaTeX Font Info:    Redeclaring font encoding TU on input line 106.
 \tstrutbox=\box49
 \zstrutbox=\box50
 LaTeX Info: Redefining \strut on input line 67.
-\ltj@@add@fenc@@inner=\luafunction36
-\ltj@@add@kyenc@@inner=\luafunction37
-\ltj@@add@ktenc@@inner=\luafunction38
-\ltj@@is@kyenc@@inner=\luafunction39
-\ltj@@is@ktenc@@inner=\luafunction40
-\ltj@@is@kenc@@inner=\luafunction41
-\ltj@@is@ffam@@inner=\luafunction42
-\ltj@@add@ffam@@inner=\luafunction43
-\ltj@@add@kfam@@inner=\luafunction44
- (c:/texlive/2020/texmf-dist/tex/latex/everysel/everysel.sty
-Package: everysel 2021/01/20 v2.1 EverySelectfont Package (MS)
- (c:/texlive/2020/texmf-dist/tex/latex/everysel/everysel-2011-10-28.sty)) ABD: EverySelectfont initializing macros
+\ltj@@add@fenc@@inner=\luafunction33
+\ltj@@add@kyenc@@inner=\luafunction34
+\ltj@@add@ktenc@@inner=\luafunction35
+\ltj@@is@kyenc@@inner=\luafunction36
+\ltj@@is@ktenc@@inner=\luafunction37
+\ltj@@is@kenc@@inner=\luafunction38
+\ltj@@is@ffam@@inner=\luafunction39
+\ltj@@add@ffam@@inner=\luafunction40
+\ltj@@add@kfam@@inner=\luafunction41
+ (c:/texlive/2020/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+) ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 358.
-\ltj@@adjust@baseline@inner=\luafunction45
+\ltj@@adjust@baseline@inner=\luafunction42
 LaTeX Info: Redefining \fontencoding on input line 558.
 LaTeX Info: Redefining \fontfamily on input line 601.
 \ltj@@latex@plv=\count182
-LaTeX Info: Redefining \fontseries on input line 755.
-LaTeX Info: Redefining \fontseriesforce on input line 759.
-LaTeX Info: Redefining \fontshape on input line 764.
-LaTeX Info: Redefining \fontshapeforce on input line 771.
-\ltj@@jfont@@jfmonly@@inner=\luafunction46
-\ltj@@does@alt@set@@inner=\luafunction47
+LaTeX Info: Redefining \fontseries on input line 754.
+LaTeX Info: Redefining \fontseriesforce on input line 758.
+LaTeX Info: Redefining \fontshape on input line 763.
+LaTeX Info: Redefining \fontshapeforce on input line 770.
+\ltj@@jfont@@jfmonly@@inner=\luafunction43
+\ltj@@does@alt@set@@inner=\luafunction44
 ) (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/patches/lltjdefs.sty
 Package: lltjdefs 2020-10-05 Default font settings of LuaTeX-ja
 luaotfload | db : Font names database loaded from C:/texlive/2020/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load cache: extra_lmroman10-regular.luc)
@@ -290,9 +302,9 @@ LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
 ) (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/patches/lltjcore.sty
 Package: lltjcore 2020-09-28 Patch to LaTeX2e Kernel for LuaTeX-ja
  (c:/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-01-09 L3 programming layer (loader) 
+Package: expl3 2020-12-07 L3 programming layer (loader) 
  (c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
-File: l3backend-luatex.def 2021-01-09 L3 backend support: PDF output (LuaTeX)
+File: l3backend-luatex.def 2020-09-24 L3 backend support: PDF output (LuaTeX)
 \l__kernel_color_stack_int=\count183
 \l__pdf_internal_box=\box51
 ))
@@ -318,7 +330,7 @@ LaTeX Info: Redefining \underline on input line 293.
 Package: lltjp-atbegshi 2020-09-30 Patching \shipout hooks for LuaTeX-ja
 \l__platex_shipout_dummy_box=\box64
 ) (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/patches/lltjp-geometry.sty
-Package: lltjp-geometry 2020-12-29 Patch to geometry for LuaTeX-ja with vertical writing mode
+Package: lltjp-geometry 2020-09-18 Patch to geometry for LuaTeX-ja with vertical writing mode
  (c:/texlive/2020/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )))
@@ -333,13 +345,13 @@ Package: luatexja-compat 2020-08-08 Compatibility with pTeX
 \jsc@mmm=\dimen158
 \jsc@smallskipamount=\skip47
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 422.
+(Font)              scaled to size 9.24713pt on input line 418.
 \fullwidth=\dimen159
 (load cache: extra_lmroman8-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 571.
+(Font)              scaled to size 7.3977pt on input line 545.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 571.
+(Font)              scaled to size 7.3977pt on input line 545.
 \c@part=\count186
 \c@chapter=\count187
 \c@section=\count188
@@ -347,12 +359,13 @@ LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 \c@subsubsection=\count190
 \c@paragraph=\count191
 \c@subparagraph=\count192
+\@abstractbox=\box65
 \c@figure=\count193
 \c@table=\count194
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
-LaTeX Info: Redefining \mc on input line 1280.
-LaTeX Info: Redefining \gt on input line 1281.
+LaTeX Info: Redefining \mc on input line 1273.
+LaTeX Info: Redefining \gt on input line 1274.
 \jsc@tocl@width=\dimen160
 \@lnumwidth=\dimen161
 \bibindent=\dimen162
@@ -367,25 +380,42 @@ LaTeX Info: Redefining \LaTeXe on input line 188.
 Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip settings
 \@dblbotnum=\count196
 \c@dblbotnumber=\count197
-) (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/patches/lltjp-stfloats.sty)) (c:/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
+) (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/patches/lltjp-stfloats.sty)) (c:/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (c:/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count198
+\Gm@cntv=\count199
+\c@Gm@tempcnt=\count266
+\Gm@bindingoffset=\dimen163
+\Gm@wd@mp=\dimen164
+\Gm@odd@mp=\dimen165
+\Gm@even@mp=\dimen166
+\Gm@layoutwidth=\dimen167
+\Gm@layoutheight=\dimen168
+\Gm@layouthoffset=\dimen169
+\Gm@layoutvoffset=\dimen170
+\Gm@dimlist=\toks25
+) (c:/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen163
-\lightrulewidth=\dimen164
-\cmidrulewidth=\dimen165
-\belowrulesep=\dimen166
-\belowbottomsep=\dimen167
-\aboverulesep=\dimen168
-\abovetopsep=\dimen169
-\cmidrulesep=\dimen170
-\cmidrulekern=\dimen171
-\defaultaddspace=\dimen172
-\@cmidla=\count198
-\@cmidlb=\count199
-\@aboverulesep=\dimen173
-\@belowrulesep=\dimen174
-\@thisruleclass=\count266
-\@lastruleclass=\count267
-\@thisrulewidth=\dimen175
+\heavyrulewidth=\dimen171
+\lightrulewidth=\dimen172
+\cmidrulewidth=\dimen173
+\belowrulesep=\dimen174
+\belowbottomsep=\dimen175
+\aboverulesep=\dimen176
+\abovetopsep=\dimen177
+\cmidrulesep=\dimen178
+\cmidrulekern=\dimen179
+\defaultaddspace=\dimen180
+\@cmidla=\count267
+\@cmidlb=\count268
+\@aboverulesep=\dimen181
+\@belowrulesep=\dimen182
+\@thisruleclass=\count269
+\@lastruleclass=\count270
+\@thisrulewidth=\dimen183
 ) (c:/texlive/2020/texmf-dist/tex/latex/mathcomp/mathcomp.sty
 Package: mathcomp 2001/01/07 v0.1f (TBo)
  (c:/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
@@ -398,26 +428,26 @@ LaTeX Font Info:    Redeclaring math symbol \dagger on input line 47.
 LaTeX Font Info:    Redeclaring math symbol \ddagger on input line 48.
 ) (c:/texlive/2020/texmf-dist/tex/latex/tools/array.sty
 Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
-\col@sep=\dimen176
-\ar@mcellbox=\box65
-\extrarowheight=\dimen177
-\NC@list=\toks25
+\col@sep=\dimen184
+\ar@mcellbox=\box66
+\extrarowheight=\dimen185
+\NC@list=\toks26
 \extratabsurround=\skip50
 \backup@length=\skip51
-\ar@cellbox=\box66
+\ar@cellbox=\box67
 ) (c:/texlive/2020/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
  (c:/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count268
-\calc@Bcount=\count269
-\calc@Adimen=\dimen178
-\calc@Bdimen=\dimen179
+\calc@Acount=\count271
+\calc@Bcount=\count272
+\calc@Adimen=\dimen186
+\calc@Bdimen=\dimen187
 \calc@Askip=\skip52
 \calc@Bskip=\skip53
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count270
+\calc@Ccount=\count273
 \calc@Cskip=\skip54
 ) (c:/texlive/2020/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
@@ -430,49 +460,49 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2000/06/29 v2.01 AMS text
  (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks26
-\ex@=\dimen180
+\@emptytoks=\toks27
+\ex@=\dimen188
 )) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen181
+\pmbraise@=\dimen189
 ) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count271
+\inf@bad=\count274
 LaTeX Info: Redefining \frac on input line 236.
-\uproot@=\count272
-\leftroot@=\count273
+\uproot@=\count275
+\leftroot@=\count276
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count274
-\DOTSCASE@=\count275
+\classnum@=\count277
+\DOTSCASE@=\count278
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box67
-\strutbox@=\box68
-\big@size=\dimen182
+\Mathstrutbox@=\box68
+\strutbox@=\box69
+\big@size=\dimen190
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count276
-\c@MaxMatrixCols=\count277
+\macc@depth=\count279
+\c@MaxMatrixCols=\count280
 \dotsspace@=\muskip16
-\c@parentequation=\count278
-\dspbrk@lvl=\count279
-\tag@help=\toks27
-\row@=\count280
-\column@=\count281
-\maxfields@=\count282
-\andhelp@=\toks28
-\eqnshift@=\dimen183
-\alignsep@=\dimen184
-\tagshift@=\dimen185
-\tagwidth@=\dimen186
-\totwidth@=\dimen187
-\lineht@=\dimen188
-\@envbody=\toks29
+\c@parentequation=\count281
+\dspbrk@lvl=\count282
+\tag@help=\toks28
+\row@=\count283
+\column@=\count284
+\maxfields@=\count285
+\andhelp@=\toks29
+\eqnshift@=\dimen191
+\alignsep@=\dimen192
+\tagshift@=\dimen193
+\tagwidth@=\dimen194
+\totwidth@=\dimen195
+\lineht@=\dimen196
+\@envbody=\toks30
 \multlinegap=\skip56
 \multlinetaggap=\skip57
-\mathdisplay@stack=\toks30
+\mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
@@ -480,17 +510,17 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count283
-\l_MT_multwidth_dim=\dimen189
+\g_MT_multlinerow_int=\count286
+\l_MT_multwidth_dim=\dimen197
 \origjot=\skip58
-\l_MT_shortvdotswithinadjustabove_dim=\dimen190
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen191
-\l_MT_above_intertext_sep=\dimen192
-\l_MT_below_intertext_sep=\dimen193
-\l_MT_above_shortintertext_sep=\dimen194
-\l_MT_below_shortintertext_sep=\dimen195
-\xmathstrut@box=\box69
-\xmathstrut@dim=\dimen196
+\l_MT_shortvdotswithinadjustabove_dim=\dimen198
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen199
+\l_MT_above_intertext_sep=\dimen256
+\l_MT_below_intertext_sep=\dimen257
+\l_MT_above_shortintertext_sep=\dimen258
+\l_MT_below_shortintertext_sep=\dimen259
+\xmathstrut@box=\box70
+\xmathstrut@dim=\dimen260
 ) (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -507,76 +537,76 @@ Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
  (c:/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
 )
-\l__siunitx_tmp_box=\box70
-\l__siunitx_tmp_dim=\dimen197
-\l__siunitx_tmp_int=\count284
-\l__siunitx_number_mantissa_length_int=\count285
-\l__siunitx_number_uncert_length_int=\count286
-\l__siunitx_round_int=\count287
-\l__siunitx_process_decimal_int=\count288
-\l__siunitx_process_uncertainty_int=\count289
-\l__siunitx_process_fixed_int=\count290
-\l__siunitx_process_integer_min_int=\count291
-\l__siunitx_process_precision_int=\count292
-\l__siunitx_group_min_int=\count293
-\l__siunitx_angle_marker_box=\box71
-\l__siunitx_angle_unit_box=\box72
-\l__siunitx_angle_marker_dim=\dimen198
-\l__siunitx_angle_unit_dim=\dimen199
-\l__siunitx_unit_int=\count294
-\l__siunitx_unit_denominator_int=\count295
-\l__siunitx_unit_numerator_int=\count296
-\l__siunitx_unit_prefix_int=\count297
-\l__siunitx_unit_prefix_base_int=\count298
-\l__siunitx_unit_prefix_gram_int=\count299
-\l__siunitx_number_product_int=\count300
+\l__siunitx_tmp_box=\box71
+\l__siunitx_tmp_dim=\dimen261
+\l__siunitx_tmp_int=\count287
+\l__siunitx_number_mantissa_length_int=\count288
+\l__siunitx_number_uncert_length_int=\count289
+\l__siunitx_round_int=\count290
+\l__siunitx_process_decimal_int=\count291
+\l__siunitx_process_uncertainty_int=\count292
+\l__siunitx_process_fixed_int=\count293
+\l__siunitx_process_integer_min_int=\count294
+\l__siunitx_process_precision_int=\count295
+\l__siunitx_group_min_int=\count296
+\l__siunitx_angle_marker_box=\box72
+\l__siunitx_angle_unit_box=\box73
+\l__siunitx_angle_marker_dim=\dimen262
+\l__siunitx_angle_unit_dim=\dimen263
+\l__siunitx_unit_int=\count297
+\l__siunitx_unit_denominator_int=\count298
+\l__siunitx_unit_numerator_int=\count299
+\l__siunitx_unit_prefix_int=\count300
+\l__siunitx_unit_prefix_base_int=\count301
+\l__siunitx_unit_prefix_gram_int=\count302
+\l__siunitx_number_product_int=\count303
 \c__siunitx_one_fill_skip=\skip59
 \l__siunitx_table_unit_align_skip=\skip60
-\l__siunitx_table_exponent_dim=\dimen256
-\l__siunitx_table_integer_dim=\dimen257
-\l__siunitx_table_mantissa_dim=\dimen258
-\l__siunitx_table_marker_dim=\dimen259
-\l__siunitx_table_result_dim=\dimen260
-\l__siunitx_table_uncert_dim=\dimen261
-\l__siunitx_table_fill_pre_dim=\dimen262
-\l__siunitx_table_fill_post_dim=\dimen263
-\l__siunitx_table_fill_mid_dim=\dimen264
-\l__siunitx_table_pre_box=\box73
-\l__siunitx_table_post_box=\box74
-\l__siunitx_table_mantissa_box=\box75
-\l__siunitx_table_result_box=\box76
+\l__siunitx_table_exponent_dim=\dimen264
+\l__siunitx_table_integer_dim=\dimen265
+\l__siunitx_table_mantissa_dim=\dimen266
+\l__siunitx_table_marker_dim=\dimen267
+\l__siunitx_table_result_dim=\dimen268
+\l__siunitx_table_uncert_dim=\dimen269
+\l__siunitx_table_fill_pre_dim=\dimen270
+\l__siunitx_table_fill_post_dim=\dimen271
+\l__siunitx_table_fill_mid_dim=\dimen272
+\l__siunitx_table_pre_box=\box74
+\l__siunitx_table_post_box=\box75
+\l__siunitx_table_mantissa_box=\box76
+\l__siunitx_table_result_box=\box77
 \l__siunitx_table_number_align_skip=\skip61
 \l__siunitx_table_text_align_skip=\skip62
  (c:/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
 Package: translator 2020-08-03 v1.12c Easy translation of strings in LaTeX
 )) (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/patches/lltjp-siunitx.sty) (c:/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2021/01/02 v2.6 Span multiple rows of a table
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip63
-\multirow@cntb=\count301
+\multirow@cntb=\count304
 \multirow@dima=\skip64
-\bigstrutjot=\dimen265
+\bigstrutjot=\dimen273
 ) (c:/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen266
-\TX@old@table=\dimen267
-\TX@old@col=\dimen268
-\TX@target=\dimen269
-\TX@delta=\dimen270
-\TX@cols=\count302
-\TX@ftn=\toks31
+\TX@col@width=\dimen274
+\TX@old@table=\dimen275
+\TX@old@col=\dimen276
+\TX@target=\dimen277
+\TX@delta=\dimen278
+\TX@cols=\count305
+\TX@ftn=\toks32
 ) (c:/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
  (c:/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
  (c:/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen271
-\captionmargin@=\dimen272
-\captionwidth=\dimen273
-\caption@tempdima=\dimen274
-\caption@indent=\dimen275
-\caption@parindent=\dimen276
-\caption@hangindent=\dimen277
+\captionmargin=\dimen279
+\captionmargin@=\dimen280
+\captionwidth=\dimen281
+\caption@tempdima=\dimen282
+\caption@indent=\dimen283
+\caption@parindent=\dimen284
+\caption@hangindent=\dimen285
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 Package caption Info: \@makecaption = \long macro:#1#2->{\small \advance \leftskip .0628\linewidth \advance \rightskip .0628\linewidth \vskip \abovecaptionskip \sbox \@tempboxa {#1{\hskip 1\zw }#2}\ifdim \wd \@tempboxa <\hsize \centering \fi #1{\hskip 1\zw }#2\par \vskip \belowcaptionskip } on input line 1139.
@@ -586,36 +616,36 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count303
-\c@continuedfloat=\count304
+\c@caption@flags=\count306
+\c@continuedfloat=\count307
 )
-\c@subfigure=\count305
-\c@subtable=\count306
+\c@subfigure=\count308
+\c@subtable=\count309
 ) (c:/texlive/2020/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count307
-\float@exts=\toks32
-\float@box=\box77
-\@float@everytoks=\toks33
-\@floatcapt=\box78
+\c@float@type=\count310
+\float@exts=\toks33
+\float@box=\box78
+\@float@everytoks=\toks34
+\@floatcapt=\box79
 ) (c:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count308
-\lst@gtempboxa=\box79
-\lst@token=\toks34
-\lst@length=\count309
-\lst@currlwidth=\dimen278
-\lst@column=\count310
-\lst@pos=\count311
-\lst@lostspace=\dimen279
-\lst@width=\dimen280
-\lst@newlines=\count312
-\lst@lineno=\count313
-\lst@maxwidth=\dimen281
+\lst@mode=\count311
+\lst@gtempboxa=\box80
+\lst@token=\toks35
+\lst@length=\count312
+\lst@currlwidth=\dimen286
+\lst@column=\count313
+\lst@pos=\count314
+\lst@lostspace=\dimen287
+\lst@width=\dimen288
+\lst@newlines=\count315
+\lst@lineno=\count316
+\lst@maxwidth=\dimen289
  (c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count314
-\lst@skipnumbers=\count315
-\lst@framebox=\box80
+\c@lstnumber=\count317
+\lst@skipnumbers=\count318
+\lst@framebox=\box81
 ) (c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
@@ -624,53 +654,93 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 Package: luatexbase-cctb 2015/10/04 v1.3 luatexbase interface to LuaTeX (legacy subpackage) 
 )
 \CatcodeTableLTJlistings=\catcodetable15
-\ltj@lst@frame@lslimit=\dimen282
+\ltj@lst@frame@lslimit=\dimen290
  (c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\lst@WFtoken=\toks35
+\lst@WFtoken=\toks36
 \lst@WF=\write3
 )) (c:/texlive/2020/texmf-dist/tex/latex/jvlisting/jvlisting.sty
 Package: jvlisting 2011/11/17 v0.7 Formatted Program Listings
-\jvl@idt=\count316
-\jvl@tmphyphenchar=\count317
+\jvl@idt=\count319
+\jvl@tmphyphenchar=\count320
 \jvl@fileinput=\read2
 \listingskipamount=\skip65
-\listingindent=\dimen283
-\prelistingpenalty=\count318
-\listingpenalty=\count319
-\postlistingpenalty=\count320
+\listingindent=\dimen291
+\prelistingpenalty=\count321
+\listingpenalty=\count322
+\postlistingpenalty=\count323
 ) (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/patches/lltjp-array.sty
 Package: lltjp-array 2018/03/29 Patch to array for LuaTeX-ja
-) (./final-report.aux)
+)
+
+LaTeX Warning: Unused global option(s):
+    [report].
+
+(./final-report.aux)
 \openout1 = final-report.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 41.
  (c:/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 40.
- (c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+LaTeX Info: Redefining \selectfont on input line 41.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
+* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=512.14963pt
+* \textheight=759.6886pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-65.2877pt
+* \headheight=20.0pt
+* \headsep=15.69684pt
+* \topskip=12.76108pt
+* \footskip=28.45792pt
+* \marginparwidth=18.49426pt
+* \marginparsep=18.49426pt
+* \columnsep=18.49426pt
+* \skip\footins=16.0pt plus 5.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
@@ -684,25 +754,25 @@ Package graphics Info: Driver file: luatex.def on input line 105.
 File: luatex.def 2020/10/05 v1.2a Graphics/color driver for luatex
  (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count321
-\scratchdimen=\dimen284
-\scratchbox=\box81
-\nofMPsegments=\count322
-\nofMParguments=\count323
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count324
-\MPscratchDim=\dimen285
-\MPnumerator=\count325
-\makeMPintoPDFobject=\count326
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count324
+\scratchdimen=\dimen292
+\scratchbox=\box82
+\nofMPsegments=\count325
+\nofMParguments=\count326
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count327
+\MPscratchDim=\dimen293
+\MPnumerator=\count328
+\makeMPintoPDFobject=\count329
+\everyMPtoPDFconversion=\toks38
 ))) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\Gin@req@height=\dimen286
-\Gin@req@width=\dimen287
+\Gin@req@height=\dimen294
+\Gin@req@width=\dimen295
 ) (c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 ) (c:/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
@@ -712,47 +782,46 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count327
+\c@lstlisting=\count330
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 40.
+(Font)              scaled to size 6.47299pt on input line 41.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 40.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
+(Font)              scaled to size 4.62357pt on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )(load cache: extra_lmroman17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 41.
+(Font)              scaled to size 15.97903pt on input line 42.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 41.
+(Font)              scaled to size 15.97903pt on input line 42.
 (load cache: extra_lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 41.
+(Font)              scaled to size 11.09656pt on input line 42.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 41.
+(Font)              scaled to size 11.09656pt on input line 42.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 41.
+(Font)              scaled to size 5.54828pt on input line 42.
  [1
-
 
 {c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 44.
+(Font)              scaled to size 9.24713pt on input line 45.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 44.
+(Font)              scaled to size 9.24713pt on input line 45.
 (load cache: extra_haranoajigothic-medium.luc)(load cache: extra_lmsans10-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 23.00687pt on input line 44.
+(Font)              scaled to size 23.00687pt on input line 45.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 23.00687pt on input line 44.
+(Font)              scaled to size 23.00687pt on input line 45.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 23.00687pt on input line 44.
+(Font)              scaled to size 23.00687pt on input line 45.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 23.00687pt on input line 44.
+(Font)              scaled to size 23.00687pt on input line 45.
 (load cache: extra_lmsans17-regular.luc) (./final-report.toc [1
 
 ])
@@ -762,31 +831,31 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
  [2]
 第1章
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 19.17854pt on input line 47.
+(Font)              scaled to size 19.17854pt on input line 48.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 19.17854pt on input line 47.
+(Font)              scaled to size 19.17854pt on input line 48.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 19.17854pt on input line 47.
+(Font)              scaled to size 19.17854pt on input line 48.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 19.17854pt on input line 47.
+(Font)              scaled to size 19.17854pt on input line 48.
 [3
 
 
 ]
 第2章
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 50.
+(Font)              scaled to size 13.31586pt on input line 68.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 50.
+(Font)              scaled to size 13.31586pt on input line 68.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 50.
+(Font)              scaled to size 13.31586pt on input line 68.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 50.
+(Font)              scaled to size 13.31586pt on input line 68.
 (load cache: extra_lmsans12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 55.
+(Font)              scaled to size 11.09656pt on input line 74.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 55.
+(Font)              scaled to size 11.09656pt on input line 74.
 [4
 
 ] [5] [6
@@ -812,19 +881,19 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 ] (./final-report.aux))
 
 Here is how much of LuaTeX's memory you used:
- 11389 strings out of 478824
- 156557,552014 words of node,token memory allocated
- 25435 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 3 glue, 411 kern, 1 glyph, 9482 attribute, 600 glue_spec, 489 attribute_list, 1 write, 47 user_defined nodes
-   avail lists: 1:33,2:36080,3:480,4:508,5:99,6:98,7:3568,8:3,9:1379,10:15,11:93
- 30463 multiletter control sequences out of 65536+600000
+ 11689 strings out of 478902
+ 195701,552014 words of node,token memory allocated
+ 22763 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 7 glue, 401 kern, 1 glyph, 7797 attribute, 748 glue_spec, 481 attribute_list, 1 write, 46 user_defined nodes
+   avail lists: 1:28,2:37713,3:592,4:634,5:99,6:119,7:4968,8:2,9:2025,10:32,11:93
+ 30672 multiletter control sequences out of 65536+600000
  104 fonts using 45437839 bytes
- 127i,9n,128p,1259b,626s stack positions out of 5000i,500n,10000p,200000b,200000s
-<c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on final-report.pdf (12 pages, 107475 bytes).
+ 121i,8n,125p,1294b,626s stack positions out of 5000i,500n,10000p,200000b,200000s
+<c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
+Output written on final-report.pdf (12 pages, 135100 bytes).
 
-PDF statistics: 96 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+PDF statistics: 92 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

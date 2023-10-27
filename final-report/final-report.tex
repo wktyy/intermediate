@@ -1,5 +1,6 @@
-\documentclass[report]{ltjsbook}
+\documentclass[report]{ltjsreport}
 %\usepackage[dvipdfmx]{color}
+\usepackage[margin=15truemm]{geometry}
 \usepackage{booktabs}
 \usepackage{mathcomp}
 \usepackage{array}
@@ -45,13 +46,31 @@
 \clearpage
 
 \chapter{はじめに}
+	上肢切断者が筋電義手を装着する際，自在に扱うことができるように
+	訓練を行う必要がある．VRを用いた筋電義手トレーニングの効果につ
+	いては先行研究\cite{ref:1}\cite{ref:2}で検討されているが，
+	3Dモデルのリアリティについて検討されていなかったため, 本研究では
+	仮想筋電義手モデルのリアリティによる訓練効果や幻肢痛緩和効果に
+	着目し3Dスキャナで取り込んだ仮想筋電義手モデルを用いたVRトレーニング
+	システムを構成し，その見た目によって訓練効果に変化があるかを評価する
+	ことを目的とする．また，近年では株式会社mediVRが販売する``カグラ''という
+	という製品は上肢機能障害者のリハビリテーションのために運用されるなど
+	VRトレーニングシステムは義手装具者以外にも需要が高まっている．
+
+	本研究は2023年度，神戸高専Digital Faburication Labに新規導入された
+	ハンディ3Dスキャナ``Ein Scan HX''の活用方法の一例としても後続の研究に
+	活用していただきたい．
 
 \chapter{解説}
+	本章では，本研究で利用した``Ein Scan HX''をはじめ各種ソフトウェアの利用方法
+	およびその使い方について解説していく．また，機器を選定した理由についても記述する．
+
 	\section{EinScan HX}
 		EinScan HXは株式会社サンステラが提供するハンディ3Dスキャナである．
 		主な使用用途としては，工業製品などの比較的大きな物をスキャンし，
 		リバースエンジニアリングや測定などに用いられている．
 		製品仕様については次項で解説する．
+
 		\subsection{製品仕様}
 			EinScan HXの製品仕様について表\refeq{tab:EinScan}に示す．
 			\begin{table}[H]
@@ -59,11 +78,11 @@
 			\caption{EinScan HXの製品仕様}
 			\label{tab:EinScan}
 			\begin{tabular}{c|cc} \toprule
-				スキャンモード&Rapidスキャン&レーザースキャン\\ \hline
+				スキャン形式&Rapidスキャン&レーザースキャン\\ \hline
 				スキャン精度&0.05\,mm&0.04\,mm\\
 				ポイント間隔&0.25～3.00\,mm&0.05～3.00\,mm\\
 				被写体長3D精度&±0.1\,mm&±0.06\,mm\\
-				シングルスキャン精度&$420 \time 440$\,mm&\\
+				シングルスキャン精度&420 × 440\,mm&\\
 				光源&ブルーLED&ブルーレーザー7本\\
 				被写体深度&&\\
 				対象物との距離&&\\
@@ -77,13 +96,31 @@
 			\end{center}
 			\end{table}
 			ここで，被写体長3D精度というのはスキャン時に取得するポイントの
-			最大累積誤差を示したもので，より大きな物体をスキャンする際に
-			誤差として現れるものである．
+			最大累積誤差を示したもので，測定する点数が増える場合や
+			取得点の距離が大きい場合に誤差が累積し，大きくなっていく．
+
+			本研究では，腕の3Dオブジェクトにテクスチャを用いることを前提としているため，
+			スキャン形式をRapidスキャンモードで,3Dモデルのファイルサイズが大きくなり過ぎないように
+			頂点数を50万点で出力した．また，出力形式は元からテクスチャがメッシュに割当されている
+			.obj形式で出力した．
+
 	\section{Blender}
+		Blenderとは，オープンソースの完全無料統合型3DCG・2D・映像編集ソフトウェア
+		である．本研究では``EinScan HX''によって出力した.obj形式の3Dモデルを
+		編集する目的で使用した．次項からは本研究で用いたBlenderの機能について解説する．
 		\subsection{スムージング}
+			スムージング機能とは，3Dオブジェクト表面をペイントソフトのようになぞるだけで
+			表面を平滑化し，頂点を揃える機能である．
 		\subsection{ボーン構成}
+			ボーンは，3Dオブジェクトを変形させる際に頂点の移動を制御する支柱の役割を果たす機能である．
 		\subsection{ウェイトペイント}
+			ウェイトペイントは，ボーンによって制御された頂点の変形の度合いをスペクトルで表示したもので，
+			赤になるほど大きく変形し，青に近づくほど変形しなくなる．
+			関節部分は赤色に，それ以外は青色にウェイトペイントを設定する．
+			自然な変形のためには，関節部分の赤色からグラデーションのように広げていくと3Dオブジェクトが
+			自然に変形する．
 	\section{Unity}
+		Unityは，
 		\subsection{座標系}
 		\subsection{シェーダー}
 			\subsubsection{既存シェーダー}
@@ -117,17 +154,31 @@
 		\subsection{デバイス構成}
 	\section{rasberry py}
 	
-\chapter{研究内容}
+\chapter{研究手順}
 	\section{使用器具}
 	\section{3Dスキャナ}
 		\subsection{3Dモデルの取り込み}
-		\subsection{出力形式の選定}
+		\subsection{出力形式}
 	\section{Blender}
 		\subsection{スムージング処理}
 		\subsection{ボーン配置}
 	\section{Unity}
-		\subsection{シェーダー選定}
-		\subsection{}
+		\subsection{オブジェクトの処理}
+		\subsection{ステージ構成}
+		\subsection{アニメーション設定}
+			\subsubsection{アニメーションクリップ作成}
+			\subsubsection{アニメーター設定}
+		\subsection{オブジェクト保持}
+		\subsection{衝突判定}
+		\subsection{腕の回転}
+		\subsection{カメラ位置}
+		\subsection{コンストレイント}
+		\subsection{UI}
+		
+
+	\section{FirstVR}
+	\section{ビルド}
+	\section{評価}
 \chapter{研究結果}
 \chapter{まとめ}
 \chapter{今後の課題}
