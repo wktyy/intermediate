@@ -1,5 +1,6 @@
 \documentclass{ltjsreport}
 %\usepackage[dvipdfmx]{color}
+\usepackage{geometry}
 \usepackage{titlesec}
 \usepackage{tocloft}
 \usepackage{booktabs}
@@ -33,16 +34,28 @@
 }
 \renewcommand{\lstlistingname}{ソースコード}
 
+\geometry{
+	left = 72truept,
+	right = 72truept,
+	top = 15truemm,
+	bottom = 20truemm,
+}
+
 \titleformat{\chapter}% command
     [block]% shape
-    {\bfseries\LARGE}% format
+    {\bfseries\huge}% format
     {第 \thechapter 章}% label
     {0.5em}% sep
     {\leftline}% before-code
 \titlespacing{\chapter}
     {0pt}% left
-    {18pt}% before-sep
+    {0pt}% before-sep
     {6pt}% after-sep
+
+\renewcommand{\cfttoctitlefont}{\hfill\large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill\null}
+\renewcommand{\cftbeforetoctitleskip}{0pt}
+\renewcommand{\cftaftertoctitleskip}{0pt}
 
 \renewcommand{\cftchapfont}{\normalsize}
 % 章ページ番号のフォント
@@ -58,28 +71,29 @@
 % 章見出しの上にある余白を調整
 \setlength{\cftbeforechapskip}{0pt}
 
-\renewcommand{\caption}
+\pagestyle{plain}
 
 \begin{document}
 \begin{titlepage}
 \begin{center}
-\large 令和4年度\\
+\LARGE 令和5年度\\
 \vspace{30pt}
-\large 卒業研究報告書\\
+\LARGE 卒業研究報告書\\
 \vspace{50pt}
-\Large\textgt{仮想筋電義手の開発に関する研究}\\
+\huge\textgt{仮想筋電義手の開発に関する研究}\\
 \vspace{80pt}
-\large 指導教官　戸崎哲也\\
-\large 報告者\hspace{23pt}河合将暉\\
+\Large 指導教官 戸崎哲也\\
+\Large 報告者\hspace{23pt}河合将暉\\
 \vspace{30pt}
-\large 神戸市立工業高等専門学校\\
-\large 電子工学科
+\Large 神戸市立工業高等専門学校\\
+\Large 電子工学科
 \end{center}
 \end{titlepage}
+
 \clearpage
 
 \begin{center}
-\large (論文要旨)
+\LARGE (論文要旨)
 \end{center}
 \pagenumbering{roman}
 あああああああああああああああああああああああああああああああああああ
