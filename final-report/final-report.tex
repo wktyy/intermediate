@@ -1,6 +1,7 @@
-\documentclass[report]{ltjsreport}
+\documentclass{ltjsreport}
 %\usepackage[dvipdfmx]{color}
-\usepackage[margin=15truemm]{geometry}
+\usepackage{titlesec}
+\usepackage{tocloft}
 \usepackage{booktabs}
 \usepackage{mathcomp}
 \usepackage{array}
@@ -32,19 +33,69 @@
 }
 \renewcommand{\lstlistingname}{ソースコード}
 
+\titleformat{\chapter}% command
+    [block]% shape
+    {\bfseries\LARGE}% format
+    {第 \thechapter 章}% label
+    {0.5em}% sep
+    {\leftline}% before-code
+\titlespacing{\chapter}
+    {0pt}% left
+    {18pt}% before-sep
+    {6pt}% after-sep
 
+\renewcommand{\cftchapfont}{\normalsize}
+% 章ページ番号のフォント
+\renewcommand{\cftchappagefont}{\normalsize}
+% 章番号の後に「:」を付ける
+\renewcommand{\cftchapaftersnum}{:}
+% 章見出しのインデント幅
+\renewcommand{\cftchapnumwidth}{5em}
+% 章見出しからページ番号までを点線でつなぐ
+\renewcommand{\cftchapleader}{\cftdotfill{\cftchapdotsep}}
+% 点線の点間隔の調整
+\renewcommand{\cftchapdotsep}{\cftdotsep}
+% 章見出しの上にある余白を調整
+\setlength{\cftbeforechapskip}{0pt}
 
-\title{仮想筋電義手の開発に関する研究}
-\author{神戸市立工業高等専門学校 \\ 電子工学科 河合 将暉}
-
+\renewcommand{\caption}
 
 \begin{document}
-\maketitle
-
-\setcounter{tocdepth}{3}
-\tableofcontents
+\begin{titlepage}
+\begin{center}
+\large 令和4年度\\
+\vspace{30pt}
+\large 卒業研究報告書\\
+\vspace{50pt}
+\Large\textgt{仮想筋電義手の開発に関する研究}\\
+\vspace{80pt}
+\large 指導教官　戸崎哲也\\
+\large 報告者\hspace{23pt}河合将暉\\
+\vspace{30pt}
+\large 神戸市立工業高等専門学校\\
+\large 電子工学科
+\end{center}
+\end{titlepage}
 \clearpage
 
+\begin{center}
+\large (論文要旨)
+\end{center}
+\pagenumbering{roman}
+あああああああああああああああああああああああああああああああああああ
+あああああああああああああああああああああああああああああああああああ
+あああああああああああああああああああああああああああああああああああ
+あああああああああああああああああああああああああああああああああああ
+あああああああああああああああああああああああああああああああああああ
+あああああああああああああああああああああああああああああああああああ
+あああああああああああああああああああああああああああああああああああ
+
+\clearpage
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
 \chapter{はじめに}
 	上肢切断者が筋電義手を装着する際，自在に扱うことができるように
 	訓練を行う必要がある．VRを用いた筋電義手トレーニングの効果につ
@@ -105,6 +156,7 @@
 			.obj形式で出力した．
 
 	\section{Blender}
+	
 		Blenderとは，オープンソースの完全無料統合型3DCG・2D・映像編集ソフトウェア
 		である．本研究では``EinScan HX''によって出力した.obj形式の3Dモデルを
 		編集する目的で使用した．次項からは本研究で用いたBlenderの機能について解説する．
@@ -131,7 +183,6 @@
 		\subsection{衝突判定}
 		\subsection{ペアレント}
 		\subsection{コンストレイント}
-\clearpage
 		\subsection{物理演算}
 		\subsection{エディタ設定}
 		\subsection{プラグイン}
@@ -181,7 +232,9 @@
 	\section{評価}
 \chapter{研究結果}
 \chapter{まとめ}
+
 \chapter{今後の課題}
+
 \begin{thebibliography}{99}
 
 	\bibitem{ref:1}
