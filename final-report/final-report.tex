@@ -71,9 +71,12 @@
 % 章見出しの上にある余白を調整
 \setlength{\cftbeforechapskip}{0pt}
 
-\pagestyle{plain}
-
 \begin{document}
+%タイトルページ
+\newgeometry{  %余白調整
+	top=70truemm,
+	bottom = 70truemm,
+}
 \begin{titlepage}
 \begin{center}
 \LARGE 令和5年度\\
@@ -89,13 +92,16 @@
 \Large 電子工学科
 \end{center}
 \end{titlepage}
-
+\restoregeometry
 \clearpage
+%タイトルぺージここまで
 
+%ページ番号をローマ数字で表示
+\pagenumbering{roman}
+%論文要旨
 \begin{center}
 \LARGE (論文要旨)
 \end{center}
-\pagenumbering{roman}
 あああああああああああああああああああああああああああああああああああ
 あああああああああああああああああああああああああああああああああああ
 あああああああああああああああああああああああああああああああああああ
@@ -103,13 +109,18 @@
 あああああああああああああああああああああああああああああああああああ
 あああああああああああああああああああああああああああああああああああ
 あああああああああああああああああああああああああああああああああああ
-
 \clearpage
-\setcounter{tocdepth}{3}
-\tableofcontents
+%論文要旨ここまで
 
+%目次を節まで表示に設定
+\setcounter{tocdepth}{3}
+%目次を表示
+\tableofcontents
+%ページ番号をアラビア数字に設定
 \pagenumbering{arabic}
+%このページから1枚目にカウントしなおす
 \setcounter{page}{1}
+
 \chapter{はじめに}
 	上肢切断者が筋電義手を装着する際，自在に扱うことができるように
 	訓練を行う必要がある．VRを用いた筋電義手トレーニングの効果につ
@@ -248,6 +259,9 @@
 \chapter{まとめ}
 
 \chapter{今後の課題}
+\clearpage
+
+\chapter*{謝辞}
 
 \begin{thebibliography}{99}
 
