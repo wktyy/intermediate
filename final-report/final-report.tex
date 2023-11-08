@@ -134,7 +134,7 @@
 	義手装具者以外にも需要が高まっている．
 
 	本研究は2023年度，神戸高専Digital Faburication Labに新規導入された
-	ハンディ3Dスキャナ``Ein Scan HX''の活用方法の一例としても後続の研究に
+	ハンディ3Dスキャナ``Ein Scan HX''\cite{ref:5}の活用方法の一例としても後続の研究に
 	活用していただきたい．
 
 \chapter{解説}
@@ -142,7 +142,7 @@
 	およびその使い方について解説していく．また，機器を選定した理由についても記述する．
 
 	\section{EinScan HX}
-		EinScan HXは株式会社サンステラが提供するハンディ3Dスキャナ\cite{ref:5}である．
+		EinScan HXは株式会社サンステラが提供するハンディ3Dスキャナである．
 		主な使用用途としては，工業製品などの比較的大きな物をスキャンし，
 		リバースエンジニアリングや測定などに用いられている．
 		製品仕様については次項で解説する．
@@ -174,11 +174,6 @@
 			ここで，被写体長3D精度というのはスキャン時に取得するポイントの
 			最大累積誤差を示したもので，測定する点数が増える場合や
 			取得点の距離が大きい場合に誤差が累積し，大きくなっていく．
-
-			本研究では，腕の3Dオブジェクトにテクスチャを用いることを前提としているため，
-			スキャン形式をRapidスキャンモードで,3Dモデルのファイルサイズが大きくなり過ぎないように
-			頂点数を50万点で出力した．また，出力形式は元からテクスチャがメッシュに割当されている
-			.obj形式で出力した．
 
 	\section{Blender}
 	
@@ -217,8 +212,38 @@
 			\subsubsection{XR Interaction Toolkit}
 			\subsubsection{Google VR}
 		\subsection{ビルド}
+			本項ではUnityで構成したシミュレータのビルド方法について解説する。
+			以下にビルドの手順を示す。
+			\begin{enumerate}
+				\item Unityエディタ上のツールバーから"File"を選択
+				\item ``Build Settings''の項目を選択すると、別ウィンドウにBuild Settingsが開かれる
+				\item 追加したいシーンファイルをUnityエディタ上で開いておき、Build Settingsのウィンドウから"Add Open Scenes"を選択
+				\item Build Settings ウィンドウの左にあるPlatformから実行したいOSを選択し、ウィンドウ右下の"Switch Platform"を選択
+				\item Build Settings ウィンドウ右下の"build"を選択してビルド開始
+			\end{enumerate}
+			以上の手順でUnityで作成したシーンのビルドが完了する。
+			Windows,LinuxなどのOSではビルドしたフォルダに実行ファイルが作成されているため、
+			そのファイルからシミュレータを実行することができる。
+			iOS,Android OSに関してはビルド・実行方法が異なるため、それぞれ以下に解説する。
 			\subsubsection{iOS}
-			\subsubsection{Xcode}
+				本項では、iOS用アプリの実行手順を以下に示す。
+				\begin{enumerate}
+					\item ビルドされたフォルダをMacOSに転送
+					\item MacOSでビルドされたフォルダを開き、フォルダ内の``Unity-iPhone.xcodeproj''をXcodeで開く
+					\item iOS端末を接続し、端末の設定から端末をデバッグモードにする
+					\item Xcodeウィンドウ上部のAny iOS Device を選択し、接続した端末を選択
+					\item Signing＆Capabilitiesを選択し、Teamの欄にApple IDを入力
+					\item 本シミュレータではBluetoothを用いるため、infoを選択し、Keyの一覧に``Privacy - Bluetooth Peripheral Usage Description''を追加
+						し、Valueを``Uses BLE to communicate with devices.''にする
+					\item iPhoneにアプリがインストールされたら、端末の『設定』から『プライバシーとセキュリティ』を開き『Bluetooth』を選択
+					\item インストールしたアプリにBluetoothの権限を許可する
+					\item アプリ一覧からインストールしたアプリを実行する
+				\end{enumerate}
+				以上の手順でiOS用のシミュレータをビルドして実行できる。
+				この手順で一番重要なのが、6の手順でこれがなければアプリを実行してもMade by Unityのポップがでた
+				あと直後に動かなくなってしまう。これらのエラーはXcode上でログが残されているため、発生しているエラーを
+				解消すれば実行することができる。一般的に、端末側の権限付与ができておらずアプリが実行できない場合があるため
+				よく確認をすること。
 			\subsubsection{Android OS}
 	\section{FirstVR}
 		\subsection{デバイス構成}
@@ -232,21 +257,49 @@
 	
 \chapter{研究手順}
 	\section{使用器具}
+		本研究での使用器具を表\refeq{tab:usedev}に示す。
 	\begin{table}[H]
 	\begin{center}
-	\caption{使用器具}
-	\label{tab:used}
+	\caption{本研究における使用器具}
+	\label{tab:usedev}
 	\begin{tabular}{clllll} \toprule
 	No&\multicolumn{1}{l}{機器名}&\multicolumn{1}{l}{型番}&\multicolumn{1}{l}{シリアルNo}&\multicolumn{1}{l}{備考}\\ \hline
-	1&FirstVR&UHL-01&&\\
+	1&EinScan HX&&&\\
+	2&FirstVR&UHL-01&&\\
+	3&iPhone SE2&&&iOS16.7.2\\
+	4&HUAWEI Nova Lite2&&&AndroidOS 9\\
+	5&PC&&&Ubuntu22.04\\
+	6&PC&&&MacOS\\
+	\bottomrule
+	\end{tabular}
+	\end{center}
+	\end{table}
+	\section{使用ソフトウェア}
+	以下に本研究で使用したソフトウェアを表\refeq{tab:usesoft}に示す。
+	\begin{table}[H]
+	\begin{center}
+	\caption{使用ソフトウェア}
+	\label{tab:usesoft}
+	\begin{tabular}{clllll} \toprule
+	No&\multicolumn{1}{l}{ソフトウェア名}&\multicolumn{1}{l}{バージョン}&\multicolumn{1}{l}{使用OS}&\multicolumn{1}{l}{備考}\\ \hline
+	1&Blender&3.0.1&Ubuntu&\\
+	2&Unity&2022.3.11f1&Ubuntu&\\
+	3&Xcode&15.0.1&MacOS&\\
+	\bottomrule
 	\end{tabular}
 	\end{center}
 	\end{table}
 	\section{3Dスキャナ}
 		\subsection{3Dモデルの取り込み}
+			ハンディ3DスキャナであるEinScan HXを用いて左腕をスキャンした
 		\subsection{出力形式}
+			本研究では，腕の3Dオブジェクトにテクスチャを用いることを前提としているため，
+			スキャン形式をRapidスキャンモードで,3Dモデルのリアリティをあげるために頂点数を
+			50万点で出力し，出力形式は元からテクスチャがメッシュに割当されている
+			.obj形式にした。
 	\section{Blender}
 		\subsection{スムージング処理}
+			.obj形式で取り込んだ3Dオブジェクトは
 		\subsection{ボーン配置}
 	\section{Unity}
 		\subsection{オブジェクトの処理}
