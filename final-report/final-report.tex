@@ -274,7 +274,6 @@
 	\end{tabular}
 	\end{center}
 	\end{table}
-	\section{使用ソフトウェア}
 	以下に本研究で使用したソフトウェアを表\refeq{tab:usesoft}に示す。
 	\begin{table}[H]
 	\begin{center}
@@ -299,7 +298,9 @@
 			.obj形式にした。
 	\section{Blender}
 		\subsection{スムージング処理}
-			.obj形式で取り込んだ3Dオブジェクトは
+			.obj形式で取り込んだ3Dオブジェクトは測定によるノイズが含まれており、特に掌と手の甲の境界線上に
+			が段差のように途切れてしまう。このノイズを除去・補完するために、オブジェクト表面の凹凸を
+			平坦にする効果があるスムージング処理を行った
 		\subsection{ボーン配置}
 	\section{Unity}
 		\subsection{オブジェクトの処理}
@@ -319,6 +320,14 @@
 		
 	\section{ビルド}
 	\section{評価}
+		\section{FirstVR}
+			本研究で構成するシミュレータの入力感度を検証するため、以下の手順でFirstVRの評価を行った。
+			\begin{enumerate}
+				\item 肘から手首までの長さを測定し、肘を原点に1/4の距離で装着
+				\item 端末とFirstVRを接続し、ジェスチャをしていない状態とジェスチャしている状態を学習
+				\item sample数を7,10〜100までの11段階でFirstVRの筋変位センサの出力値を測定
+				\item 最もノイズの少ないsample数を選出し、ジェスチャ状態で手の角度を上下左右に動かした場合のノイズを測定
+			\end{enumerate}
 \chapter{研究結果}
 \chapter{まとめ}
 
