@@ -73,23 +73,24 @@
 
 \begin{document}
 %タイトルページ
-\newgeometry{  %余白調整
+\newgeometry{
+	%余白調整
 	top=70truemm,
-	bottom = 70truemm,
+	bottom = 10truemm,
 }
 \begin{titlepage}
 \begin{center}
-\LARGE 令和5年度\\
+\huge 令和5年度\\
 \vspace{30pt}
-\LARGE 卒業研究報告書\\
+\huge 卒業研究報告書\\
 \vspace{50pt}
-\huge\textgt{仮想筋電義手の開発に関する研究}\\
-\vspace{80pt}
-\Large 指導教官\hspace{10pt}戸崎哲也\\
-\Large 報告者\hspace{23pt}河合将暉\\
-\vspace{30pt}
-\Large 神戸市立工業高等専門学校\\
-\Large 電子工学科
+\HUGE\textgt{仮想筋電義手の開発に関する研究}\\
+\vspace{200pt}
+\huge 指導教官\hspace{10pt}戸崎　哲也\\
+\huge 報告者\hspace{28pt}河合　将暉\\
+\vspace{50pt}
+\huge 神戸市立工業高等専門学校\\
+\huge 電子工学科
 \end{center}
 \end{titlepage}
 \restoregeometry
@@ -121,14 +122,15 @@
 %このページから1枚目にカウントしなおす
 \setcounter{page}{1}
 
-\chapter{はじめに}
+\chapter{序論}
+	\section{研究背景}
 	上肢切断者が筋電義手を装着する際，自在に扱うことができるように
-	訓練を行う必要がある．VRを用いた筋電義手トレーニングの効果につ
-	いては先行研究\cite{ref:1}\cite{ref:2}で検討されているが，
+	訓練を行う必要がある．VRを用いた筋電義手トレーニングの効果に
+	ついては先行研究\cite{ref:1}\cite{ref:2}で検討されているが，
 	3Dモデルのリアリティについて検討されていなかったため, 本研究では
 	仮想筋電義手モデルのリアリティによる訓練効果や幻肢痛緩和効果に
-	着目し3Dスキャナで取り込んだ仮想筋電義手モデルを用いたVRトレーニング
-	システムを構成し，その見た目によって訓練効果に変化があるかを評価する
+	着目し3Dスキャナで取り込んだ仮想筋電義手モデル(VH:Virtual Hand)を用いた
+	VRトレーニングシステムを構成し，VHの見た目によって訓練効果に変化があるかを評価する。
 	ことを目的とする．また，近年では``カグラ''\cite{ref:6}という製品は上肢機能障害者
 	のリハビリテーションのために運用されるなどVRトレーニングシステムは
 	義手装具者以外にも需要が高まっている．
@@ -137,8 +139,15 @@
 	ハンディ3Dスキャナ``Ein Scan HX''\cite{ref:5}の活用方法の一例としても後続の研究に
 	活用していただきたい．
 
-\chapter{解説}
-	本章では，本研究で利用した``Ein Scan HX''をはじめ各種ソフトウェアの利用方法
+	\section{研究目的}
+	本研究の目的はVRトレーニングシステムのリアリティについて入力デバイス・VHのモデルという観点から研究を行い
+	そのリアリティが幻肢痛の緩和や運動機能の訓練効果にどのように影響を与えるかを検討することが最終目標である。
+	まずその第1段階として、FirstVRを用いたVRトレーニングシステムを構成し、どの程度リアルにシミュレートできるかを検討した。
+	また、FirstVRがどの程度の精度でジェスチャを検出できるか検証も行った。
+	なお、本研究におけるリアリティの評価方法として、実験協力者を対象とした定性評価アンケートを用いて評価した。
+
+\chapter{理論:3Dモデルの制作}
+	本章では，本研究で利用した``Ein Scan HX''をはじめ,各種ソフトウェアの利用方法
 	およびその使い方について解説していく．また，機器を選定した理由についても記述する．
 
 	\section{EinScan HX}
@@ -191,20 +200,21 @@
 			関節部分は赤色に，それ以外は青色にウェイトペイントを設定する．
 			自然な変形のためには，関節部分の赤色からグラデーションのように広げていくと3Dオブジェクトが
 			自然に変形する．
+
+\chapter{理論:Unity}
 	\section{Unity}
-		Unityは，
+		Unityは，Unity Technologies社が提供するゲーム制作を中心とした統合開発環境のことで,主にスマートフォン向けゲームの制作に用いられている。
+		特徴としては、他社製の開発環境よりも比較的簡単にゲームの制作をすることが可能で、プログラムを必須としない点に強みをもつ。
+		本研究ではVRトレーニングシステムを構築する上で利用した機能について解説を加える。
 		\subsection{シェーダー}
 			\subsubsection{既存シェーダー}
 			\subsubsection{Reflex Shader 2.2}
 		\subsection{オブジェクト}
 		\subsection{衝突判定}
 		\subsection{ペアレント}
-		\subsection{コンストレイント}
 		\subsection{エディタ設定}
 		\subsection{プラグイン}
 			\subsubsection{FVRsdk}
-			\subsubsection{XR Interaction Toolkit}
-			\subsubsection{Google VR}
 		\subsection{ビルド}
 			本項ではUnityで構成したシミュレータのビルド方法について解説する。
 			以下にビルドの手順を示す。
@@ -243,9 +253,6 @@
 		\subsection{デバイス構成}
 		\subsection{トラッキング}
 		\subsection{キャリブレーション}
-	\section{Meta Quest2}
-		\subsection{デバイス構成}
-	\section{rasberry py}
 	
 \chapter{研究手順}
 	\section{使用器具}
@@ -260,8 +267,8 @@
 	2&FirstVR&UHL-01&&\\
 	3&iPhone SE2&&&iOS16.7.2\\
 	4&HUAWEI Nova Lite2&&&AndroidOS 9\\
-	5&PC&&&Ubuntu22.04\\
-	6&PC&&&MacOS\\
+	5&PC-1&&&Ubuntu22.04\\
+	6&PC-2&&&MacOS\\
 	\bottomrule
 	\end{tabular}
 	\end{center}
@@ -283,11 +290,10 @@
 	\section{3Dスキャナ}
 		\subsection{3Dモデルの取り込み}
 			ハンディ3DスキャナであるEinScan HXを用いて左腕をスキャンした
-		\subsection{出力形式}
 			本研究では，腕の3Dオブジェクトにテクスチャを用いることを前提としているため，
 			スキャン形式をRapidスキャンモードで,3Dモデルのリアリティをあげるために頂点数を
 			50万点で出力し，出力形式は元からテクスチャがメッシュに割当されている
-			.obj形式にした。
+			.obj形式を選択した。
 	\section{Blender}
 		\subsection{スムージング処理}
 			.obj形式で取り込んだ3Dオブジェクトは測定によるノイズが含まれており、特に掌と手の甲の境界線上に
@@ -302,10 +308,7 @@
 			\subsubsection{アニメーションクリップ作成}
 			\subsubsection{アニメーター設定}
 		\subsection{オブジェクト保持}
-		\subsection{衝突判定}
-		\subsection{腕の回転}
-		\subsection{カメラ位置}
-		\subsection{コンストレイント}
+	
 		\subsection{UI}
 		
 
@@ -316,15 +319,20 @@
 		\section{FirstVR}
 			本研究で構成するシミュレータの入力感度を検証するため、以下の手順でFirstVRの評価を行った。
 			\begin{enumerate}
-				\item 肘から手首までの長さを測定し、肘を原点に1/4の距離で装着
-				\item 端末とFirstVRを接続し、ジェスチャをしていない状態とジェスチャしている状態を学習
-				\item sample数を7,10〜100までの11段階でFirstVRの筋変位センサの出力値を測定
-				\item 最もノイズの少ないsample数を選出し、ジェスチャ状態で手の角度を上下左右に動かした場合のノイズを測定
+				\item 肘から手首までの長さを測定し、肘を原点に1/4の距離で装着 \\
+				\item 端末とFirstVRを接続し、ジェスチャをしていない状態とジェスチャしている状態を学習 \\
+				\item ジェスチャをしていない状態の筋変位センサの値を基準に手を握るジェスチャのセンサ値の変化量を測定した。
+					この操作をsample数を7,10〜100までの11段階で測定した。 \\
+				\item ノイズの少なかったsample数を選出し、ジェスチャ状態で手の角度を上下左右に動かした場合のノイズを測定 \\
+				\item 
 			\end{enumerate}
 \chapter{研究結果}
 \chapter{まとめ}
 
 \chapter{今後の課題}
+	現段階では、シミュレータとして最低限の要素を追加した。
+	しかし、FirstVRにおける掴みジェスチャの認識精度の低さから本研究で検討しようとした
+	リアリティについて検討できなかった。
 \clearpage
 
 \chapter*{謝辞}
@@ -351,10 +359,20 @@
 	MDPI. 2021 Feb
 
 	\bibitem{ref:5}
-	株式会社サンステラ, https://www.einscan.jp/einscan-hx
-
-	\bibitem{ref:6}
 	mediVR.Inc.,https://www.medivr.jp/
 
+	\bibitem{ref:6}
+	株式会社サンステラ, https://www.einscan.jp/einscan-hx
+
+	\bibitem{ref:7}
+
+
 \end{thebibliography}
+\chapter*{付録}
+%ページ番号をローマ数字で表示
+\pagenumbering{roman}
+%このページから1枚目にカウントしなおす
+\setcounter{page}{1}
+
+
 \end{document}
