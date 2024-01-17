@@ -1,26 +1,23 @@
 \contentsline {chapter}{\numberline {第1章}序論}{2}{}%
 \contentsline {section}{\numberline {1.1}研究背景}{2}{}%
 \contentsline {section}{\numberline {1.2}研究目的}{2}{}%
-\contentsline {chapter}{\numberline {第2章}理論:3Dモデルの制作}{3}{}%
+\contentsline {chapter}{\numberline {第2章}理論:3Dモデルの製作}{3}{}%
 \contentsline {section}{\numberline {2.1}EinScan HX}{3}{}%
 \contentsline {subsection}{\numberline {2.1.1}製品仕様}{3}{}%
 \contentsline {section}{\numberline {2.2}Blender}{3}{}%
 \contentsline {subsection}{\numberline {2.2.1}スムージング}{3}{}%
 \contentsline {subsection}{\numberline {2.2.2}ボーン構成}{4}{}%
 \contentsline {subsection}{\numberline {2.2.3}ウェイトペイント}{4}{}%
-\contentsline {chapter}{\numberline {第3章}理論:Unity}{5}{}%
+\contentsline {chapter}{\numberline {第3章}理論:Unity・FirstVR}{5}{}%
 \contentsline {section}{\numberline {3.1}Unity}{5}{}%
 \contentsline {subsection}{\numberline {3.1.1}シェーダー}{5}{}%
-\contentsline {subsubsection}{既存シェーダー}{5}{}%
-\contentsline {subsubsection}{Reflex Shader 2.2}{5}{}%
 \contentsline {subsection}{\numberline {3.1.2}オブジェクト}{5}{}%
 \contentsline {subsection}{\numberline {3.1.3}衝突判定}{5}{}%
+\contentsline {subsubsection}{PC版の衝突判定}{5}{}%
+\contentsline {subsubsection}{iOS版の衝突判定}{5}{}%
 \contentsline {subsection}{\numberline {3.1.4}ペアレント}{5}{}%
-\contentsline {subsection}{\numberline {3.1.5}エディタ設定}{5}{}%
-\contentsline {subsection}{\numberline {3.1.6}プラグイン}{5}{}%
-\contentsline {subsubsection}{FVRsdk}{5}{}%
-\contentsline {subsection}{\numberline {3.1.7}ビルド}{5}{}%
-\contentsline {subsubsection}{iOS}{5}{}%
+\contentsline {subsection}{\numberline {3.1.5}ビルド}{5}{}%
+\contentsline {subsubsection}{iOS}{6}{}%
 \contentsline {subsubsection}{Android OS}{6}{}%
 \contentsline {section}{\numberline {3.2}FirstVR}{6}{}%
 \contentsline {subsection}{\numberline {3.2.1}デバイス構成}{6}{}%
