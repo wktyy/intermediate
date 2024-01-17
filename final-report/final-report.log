@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.25)  17 JAN 2024 14:01
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.25)  17 JAN 2024 14:02
  system commands enabled.
  file:line:error style messages enabled.
 **"g:/その他のパソコン/WKTYY desktop/D5/soturon/intermediate/final-report/final-report"
@@ -825,4 +825,222 @@ Dictionary: translator-basic-dictionary, Language: English
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
-Package capti
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count332
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 74.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 74.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: luatex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(199.16928pt, 617.42482pt, 28.45274pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=617.42482pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=91.20245pt
+* \headheight=20.0pt
+* \headsep=15.69684pt
+* \topskip=12.76108pt
+* \footskip=28.45792pt
+* \marginparwidth=18.49426pt
+* \marginparsep=18.49426pt
+* \columnsep=18.49426pt
+* \skip\footins=16.0pt plus 5.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(load cache: extra_lmroman17-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 19.17854pt on input line 83.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 19.17854pt on input line 83.
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 27.7414pt on input line 87.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 27.7414pt on input line 87.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 27.7414pt on input line 87.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 27.7414pt on input line 87.
+(load cache: extra_haranoajigothic-medium.luc) [1
+
+
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 15.97903pt on input line 104.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 15.97903pt on input line 104.
+ [1
+
+
+](load cache: extra_lmroman12-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 119.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 119.
+(load cache: extra_lmroman12-bold.luc)
+LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <12> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 119.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 119.
+LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <12> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 119.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 119.
+ (./final-report.toc [2
+
+])
+\tf@toc=\write4
+
+\openout4 = final-report.toc
+ [1]
+第1章
+(load cache: extra_lmroman10-bold.luc)
+LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 125.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 125.
+LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 125.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 125.
+LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <20.74> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 125.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 19.17854pt on input line 125.
+LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <20.74> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 125.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 19.17854pt on input line 125.
+
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 125--125
+|||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 1 |\JY3/mc/b/n/20.74 章 [] 
+ []
+
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 13.31586pt on input line 126.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 13.31586pt on input line 126.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 13.31586pt on input line 126.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 13.31586pt on input line 126.
+(load cache: extra_lmsans12-regular.luc) [2
+
+]
+第2章
+
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 151--151
+|||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 2 |\JY3/mc/b/n/20.74 章 [] 
+ []
+
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 161.
+[3
+
+] [4]
+第3章
+
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 206--206
+|||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 3 |\JY3/mc/b/n/20.74 章 [] 
+ []
+
+<../figs/NomalShader.png, id=30, 682.55pt x 363.3575pt>
+File: ../figs/NomalShader.png Graphic file (type png)
+<use ../figs/NomalShader.png>
+Package luatex.def Info: ../figs/NomalShader.png  used on input line 218.
+(luatex.def)             Requested size: 181.40038pt x 96.56648pt.
+<../figs/ReflexShader.png, id=31, 682.55pt x 363.3575pt>
+File: ../figs/ReflexShader.png Graphic file (type png)
+<use ../figs/ReflexShader.png>
+Package luatex.def Info: ../figs/ReflexShader.png  used on input line 223.
+(luatex.def)             Requested size: 181.40038pt x 96.56648pt.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 231.
+(load cache: extra_lmsans10-regular.luc) [5
+
+<../figs/NomalShader.png><../figs/ReflexShader.png>] [6]
+第4章
+
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 273--273
+|||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 4 |\JY3/mc/b/n/20.74 章 [] 
+ []
+
+[7
+
+] [8]
+第5章
+
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 344--344
+|||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 5 |\JY3/mc/b/n/20.74 章 [] 
+ []
+
+[9
+
+]
+第6章
+
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 347--347
+|||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 6 |\JY3/mc/b/n/20.74 章 [] 
+ []
+
+[10
+
+]
+第7章
+
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 349--349
+|||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 7 |\JY3/mc/b/n/20.74 章 [] 
+ []
+
+[11
+
+] [12
+
+
+] [13
+
+] [1
+
+] (./final-report.aux))
+
+Here is how much of LuaTeX's memory you used:
+ 12274 strings out of 478902
+ 195704,552014 words of node,token memory allocated
+ 26066 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 23 glue, 369 kern, 1 glyph, 8665 attribute, 971 glue_spec, 553 attribute_list, 1 write, 135 user_defined nodes
+   avail lists: 1:23,2:40231,3:826,4:736,5:92,6:137,7:5527,8:3,9:2253,10:35,11:93
+ 31225 multiletter control sequences out of 65536+600000
+ 77 fonts using 41710175 bytes
+ 121i,9n,125p,1295b,633s stack positions out of 5000i,500n,10000p,200000b,200000s
+<c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
+Output written on final-report.pdf (17 pages, 457292 bytes).
+
+PDF statistics: 111 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+
