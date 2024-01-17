@@ -131,12 +131,12 @@
 	仮想筋電義手モデルのリアリティによる訓練効果や幻肢痛緩和効果に
 	着目し3Dスキャナで取り込んだ仮想筋電義手モデル(VH:Virtual Hand)を用いた
 	VRトレーニングシステムを構成し，VHの見た目によって訓練効果に変化があるかを評価する。
-	ことを目的とする．また，近年では``カグラ''\cite{ref:6}という製品は上肢機能障害者
+	ことを目的とする．また，近年では``カグラ''\cite{ref:5}という製品は上肢機能障害者
 	のリハビリテーションのために運用されるなどVRトレーニングシステムは
 	義手装具者以外にも需要が高まっている．
 
 	本研究は2023年度，神戸高専Digital Faburication Labに新規導入された
-	ハンディ3Dスキャナ``Ein Scan HX''\cite{ref:5}の活用方法の一例としても後続の研究に
+	ハンディ3Dスキャナ``Ein Scan HX''\cite{ref:6}の活用方法の一例としても後続の研究に
 	活用していただきたい．
 
 	\section{研究目的}
@@ -146,7 +146,7 @@
 	また、FirstVRがどの程度の精度でジェスチャを検出できるか検証も行った。
 	なお、本研究におけるリアリティの評価方法として、実験協力者を対象とした定性評価アンケートを用いて評価した。
 
-\chapter{理論:3Dモデルの制作}
+\chapter{理論:3Dモデルの製作}
 	本章では，本研究で利用した``Ein Scan HX''をはじめ,各種ソフトウェアの利用方法
 	およびその使い方について解説していく．また，機器を選定した理由についても記述する．
 
@@ -201,20 +201,34 @@
 			自然な変形のためには，関節部分の赤色からグラデーションのように広げていくと3Dオブジェクトが
 			自然に変形する．
 
-\chapter{理論:Unity}
+\chapter{理論:Unity・FirstVR}
 	\section{Unity}
 		Unityは，Unity Technologies社が提供するゲーム制作を中心とした統合開発環境のことで,主にスマートフォン向けゲームの制作に用いられている。
 		特徴としては、他社製の開発環境よりも比較的簡単にゲームの制作をすることが可能で、プログラムを必須としない点に強みをもつ。
 		本研究ではVRトレーニングシステムを構築する上で利用した機能について解説を加える。
 		\subsection{シェーダー}
-			\subsubsection{既存シェーダー}
-			\subsubsection{Reflex Shader 2.2}
+			本研究では、UnityにインポートしたVHの見た目をよりリアルにするため、標準搭載のシェーダーではなく、``Reflex Shader 2.2''というシェーダーを
+			用いて表示した。このシェーダーは主にVRChatの3Dモデル表示に用いられ、標準のシェーダーと比較して鏡面光が抑制され、モデルのコントラストが強調されていることがわかる。
+			\begin{figure}[H]
+			\centering
+			\begin{minipage}{0.4\columnwidth}
+			\centering
+			\includegraphics[width = \columnwidth]{../figs/NomalShader.png}
+			\end{minipage}
+			\hspace{0.04\columnwidth}
+			\begin{minipage}{0.4\columnwidth}
+			\centering
+			\includegraphics[width = \columnwidth]{../figs/ReflexShader.png}
+			\end{minipage}
+			\caption{シェーダーによる3Dモデルの違い}
+			\end{figure}
+
 		\subsection{オブジェクト}
 		\subsection{衝突判定}
+			
+			\subsubsection{PC版の衝突判定}
+			\subsubsection{iOS版の衝突判定}
 		\subsection{ペアレント}
-		\subsection{エディタ設定}
-		\subsection{プラグイン}
-			\subsubsection{FVRsdk}
 		\subsection{ビルド}
 			本項ではUnityで構成したシミュレータのビルド方法について解説する。
 			以下にビルドの手順を示す。
@@ -245,8 +259,8 @@
 				\end{enumerate}
 				以上の手順でiOS用のシミュレータをビルドして実行できる。
 				この手順で一番重要なのが、6の手順でこれがなければアプリを実行してもMade by Unityのポップがでた
-				あと直後に動かなくなってしまう。これらのエラーはXcode上でログが残されているため、発生しているエラーを
-				解消すれば実行することができる。一般的に、端末側の権限付与ができておらずアプリが実行できない場合があるため
+				直後に動かなくなってしまう。これらのエラーはXcode上でログが残されているため、発生しているエラーを
+				解消すれば実行することができる。大抵の場合、端末側の権限付与ができておらずアプリが実行できないエラーが多発するため
 				よく確認をすること。
 			\subsubsection{Android OS}
 	\section{FirstVR}
