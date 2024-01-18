@@ -132,7 +132,7 @@
 	着目し3Dスキャナで取り込んだ仮想筋電義手モデル(VH:Virtual Hand)を用いた
 	VRトレーニングシステムを構成し，VHの見た目によって訓練効果に変化があるかを評価する。
 	ことを目的とする．このトレーニングシステムのインタフェースに``FirstVR''を用いることで，
-	実際の筋電義手を使用することなく，安価で訓練が行えると考えた．このFirstVR
+	実際の筋電義手を使用することなく，安価で訓練が行えると考えた.
 	また，近年では``カグラ''\cite{ref:6}という製品は上肢機能障害者
 	のリハビリテーションのために運用されるなどVRトレーニングシステムは
 	義手装具者以外にも需要が高まっている．
@@ -312,11 +312,37 @@
 			obj形式を選択した。
 	\section{Blender}
 		\subsection{スムージング処理}
-			.obj形式で取り込んだ3Dオブジェクトは測定によるノイズが含まれており、特に掌と手の甲の境界線上に
+			.obj形式で取り込んだ3Dモデルは測定によるノイズが含まれており、特に掌と手の甲の境界線上に
 			が段差のように途切れてしまう。このノイズを除去・補完するために、オブジェクト表面の凹凸を
 			平坦にする効果があるスムージング処理を行った。
+			\begin{figure}[H]
+			\centering
+			\begin{minipage}{0.4\columnwidth}
+			\centering
+			\includegraphics[width = \columnwidth]{../figs/SmoothingBeforRear.png}
+			\end{minipage}
+			\begin{minipage}{0.4\columnwidth}
+			\centering
+			\includegraphics[width = \columnwidth]{../figs/SmoothingAfterRight.png}
+			\end{minipage}
+			\caption{スムージング処理比較}
+			\end{figure}
+
 		\subsection{ボーン配置}
-			VHに
+			スムージング処理後の3Dモデルを基準に図のようにボーンを配置した．
+			\begin{figure}[H]
+			\centering
+			\begin{minipage}{0.3\columnwidth}
+			\centering
+			\includegraphics[width = \columnwidth]{../figs/handmeshLat.png}
+			\end{minipage}
+			\begin{minipage}{0.3\columnwidth}
+			\centering
+			\includegraphics[width = \columnwidth]{../figs/handboneLat.png}
+			\end{minipage}
+			\caption{ボーン配置図}
+			\end{figure}
+
 	\section{Unity}
 		\subsection{オブジェクトの処理}
 		\subsection{ステージ構成}
