@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2021.1.28)  18 SEP 2023 23:22
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2021.1.28)  19 SEP 2023 02:19
  system commands enabled.
  file:line:error style messages enabled.
 **d:/KCCT/D5/soturon/intermediate/intermediate
@@ -31,8 +31,8 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
-Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'. L3 programming layer <2021-01-09> xparse <2020-03-03> (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/ltjarticle.cls
-Document Class: ltjarticle 2020-09-30 v1.8f-ltj-20 Standard LuaLaTeX-ja class
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'. L3 programming layer <2021-01-09> xparse <2020-03-03> (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/ltjsarticle.cls
+Document Class: ltjsarticle 2020/12/23 ltjsclasses 
 (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/luatexja.sty
 Package: luatexja 2021-01-03 Japanese Typesetting with Lua(La)TeX
  (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
@@ -277,11 +277,11 @@ LaTeX Info: Redefining \fontshapeforce on input line 771.
 Package: lltjdefs 2020-10-05 Default font settings of LuaTeX-ja
 luaotfload | db : Font names database loaded from C:/texlive/2020/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load cache: extra_lmroman10-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 70.
+(Font)              scaled to size 9.24713pt on input line 70.
 
 (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/jfm-ujisv.lua)
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 70.
+(Font)              scaled to size 9.24713pt on input line 70.
 (load cache: extra_haranoajimincho-regular.luc)
 (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/jfm-ujis.lua)
 \symmincho=\mathgroup4
@@ -329,46 +329,50 @@ Package: luatexja-compat 2020-08-08 Compatibility with pTeX
 \hour=\count184
 \minute=\count185
 ))
-\c@@paper=\count186
- (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/ltjsize11.clo
-File: ltjsize11.clo 2020-09-30 v1.8f-ltj-20 Standard LuaLaTeX-ja file (size option)
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 10.53629pt on input line 35.
+\jsc@mpt=\dimen157
+\jsc@mmm=\dimen158
+\ltjs@@magnify@font@calc=\luafunction48
+\jsc@smallskipamount=\skip47
+(load cache: extra_lmroman9-regular.luc)
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 10.53629pt on input line 35.
+(Font)              scaled to size 8.44485pt on input line 414.
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 414.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 414.
+\fullwidth=\dimen159
+(load cache: extra_lmroman8-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 7.3977pt on input line 555.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 7.3977pt on input line 555.
+\c@part=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\@abstractbox=\box65
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+LaTeX Info: Redefining \mc on input line 1208.
+LaTeX Info: Redefining \gt on input line 1209.
+\jsc@tocl@width=\dimen160
+\@lnumwidth=\dimen161
+\bibindent=\dimen162
+ (c:/texlive/2020/texmf-dist/tex/platex/jsclasses/jslogo.sty
+Package: jslogo 2019/07/25 okumura, texjporg
+LaTeX Info: Redefining \TeX on input line 82.
+LaTeX Info: Redefining \LaTeX on input line 135.
+LaTeX Info: Redefining \LaTeXe on input line 188.
 )
-\c@part=\count187
-\c@section=\count188
-\c@subsection=\count189
-\c@subsubsection=\count190
-\c@paragraph=\count191
-\c@subparagraph=\count192
-\c@figure=\count193
-\c@table=\count194
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 643.
-LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
-(Font)                  JY3/mc/m/n --> JY3/mc/m/n on input line 643.
-LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY3/gt/m/n --> JY3/mc/m/n on input line 643.
-LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY3/mc/m/n --> JY3/gt/m/n on input line 645.
-LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 647.
-LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `normal'
-(Font)                  JY3/gt/m/n --> JY3/gt/m/n on input line 647.
-LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
-(Font)                  JY3/gt/m/n --> JY3/gt/m/n on input line 647.
-LaTeX Info: Redefining \mc on input line 656.
-LaTeX Info: Redefining \gt on input line 657.
-\toclineskip=\dimen157
-\@lnumwidth=\dimen158
-\bibindent=\dimen159
-\heisei=\count195
+\heisei=\count194
  (c:/texlive/2020/texmf-dist/tex/latex/sttools/stfloats.sty
 Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip settings
-\@dblbotnum=\count196
-\c@dblbotnumber=\count197
+\@dblbotnum=\count195
+\c@dblbotnumber=\count196
 ) (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/patches/lltjp-stfloats.sty)) (c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
@@ -382,27 +386,27 @@ Package graphics Info: Driver file: luatex.def on input line 105.
  (c:/texlive/2020/texmf-dist/tex/latex/graphics-def/luatex.def
 File: luatex.def 2020/10/05 v1.2a Graphics/color driver for luatex
 ))
-\Gin@req@height=\dimen160
-\Gin@req@width=\dimen161
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
 ) (c:/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen162
-\lightrulewidth=\dimen163
-\cmidrulewidth=\dimen164
-\belowrulesep=\dimen165
-\belowbottomsep=\dimen166
-\aboverulesep=\dimen167
-\abovetopsep=\dimen168
-\cmidrulesep=\dimen169
-\cmidrulekern=\dimen170
-\defaultaddspace=\dimen171
-\@cmidla=\count198
-\@cmidlb=\count199
-\@aboverulesep=\dimen172
-\@belowrulesep=\dimen173
-\@thisruleclass=\count266
-\@lastruleclass=\count267
-\@thisrulewidth=\dimen174
+\heavyrulewidth=\dimen165
+\lightrulewidth=\dimen166
+\cmidrulewidth=\dimen167
+\belowrulesep=\dimen168
+\belowbottomsep=\dimen169
+\aboverulesep=\dimen170
+\abovetopsep=\dimen171
+\cmidrulesep=\dimen172
+\cmidrulekern=\dimen173
+\defaultaddspace=\dimen174
+\@cmidla=\count197
+\@cmidlb=\count198
+\@aboverulesep=\dimen175
+\@belowrulesep=\dimen176
+\@thisruleclass=\count199
+\@lastruleclass=\count266
+\@thisrulewidth=\dimen177
 ) (c:/texlive/2020/texmf-dist/tex/latex/mathcomp/mathcomp.sty
 Package: mathcomp 2001/01/07 v0.1f (TBo)
  (c:/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
@@ -415,32 +419,32 @@ LaTeX Font Info:    Redeclaring math symbol \dagger on input line 47.
 LaTeX Font Info:    Redeclaring math symbol \ddagger on input line 48.
 ) (c:/texlive/2020/texmf-dist/tex/latex/tools/array.sty
 Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
-\col@sep=\dimen175
-\ar@mcellbox=\box65
-\extrarowheight=\dimen176
+\col@sep=\dimen178
+\ar@mcellbox=\box66
+\extrarowheight=\dimen179
 \NC@list=\toks25
-\extratabsurround=\skip49
-\backup@length=\skip50
-\ar@cellbox=\box66
+\extratabsurround=\skip50
+\backup@length=\skip51
+\ar@cellbox=\box67
 ) (c:/texlive/2020/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
  (c:/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count268
-\calc@Bcount=\count269
-\calc@Adimen=\dimen177
-\calc@Bdimen=\dimen178
-\calc@Askip=\skip51
-\calc@Bskip=\skip52
+\calc@Acount=\count267
+\calc@Bcount=\count268
+\calc@Adimen=\dimen180
+\calc@Bdimen=\dimen181
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count270
-\calc@Cskip=\skip53
+\calc@Ccount=\count269
+\calc@Cskip=\skip54
 ) (c:/texlive/2020/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 ) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip54
+\@mathmargin=\skip55
 
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -448,47 +452,47 @@ Package: amstext 2000/06/29 v2.01 AMS text
  (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks26
-\ex@=\dimen179
+\ex@=\dimen182
 )) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen180
+\pmbraise@=\dimen183
 ) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count271
+\inf@bad=\count270
 LaTeX Info: Redefining \frac on input line 236.
-\uproot@=\count272
-\leftroot@=\count273
+\uproot@=\count271
+\leftroot@=\count272
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count274
-\DOTSCASE@=\count275
+\classnum@=\count273
+\DOTSCASE@=\count274
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box67
-\strutbox@=\box68
-\big@size=\dimen181
+\Mathstrutbox@=\box68
+\strutbox@=\box69
+\big@size=\dimen184
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count276
-\c@MaxMatrixCols=\count277
+\macc@depth=\count275
+\c@MaxMatrixCols=\count276
 \dotsspace@=\muskip16
-\c@parentequation=\count278
-\dspbrk@lvl=\count279
+\c@parentequation=\count277
+\dspbrk@lvl=\count278
 \tag@help=\toks27
-\row@=\count280
-\column@=\count281
-\maxfields@=\count282
+\row@=\count279
+\column@=\count280
+\maxfields@=\count281
 \andhelp@=\toks28
-\eqnshift@=\dimen182
-\alignsep@=\dimen183
-\tagshift@=\dimen184
-\tagwidth@=\dimen185
-\totwidth@=\dimen186
-\lineht@=\dimen187
+\eqnshift@=\dimen185
+\alignsep@=\dimen186
+\tagshift@=\dimen187
+\tagwidth@=\dimen188
+\totwidth@=\dimen189
+\lineht@=\dimen190
 \@envbody=\toks29
-\multlinegap=\skip55
-\multlinetaggap=\skip56
+\multlinegap=\skip56
+\multlinetaggap=\skip57
 \mathdisplay@stack=\toks30
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
@@ -497,17 +501,17 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count283
-\l_MT_multwidth_dim=\dimen188
-\origjot=\skip57
-\l_MT_shortvdotswithinadjustabove_dim=\dimen189
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen190
-\l_MT_above_intertext_sep=\dimen191
-\l_MT_below_intertext_sep=\dimen192
-\l_MT_above_shortintertext_sep=\dimen193
-\l_MT_below_shortintertext_sep=\dimen194
-\xmathstrut@box=\box69
-\xmathstrut@dim=\dimen195
+\g_MT_multlinerow_int=\count282
+\l_MT_multwidth_dim=\dimen191
+\origjot=\skip58
+\l_MT_shortvdotswithinadjustabove_dim=\dimen192
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen193
+\l_MT_above_intertext_sep=\dimen194
+\l_MT_below_intertext_sep=\dimen195
+\l_MT_above_shortintertext_sep=\dimen196
+\l_MT_below_shortintertext_sep=\dimen197
+\xmathstrut@box=\box70
+\xmathstrut@dim=\dimen198
 ) (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -524,62 +528,62 @@ Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
  (c:/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
 )
-\l__siunitx_tmp_box=\box70
-\l__siunitx_tmp_dim=\dimen196
-\l__siunitx_tmp_int=\count284
-\l__siunitx_number_mantissa_length_int=\count285
-\l__siunitx_number_uncert_length_int=\count286
-\l__siunitx_round_int=\count287
-\l__siunitx_process_decimal_int=\count288
-\l__siunitx_process_uncertainty_int=\count289
-\l__siunitx_process_fixed_int=\count290
-\l__siunitx_process_integer_min_int=\count291
-\l__siunitx_process_precision_int=\count292
-\l__siunitx_group_min_int=\count293
-\l__siunitx_angle_marker_box=\box71
-\l__siunitx_angle_unit_box=\box72
-\l__siunitx_angle_marker_dim=\dimen197
-\l__siunitx_angle_unit_dim=\dimen198
-\l__siunitx_unit_int=\count294
-\l__siunitx_unit_denominator_int=\count295
-\l__siunitx_unit_numerator_int=\count296
-\l__siunitx_unit_prefix_int=\count297
-\l__siunitx_unit_prefix_base_int=\count298
-\l__siunitx_unit_prefix_gram_int=\count299
-\l__siunitx_number_product_int=\count300
-\c__siunitx_one_fill_skip=\skip58
-\l__siunitx_table_unit_align_skip=\skip59
-\l__siunitx_table_exponent_dim=\dimen199
-\l__siunitx_table_integer_dim=\dimen256
-\l__siunitx_table_mantissa_dim=\dimen257
-\l__siunitx_table_marker_dim=\dimen258
-\l__siunitx_table_result_dim=\dimen259
-\l__siunitx_table_uncert_dim=\dimen260
-\l__siunitx_table_fill_pre_dim=\dimen261
-\l__siunitx_table_fill_post_dim=\dimen262
-\l__siunitx_table_fill_mid_dim=\dimen263
-\l__siunitx_table_pre_box=\box73
-\l__siunitx_table_post_box=\box74
-\l__siunitx_table_mantissa_box=\box75
-\l__siunitx_table_result_box=\box76
-\l__siunitx_table_number_align_skip=\skip60
-\l__siunitx_table_text_align_skip=\skip61
+\l__siunitx_tmp_box=\box71
+\l__siunitx_tmp_dim=\dimen199
+\l__siunitx_tmp_int=\count283
+\l__siunitx_number_mantissa_length_int=\count284
+\l__siunitx_number_uncert_length_int=\count285
+\l__siunitx_round_int=\count286
+\l__siunitx_process_decimal_int=\count287
+\l__siunitx_process_uncertainty_int=\count288
+\l__siunitx_process_fixed_int=\count289
+\l__siunitx_process_integer_min_int=\count290
+\l__siunitx_process_precision_int=\count291
+\l__siunitx_group_min_int=\count292
+\l__siunitx_angle_marker_box=\box72
+\l__siunitx_angle_unit_box=\box73
+\l__siunitx_angle_marker_dim=\dimen256
+\l__siunitx_angle_unit_dim=\dimen257
+\l__siunitx_unit_int=\count293
+\l__siunitx_unit_denominator_int=\count294
+\l__siunitx_unit_numerator_int=\count295
+\l__siunitx_unit_prefix_int=\count296
+\l__siunitx_unit_prefix_base_int=\count297
+\l__siunitx_unit_prefix_gram_int=\count298
+\l__siunitx_number_product_int=\count299
+\c__siunitx_one_fill_skip=\skip59
+\l__siunitx_table_unit_align_skip=\skip60
+\l__siunitx_table_exponent_dim=\dimen258
+\l__siunitx_table_integer_dim=\dimen259
+\l__siunitx_table_mantissa_dim=\dimen260
+\l__siunitx_table_marker_dim=\dimen261
+\l__siunitx_table_result_dim=\dimen262
+\l__siunitx_table_uncert_dim=\dimen263
+\l__siunitx_table_fill_pre_dim=\dimen264
+\l__siunitx_table_fill_post_dim=\dimen265
+\l__siunitx_table_fill_mid_dim=\dimen266
+\l__siunitx_table_pre_box=\box74
+\l__siunitx_table_post_box=\box75
+\l__siunitx_table_mantissa_box=\box76
+\l__siunitx_table_result_box=\box77
+\l__siunitx_table_number_align_skip=\skip61
+\l__siunitx_table_text_align_skip=\skip62
  (c:/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
 Package: translator 2020-08-03 v1.12c Easy translation of strings in LaTeX
 )) (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/patches/lltjp-siunitx.sty) (c:/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/01/02 v2.6 Span multiple rows of a table
-\multirow@colwidth=\skip62
-\multirow@cntb=\count301
-\multirow@dima=\skip63
-\bigstrutjot=\dimen264
+\multirow@colwidth=\skip63
+\multirow@cntb=\count300
+\multirow@dima=\skip64
+\bigstrutjot=\dimen267
 ) (c:/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen265
-\TX@old@table=\dimen266
-\TX@old@col=\dimen267
-\TX@target=\dimen268
-\TX@delta=\dimen269
-\TX@cols=\count302
+\TX@col@width=\dimen268
+\TX@old@table=\dimen269
+\TX@old@col=\dimen270
+\TX@target=\dimen271
+\TX@delta=\dimen272
+\TX@cols=\count301
 \TX@ftn=\toks31
 ) (c:/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
@@ -587,34 +591,34 @@ Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
  (c:/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen270
-\captionmargin@=\dimen271
-\captionwidth=\dimen272
-\caption@tempdima=\dimen273
-\caption@indent=\dimen274
-\caption@parindent=\dimen275
-\caption@hangindent=\dimen276
+\captionmargin=\dimen273
+\captionmargin@=\dimen274
+\captionwidth=\dimen275
+\caption@tempdima=\dimen276
+\caption@indent=\dimen277
+\caption@parindent=\dimen278
+\caption@hangindent=\dimen279
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
-Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionskip \ifnum \ltjgetparameter {direction}=3 \sbox \@tempboxa {#1\hskip 1\zw #2}\else \sbox \@tempboxa {#1: #2}\fi \ifdim \wd \@tempboxa >\hsize \ifnum \ltjgetparameter {direction}=3 #1\hskip 1\zw #2\relax \par \else #1: #2\relax \par \fi \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@tempboxa \hfil }\fi \vskip \belowcaptionskip  on input line 1139.
+Package caption Info: \@makecaption = \long macro:#1#2->{\small \advance \leftskip .0628\linewidth \advance \rightskip .0628\linewidth \vskip \abovecaptionskip \sbox \@tempboxa {#1{\hskip 1\zw }#2}\ifdim \wd \@tempboxa <\hsize \centering \fi #1{\hskip 1\zw }#2\par \vskip \belowcaptionskip } on input line 1139.
 )
 
 Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count303
-\c@continuedfloat=\count304
+\c@caption@flags=\count302
+\c@continuedfloat=\count303
 )
-\c@subfigure=\count305
-\c@subtable=\count306
+\c@subfigure=\count304
+\c@subtable=\count305
 ) (c:/texlive/2020/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count307
+\c@float@type=\count306
 \float@exts=\toks32
-\float@box=\box77
+\float@box=\box78
 \@float@everytoks=\toks33
-\@floatcapt=\box78
+\@floatcapt=\box79
 ) (./abstract.sty) (c:/texlive/2020/texmf-dist/tex/luatex/luatexja/patches/lltjp-array.sty
 Package: lltjp-array 2018/03/29 Patch to array for LuaTeX-ja
 ) (./intermediate.aux)
@@ -648,16 +652,16 @@ LaTeX Font Info:    ... okay on input line 22.
 LaTeX Info: Redefining \selectfont on input line 22.
  (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count308
-\scratchdimen=\dimen277
-\scratchbox=\box79
-\nofMPsegments=\count309
-\nofMParguments=\count310
+\scratchcounter=\count307
+\scratchdimen=\dimen280
+\scratchbox=\box80
+\nofMPsegments=\count308
+\nofMParguments=\count309
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count311
-\MPscratchDim=\dimen278
-\MPnumerator=\count312
-\makeMPintoPDFobject=\count313
+\MPscratchCnt=\count310
+\MPscratchDim=\dimen281
+\MPnumerator=\count311
+\makeMPintoPDFobject=\count312
 \everyMPtoPDFconversion=\toks35
 ) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -672,10 +676,11 @@ Dictionary: translator-basic-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Calculating math sizes for size <10.95001> on input line 22.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 22.
+(Font)              scaled to size 6.47295pt on input line 22.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 22.
+(Font)              scaled to size 4.62357pt on input line 22.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -685,40 +690,45 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )(load cache: extra_lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 23.
+(Font)              scaled to size 13.31584pt on input line 23.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 23.
+(Font)              scaled to size 13.31584pt on input line 23.
 (load cache: extra_lmroman12-bold.luc)
-LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <14.4> not available
+LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <14.39998> not available
 (Font)              Font shape `JT3/gt/m/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 23.
-LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <14.4> not available
+(Font)              scaled to size 12.16057pt on input line 23.
+LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <14.39998> not available
 (Font)              Font shape `JY3/gt/m/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 23.
+(Font)              scaled to size 12.16057pt on input line 23.
 (load cache: extra_haranoajigothic-medium.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 23.
+(Font)              scaled to size 11.09656pt on input line 23.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 23.
+(Font)              scaled to size 11.09656pt on input line 23.
+LaTeX Font Info:    Calculating math sizes for size <13.14001> on input line 23.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 7.76755pt on input line 23.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 5.54828pt on input line 23.
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <12> not available
 (Font)              Font shape `JT3/gt/m/n' tried instead on input line 25.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 25.
+(Font)              scaled to size 10.13382pt on input line 25.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <12> not available
 (Font)              Font shape `JY3/gt/m/n' tried instead on input line 25.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 25.
+(Font)              scaled to size 10.13382pt on input line 25.
 (load cache: extra_lmroman10-bold.luc)
-LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10.95> not available
+LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
 (Font)              Font shape `JT3/gt/m/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 10.53629pt on input line 28.
-LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10.95> not available
+(Font)              scaled to size 8.44485pt on input line 28.
+LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
 (Font)              Font shape `JY3/gt/m/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 10.53629pt on input line 28.
+(Font)              scaled to size 8.44485pt on input line 28.
  [1{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -726,16 +736,16 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 ] (./intermediate.aux))
 
 Here is how much of LuaTeX's memory you used:
- 9467 strings out of 478824
+ 9621 strings out of 478824
  125244,552014 words of node,token memory allocated
- 14369 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 247 kern, 1 glyph, 5776 attribute, 125 glue_spec, 301 attribute_list, 1 write, 28 user_defined nodes
-   avail lists: 1:13,2:14514,3:273,4:166,5:38,6:45,7:1613,8:2,9:542,10:15,11:9
- 28606 multiletter control sequences out of 65536+600000
- 75 fonts using 28315863 bytes
- 127i,7n,128p,1245b,270s stack positions out of 5000i,500n,10000p,200000b,200000s
+ 22033 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 403 kern, 1 glyph, 9016 attribute, 141 glue_spec, 463 attribute_list, 1 write, 28 user_defined nodes
+   avail lists: 1:15,2:16629,3:303,4:184,5:56,6:48,7:1880,8:2,9:686,10:15,11:6
+ 28756 multiletter control sequences out of 65536+600000
+ 98 fonts using 37222007 bytes
+ 127i,7n,128p,1246b,382s stack positions out of 5000i,500n,10000p,200000b,200000s
 <c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf>
-Output written on intermediate.pdf (1 page, 37810 bytes).
+Output written on intermediate.pdf (1 page, 44279 bytes).
 
 PDF statistics: 43 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream
