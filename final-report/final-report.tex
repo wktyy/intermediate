@@ -114,13 +114,14 @@
 %論文要旨ここまで
 
 %目次を節まで表示に設定
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 %目次を表示
 \tableofcontents
+
+\clearpage
 %ページ番号をアラビア数字に設定
 \pagenumbering{arabic}
-%このページから1枚目にカウントしなおす
-\setcounter{page}{1}
+
 
 \chapter{序論}
 	\section{研究背景}
@@ -317,11 +318,11 @@
 			平坦にする効果があるスムージング処理を行った。
 			\begin{figure}[H]
 			\centering
-			\begin{minipage}{0.4\columnwidth}
+			\begin{minipage}{0.3\columnwidth}
 			\centering
 			\includegraphics[width = \columnwidth]{../figs/SmoothingBeforRear.png}
 			\end{minipage}
-			\begin{minipage}{0.4\columnwidth}
+			\begin{minipage}{0.3\columnwidth}
 			\centering
 			\includegraphics[width = \columnwidth]{../figs/SmoothingAfterRear.png}
 			\end{minipage}
@@ -332,11 +333,11 @@
 			スムージング処理後の3Dモデルを基準に図のようにボーンを配置した．
 			\begin{figure}[H]
 			\centering
-			\begin{minipage}{0.3\columnwidth}
+			\begin{minipage}{0.2\columnwidth}
 			\centering
 			\includegraphics[width = \columnwidth]{../figs/handmeshLat.png}
 			\end{minipage}
-			\begin{minipage}{0.3\columnwidth}
+			\begin{minipage}{0.2\columnwidth}
 			\centering
 			\includegraphics[width = \columnwidth]{../figs/handboneLat.png}
 			\end{minipage}
@@ -356,13 +357,19 @@
 	\section{FirstVR}
 		本研究で構成するシミュレータの入力感度を検証するため、以下の手順でFirstVRの評価を行った。
 			\begin{enumerate}
-				\item 肘から手首までの長さを測定し、肘を原点に1/4の距離(約7cm)で装着 \\
-				\item 端末とFirstVRを接続し、ジェスチャをしていない状態とジェスチャしている状態を学習 \\
-				\item ジェスチャをしていない状態の筋変位センサの値を1回測定し，手を握るジェスチャのセンサ値の変化量を5回測定した。
-					また，この操作をsample数を7,10〜100までの11段階で測定した。 \\
-				\item ノイズの少なかったsample数を選出し、ジェスチャ状態で手の角度を上下左右に動かした場合のノイズを測定 \\
-				\item ジェスチャをしていない状態の筋変位センサの値を基準値としてジェスチャ後の測定値との差をとり，各チャネルでの変位量の総和を
-					総変化量としてsample数ごとに比較し，最適(分散が少なく，データ量が小さい)なデータを検討した．
+				\item 装着位置の決定\\
+					FirstVRの動作原理より，赤外線で筋変位を取得しているため，かなり密着させて装着する必要がある．
+					そのため本研究では，筋肉量が一番多い位置を肘から前腕の1/4程度の距離と推定し，被験者の肘から手首までの長さを測定し、
+					肘を原点に1/4の距離(約7cm)で装着した
+				\item FirstVRの接続と学習\\
+					端末とFirstVRを接続し、測定するsample数でジェスチャをしていない状態とジェスチャしている状態を学習させた．
+				\item FirstVRの測定\\
+					ジェスチャをしていない状態の筋変位センサの値を1回測定し，手を握るジェスチャのセンサ値の変化量を5回測定した。
+				\item FirstVRのジェスチャ保持特性の検証\\
+					ノイズの少なかったsample数を選出し、ジェスチャ状態で手の角度を上下左右に動かした場合のノイズを測定した．
+				\item 最適sample数の検討\\
+				ジェスチャをしていない状態の筋変位センサの値を基準値としてジェスチャ後の測定値との差をとり，各チャネルでの変位量の総和を
+					総変化量としてsample数ごとに比較し，最適な(分散が少なく，データ量が小さい)データを検討した．
 			\end{enumerate}
 	\section{ビルド}
 	\section{評価}
