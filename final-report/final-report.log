@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2021.1.28)  21 JAN 2024 02:06
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2021.1.28)  22 JAN 2024 00:41
  system commands enabled.
  file:line:error style messages enabled.
 **d:/KCCT/D5/soturon/intermediate/final-report/final-report
@@ -953,40 +953,40 @@ LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
 ] [3]
 第3章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 207--207
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 209--209
 |||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 3 |\JY3/mc/b/n/20.74 章 [] 
  []
 
 <../figs/NomalShader.png, id=27, 682.55pt x 363.3575pt>
 File: ../figs/NomalShader.png Graphic file (type png)
 <use ../figs/NomalShader.png>
-Package luatex.def Info: ../figs/NomalShader.png  used on input line 219.
+Package luatex.def Info: ../figs/NomalShader.png  used on input line 221.
 (luatex.def)             Requested size: 181.40038pt x 96.56648pt.
 <../figs/ReflexShader.png, id=28, 682.55pt x 363.3575pt>
 File: ../figs/ReflexShader.png Graphic file (type png)
 <use ../figs/ReflexShader.png>
-Package luatex.def Info: ../figs/ReflexShader.png  used on input line 224.
+Package luatex.def Info: ../figs/ReflexShader.png  used on input line 226.
 (luatex.def)             Requested size: 181.40038pt x 96.56648pt.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 232.
+(Font)              scaled to size 9.24713pt on input line 238.
 (load cache: extra_lmsans10-regular.luc) [4
 
 <../figs/NomalShader.png><../figs/ReflexShader.png>] [5]
 第4章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 274--274
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 284--284
 |||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 4 |\JY3/mc/b/n/20.74 章 [] 
  []
 
 <../figs/SmoothingBeforRear.png, id=38, 501.875pt x 767.86874pt>
 File: ../figs/SmoothingBeforRear.png Graphic file (type png)
 <use ../figs/SmoothingBeforRear.png>
-Package luatex.def Info: ../figs/SmoothingBeforRear.png  used on input line 323.
+Package luatex.def Info: ../figs/SmoothingBeforRear.png  used on input line 333.
 (luatex.def)             Requested size: 136.05374pt x 208.15921pt.
 <../figs/SmoothingAfterRear.png, id=39, 562.1pt x 832.10875pt>
 File: ../figs/SmoothingAfterRear.png Graphic file (type png)
 <use ../figs/SmoothingAfterRear.png>
-Package luatex.def Info: ../figs/SmoothingAfterRear.png  used on input line 327.
+Package luatex.def Info: ../figs/SmoothingAfterRear.png  used on input line 337.
 (luatex.def)             Requested size: 136.05374pt x 201.39886pt.
 [6
 
@@ -994,17 +994,17 @@ Package luatex.def Info: ../figs/SmoothingAfterRear.png  used on input line 327.
 <../figs/handmeshLat.png, id=43, 328.22626pt x 722.7pt>
 File: ../figs/handmeshLat.png Graphic file (type png)
 <use ../figs/handmeshLat.png>
-Package luatex.def Info: ../figs/handmeshLat.png  used on input line 338.
+Package luatex.def Info: ../figs/handmeshLat.png  used on input line 348.
 (luatex.def)             Requested size: 90.70018pt x 199.70801pt.
 <../figs/handboneLat.png, id=44, 328.22626pt x 722.7pt>
 File: ../figs/handboneLat.png Graphic file (type png)
 <use ../figs/handboneLat.png>
-Package luatex.def Info: ../figs/handboneLat.png  used on input line 342.
+Package luatex.def Info: ../figs/handboneLat.png  used on input line 352.
 (luatex.def)             Requested size: 90.70018pt x 199.70801pt.
  [7<../figs/SmoothingBeforRear.png><../figs/SmoothingAfterRear.png><../figs/handmeshLat.png><../figs/handboneLat.png>] [8]
 第5章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 377--377
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 387--387
 |||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 5 |\JY3/mc/b/n/20.74 章 [] 
  []
 
@@ -1013,7 +1013,7 @@ Overfull \hbox (69.52936pt too wide) in paragraph at lines 377--377
 ]
 第6章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 421--421
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 431--431
 |||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 6 |\JY3/mc/b/n/20.74 章 [] 
  []
 
@@ -1022,7 +1022,7 @@ Overfull \hbox (69.52936pt too wide) in paragraph at lines 421--421
 ]
 第7章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 423--423
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 433--433
 |||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 7 |\JY3/mc/b/n/20.74 章 [] 
  []
 
@@ -1040,14 +1040,14 @@ Overfull \hbox (69.52936pt too wide) in paragraph at lines 423--423
 Here is how much of LuaTeX's memory you used:
  12409 strings out of 478824
  382243,552014 words of node,token memory allocated
- 30970 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 23 glue, 378 kern, 1 glyph, 10797 attribute, 1078 glue_spec, 569 attribute_list, 1 write, 142 user_defined nodes
-   avail lists: 1:37,2:92251,3:802,4:1203,5:92,6:129,7:11790,8:2,9:2217,10:34,11:93
+ 31164 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 24 glue, 378 kern, 1 glyph, 10817 attribute, 1107 glue_spec, 570 attribute_list, 1 write, 142 user_defined nodes
+   avail lists: 1:38,2:92251,3:801,4:1203,5:92,6:130,7:11790,8:2,9:2542,10:34,11:105
  31407 multiletter control sequences out of 65536+600000
  77 fonts using 41710175 bytes
  127i,9n,128p,1259b,635s stack positions out of 5000i,500n,10000p,200000b,200000s
 <c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
-Output written on final-report.pdf (17 pages, 1018360 bytes).
+Output written on final-report.pdf (17 pages, 1022028 bytes).
 
 PDF statistics: 119 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
