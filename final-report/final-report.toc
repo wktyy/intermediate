@@ -4,8 +4,8 @@
 \contentsline {chapter}{\numberline {第2章}理論:3Dモデルの製作}{2}{}%
 \contentsline {section}{\numberline {2.1}EinScan HX}{2}{}%
 \contentsline {subsection}{\numberline {2.1.1}製品仕様}{2}{}%
-\contentsline {section}{\numberline {2.2}Blender}{2}{}%
-\contentsline {subsection}{\numberline {2.2.1}スムージング}{2}{}%
+\contentsline {section}{\numberline {2.2}Blender}{3}{}%
+\contentsline {subsection}{\numberline {2.2.1}スムージング}{3}{}%
 \contentsline {subsection}{\numberline {2.2.2}ボーン構成}{3}{}%
 \contentsline {subsection}{\numberline {2.2.3}ウェイトペイント}{3}{}%
 \contentsline {chapter}{\numberline {第3章}理論:Unity・FirstVR}{4}{}%
@@ -18,31 +18,31 @@
 \contentsline {subsection}{\numberline {3.1.4}保持表現}{5}{}%
 \contentsline {subsection}{\numberline {3.1.5}ビルド}{5}{}%
 \contentsline {subsubsection}{iOS}{5}{}%
-\contentsline {subsubsection}{Android OS}{5}{}%
-\contentsline {section}{\numberline {3.2}FirstVR}{5}{}%
-\contentsline {subsection}{\numberline {3.2.1}デバイス構成}{5}{}%
-\contentsline {subsection}{\numberline {3.2.2}トラッキング}{5}{}%
-\contentsline {subsection}{\numberline {3.2.3}キャリブレーション}{5}{}%
-\contentsline {chapter}{\numberline {第4章}研究手順}{6}{}%
-\contentsline {section}{\numberline {4.1}使用器具}{6}{}%
-\contentsline {section}{\numberline {4.2}3Dスキャナ}{6}{}%
-\contentsline {subsection}{\numberline {4.2.1}3Dモデルの取り込み}{6}{}%
-\contentsline {section}{\numberline {4.3}Blender}{6}{}%
-\contentsline {subsection}{\numberline {4.3.1}スムージング処理}{6}{}%
-\contentsline {subsection}{\numberline {4.3.2}ボーン配置}{7}{}%
+\contentsline {section}{\numberline {3.2}FirstVR}{6}{}%
+\contentsline {subsection}{\numberline {3.2.1}デバイス構成}{6}{}%
+\contentsline {subsection}{\numberline {3.2.2}トラッキング}{6}{}%
+\contentsline {subsection}{\numberline {3.2.3}キャリブレーション}{6}{}%
+\contentsline {chapter}{\numberline {第4章}研究手順}{7}{}%
+\contentsline {section}{\numberline {4.1}使用器具}{7}{}%
+\contentsline {section}{\numberline {4.2}3Dスキャナ}{7}{}%
+\contentsline {subsection}{\numberline {4.2.1}3Dモデルの取り込み}{7}{}%
+\contentsline {section}{\numberline {4.3}Blender}{7}{}%
+\contentsline {subsection}{\numberline {4.3.1}スムージング処理}{7}{}%
+\contentsline {subsection}{\numberline {4.3.2}ボーン配置}{8}{}%
 \contentsline {section}{\numberline {4.4}Unity}{8}{}%
-\contentsline {subsection}{\numberline {4.4.1}オブジェクトの処理}{8}{}%
-\contentsline {subsection}{\numberline {4.4.2}ステージ構成}{8}{}%
-\contentsline {subsection}{\numberline {4.4.3}アニメーション設定}{8}{}%
-\contentsline {subsubsection}{アニメーションクリップ作成}{8}{}%
-\contentsline {subsubsection}{アニメーター設定}{8}{}%
-\contentsline {subsection}{\numberline {4.4.4}オブジェクト保持}{8}{}%
-\contentsline {section}{\numberline {4.5}FirstVR}{8}{}%
-\contentsline {section}{\numberline {4.6}ビルド}{8}{}%
-\contentsline {section}{\numberline {4.7}評価}{8}{}%
-\contentsline {chapter}{\numberline {第5章}研究結果}{9}{}%
-\contentsline {section}{\numberline {5.1}FirstVR}{9}{}%
-\contentsline {section}{\numberline {5.2}シミュレータの定性評価}{9}{}%
-\contentsline {chapter}{\numberline {第6章}まとめ}{10}{}%
-\contentsline {chapter}{\numberline {第7章}今後の課題}{11}{}%
-\contentsline {chapter}{参考文献}{13}{}%
+\contentsline {subsection}{\numberline {4.4.1}オブジェクトの構成}{8}{}%
+\contentsline {subsection}{\numberline {4.4.2}ステージ構成}{9}{}%
+\contentsline {subsection}{\numberline {4.4.3}アニメーション設定}{9}{}%
+\contentsline {subsubsection}{アニメーションクリップ作成}{9}{}%
+\contentsline {subsubsection}{アニメーター設定}{9}{}%
+\contentsline {subsection}{\numberline {4.4.4}オブジェクト保持}{9}{}%
+\contentsline {section}{\numberline {4.5}FirstVR}{9}{}%
+\contentsline {section}{\numberline {4.6}ビルド}{9}{}%
+\contentsline {section}{\numberline {4.7}評価}{9}{}%
+\contentsline {chapter}{\numberline {第5章}研究結果}{10}{}%
+\contentsline {section}{\numberline {5.1}FirstVR}{10}{}%
+\contentsline {section}{\numberline {5.2}シミュレータの構成}{12}{}%
+\contentsline {section}{\numberline {5.3}シミュレータの定性評価}{13}{}%
+\contentsline {chapter}{\numberline {第6章}まとめ}{14}{}%
+\contentsline {chapter}{\numberline {第7章}今後の課題}{15}{}%
+\contentsline {chapter}{参考文献}{17}{}%

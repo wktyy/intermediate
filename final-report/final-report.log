@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2021.1.28)  22 JAN 2024 00:41
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2021.1.28)  22 JAN 2024 05:08
  system commands enabled.
  file:line:error style messages enabled.
 **d:/KCCT/D5/soturon/intermediate/final-report/final-report
@@ -946,111 +946,194 @@ Overfull \hbox (69.52936pt too wide) in paragraph at lines 152--152
 |||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 2 |\JY3/mc/b/n/20.74 章 [] 
  []
 
+<../figs/EinScan.png, id=21, 451.6875pt x 451.6875pt>
+File: ../figs/EinScan.png Graphic file (type png)
+<use ../figs/EinScan.png>
+Package luatex.def Info: ../figs/EinScan.png  used on input line 164.
+(luatex.def)             Requested size: 170.71652pt x 170.71947pt.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 162.
+(Font)              scaled to size 11.09656pt on input line 169.
 [2
 
-] [3]
+<../figs/EinScan.png>] [3]
 第3章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 209--209
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 216--216
 |||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 3 |\JY3/mc/b/n/20.74 章 [] 
  []
 
-<../figs/NomalShader.png, id=27, 682.55pt x 363.3575pt>
+<../figs/NomalShader.png, id=29, 682.55pt x 363.3575pt>
 File: ../figs/NomalShader.png Graphic file (type png)
 <use ../figs/NomalShader.png>
-Package luatex.def Info: ../figs/NomalShader.png  used on input line 221.
+Package luatex.def Info: ../figs/NomalShader.png  used on input line 228.
 (luatex.def)             Requested size: 181.40038pt x 96.56648pt.
-<../figs/ReflexShader.png, id=28, 682.55pt x 363.3575pt>
+(load cache: extra_lmroman9-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 229.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 229.
+<../figs/ReflexShader.png, id=30, 682.55pt x 363.3575pt>
 File: ../figs/ReflexShader.png Graphic file (type png)
 <use ../figs/ReflexShader.png>
-Package luatex.def Info: ../figs/ReflexShader.png  used on input line 226.
+Package luatex.def Info: ../figs/ReflexShader.png  used on input line 234.
 (luatex.def)             Requested size: 181.40038pt x 96.56648pt.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 238.
+(Font)              scaled to size 9.24713pt on input line 248.
 (load cache: extra_lmsans10-regular.luc) [4
 
-<../figs/NomalShader.png><../figs/ReflexShader.png>] [5]
+<../figs/NomalShader.png><../figs/ReflexShader.png>]
+<../figs/BuildSettings.png, id=38, 481.04718pt x 453.94594pt>
+File: ../figs/BuildSettings.png Graphic file (type png)
+<use ../figs/BuildSettings.png>
+Package luatex.def Info: ../figs/BuildSettings.png  used on input line 271.
+(luatex.def)             Requested size: 284.52756pt x 268.5046pt.
+ [5<../figs/BuildSettings.png>]
+warning  (file ../figs/IMG_5130.JPG) (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolution 300dpi x 300dpi
+<../figs/IMG_5130.JPG, id=43, 4047.12pt x 1443.3925pt>
+File: ../figs/IMG_5130.JPG Graphic file (type jpg)
+<use ../figs/IMG_5130.JPG>
+Package luatex.def Info: ../figs/IMG_5130.JPG  used on input line 303.
+(luatex.def)             Requested size: 340.1309pt x 121.2882pt.
+
+warning  (file ../figs/IMG_5131.JPG) (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolution 300dpi x 300dpi
+<../figs/IMG_5131.JPG, id=44, 4045.1125pt x 1514.65875pt>
+File: ../figs/IMG_5131.JPG Graphic file (type jpg)
+<use ../figs/IMG_5131.JPG>
+Package luatex.def Info: ../figs/IMG_5131.JPG  used on input line 309.
+(luatex.def)             Requested size: 340.1309pt x 127.34602pt.
+[6<../figs/IMG_5130.JPG
+warning  (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolution 300dpi x 300dpi
+><../figs/IMG_5131.JPG
+warning  (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolution 300dpi x 300dpi
+>]
 第4章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 284--284
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 317--317
 |||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 4 |\JY3/mc/b/n/20.74 章 [] 
  []
 
-<../figs/SmoothingBeforRear.png, id=38, 501.875pt x 767.86874pt>
+<../figs/SmoothingBeforRear.png, id=48, 501.875pt x 767.86874pt>
 File: ../figs/SmoothingBeforRear.png Graphic file (type png)
 <use ../figs/SmoothingBeforRear.png>
-Package luatex.def Info: ../figs/SmoothingBeforRear.png  used on input line 333.
+Package luatex.def Info: ../figs/SmoothingBeforRear.png  used on input line 367.
 (luatex.def)             Requested size: 136.05374pt x 208.15921pt.
-<../figs/SmoothingAfterRear.png, id=39, 562.1pt x 832.10875pt>
+<../figs/SmoothingAfterRear.png, id=49, 562.1pt x 832.10875pt>
 File: ../figs/SmoothingAfterRear.png Graphic file (type png)
 <use ../figs/SmoothingAfterRear.png>
-Package luatex.def Info: ../figs/SmoothingAfterRear.png  used on input line 337.
+Package luatex.def Info: ../figs/SmoothingAfterRear.png  used on input line 371.
 (luatex.def)             Requested size: 136.05374pt x 201.39886pt.
-[6
+[7
 
 ]
-<../figs/handmeshLat.png, id=43, 328.22626pt x 722.7pt>
+<../figs/handmeshLat.png, id=53, 328.22626pt x 722.7pt>
 File: ../figs/handmeshLat.png Graphic file (type png)
 <use ../figs/handmeshLat.png>
-Package luatex.def Info: ../figs/handmeshLat.png  used on input line 348.
+Package luatex.def Info: ../figs/handmeshLat.png  used on input line 382.
 (luatex.def)             Requested size: 90.70018pt x 199.70801pt.
-<../figs/handboneLat.png, id=44, 328.22626pt x 722.7pt>
+<../figs/handboneLat.png, id=54, 328.22626pt x 722.7pt>
 File: ../figs/handboneLat.png Graphic file (type png)
 <use ../figs/handboneLat.png>
-Package luatex.def Info: ../figs/handboneLat.png  used on input line 352.
+Package luatex.def Info: ../figs/handboneLat.png  used on input line 386.
 (luatex.def)             Requested size: 90.70018pt x 199.70801pt.
- [7<../figs/SmoothingBeforRear.png><../figs/SmoothingAfterRear.png><../figs/handmeshLat.png><../figs/handboneLat.png>] [8]
+ [8<../figs/SmoothingBeforRear.png><../figs/SmoothingAfterRear.png><../figs/handmeshLat.png><../figs/handboneLat.png>] [9]
 第5章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 387--387
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 434--434
 |||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 5 |\JY3/mc/b/n/20.74 章 [] 
  []
 
-[9
+<../figs/IMG_1866.PNG, id=72, 1339.0025pt x 752.8125pt>
+File: ../figs/IMG_1866.PNG Graphic file (type png)
+<use ../figs/IMG_1866.PNG>
+Package luatex.def Info: ../figs/IMG_1866.PNG  used on input line 441.
+(luatex.def)             Requested size: 340.1309pt x 191.22372pt.
+<../figs/IMG_1867.PNG, id=73, 1339.0025pt x 752.8125pt>
+File: ../figs/IMG_1867.PNG Graphic file (type png)
+<use ../figs/IMG_1867.PNG>
+Package luatex.def Info: ../figs/IMG_1867.PNG  used on input line 446.
+(luatex.def)             Requested size: 340.1309pt x 191.22372pt.
+[10
 
-]
+<../figs/IMG_1866.PNG><../figs/IMG_1867.PNG>]
+<../figs/FVRALL.png, id=77, 510.489pt x 293.46pt>
+File: ../figs/FVRALL.png Graphic file (type png)
+<use ../figs/FVRALL.png>
+Package luatex.def Info: ../figs/FVRALL.png  used on input line 495.
+(luatex.def)             Requested size: 398.33858pt x 228.9964pt.
+ [11]
+<../figs/iOSnomal.png, id=81, 1206.75844pt x 563.85657pt>
+File: ../figs/iOSnomal.png Graphic file (type png)
+<use ../figs/iOSnomal.png>
+Package luatex.def Info: ../figs/iOSnomal.png  used on input line 505.
+(luatex.def)             Requested size: 340.1309pt x 158.91982pt.
+<../figs/iOSmenu.png, id=82, 1207.51125pt x 578.16pt>
+File: ../figs/iOSmenu.png Graphic file (type png)
+<use ../figs/iOSmenu.png>
+Package luatex.def Info: ../figs/iOSmenu.png  used on input line 511.
+(luatex.def)             Requested size: 340.1309pt x 162.85411pt.
+<../figs/UnityObject.png, id=83, 286.82156pt x 564.60938pt>
+File: ../figs/UnityObject.png Graphic file (type png)
+<use ../figs/UnityObject.png>
+Package luatex.def Info: ../figs/UnityObject.png  used on input line 520.
+(luatex.def)             Requested size: 170.71652pt x 336.06305pt.
+ [12<../figs/FVRALL.png><../figs/iOSnomal.png><../figs/iOSmenu.png>] [13<../figs/UnityObject.png>]
 第6章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 431--431
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 526--526
 |||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 6 |\JY3/mc/b/n/20.74 章 [] 
  []
 
-[10
+[14
 
 ]
 第7章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 433--433
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 528--528
 |||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 7 |\JY3/mc/b/n/20.74 章 [] 
  []
 
-[11
+[15
 
-] [12
+] [16
 
 
-] [13
+] [17
 
-] [1
+](load cache: extra_lmmono10-regular.luc)
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.(load cache: extra_lmmono9-regular.luc)
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 572.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 572.
+ [1
 
-] (./final-report.aux))
+] [2] [3] [4]
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'. [5]
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'. [6]
+Removing  `ltj.listings_unicode' from `process_input_buffer'. [7] (./final-report.aux))
 
 Here is how much of LuaTeX's memory you used:
- 12409 strings out of 478824
- 382243,552014 words of node,token memory allocated
- 31164 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 24 glue, 378 kern, 1 glyph, 10817 attribute, 1107 glue_spec, 570 attribute_list, 1 write, 142 user_defined nodes
-   avail lists: 1:38,2:92251,3:801,4:1203,5:92,6:130,7:11790,8:2,9:2542,10:34,11:105
- 31407 multiletter control sequences out of 65536+600000
- 77 fonts using 41710175 bytes
- 127i,9n,128p,1259b,635s stack positions out of 5000i,500n,10000p,200000b,200000s
-<c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
-Output written on final-report.pdf (17 pages, 1022028 bytes).
+ 12675 strings out of 478824
+ 1458192,552014 words of node,token memory allocated
+ 40861 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 23 glue, 422 kern, 1 glyph, 12471 attribute, 2273 glue_spec, 659 attribute_list, 1 write, 184 user_defined nodes
+   avail lists: 1:36,2:229316,3:825,4:28249,5:16770,6:167,7:15538,8:24,9:37764,10:42,11:1764
+ 31613 multiletter control sequences out of 65536+600000
+ 82 fonts using 47272603 bytes
+ 127i,9n,128p,1259b,774s stack positions out of 5000i,500n,10000p,200000b,200000s
+<c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on final-report.pdf (27 pages, 8614059 bytes).
 
-PDF statistics: 119 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+PDF statistics: 212 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

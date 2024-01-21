@@ -23,9 +23,9 @@
 	frame={tb},
 	breaklines=true,
 	columns=[l]{fullflexible},
-	numbers=left,
-	xrightmargin=0zw,
-	xleftmargin=3zw,
+	%numbers=left,
+	%xrightmargin=0zw,
+	%xleftmargin=3zw,
 	numberstyle={\scriptsize},
 	stepnumber=1,
 	numbersep=1zw,
@@ -159,6 +159,13 @@
 		リバースエンジニアリングや測定などに用いられている．
 		製品仕様については次項で解説する．
 
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width = 6cm]{../figs/EinScan.png}
+		\caption{EinScan HX}
+		\label{fig:EinScan}
+		\end{figure}
+
 		\subsection{製品仕様}
 			EinScan HXの製品仕様について表\refeq{tab:EinScan}に示す．
 			\begin{table}[H]
@@ -219,13 +226,16 @@
 			\begin{minipage}{0.4\columnwidth}
 			\centering
 			\includegraphics[width = \columnwidth]{../figs/NomalShader.png}
+			\subcaption{Unity標準シェーダー}
 			\end{minipage}
 			\hspace{0.04\columnwidth}
 			\begin{minipage}{0.4\columnwidth}
 			\centering
 			\includegraphics[width = \columnwidth]{../figs/ReflexShader.png}
+			\subcaption{Reflex Shader}
 			\end{minipage}
 			\caption{シェーダーによる3Dモデルの違い}
+			\label{fig:Shader}
 			\end{figure}
 
 		\subsection{オブジェクト}
@@ -240,7 +250,7 @@
 				異なる2つのオブジェクトに付加されたColliderの領域が重なることで衝突フラグを立てる。
 				本研究ではPC版シミュレータにこの方式での衝突判定を用いている．
 			\subsubsection{RayCast}
-				RayCast
+				Ray
 		\subsection{保持表現}
 		\subsection{ビルド}
 			本項ではUnityで構成したシミュレータのビルド方法について解説する。
@@ -255,6 +265,14 @@
 			以上の手順でUnityで作成したシーンのビルドが完了する。
 			Windows,LinuxなどのOSではビルドしたフォルダに実行ファイルが作成されているため、
 			そのファイルからシミュレータを実行することができる。
+
+			\begin{figure}[H]
+			\centering
+			\includegraphics[width = 10cm]{../figs/BuildSettings.png}
+			\caption{BuildSettings画面}
+			\label{fig:BuildSettings}
+			\end{figure}
+
 			iOS,Android OSに関してはビルド・実行方法が異なるため、それぞれ以下に解説する。
 			\subsubsection{iOS}
 				本項では、iOS用アプリの実行手順を以下に示す。
@@ -275,9 +293,24 @@
 				直後に動かなくなってしまう。これらのエラーはXcode上でログが残されているため、発生しているエラーを
 				解消すれば実行することができる。大抵の場合、端末側の権限付与ができておらずアプリが実行できないエラーが多発するため
 				よく確認をすること。
-			\subsubsection{Android OS}
 	\section{FirstVR}
+		FirstVRは
 		\subsection{デバイス構成}
+				\begin{figure}[H]
+				\centering
+				\begin{minipage}{0.75\columnwidth}
+				\centering
+				\includegraphics[width = \columnwidth]{../figs/IMG_5130.JPG}
+				\subcaption{表面画像}
+				\end{minipage}
+				\hspace{0.04\columnwidth}
+				\begin{minipage}{0.75\columnwidth}
+				\centering
+				\includegraphics[width = \columnwidth]{../figs/IMG_5131.JPG}
+				\subcaption{裏面画像}
+				\end{minipage}
+				\caption{FirstVR}
+				\end{figure}
 		\subsection{トラッキング}
 		\subsection{キャリブレーション}
 	
@@ -292,10 +325,11 @@
 	No&\multicolumn{1}{l}{機器名}&\multicolumn{1}{l}{型番}&\multicolumn{1}{l}{シリアルNo}&\multicolumn{1}{l}{備考}\\ \hline
 	1&EinScan HX&&&\\
 	2&FirstVR&UHL-01&&\\
-	3&iPhone SE2&&&iOS16.7.2\\
-	4&HUAWEI Nova Lite2&&&AndroidOS 9\\
-	5&PC-1&&&Ubuntu22.04\\
-	6&PC-2&&&MacOS\\
+	3&スマートフォン1&iphone SE2&&iOS16.7.2\\
+	4&スマートフォン2&iphone 13&&iOS17.2.1\\
+	5&スマートフォン3&HUAWEI Nova Lite2&&AndroidOS 9\\
+	6&PC-1&&&Ubuntu22.04\\
+	7&PC-2&Mac mini2&&MacOS\\
 	\bottomrule
 	\end{tabular}
 	\end{center}
@@ -355,7 +389,12 @@
 			\end{figure}
 
 	\section{Unity}
-		\subsection{オブジェクトの処理}
+		\subsection{オブジェクトの構成}
+			\begin{itemize}
+				\item Player
+				\item Target
+				\item Stage
+			\end{itemize}
 		\subsection{ステージ構成}
 		\subsection{アニメーション設定}
 			\subsubsection{アニメーションクリップ作成}
@@ -383,13 +422,36 @@
 			\end{enumerate}
 	\section{ビルド}
 	\section{評価}
-
+		FirstVRで筋変位を測定した14チャンネル光変位センサの測定値を用いてジェスチャ認識の精度を確認するため
+		各被験者，各sample数ごとの評価指標として総変化量$X$を定めた．総変化量の算出は測定回数s:1～5,チャンネル数r:0～13としてジェスチャ状態で測定した筋変位センサの値を$M_{{s}{r}}$
+		とジェスチャしていない状態の筋変位センサの値$N_{r}$とすると
+		\begin{equation}
+			X = \frac{1}{5} \sum_{s = 1}^{5} \sum_{r = 0}^{13} |N_{r} - M_{{s}{r}}|
+		\end{equation}
+		と示すことができる．
+		この評価指標を用いて各sample数ごとに分散を調べることにより，どのsample数をシミュレータで用いれば良いかを検討した．
+		
 \chapter{研究結果}
 	\section{FirstVR}
+		
+		\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.75\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/IMG_1866.PNG}
+		\end{minipage}
+		\hspace{0.04\columnwidth}
+		\begin{minipage}{0.75\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/IMG_1867.PNG}
+		\end{minipage}
+		\caption{}
+		\end{figure}
+
 		\begin{table}[H]
 		\begin{center}
-		\caption{}
-		\label{}
+		\caption{各被験者におけるsample数ごとの総変化量一覧}
+		\label{tab:FVRdata}
 		\begin{tabular}{c|ccccccccccc} \toprule
 			num/sample & 7 & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100 \\ \hline
 			1 & 44.4 & 25.6 & 21.8 & 19.4 & 12.2 & 12.6 & 13.4 & 22.4 & 8.2 & 11.8 & 27.2 \\
@@ -427,6 +489,39 @@
 		\end{tabular}
 		\end{center}
 		\end{table}
+
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width = 14cm]{../figs/FVRALL.png}
+		\caption{sample数ごとの総変化量分散}
+		\label{fig:FVRdata}
+		\end{figure}
+
+	\section{シミュレータの構成}
+		\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.75\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/iOSnomal.png}
+		\subcaption{通常時の画面構成}
+		\end{minipage}
+		\hspace{0.04\columnwidth}
+		\begin{minipage}{0.75\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/iOSmenu.png}
+		\subcaption{メニュー起動時の画面構成}
+		\end{minipage}
+		\caption{iOS版シミュレータの実行画面}
+		\label{fig:iOSsimulate}
+		\end{figure}
+	
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width = 6cm]{../figs/UnityObject.png}
+		\caption{}
+		\label{}
+		\end{figure}
+
 	\section{シミュレータの定性評価}
 \chapter{まとめ}
 
@@ -472,8 +567,331 @@
 \chapter*{付録}
 %ページ番号をローマ数字で表示
 \pagenumbering{roman}
-%このページから1枚目にカウントしなおす
-\setcounter{page}{1}
+
+\begin{lstlisting}[caption = CalibrationManager, label = code:Calibration]
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.XR;
+using UnityEngine.UI;
+using UnityEngine.Animations;
+using System.Linq;
+using FVRlib;
+public class CalibrationManager : MonoBehaviour
+{
+    public Animator animator;
+    public GameObject Collider;
+ 
+    public Transform GrapPoint_sphere, GrapPoint_cylinder, GrapPoint_cube;
+
+    // FVR 
+    public FVRConnection fvr;
+    public FVRGesture gesture;
+
+    //Control variables
+    int samplesPerSecond = 0;
+    int roundLength = 0;
+    int tCalibRounds = 0;
+    int ntCalibRounds = 0;
+
+    // Texts
+    public Text samplesPerSecondTxt;
+    public Text roundLengthTxt;
+    public Text tCalibRoundsTxt;
+    public Text ntCalibRoundsTxt;
+
+    // Images
+    public Image targetImg;
+    public Image nonTargetImg;
+    public Image testImg;
+
+    //Buttons
+    public Button targetBtn;
+    public Button nonTargetBtn;
+    public Button resetBtn;
+    public Button[] varBtns;
+
+    bool cube_col;
+    bool cylinder_col;
+    bool sphere_col;
+
+    // int grap;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        fvr = FindObjectOfType (typeof(FVRConnection)) as FVRConnection;
+
+        // Create a new custom gesture
+        gesture = fvr.gestureManager.RegisterCustomGesture ("gestureName");
+
+        // Display the default settings
+        samplesPerSecond = fvr.gestureManager.calibrationSamplesPerSecond;
+        roundLength = (int)fvr.gestureManager.calibrationRoundLength;
+        UpdateTexts ();
+
+        // Button control
+        targetBtn.interactable = false;
+    }
+
+    void Update()
+    {
+        Vector3 origin = Collider.transform.position;
+        Vector3 direction = -Collider.transform.forward;
+        Ray ray = new Ray(origin,direction);
+        Debug.DrawRay(ray.origin, ray.direction*0.2f, Color.red, 0.01f);
+        if(Physics.Raycast(ray, out RaycastHit hit, 1.0f))
+        {
+            Debug.Log(hit.collider.gameObject.name);
+            if(hit.collider.gameObject.name == "Cube")
+                cube_col = true;
+            if(hit.collider.gameObject.name == "Cylinder")
+                cylinder_col  = true;
+            if(hit.collider.gameObject.name == "Sphere")
+                sphere_col = true;
+        }
+
+        if(gesture.held == true)
+        {
+            animator.SetBool("grap_null",true);
+            testImg.color = Color.green;
+            if(cube_col == true)
+            {
+                testImg.color = Color.blue;
+                animator.SetBool("grap_cube1",true);
+				GameObject cube = GameObject.Find("Cube");
+				Rigidbody rb = cube.GetComponent<Rigidbody>();
+				rb.isKinematic = true;
+				cube.transform.position = GrapPoint_cube.position;
+				cube.gameObject.transform.parent = GrapPoint_cube;
+            }
+            if(cylinder_col == true)
+            {
+                testImg.color = Color.red;
+                animator.SetBool("grap_cylinder1",true);
+				GameObject cylinder = GameObject.Find("Cylinder");
+				Rigidbody rb = cylinder.GetComponent<Rigidbody>();
+				rb.isKinematic = true;
+				cylinder.transform.position = GrapPoint_cylinder.position;
+				cylinder.gameObject.transform.parent = GrapPoint_cylinder;
+            }
+            if(sphere_col == true)
+            {
+                testImg.color = Color.yellow;
+                animator.SetBool("grap_sphere1",true);
+				GameObject sphere = GameObject.Find("Sphere");
+				Rigidbody rb = sphere.GetComponent<Rigidbody>();
+				rb.isKinematic = true;
+				sphere.transform.position = GrapPoint_sphere.position;
+				sphere.gameObject.transform.parent = GrapPoint_sphere;
+            }
+        }
+        else if(gesture.held == false)
+        {
+            testImg.color = Color.white;
+
+            animator.SetBool("grap_null",false);
+            animator.SetBool("grap_sphere1", false);
+            animator.SetBool("grap_cylinder1", false);
+            animator.SetBool("grap_cube1", false);
+
+            cube_col = false;
+            cylinder_col = false;
+            sphere_col = false;
+
+            //sphere
+            GameObject sphere = GameObject.Find("Sphere");
+            Rigidbody rb_sphere = sphere.GetComponent<Rigidbody>();
+            rb_sphere.isKinematic = false;
+            sphere.gameObject.transform.parent = null;
+
+            //cylinder
+            GameObject cylinder = GameObject.Find("Cylinder");
+            Rigidbody rb_cylinder = cylinder.GetComponent<Rigidbody>();
+            rb_cylinder.isKinematic = false;
+            cylinder.gameObject.transform.parent = null;
+
+            //cube
+            GameObject cube = GameObject.Find("Cube");
+            Rigidbody rb_cube = cube.GetComponent<Rigidbody>();
+            rb_cube.isKinematic = false;
+            cube.gameObject.transform.parent = null;
+        }
+    }
+
+    public void ChangeSPS(int dir){
+        samplesPerSecond += 1 * dir;
+        samplesPerSecond = samplesPerSecond < 1 ? 1 : samplesPerSecond;
+        fvr.gestureManager.calibrationSamplesPerSecond = samplesPerSecond;
+        UpdateTexts ();
+    }
+	/// <summary>
+	/// You can change the length of the calibration round.
+	/// This length should always be higher than 0 and making it too long might affect the results in a negative way.
+	/// Recomended values are 1~3
+	/// </summary>
+    public void ChangeRL(int dir){
+        roundLength += 1 * dir;
+        roundLength = roundLength < 1 ? 1 : roundLength;
+        fvr.gestureManager.calibrationRoundLength = (float)roundLength;
+        UpdateTexts ();
+    }
+
+    public void SetTargetPress(){
+        StartCoroutine (Calibrate (true));
+    }
+
+    public void SetNonTargetPress(){
+        StartCoroutine (Calibrate (false));
+    }
+
+    // Reset the calibration data and start all over again
+    public void ResetCalibrationPress(){
+        fvr.gestureManager.ResetPatternData (gesture);
+        tCalibRounds = 0;
+        ntCalibRounds = 0;
+        UpdateTexts ();
+        targetBtn.interactable = false;
+        nonTargetBtn.GetComponentInChildren<Text> ().text = "Set\nDummy";
+        foreach (Button b in varBtns) {
+            b.interactable = true;
+        }
+    }
+
+    // Updates the display texts
+    void UpdateTexts(){
+        tCalibRoundsTxt.text = tCalibRounds.ToString ();
+        ntCalibRoundsTxt.text = ntCalibRounds.ToString ();
+        samplesPerSecondTxt.text = samplesPerSecond.ToString ();
+        roundLengthTxt.text = roundLength.ToString ();
+    }
+
+    /// <summary>
+    /// Calibrate the gesture with target or non-target values.
+    /// Calibration requires time, and it's best to let the user know what's going on, so this process is best done in a coroutine.
+    /// </summary>
+    IEnumerator Calibrate(bool target){
+        if (target) {
+            // Setting target values
+            fvr.gestureManager.SetTargetData (gesture);
+            tCalibRounds++;
+        } else {
+            // Setting non-target values
+            fvr.gestureManager.SetNonTargetData (gesture);
+            /// The first time we set a target or non-target value, the round length and samples per second are ignored and the SVM takes only one value with dummy data then
+            /// the dummy data is replaced with real data. 
+            /// After the first round the FVRGesture.calibrated flag is set to true and you are ready to start calibrating with real data
+            if (gesture.calibrated) {
+                ntCalibRounds++;
+            }else{
+                nonTargetBtn.GetComponentInChildren<Text> ().text = "Set\nNonTarget";
+                foreach (Button b in varBtns) {
+                    b.interactable = false;
+                }
+            }
+        }
+        // We dont wan't multiple coroutines taking the same data so it's good to block the user from starting a new one before this round is done
+        targetBtn.interactable = false;
+        nonTargetBtn.interactable = false;
+        resetBtn.interactable = false;
+        float t = 0;
+        while (gesture.registering) {
+            /// While the target or non-target data is being set, the FVRGesture.registering flag will be set to true.
+            /// A count down or a image fill loading bar is a good way to let the user know your app is doing something.
+            /// Once the porcess is done, the FVRGesture.registering flag will be set to false, and we will exit this while loop.
+            t += Time.deltaTime;
+            if(target)
+                targetImg.fillAmount = t / (float)roundLength;
+            else
+                nonTargetImg.fillAmount = t / (float)roundLength;
+            yield return null;
+        }
+        UpdateTexts ();
+        targetImg.fillAmount = 0;
+        nonTargetImg.fillAmount =0;
+        // After the process is done you can enable whatever buttons you need to proceed with the calibration or move on with your app.
+        targetBtn.interactable = true;
+        nonTargetBtn.interactable = true;
+        resetBtn.interactable = true;
+    }
+}
+
+\end{lstlisting}
+
+\begin{lstlisting}[caption=handtrack.cs, label=code:track]
+	using System.Collections;
+	using System.Collections.Generic;
+	using UnityEngine;
+	using FVRlib;
+
+	public class handtrack : MonoBehaviour
+	{
+		public FVRConnection fvr;
+
+		// Update is called once per frame
+		void Update()
+		{
+			this.transform.rotation = fvr.centeredRotation;
+		}
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[caption=MoveManager.cs, label=code:Move]
+	using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Movemanager : MonoBehaviour
+	{
+		public Vector3 Up_speed,Down_speed,Left_speed,Right_speed;
+		bool forwardmove;
+		bool backmove;
+		bool rightmove;
+		bool leftmove;
+
+		public void forwardButtonDown(){
+				forwardmove = true;
+			}
+		public void forwardButtonUp(){
+				forwardmove = false;
+			}
+		public void backButtonDown(){
+				backmove = true;
+			}
+		public void backButtonUp(){
+				backmove = false;
+			}
+		public void rightButtonDown(){
+				rightmove = true;
+			}
+		public void rightButtonUp(){
+				rightmove = false;
+			}
+		public void leftButtonDown(){
+				leftmove = true;
+			}
+		public void leftButtonUp(){
+				leftmove = false;
+			}
+
+
+		void Update()
+		{
+				if(forwardmove == true){
+						transform.position += Up_speed;
+					}
+				if(backmove == true){
+						transform.position += Down_speed;
+					}
+				if(rightmove == true){
+						transform.position += Right_speed;
+					}
+				if(leftmove == true){
+						transform.position += Left_speed;
+					}
+			}
+	}
+\end{lstlisting}
 
 
 \end{document}
