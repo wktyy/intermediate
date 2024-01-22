@@ -206,12 +206,6 @@
 			ボーンは，3Dオブジェクトを変形させる際に頂点の移動を制御する支柱の役割を果たす機能である．
 			Unityにインポートした後に物体保持のアニメーションを作成する際にVHの変形を制御するために用いている．
 
-		\subsection{ウェイトペイント}
-			ウェイトペイントは，ボーンによって制御された頂点の変形の度合いをスペクトルで表示したもので，
-			赤になるほど大きく変形し，青に近づくほど変形しなくなる．
-			関節部分は赤色に，それ以外は青色にウェイトペイントを設定する．
-			自然な変形のためには，関節部分の赤色からグラデーションのように広げていくと3Dオブジェクトが
-			自然に変形する．
 
 \chapter{理論:Unity・FirstVR}
 	\section{Unity}
@@ -243,15 +237,41 @@
 			シーンに配置された段階でシーン上のオブジェクトの座標を示すTransformというコンポーネントが付加されている．
 			その他にも衝突判定を付加するColliderコンポーネントなど様々な種類のコンポーネントを付加することができる．
 		\subsection{衝突判定}
-			本研究では衝突判定にUnityに標準搭載されているColliderコンポーネントとRayCastコンポーネントを用いた
+			本研究では衝突判定にUnityに標準搭載されているColliderコンポーネントとRaycastコンポーネントを用いた
 			衝突判定を行った．次項にそれぞれの衝突判定の違いについて解説する．
 			\subsubsection{Collider}
 				Colliderコンポーネントにはオブジェクトの被衝突領域を設定する役割があり，
 				異なる2つのオブジェクトに付加されたColliderの領域が重なることで衝突フラグを立てる。
-				本研究ではPC版シミュレータにこの方式での衝突判定を用いている．
-			\subsubsection{RayCast}
-				Ray
+				本研究ではPC版シミュレータにこの方式の衝突判定を用いている．
+			\subsubsection{Raycast}
+				Raycastコンポーネントはオブジェクトの中心から任意方向・任意長さに直線を引き、その直線と
+				Colliderコンポーネントを持つオブジェクトの被衝突領域が重なると衝突フラグを立てる。
+				本研究ではiOS版シミュレータにこの方式の衝突判定を用いている。
+
+					\begin{figure}[H]
+					\centering
+					\includegraphics[width = 12cm]{../figs/raycast.png}
+					\caption{Raycastのイメージ図}
+					\label{fig:Raycast}
+					\end{figure}
+
+				図\refeq{fig:Raycast}のように左側の立方体オブジェクトの中心から射出されている赤い直線がRayである。
+				この直線と右側の球体オブジェクトを囲う黄緑の領域がColliderコンポーネントの被衝突領域となっている。
+
 		\subsection{保持表現}
+			\begin{figure}[H]
+			\centering
+			\begin{minipage}{0.45\columnwidth}
+			\centering
+			\includegraphics[width = \columnwidth]{../figs/nutralHand.png}
+			\end{minipage}
+			\hspace{0.04\columnwidth}
+			\begin{minipage}{0.45\columnwidth}
+			\centering
+			\includegraphics[width = \columnwidth]{../figs/grapsphereHand.png}
+			\end{minipage}
+			\caption{}
+			\end{figure}
 		\subsection{ビルド}
 			本項ではUnityで構成したシミュレータのビルド方法について解説する。
 			以下にビルドの手順を示す。
@@ -445,7 +465,7 @@
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/IMG_1867.PNG}
 		\end{minipage}
-		\caption{}
+		\caption{測定用アプリケーション}
 		\end{figure}
 
 		\begin{table}[H]
@@ -523,6 +543,13 @@
 		\end{figure}
 
 	\section{シミュレータの定性評価}
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width = 12cm]{../figs/IMG_5132.JPG}
+		\caption{定性評価の様子}
+		\label{fig:evaluation}
+		\end{figure}
+
 \chapter{まとめ}
 
 \chapter{今後の課題}
