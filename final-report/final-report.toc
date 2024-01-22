@@ -21,7 +21,7 @@
 \contentsline {section}{\numberline {3.2}FirstVR}{6}{}%
 \contentsline {subsection}{\numberline {3.2.1}デバイス構成}{6}{}%
 \contentsline {subsection}{\numberline {3.2.2}トラッキング}{6}{}%
-\contentsline {subsection}{\numberline {3.2.3}キャリブレーション}{6}{}%
+\contentsline {subsection}{\numberline {3.2.3}ジェスチャ認識}{6}{}%
 \contentsline {chapter}{\numberline {第4章}研究手順}{7}{}%
 \contentsline {section}{\numberline {4.1}使用器具}{7}{}%
 \contentsline {section}{\numberline {4.2}3Dスキャナ}{7}{}%

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2021.1.28)  22 JAN 2024 05:08
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2021.1.28)  22 JAN 2024 05:33
  system commands enabled.
  file:line:error style messages enabled.
 **d:/KCCT/D5/soturon/intermediate/final-report/final-report
@@ -1008,19 +1008,19 @@ warning  (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolut
 >]
 第4章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 317--317
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 319--319
 |||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 4 |\JY3/mc/b/n/20.74 章 [] 
  []
 
 <../figs/SmoothingBeforRear.png, id=48, 501.875pt x 767.86874pt>
 File: ../figs/SmoothingBeforRear.png Graphic file (type png)
 <use ../figs/SmoothingBeforRear.png>
-Package luatex.def Info: ../figs/SmoothingBeforRear.png  used on input line 367.
+Package luatex.def Info: ../figs/SmoothingBeforRear.png  used on input line 369.
 (luatex.def)             Requested size: 136.05374pt x 208.15921pt.
 <../figs/SmoothingAfterRear.png, id=49, 562.1pt x 832.10875pt>
 File: ../figs/SmoothingAfterRear.png Graphic file (type png)
 <use ../figs/SmoothingAfterRear.png>
-Package luatex.def Info: ../figs/SmoothingAfterRear.png  used on input line 371.
+Package luatex.def Info: ../figs/SmoothingAfterRear.png  used on input line 373.
 (luatex.def)             Requested size: 136.05374pt x 201.39886pt.
 [7
 
@@ -1028,12 +1028,12 @@ Package luatex.def Info: ../figs/SmoothingAfterRear.png  used on input line 371.
 <../figs/handmeshLat.png, id=53, 328.22626pt x 722.7pt>
 File: ../figs/handmeshLat.png Graphic file (type png)
 <use ../figs/handmeshLat.png>
-Package luatex.def Info: ../figs/handmeshLat.png  used on input line 382.
+Package luatex.def Info: ../figs/handmeshLat.png  used on input line 384.
 (luatex.def)             Requested size: 90.70018pt x 199.70801pt.
 <../figs/handboneLat.png, id=54, 328.22626pt x 722.7pt>
 File: ../figs/handboneLat.png Graphic file (type png)
 <use ../figs/handboneLat.png>
-Package luatex.def Info: ../figs/handboneLat.png  used on input line 386.
+Package luatex.def Info: ../figs/handboneLat.png  used on input line 388.
 (luatex.def)             Requested size: 90.70018pt x 199.70801pt.
  [8<../figs/SmoothingBeforRear.png><../figs/SmoothingAfterRear.png><../figs/handmeshLat.png><../figs/handboneLat.png>] [9]
 第5章
@@ -1075,7 +1075,7 @@ Package luatex.def Info: ../figs/iOSmenu.png  used on input line 511.
 File: ../figs/UnityObject.png Graphic file (type png)
 <use ../figs/UnityObject.png>
 Package luatex.def Info: ../figs/UnityObject.png  used on input line 520.
-(luatex.def)             Requested size: 170.71652pt x 336.06305pt.
+(luatex.def)             Requested size: 227.62204pt x 448.08693pt.
  [12<../figs/FVRALL.png><../figs/iOSnomal.png><../figs/iOSmenu.png>] [13<../figs/UnityObject.png>]
 第6章
 
@@ -1122,15 +1122,15 @@ Removing  `ltj.listings_unicode' from `process_input_buffer'. [7] (./final-repor
 
 Here is how much of LuaTeX's memory you used:
  12675 strings out of 478824
- 1458192,552014 words of node,token memory allocated
- 40861 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 23 glue, 422 kern, 1 glyph, 12471 attribute, 2273 glue_spec, 659 attribute_list, 1 write, 184 user_defined nodes
-   avail lists: 1:36,2:229316,3:825,4:28249,5:16770,6:167,7:15538,8:24,9:37764,10:42,11:1764
+ 1458234,552014 words of node,token memory allocated
+ 40850 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 24 glue, 422 kern, 1 glyph, 12474 attribute, 2269 glue_spec, 659 attribute_list, 1 write, 183 user_defined nodes
+   avail lists: 1:35,2:229316,3:823,4:28248,5:16770,6:167,7:15539,8:24,9:37764,10:42,11:1764
  31613 multiletter control sequences out of 65536+600000
  82 fonts using 47272603 bytes
  127i,9n,128p,1259b,774s stack positions out of 5000i,500n,10000p,200000b,200000s
 <c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on final-report.pdf (27 pages, 8614059 bytes).
+Output written on final-report.pdf (27 pages, 8615841 bytes).
 
 PDF statistics: 212 PDF objects out of 1000 (max. 8388607)
  117 compressed objects within 2 object streams
