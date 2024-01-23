@@ -134,12 +134,12 @@
 	VRトレーニングシステムを構成し，VHの見た目によって訓練効果に変化があるかを評価する。
 	ことを目的とする．このトレーニングシステムのインタフェースに``FirstVR''を用いることで，
 	実際の筋電義手を使用することなく，安価で訓練が行えると考えた.
-	また，近年では``カグラ''\cite{ref:6}という製品は上肢機能障害者
+	また，近年では``カグラ''\cite{ref:3}という製品は上肢機能障害者
 	のリハビリテーションのために運用されるなどVRトレーニングシステムは
 	義手装具者以外にも需要が高まっている．
 
 	本研究は2023年度，神戸高専Digital Faburication Labに新規導入された
-	ハンディ3Dスキャナ``Ein Scan HX''\cite{ref:6}の活用方法の一例としても後続の研究に
+	ハンディ3Dスキャナ``Ein Scan HX''\cite{ref:4}の活用方法の一例としても後続の研究に
 	活用していただきたい．
 
 	\section{研究目的}
@@ -243,6 +243,8 @@
 				Colliderコンポーネントにはオブジェクトの被衝突領域を設定する役割があり，
 				異なる2つのオブジェクトに付加されたColliderの領域が重なることで衝突フラグを立てる。
 				本研究ではPC版シミュレータにこの方式の衝突判定を用いている．
+
+\clearpage
 			\subsubsection{Raycast}
 				Raycastコンポーネントはオブジェクトの中心から任意方向・任意長さに直線を引き、その直線と
 				Colliderコンポーネントを持つオブジェクトの被衝突領域が重なると衝突フラグを立てる。
@@ -259,6 +261,10 @@
 				この直線と右側の球体オブジェクトを囲う黄緑の領域がColliderコンポーネントの被衝突領域となっている。
 
 		\subsection{保持表現}
+			オブジェクト保持状態を表現するためにVHにオブジェクトごとの保持アニメーションを作製した。
+			Unityにおけるアニメーションは各オブジェクトの動きを記録し、再生フラグが立った場合にアニメーションが再生されるようになっている。
+			また、アニメーションを作製する際、初期状態とアニメーションした後のオブジェクトの位置を記録することで
+			自動的にその移動が補完されるようになっている。
 			\begin{figure}[H]
 			\centering
 			\begin{minipage}{0.45\columnwidth}
@@ -314,7 +320,8 @@
 				解消すれば実行することができる。大抵の場合、端末側の権限付与ができておらずアプリが実行できないエラーが多発するため
 				よく確認をすること。
 	\section{FirstVR}
-		FirstVRは
+		FirstVRはH2L株式会社\cite{ref:6}によって開発・製造されている筋変位センサを用いたウェアラブルデバイスである。
+		この製品は現状iOSとAndroidのみ対応しており、アプリケーション開発をする際は
 		\subsection{デバイス構成}
 				\begin{figure}[H]
 				\centering
@@ -335,7 +342,8 @@
 			FirtVRには3軸ジャイロセンサと加速度センサが搭載されており，Unityで作製したアプリ上で測定値を確認することができる．
 			本研究ではこのジャイロセンサを用いて，腕のピッチ，ヨー，ロールの3軸の回転をシミュレータに反映させている．
 		\subsection{ジェスチャ認識}
-	
+			FirstVRのジェスチャ認識方法は、ジェスチャ状態と非ジェスチャ状態における筋変位センサの各チャンネルごとの値をサンプリングし、
+
 \chapter{研究手順}
 	\section{使用器具}
 		本研究での使用器具を表\refeq{tab:usedev}に示す。
@@ -550,6 +558,7 @@
 		\label{fig:evaluation}
 		\end{figure}
 
+
 \chapter{まとめ}
 
 \chapter{今後の課題}
@@ -568,24 +577,26 @@
 	JRSJ. 2012 July.
 
 	\bibitem{ref:2}
-	Osumi M, et al.
+	Osumi M, et.al.
 	``Characteristics of Phantom Limb Pain Alleviated
 	with Virtual Reality Rehabilitation''.
 	Pain Med. 2019 May.
 
 	\bibitem{ref:3}
-	H2L.Inc.,Tokyo106-0032,Japan;satoshi.hosono@h2l.jp
+	mediVR.Inc.,https://www.medivr.jp/
+	
 
 	\bibitem{ref:4}
-	Tamon Miyake, etal``Gait Phase Detection Based on Muscle Deformation
+	株式会社サンステラ, https://www.einscan.jp/einscan-hx
+	
+	\bibitem{ref:5}
+	Tamon Miyake, et.al.``Gait Phase Detection Based on Muscle Deformation
 	with Static Standing-Based Calibration''.
 	MDPI. 2021 Feb
 
-	\bibitem{ref:5}
-	mediVR.Inc.,https://www.medivr.jp/
 
 	\bibitem{ref:6}
-	株式会社サンステラ, https://www.einscan.jp/einscan-hx
+	H2L.Inc.,Tokyo106-0032,Japan;satoshi.hosono@h2l.jp
 
 	\bibitem{ref:7}
 
