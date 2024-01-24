@@ -25,12 +25,9 @@
 \contentsline {section}{\numberline {4.1}使用器具}{8}{}%
 \contentsline {section}{\numberline {4.2}VHの3Dモデル取り込み}{8}{}%
 \contentsline {section}{\numberline {4.3}VHのスムージング処理・ボーン配置}{8}{}%
-\contentsline {section}{\numberline {4.4}シミュレータの構成}{8}{}%
-\contentsline {subsection}{\numberline {4.4.1}オブジェクト構成}{9}{}%
-\contentsline {subsection}{\numberline {4.4.2}オブジェクト保持表現}{9}{}%
-\contentsline {section}{\numberline {4.5}FirstVRの性能評価}{9}{}%
-\contentsline {section}{\numberline {4.6}シミュレータのビルド}{9}{}%
-\contentsline {section}{\numberline {4.7}評価}{9}{}%
+\contentsline {section}{\numberline {4.4}オブジェクト保持表現}{8}{}%
+\contentsline {section}{\numberline {4.5}FirstVRの性能評価}{8}{}%
+\contentsline {section}{\numberline {4.6}評価}{9}{}%
 \contentsline {chapter}{\numberline {第5章}研究結果}{10}{}%
 \contentsline {section}{\numberline {5.1}VHの3Dモデル構成}{10}{}%
 \contentsline {section}{\numberline {5.2}保持表現の作製}{11}{}%
