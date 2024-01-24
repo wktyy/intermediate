@@ -40,8 +40,8 @@
 \contentsline {section}{\numberline {4.7}評価}{10}{}%
 \contentsline {chapter}{\numberline {第5章}研究結果}{11}{}%
 \contentsline {section}{\numberline {5.1}FirstVR}{11}{}%
-\contentsline {section}{\numberline {5.2}シミュレータの構成}{13}{}%
-\contentsline {section}{\numberline {5.3}シミュレータの定性評価}{15}{}%
-\contentsline {chapter}{\numberline {第6章}まとめ}{16}{}%
-\contentsline {chapter}{\numberline {第7章}今後の課題}{17}{}%
-\contentsline {chapter}{参考文献}{19}{}%
+\contentsline {section}{\numberline {5.2}シミュレータの構成}{14}{}%
+\contentsline {section}{\numberline {5.3}シミュレータの定性評価}{16}{}%
+\contentsline {chapter}{\numberline {第6章}まとめ}{17}{}%
+\contentsline {chapter}{\numberline {第7章}今後の課題}{18}{}%
+\contentsline {chapter}{参考文献}{20}{}%
