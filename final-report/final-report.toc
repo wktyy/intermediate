@@ -23,25 +23,20 @@
 \contentsline {subsection}{\numberline {3.2.3}ジェスチャ認識}{7}{}%
 \contentsline {chapter}{\numberline {第4章}研究手順}{8}{}%
 \contentsline {section}{\numberline {4.1}使用器具}{8}{}%
-\contentsline {section}{\numberline {4.2}3Dスキャナ}{8}{}%
-\contentsline {subsection}{\numberline {4.2.1}3Dモデルの取り込み}{8}{}%
-\contentsline {section}{\numberline {4.3}Blender}{8}{}%
-\contentsline {subsection}{\numberline {4.3.1}スムージング処理}{8}{}%
-\contentsline {subsection}{\numberline {4.3.2}ボーン配置}{9}{}%
-\contentsline {section}{\numberline {4.4}Unity}{9}{}%
-\contentsline {subsection}{\numberline {4.4.1}オブジェクトの構成}{9}{}%
-\contentsline {subsection}{\numberline {4.4.2}ステージ構成}{10}{}%
-\contentsline {subsection}{\numberline {4.4.3}アニメーション設定}{10}{}%
-\contentsline {subsubsection}{アニメーションクリップ作成}{10}{}%
-\contentsline {subsubsection}{アニメーター設定}{10}{}%
-\contentsline {subsection}{\numberline {4.4.4}オブジェクト保持}{10}{}%
-\contentsline {section}{\numberline {4.5}FirstVR}{10}{}%
-\contentsline {section}{\numberline {4.6}ビルド}{10}{}%
-\contentsline {section}{\numberline {4.7}評価}{10}{}%
-\contentsline {chapter}{\numberline {第5章}研究結果}{11}{}%
-\contentsline {section}{\numberline {5.1}FirstVR}{11}{}%
-\contentsline {section}{\numberline {5.2}シミュレータの構成}{14}{}%
-\contentsline {section}{\numberline {5.3}シミュレータの定性評価}{16}{}%
-\contentsline {chapter}{\numberline {第6章}まとめ}{17}{}%
-\contentsline {chapter}{\numberline {第7章}今後の課題}{18}{}%
-\contentsline {chapter}{参考文献}{20}{}%
+\contentsline {section}{\numberline {4.2}VHの3Dモデル取り込み}{8}{}%
+\contentsline {section}{\numberline {4.3}VHのスムージング処理・ボーン配置}{8}{}%
+\contentsline {section}{\numberline {4.4}シミュレータの構成}{8}{}%
+\contentsline {subsection}{\numberline {4.4.1}オブジェクト構成}{9}{}%
+\contentsline {subsection}{\numberline {4.4.2}オブジェクト保持表現}{9}{}%
+\contentsline {section}{\numberline {4.5}FirstVRの性能評価}{9}{}%
+\contentsline {section}{\numberline {4.6}シミュレータのビルド}{9}{}%
+\contentsline {section}{\numberline {4.7}評価}{9}{}%
+\contentsline {chapter}{\numberline {第5章}研究結果}{10}{}%
+\contentsline {section}{\numberline {5.1}VHの3Dモデル構成}{10}{}%
+\contentsline {section}{\numberline {5.2}}{11}{}%
+\contentsline {section}{\numberline {5.3}FirstVRの性能評価}{11}{}%
+\contentsline {section}{\numberline {5.4}シミュレータの構成}{15}{}%
+\contentsline {section}{\numberline {5.5}シミュレータの定性評価}{18}{}%
+\contentsline {chapter}{\numberline {第6章}まとめ}{19}{}%
+\contentsline {chapter}{\numberline {第7章}今後の課題}{20}{}%
+\contentsline {chapter}{参考文献}{22}{}%

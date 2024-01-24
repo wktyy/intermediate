@@ -182,10 +182,10 @@
 				被写体深度&200-700\,mm&350-610\,mm\\
 				対象物との距離&470\,mm&470\,mm\\
 				テクスチャスキャン&あり&なし\\
-				安全性&クラス対象外&クラス1\\
-				データ出力&STL,OBJ,PLY,ASC,3MF,P3\\
-				本体サイズ&108×110×237\,mm&\\
-				本体重量&710g\\
+				安全性&クラス対象外&クラス1\\ \hline
+				データ出力形式&\multicolumn{2}{c}{STL,OBJ,PLY,ASC,3MF,P3}\\
+				本体サイズ&\multicolumn{2}{c}{108×110×237\,mm}\\
+				本体重量&\multicolumn{2}{c}{710\,g}\\
 				\bottomrule
 			\end{tabular}
 			\end{center}
@@ -259,6 +259,7 @@
 
 				図\refeq{fig:Raycast}のように左側の立方体オブジェクトの中心から射出されている赤い直線がRayである。
 				この直線と右側の球体オブジェクトを囲う黄緑の領域がColliderコンポーネントの被衝突領域となっている。
+				なお、図\refeq{fig:Raycast}のRayやColliderは表示されないようになっている。
 
 		\subsection{保持表現}
 			オブジェクト保持状態を表現するためにVHにオブジェクトごとの保持アニメーションを作製した。
@@ -321,7 +322,7 @@
 				よく確認をすること。
 	\section{FirstVR}
 		FirstVRはH2L株式会社\cite{ref:6}によって開発・製造されている筋変位センサを用いたウェアラブルデバイスである。
-		この製品は現状iOSとAndroidのみ対応しており、アプリケーション開発をする際は
+		この製品は現状iOSとAndroidのみ対応しており、アプリケーション開発をする際はH2Lから公開されている``FirstVR sdk''というUnity開発用APIが公開されている
 		\subsection{デバイス構成}
 				\begin{figure}[H]
 				\centering
@@ -339,10 +340,13 @@
 				\caption{FirstVR}
 				\end{figure}
 		\subsection{トラッキング}
-			FirtVRには3軸ジャイロセンサと加速度センサが搭載されており，Unityで作製したアプリ上で測定値を確認することができる．
-			本研究ではこのジャイロセンサを用いて，腕のピッチ，ヨー，ロールの3軸の回転をシミュレータに反映させている．
+			FirtVRには3軸ジャイロセンサと加速度センサが搭載されており，Unityで作製したアプリ上で測定値を
+			確認することができる．本研究ではこのジャイロセンサを用いて，腕のピッチ，ヨー，ロールの3軸の
+			回転をシミュレータに反映させている．
 		\subsection{ジェスチャ認識}
-			FirstVRのジェスチャ認識方法は、ジェスチャ状態と非ジェスチャ状態における筋変位センサの各チャンネルごとの値をサンプリングし、
+			FirstVRのジェスチャ認識方法は、ジェスチャ状態と非ジェスチャ状態における筋変位センサの
+			各チャンネルごとの値をサンプリングし、機械学習させることでジェスチャ状態のセンサ値を
+			しきい値としてジェスチャ認識を行っている。
 
 \chapter{研究手順}
 	\section{使用器具}
@@ -378,62 +382,26 @@
 	\end{tabular}
 	\end{center}
 	\end{table}
-	\section{3Dスキャナ}
-		\subsection{3Dモデルの取り込み}
-			ハンディ3DスキャナであるEinScan HXを用いて左腕をスキャンした
-			本研究では，VHにテクスチャを貼って用いることを前提としているため，
-			スキャン形式をRapidスキャンモードで,3Dモデルの精度を高めるために頂点数を
-			50万点で出力し，出力形式としてテクスチャがメッシュに割当されている
-			obj形式を選択した。
-	\section{Blender}
-		\subsection{スムージング処理}
-			.obj形式で取り込んだ3Dモデルは測定によるノイズが含まれており、特に掌と手の甲の境界線上に
-			が段差のように途切れてしまう。このノイズを除去・補完するために、オブジェクト表面の凹凸を
-			平坦にする効果があるスムージング処理を行った。
-			\begin{figure}[H]
-			\centering
-			\begin{minipage}{0.3\columnwidth}
-			\centering
-			\includegraphics[width = \columnwidth]{../figs/SmoothingBeforRear.png}
-			\end{minipage}
-			\begin{minipage}{0.3\columnwidth}
-			\centering
-			\includegraphics[width = \columnwidth]{../figs/SmoothingAfterRear.png}
-			\end{minipage}
-			\caption{スムージング処理比較}
-			\end{figure}
+	\section{VHの3Dモデル取り込み}
+		ハンディ3DスキャナであるEinScan HXを用いて左腕をスキャンした。
+		本研究では，VHにテクスチャを貼って用いることを前提としているため，
+		スキャン形式をRapidスキャンモードで,3Dモデルの精度を高めるために
+		頂点数を50万点で出力し，出力形式としてテクスチャがメッシュに割当
+		されているobj形式を選択した。
 
-		\subsection{ボーン配置}
-			スムージング処理後の3Dモデルを基準に図のようにボーンを配置した．
-			\begin{figure}[H]
-			\centering
-			\begin{minipage}{0.2\columnwidth}
-			\centering
-			\includegraphics[width = \columnwidth]{../figs/handmeshLat.png}
-			\end{minipage}
-			\begin{minipage}{0.2\columnwidth}
-			\centering
-			\includegraphics[width = \columnwidth]{../figs/handboneLat.png}
-			\end{minipage}
-			\caption{ボーン配置図}
-			\end{figure}
+	\section{VHのスムージング処理・ボーン配置}
+		obj形式で取り込んだ3Dモデルは測定によるノイズが含まれており、特に掌と手の甲の境界線上に
+		が段差のように途切れてしまう。このノイズを除去・補完するために、オブジェクト表面の凹凸を
+		平坦にする効果があるスムージング処理を行った。また、アニメーション作製のために処理後の3D
+		モデルにボーンを配置した。
 
-	\section{Unity}
-		\subsection{オブジェクトの構成}
-			\begin{itemize}
-				\item Player
-				\item Target
-				\item Stage
-			\end{itemize}
-		\subsection{ステージ構成}
-		\subsection{アニメーション設定}
-			\subsubsection{アニメーションクリップ作成}
-			\subsubsection{アニメーター設定}
-		\subsection{オブジェクト保持}
+	\section{シミュレータの構成}
+		Blenderでの処理を行った3DモデルをUnityにインポートし、VHとして機能させるために様々なコン
+		ポーネントを付け加えた。
+		\subsection{オブジェクト構成}
+		\subsection{オブジェクト保持表現}
 
-		
-
-	\section{FirstVR}
+	\section{FirstVRの性能評価}
 		本研究で構成するシミュレータの入力感度を検証するため、以下の手順でFirstVRの評価を行った。
 			\begin{enumerate}
 				\item 装着位置の決定\\
@@ -448,7 +416,7 @@
 					ノイズの少なかったsample数を選出し、ジェスチャ状態で手の角度を上下左右に動かした場合のジェスチャ状態の変化を
 					動画に撮影して検証した．
 			\end{enumerate}
-	\section{ビルド}
+	\section{シミュレータのビルド}
 	\section{評価}
 		FirstVRで筋変位を測定した14チャンネル光変位センサの測定値を用いてジェスチャ認識の精度を確認するため,
 		各被験者・各sample数ごとの評価指標として総変化量$X$を定めた．総変化量の算出は測定回数s:1～5,チャンネル数r:0～13としてジェスチャ状態で測定した筋変位センサの値を$M_{{s}{r}}$
@@ -457,10 +425,108 @@
 			X = \frac{1}{5} \sum_{s = 1}^{5} \sum_{r = 0}^{13} |N_{r} - M_{{s}{r}}|
 		\end{equation}
 		と示すことができる．
-		この評価指標を用いて各sample数ごとに分散を調べることにより，どのsample数をシミュレータで用いれば良いかを検討した．
+		この評価指標を用いて各sample数ごとに分散を調べることにより，どのsample数をシミュレータで用いるかを検討した．
 		
 \chapter{研究結果}
-	\section{FirstVR}
+	
+	\section{VHの3Dモデル構成}
+		3Dスキャナで取り込んだ左腕3Dモデルと実際の左腕の比較を図\refeq{fig:hikaku}に示す。
+
+		\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.11\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/SmoothingBeforALL.png}
+		\subcaption{左腕3Dモデル}
+		\label{fig:importLeftArm}
+		\end{minipage}
+		\hspace{0.04\columnwidth}
+		\begin{minipage}{0.2\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/IMG_5145.jpg}
+		\subcaption{実際の左腕}
+		\label{fig:realLeftArm}
+		\vspace{0.12\columnwidth}
+		\end{minipage}
+		\caption{取り込んだ左腕3Dモデルと実際の左腕の比較}
+		\label{fig:hikaku}
+		\end{figure}
+
+		\vspace{-10pt}
+
+		実際の左腕と比較して、手の甲の表現や筋の出方の表現がとても精巧に再現されているように感じられる。
+		しかし、多少腕周りの太さが細くなっているようにも見られる。また、図\refeq{fig:smoothingbefor}取り込んだ直後の3Dモデルでは撮影
+		時のノイズが含まれているため、Blenderのスムージング機能を用いて図\refeq{fig:smoothingafter}のように3Dモデルを平滑化した。
+
+		\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.3\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/SmoothingBeforRear.png}
+		\subcaption{処理前画像}
+		\label{fig:smoothingbefor}
+		\end{minipage}
+		\hspace{0.04\columnwidth}
+		\begin{minipage}{0.32\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/SmoothingAfterRear.png}
+		\subcaption{処理後画像}
+		\label{fig:smoothingafter}
+		\end{minipage}
+		\caption{スムージング処理前後の3Dモデル比較}
+		\label{fig:smoothing}
+		\end{figure}
+
+		図\refeq{fig:smoothing}より、図\refeq{fig:smoothingbefor}では小指や人差し指の先端部分のノイズが
+		見られるが、図\refeq{fig:smoothingafter}ではスムージング処理によりノイズが解消されていることが
+		わかる.
+
+		また、3DモデルをUnityにインポートする際、オブジェクト保持のアニメーションを作製するためにメッシュ
+		の制御を行う必要があるため、図\refeq{fig:bone}のようにボーンを配置した。
+		\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.15\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/handmeshAll.png}
+		\end{minipage}
+		\hspace{0.04\columnwidth}
+		\begin{minipage}{0.15\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/handboneLatAll.png}
+		\end{minipage}
+		\caption{ボーン配置図}
+		\label{fig:bone}
+		\end{figure}
+
+		図\refeq{fig:bone}より、ボーンの配置は関節ごとに配置しており、各指の先端にはエンドボーンと呼ばれる
+		アニメーション制御用のボーンを追加している。このエンドボーンを移動させることでその指のボーンの変形
+		を自動的に補完されるようになっている。
+
+	\section{}
+		
+
+	\section{FirstVRの性能評価}
+
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width = 12cm]{../figs/IMG_1386.JPG}
+		\caption{}
+		\label{}
+		\end{figure}
+
+		\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.4\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/IMG_5138.PNG}
+		\end{minipage}
+		\hspace{0.04\columnwidth}
+		\begin{minipage}{0.4\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/IMG_5139.PNG}
+		\end{minipage}
+		\caption{}
+		\end{figure}
 		
 		\begin{figure}[H]
 		\centering
@@ -547,6 +613,21 @@
 		\end{figure}
 
 	\section{シミュレータの構成}
+
+		\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.4\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/PCnomal.png}
+		\end{minipage}
+		\hspace{0.04\columnwidth}
+		\begin{minipage}{0.4\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/PCmenu.png}
+		\end{minipage}
+		\caption{}
+		\end{figure}
+
 		\begin{figure}[H]
 		\centering
 		\begin{minipage}{0.75\columnwidth}
@@ -575,7 +656,7 @@
 		\begin{figure}[H]
 		\centering
 		\includegraphics[width = 12cm]{../figs/IMG_5132.JPG}
-		\caption{定性評価の様子}
+		\caption{PC版シミュレータ定性評価の様子}
 		\label{fig:evaluation}
 		\end{figure}
 
@@ -585,7 +666,10 @@
 		\caption{}
 		\label{}
 		\end{figure}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1df017154e0ea0de172f1f1430b7e736497eb8e0
 
 \chapter{まとめ}
 
@@ -631,6 +715,7 @@
 
 \end{thebibliography}
 \chapter*{付録}
+
 %ページ番号をローマ数字で表示
 \pagenumbering{roman}
 
@@ -884,6 +969,63 @@ public class CalibrationManager : MonoBehaviour
 
 \end{lstlisting}
 
+\clearpage
+
+\begin{lstlisting}[caption=MoveManager.cs, label=code:Move]
+	using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Movemanager : MonoBehaviour
+	{
+		public Vector3 Up_speed,Down_speed,Left_speed,Right_speed;
+		bool forwardmove;
+		bool backmove;
+		bool rightmove;
+		bool leftmove;
+
+		public void forwardButtonDown(){
+			forwardmove = true;
+		}
+		public void forwardButtonUp(){
+			forwardmove = false;
+		}
+		public void backButtonDown(){
+			backmove = true;
+		}
+		public void backButtonUp(){
+			backmove = false;
+		}
+		public void rightButtonDown(){
+			rightmove = true;
+		}
+		public void rightButtonUp(){
+			rightmove = false;
+		}
+		public void leftButtonDown(){
+			leftmove = true;
+		}
+		public void leftButtonUp(){
+			leftmove = false;
+		}
+		void Update()
+		{
+			if(forwardmove == true){
+				transform.position += Up_speed;
+			}
+			if(backmove == true){
+				transform.position += Down_speed;
+			}
+			if(rightmove == true){
+				transform.position += Right_speed;
+			}
+			if(leftmove == true){
+				transform.position += Left_speed;
+			}
+		}
+	}
+\end{lstlisting}
+
 \begin{lstlisting}[caption=handtrack.cs, label=code:track]
 	using System.Collections;
 	using System.Collections.Generic;
@@ -901,63 +1043,5 @@ public class CalibrationManager : MonoBehaviour
 		}
 	}
 \end{lstlisting}
-
-\begin{lstlisting}[caption=MoveManager.cs, label=code:Move]
-	using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Movemanager : MonoBehaviour
-	{
-		public Vector3 Up_speed,Down_speed,Left_speed,Right_speed;
-		bool forwardmove;
-		bool backmove;
-		bool rightmove;
-		bool leftmove;
-
-		public void forwardButtonDown(){
-				forwardmove = true;
-			}
-		public void forwardButtonUp(){
-				forwardmove = false;
-			}
-		public void backButtonDown(){
-				backmove = true;
-			}
-		public void backButtonUp(){
-				backmove = false;
-			}
-		public void rightButtonDown(){
-				rightmove = true;
-			}
-		public void rightButtonUp(){
-				rightmove = false;
-			}
-		public void leftButtonDown(){
-				leftmove = true;
-			}
-		public void leftButtonUp(){
-				leftmove = false;
-			}
-
-
-		void Update()
-		{
-				if(forwardmove == true){
-						transform.position += Up_speed;
-					}
-				if(backmove == true){
-						transform.position += Down_speed;
-					}
-				if(rightmove == true){
-						transform.position += Right_speed;
-					}
-				if(leftmove == true){
-						transform.position += Left_speed;
-					}
-			}
-	}
-\end{lstlisting}
-
 
 \end{document}
