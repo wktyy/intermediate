@@ -85,8 +85,8 @@
 \huge 卒業研究報告書\\
 \vspace{50pt}
 \HUGE\textgt{仮想筋電義手の開発に関する研究}\\
-\vspace{200pt}
-\huge 指導教官\hspace{10pt}戸崎　哲也\\
+\vspace{250pt}
+\huge 指導教員\hspace{10pt}戸崎　哲也\\
 \huge 報告者\hspace{28pt}河合　将暉\\
 \vspace{50pt}
 \huge 神戸市立工業高等専門学校\\
@@ -103,13 +103,16 @@
 \begin{center}
 \LARGE (論文要旨)
 \end{center}
-あああああああああああああああああああああああああああああああああああ
-あああああああああああああああああああああああああああああああああああ
-あああああああああああああああああああああああああああああああああああ
-あああああああああああああああああああああああああああああああああああ
-あああああああああああああああああああああああああああああああああああ
-あああああああああああああああああああああああああああああああああああ
-あああああああああああああああああああああああああああああああああああ
+上肢切断者が筋電義手を装着し,日常生活で扱えるようになるには相応の訓練が必要とされる.
+この筋電義手の訓練を代替するものとして,仮想筋電義手シミュレータが先行研究によって開発
+されてきた.本研究では,先行研究で一般的に使用されていた配布されている仮想筋電義手3Dモ
+デルとは異なる3Dスキャナを用いた仮想筋電義手3Dモデルを使用することにより筋電義手装着訓
+練の訓練効果に影響があるかを検討した.また,入力インターフェースにFirstVRを採用すること
+による訓練効果への影響を検討するために,シミュレータのプロトタイプを提案した.健常者を
+対象にした6段階定性評価アンケート調査を行い,入力インターフェースをキーボード・マウスと
+したシステムとFirstVRのシステムとを比較したところ,FirstVRのシステムがより没入感が高い
+という結果が得られた.しかし,操作性や遅延といった点では優位性がみられることはなく,さら
+にFirstVRの装着位置・ジェスチャ学習のプロセスなどの条件を加えて改善することが求められる.
 \clearpage
 %論文要旨ここまで
 
@@ -123,41 +126,73 @@
 \pagenumbering{arabic}
 
 
-\chapter{序論}
+\chapter{はじめに}
 	\section{研究背景}
 	上肢切断者が筋電義手を装着する際，自在に扱うことができるように
 	訓練を行う必要がある．VRを用いた筋電義手トレーニングの効果に
-	ついては先行研究\cite{ref:1}\cite{ref:2}で検討されているが，
-	3Dモデルのリアリティについて検討されていなかったため, 本研究では
-	仮想筋電義手モデルのリアリティによる訓練効果や幻肢痛緩和効果に
-	着目し3Dスキャナで取り込んだ仮想筋電義手モデル(VH:Virtual Hand)を用いた
-	VRトレーニングシステムを構成し，VHの見た目によって訓練効果に変化があるかを評価する。
-	ことを目的とする．このトレーニングシステムのインタフェースに``FirstVR''を用いることで，
-	実際の筋電義手を使用することなく，安価で訓練が行えると考えた.
-	また，近年では``カグラ''\cite{ref:3}という製品は上肢機能障害者
+	ついては先行研究\cite{ref:1}\cite{ref:2}で検討されており,筋電
+	義手操作の幻肢痛緩和やに効果があると立証されている.これらの研
+	究では仮想筋電義手の3Dモデルについては長方形のオブジェクトや,
+	腕を模して製作された3Dモデルを用いることが一般的であった.そこ
+	で本研究では,仮想筋電義手モデルのリアリティによる訓練効果や幻
+	肢痛緩和効果に着目し3Dスキャナで取り込んだ仮想筋電義手3Dモデル
+	(VH:Virtual Hand)を用いたVRトレーニングシステムを構成し，VHの
+	見た目によって訓練効果に変化があるかを評価することを目的とする．
+	加えて,このトレーニングシステムのインタフェースに``FirstVR''
+	を用いることで，実際の筋電義手や高価な筋電センサ使用することな
+	く，安価で訓練が行えると考えたため,FirstVRによる訓練効果の影響を
+	調べるために前段階として定性評価を行い,入力インターフェースに
+	よる没入感や操作性などの違いを調査することにした.
+	また，近年では``カグラ''\cite{ref:3}という医療機器は上肢機能障害者
 	のリハビリテーションのために運用されるなどVRトレーニングシステムは
-	義手装具者以外にも需要が高まっている．
+	義手装具者以外にも需要が高まっている．本研究は2023年度，神戸高専
+	Digital Faburication Labに新規導入されたハンディ3Dスキャナ``Ein Scan HX''\cite{ref:4}の活用方法の一例として後続の研究に
+	利用していただきたい.
 
-	本研究は2023年度，神戸高専Digital Faburication Labに新規導入された
-	ハンディ3Dスキャナ``Ein Scan HX''\cite{ref:4}の活用方法の一例としても後続の研究に
-	活用していただきたい．
+	本論文の構成として第2章,第3章で3Dモデルの製作やUnity・FirstVRについて
+	解説を行う.そして,第4章に研究手法を提示し,第5章に研究結果を示す.
+	
+\clearpage
+	\section{関連研究}
+		FirstVRを用いた関連研究としては足にFirstVRを装着することで足の筋変位による
+		足の接地状態の検出を行う研究\cite{ref:5}が行われている.この研究では
+		図\refeq{fig:RR-FVRcalibration}の歩行状態を7段階に分割した姿勢をFirstVRにそれぞれ学習させ,加えてジャイロセ
+		ンサを用いてどの姿勢が足の接地状態(立脚期)の検出に最適なのかを調査されている.
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width = 8cm]{../figs/sensors-21-01081-g004.jpg}
+		\caption{歩行位相検出アルゴリズムのキャリブレーション姿勢}
+		\label{fig:RR-FVRcalibration}
+		\end{figure}
+		
+		足の浮遊状態(遊脚期)の検出には体軸よりも足が後ろになっている状態が検出精度が高くなる
+		傾向にあるということが報告されており,その姿勢状態を学習させて被験者10名(男性6名,女性4名)
+		にトレッドミルを用いて歩行データを計測されていた.図\refeq{fig:RR-malefemale}に男女別の
+		遊脚期(Swing phase)と立脚期(Stance phase)の陽性率を示す.
 
-	\section{研究目的}
-	本研究の目的はVRトレーニングシステムのリアリティについて入力デバイス・VHのモデルという観点から研究を行い
-	そのリアリティが幻肢痛の緩和や運動機能の訓練効果にどのように影響を与えるかを検討することが最終目標である。
-	まずその第1段階として、FirstVRを用いたVRトレーニングシステムを構成し、どの程度リアルにシミュレートできるかを検討した。
-	また、FirstVRがどの程度の精度でジェスチャを検出できるか検証も行った。
-	なお、本研究におけるリアリティの評価方法として、実験協力者を対象とした定性評価アンケートを用いて評価した。
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width = 8cm]{../figs/sensors-21-01081-g010.jpg}
+		\caption{男性(左)と女性(右)の立脚期と遊脚期の陽性率}
+		\label{fig:RR-malefemale}
+		\end{figure}
+
+		図\refeq{fig:RR-malefemale}の結果より,立脚期の検出精度中央値は90％であり,
+		歩行位相検出システムとして十分な結果を得られている.しかし,この方式では
+		女性の遊脚期の検出精度が低いことから個人の筋肉量に検出精度が依存している
+		といった課題が挙げられている.
+
+
 
 \chapter{理論:3Dモデルの製作}
-	本章では，本研究で利用した``Ein Scan HX''をはじめ,各種ソフトウェアの利用方法
-	およびその使い方について解説していく．また，機器を選定した理由についても記述する．
+	本章では，3Dモデル製作に使用した``Ein Scan HX''と``Blender''について解説する.
+	また,それぞれの役割と機能についても説明を加える.
 
 	\section{EinScan HX}
 		EinScan HXは株式会社サンステラが提供するハンディ3Dスキャナである．
 		主な使用用途としては，工業製品などの比較的大きな物をスキャンし，
 		リバースエンジニアリングや測定などに用いられている．
-		製品仕様については次項で解説する．
+		図\refeq{fig:EinScan}にEinScanの外観を示す.
 
 		\begin{figure}[H]
 		\centering
@@ -167,7 +202,7 @@
 		\end{figure}
 
 		\subsection{製品仕様}
-			EinScan HXの製品仕様について表\refeq{tab:EinScan}に示す．
+			\cite{ref:4}から参照したEinScanの製品仕様を図\refeq{fig:EinScan}に示す.
 			\begin{table}[H]
 			\begin{center}
 			\caption{EinScan HXの製品仕様}
@@ -177,7 +212,7 @@
 				スキャン精度&0.05\,mm&0.04\,mm\\
 				ポイント間隔&0.25～3.00\,mm&0.05～3.00\,mm\\
 				被写体長3D精度&±0.1\,mm&±0.06\,mm\\
-				シングルスキャン精度&420 × 440\,mm&\\
+				シングルスキャン精度&420 × 440\,mm&380 × 400\,mm\\
 				光源&ブルーLED&ブルーレーザー7本\\
 				被写体深度&200-700\,mm&350-610\,mm\\
 				対象物との距離&470\,mm&470\,mm\\
@@ -195,13 +230,26 @@
 			取得点の距離が大きい場合に誤差が累積し，大きくなっていく．
 
 	\section{Blender}
-	
 		Blenderとは，オープンソースの完全無料統合型3DCG・2D・映像編集ソフトウェア
 		である．本研究では``EinScan HX''によって出力した.obj形式の3Dモデルを
 		編集する目的で使用した．次項からは本研究で用いたBlenderの機能について解説する．
 		\subsection{スムージング}
-			スムージング機能とは，3Dオブジェクト表面をペイントソフトのようになぞるだけで
-			表面を平滑化し，頂点を揃える機能である．
+			スムージング機能とは，\cite{ref:7}によると3Dオブジェクト等の点群データにおいて,ノイズを削減するために
+			近傍データを用いて平均化処理を行い,データ点列をスムーズになるようにすることである.
+			Blenderでは,この処理をペイントツールのようにオブジェクトをなぞるだけでその軌跡に従うように平均化処理が行われている.
+			\begin{figure}[H]
+			\centering
+			\begin{minipage}{0.4\columnwidth}
+			\centering
+			\includegraphics[width = \columnwidth]{../figs/SmoothingBeforCube.png}
+			\end{minipage}
+			\hspace{0.04\columnwidth}
+			\begin{minipage}{0.4\columnwidth}
+			\centering
+			\includegraphics[width = \columnwidth]{../figs/SmoothingAfterCube.png}
+			\end{minipage}
+			\caption{頂点数35000点の立方体オブジェクトのスムージング処理比較}
+			\end{figure}
 		\subsection{ボーン構成}
 			ボーンは，3Dオブジェクトを変形させる際に頂点の移動を制御する支柱の役割を果たす機能である．
 			Unityにインポートした後に物体保持のアニメーションを作成する際にVHの変形を制御するために用いている．
@@ -209,12 +257,12 @@
 
 \chapter{理論:Unity・FirstVR}
 	\section{Unity}
-		Unityは，Unity Technologies社が提供するゲーム制作を中心とした統合開発環境のことで,主にスマートフォン向けゲームの制作に用いられている。
-		特徴としては、他社製の開発環境よりも比較的簡単にゲームの制作をすることが可能で、プログラムを必須としない点に強みをもつ。
-		本研究ではVRトレーニングシステムを構築する上で利用した機能について解説を加える。
+		Unityは，Unity Technologies社が提供するゲーム制作を中心とした統合開発環境のことで,主にスマートフォン向けゲームの制作に用いられている.
+		特徴としては,他社製の開発環境よりも比較的簡単にゲームの制作をすることが可能で,プログラムを必須としない点に強みをもつ.
+		本研究ではVRトレーニングシステムを構築する上で利用した機能について解説を加える.
 		\subsection{シェーダー}
-			本研究では、UnityにインポートしたVHの見た目をよりリアルにするため、標準搭載のシェーダーではなく、``Reflex Shader 2.2''というシェーダーを
-			用いて表示した。このシェーダーは主にVRChatの3Dモデル表示に用いられ、標準のシェーダーと比較して鏡面光が抑制され、モデルのコントラストが強調されていることがわかる。
+			本研究では,UnityにインポートしたVHの見た目をよりリアルにするため,標準搭載のシェーダーではなく,``Reflex Shader 2.2''というシェーダーを
+			用いて表示した.このシェーダーは主にVRChatの3Dモデル表示に用いられ,標準のシェーダーと比較して鏡面光が抑制され,モデルのコントラストが強調されていることがわかる.
 			\begin{figure}[H]
 			\centering
 			\begin{minipage}{0.4\columnwidth}
@@ -241,57 +289,62 @@
 			衝突判定を行った．次項にそれぞれの衝突判定の違いについて解説する．
 			\subsubsection{Collider}
 				Colliderコンポーネントにはオブジェクトの被衝突領域を設定する役割があり，
-				異なる2つのオブジェクトに付加されたColliderの領域が重なることで衝突フラグを立てる。
+				異なる2つのオブジェクトに付加されたColliderの領域が重なることで衝突フラグを立てる.
 				本研究ではPC版シミュレータにこの方式の衝突判定を用いている．
 
 \clearpage
-			\subsubsection{Raycast}
-				Raycastコンポーネントはオブジェクトの中心から任意方向・任意長さに直線を引き、その直線と
-				Colliderコンポーネントを持つオブジェクトの被衝突領域が重なると衝突フラグを立てる。
-				本研究ではiOS版シミュレータにこの方式の衝突判定を用いている。
+		\subsubsection{Raycast}
+			Raycastコンポーネントはオブジェクトの中心から任意方向・任意長さに直線を引き,その直線と
+			Colliderコンポーネントを持つオブジェクトの被衝突領域が重なると衝突フラグを立てる.
+			本研究ではiOS版シミュレータにこの方式の衝突判定を用いている.
+			\begin{figure}[H]
+			\centering
+			\includegraphics[width = 12cm]{../figs/raycast.png}
+			\caption{Raycastのイメージ図}
+			\label{fig:Raycast}
+			\end{figure}
 
-					\begin{figure}[H]
-					\centering
-					\includegraphics[width = 12cm]{../figs/raycast.png}
-					\caption{Raycastのイメージ図}
-					\label{fig:Raycast}
-					\end{figure}
+			図\refeq{fig:Raycast}のように左側の立方体オブジェクトの中心から射出されている赤い直線がRayである.
+			この直線と右側の球体オブジェクトを囲う黄緑の領域がColliderコンポーネントの被衝突領域となっている.
+			なお,図\refeq{fig:Raycast}のRayやColliderは表示されないようになっている.
 
-				図\refeq{fig:Raycast}のように左側の立方体オブジェクトの中心から射出されている赤い直線がRayである。
-				この直線と右側の球体オブジェクトを囲う黄緑の領域がColliderコンポーネントの被衝突領域となっている。
-				なお、図\refeq{fig:Raycast}のRayやColliderは表示されないようになっている。
-
-		\subsection{保持表現}
-			オブジェクト保持状態を表現するためにVHにオブジェクトごとの保持アニメーションを作製した。
-			Unityにおけるアニメーションは各オブジェクトの動きを記録し、再生フラグが立った場合にアニメーションが再生されるようになっている。
-			また、アニメーションを作製する際、初期状態とアニメーションした後のオブジェクトの位置を記録することで
-			自動的にその移動が補完されるようになっている。
+		\subsection{オブジェクト保持表現}
+			オブジェクト保持状態を表現するためにVHにオブジェクトごとの保持アニメーションを作製した.
+			Unityにおけるアニメーションは各オブジェクトの動きを記録し,再生フラグが立った場合にアニメーションが再生されるようになっている.
+			また,アニメーションを作製する際,初期状態とアニメーションした後のオブジェクトの位置を記録することで
+			自動的にその移動が補完されるようになっている.図\refeq{fig:ObjectHold}にオブジェクト保持表現のアニメーションを示す.
 			\begin{figure}[H]
 			\centering
 			\begin{minipage}{0.45\columnwidth}
 			\centering
 			\includegraphics[width = \columnwidth]{../figs/nutralHand.png}
+			\subcaption{無保持状態アニメーション}
 			\end{minipage}
 			\hspace{0.04\columnwidth}
 			\begin{minipage}{0.45\columnwidth}
 			\centering
 			\includegraphics[width = \columnwidth]{../figs/grapsphereHand.png}
+			\subcaption{保持状態アニメーション}
 			\end{minipage}
-			\caption{}
+			\caption{オブジェクト保持アニメーション}
+			\label{fig:ObjectHold}
 			\end{figure}
+
+
 		\subsection{ビルド}
-			本項ではUnityで構成したシミュレータのビルド方法について解説する。
-			以下にビルドの手順を示す。
+			本項ではUnityで構成したシミュレータのビルド方法について解説する.
+			以下にビルドの手順を示す.
 			\begin{enumerate}
 				\item Unityエディタ上のツールバーから"File"を選択
-				\item ``Build Settings''の項目を選択すると、別ウィンドウにBuild Settingsが開かれる
-				\item 追加したいシーンファイルをUnityエディタ上で開いておき、Build Settingsのウィンドウから"Add Open Scenes"を選択
-				\item Build Settings ウィンドウの左にあるPlatformから実行したいOSを選択し、ウィンドウ右下の"Switch Platform"を選択
+				\item ``Build Settings''の項目を選択すると,別ウィンドウにBuild Settingsが開かれる
+				\item 追加したいシーンファイルをUnityエディタ上で開いておき,Build Settingsのウィンドウから"Add Open Scenes"を選択
+				\item Build Settings ウィンドウの左にあるPlatformから実行したいOSを選択し,ウィンドウ右下の"Switch Platform"を選択
 				\item Build Settings ウィンドウ右下の"build"を選択してビルド開始
 			\end{enumerate}
-			以上の手順でUnityで作成したシーンのビルドが完了する。
-			Windows,LinuxなどのOSではビルドしたフォルダに実行ファイルが作成されているため、
-			そのファイルからシミュレータを実行することができる。
+			以上の手順でUnityで作成したシーンのビルドが完了する.
+			Windows,LinuxなどのOSではビルドしたフォルダに実行ファイルが作成されているため,
+			そのファイルからシミュレータを実行することができる.また,AndroiOSに関しても,作成した実行ファイルを
+			AndroidOSに転送し,ファイル解凍することで実行できる.
 
 			\begin{figure}[H]
 			\centering
@@ -300,30 +353,31 @@
 			\label{fig:BuildSettings}
 			\end{figure}
 
-			iOS,Android OSに関してはビルド・実行方法が異なるため、それぞれ以下に解説する。
+			iOSに関してはビルド・実行方法が異なるため,以下に解説する.
 			\subsubsection{iOS}
-				本項では、iOS用アプリの実行手順を以下に示す。
+				本項では,iOS用アプリの実行手順を以下に示す.
 				\begin{enumerate}
 					\item ビルドされたフォルダをMacOSに転送
-					\item MacOSでビルドされたフォルダを開き、フォルダ内の``Unity-iPhone.xcodeproj''をXcodeで開く
-					\item iOS端末を接続し、端末の設定から端末をデバッグモードにする
-					\item Xcodeウィンドウ上部のAny iOS Device を選択し、接続した端末を選択
-					\item Signing＆Capabilitiesを選択し、Teamの欄にApple IDを入力
-					\item 本シミュレータではBluetoothを用いるため、infoを選択し、Keyの一覧に``Privacy - Bluetooth Peripheral Usage Description''を追加
-						し、Valueを``Uses BLE to communicate with devices.''にする
-					\item iPhoneにアプリがインストールされたら、端末の『設定』から『プライバシーとセキュリティ』を開き『Bluetooth』を選択
+					\item MacOSでビルドされたフォルダを開き,フォルダ内の``Unity-iPhone.xcodeproj''をXcodeで開く
+					\item iOS端末を接続し,端末の設定から端末をデバッグモードにする
+					\item Xcodeウィンドウ上部のAny iOS Device を選択し,接続した端末を選択
+					\item Signing＆Capabilitiesを選択し,Teamの欄にApple IDを入力
+					\item 本シミュレータではBluetoothを用いるため,infoを選択し,Keyの一覧に``Privacy - Bluetooth Peripheral Usage Description''を追加
+						し,Valueを``Uses BLE to communicate with devices.''にする
+					\item iPhoneにアプリがインストールされたら,端末の『設定』から『プライバシーとセキュリティ』を開き『Bluetooth』を選択
 					\item インストールしたアプリにBluetoothの権限を許可する
 					\item アプリ一覧からインストールしたアプリを実行する
 				\end{enumerate}
-				以上の手順でiOS用のシミュレータをビルドして実行できる。
-				この手順で一番重要なのが、6の手順でこれがなければアプリを実行してもMade by Unityのポップがでた
-				直後に動かなくなってしまう。これらのエラーはXcode上でログが残されているため、発生しているエラーを
-				解消すれば実行することができる。大抵の場合、端末側の権限付与ができておらずアプリが実行できないエラーが多発するため
-				よく確認をすること。
+				以上の手順でiOS用のシミュレータをビルドして実行できる.
+				この手順で一番重要なのが,6の手順でこれがなければアプリを実行してもMade by Unityのポップがでた
+				直後に動かなくなってしまう.これらのエラーはXcode上でログが残されているため,発生しているエラーを
+				解消すれば実行することができる.大抵の場合,端末側の権限付与ができておらずアプリが実行できないエラーが多発するため
+				よく確認をすること.
 	\section{FirstVR}
-		FirstVRはH2L株式会社\cite{ref:6}によって開発・製造されている筋変位センサを用いたウェアラブルデバイスである。
-		この製品は現状iOSとAndroidのみ対応しており、アプリケーション開発をする際はH2Lから公開されている``FirstVR sdk''というUnity開発用APIが公開されている
+		FirstVRはH2L株式会社\cite{ref:6}によって開発・製造されている筋変位センサを用いたウェアラブルデバイスである.
+		この製品は現状iOSとAndroidのみ対応しており,アプリケーション開発をする際はH2Lから公開されている``FirstVR sdk''というUnity開発用APIが公開されている
 		\subsection{デバイス構成}
+				FirstVRの外観を図\refeq{fig:FirstVR}に示す。
 				\begin{figure}[H]
 				\centering
 				\begin{minipage}{0.75\columnwidth}
@@ -338,19 +392,22 @@
 				\subcaption{裏面画像}
 				\end{minipage}
 				\caption{FirstVR}
+				\label{fig:FirstVR}
 				\end{figure}
+			裏面には近赤外線センサが14チャンネル配置されており,ここから装着した筋肉の変化を
+			測定している.
 		\subsection{トラッキング}
 			FirtVRには3軸ジャイロセンサと加速度センサが搭載されており，Unityで作製したアプリ上で測定値を
 			確認することができる．本研究ではこのジャイロセンサを用いて，腕のピッチ，ヨー，ロールの3軸の
 			回転をシミュレータに反映させている．
 		\subsection{ジェスチャ認識}
-			FirstVRのジェスチャ認識方法は、ジェスチャ状態と非ジェスチャ状態における筋変位センサの
-			各チャンネルごとの値をサンプリングし、機械学習させることでジェスチャ状態のセンサ値を
-			しきい値としてジェスチャ認識を行っている。
+			FirstVRのジェスチャ認識方法は,ジェスチャ状態と非ジェスチャ状態における筋変位センサの
+			各チャンネルごとの値をサンプリングし,機械学習させることでジェスチャ状態のセンサ値を
+			しきい値としてジェスチャ認識を行っている.
 
 \chapter{研究手順}
 	\section{使用器具}
-		本研究での使用器具を表\refeq{tab:usedev}に示す。
+		本研究での使用器具を表\refeq{tab:usedev}に示す.
 	\begin{table}[H]
 	\begin{center}
 	\caption{本研究における使用器具}
@@ -368,7 +425,7 @@
 	\end{tabular}
 	\end{center}
 	\end{table}
-	以下に本研究で使用したソフトウェアを表\refeq{tab:usesoft}に示す。
+	以下に本研究で使用したソフトウェアを表\refeq{tab:usesoft}に示す.
 	\begin{table}[H]
 	\begin{center}
 	\caption{使用ソフトウェア}
@@ -383,51 +440,80 @@
 	\end{center}
 	\end{table}
 	\section{VHの3Dモデル取り込み}
-		ハンディ3DスキャナであるEinScan HXを用いて左腕をスキャンした。
+		ハンディ3DスキャナであるEinScan HXを用いて左腕をスキャンした.
 		本研究では，VHにテクスチャを貼って用いることを前提としているため，
 		スキャン形式をRapidスキャンモードで,3Dモデルの精度を高めるために
 		頂点数を50万点で出力し，出力形式としてテクスチャがメッシュに割当
-		されているobj形式を選択した。
+		されているobj形式を選択した.
 
 	\section{VHのスムージング処理・ボーン配置}
-		obj形式で取り込んだ3Dモデルは測定によるノイズが含まれており、特に掌と手の甲の境界線上に
-		が段差のように途切れてしまう。このノイズを除去・補完するために、オブジェクト表面の凹凸を
-		平坦にする効果があるスムージング処理を行った。また、アニメーション作製のために処理後の3D
-		モデルにボーンを配置した。
+		obj形式で取り込んだ3Dモデルは測定によるノイズが含まれており,特に掌と手の甲の境界線上に
+		が段差のように途切れてしまう.このノイズを除去・補完するために,オブジェクト表面の凹凸を
+		平坦にする効果があるスムージング処理を行った.また,アニメーション作製のために処理後の3D
+		モデルにボーンを配置した.
 
 	
 	\section{オブジェクト保持表現}
+		オブジェクト保持表現としてUnityのアニメーション機能を用いて保持可能な
+		球体・円柱・立方体の3つのオブジェクトごとのアニメーションを作製した.
+
 
 	\section{FirstVRの性能評価}
-		本研究で構成するシミュレータの入力感度を検証するため、以下の手順でFirstVRの評価を行った。
-			\begin{enumerate}
-				\item 装着位置の決定\\
-					FirstVRの動作原理より，赤外線で筋変位を取得しているため，かなり密着させて装着する必要がある．
-					そのため本研究では，筋肉量が一番多い位置を肘から前腕の1/4程度の距離と推定し，被験者の肘から手首までの長さを測定し、
-					肘を原点に1/4の距離(約7cm)で装着した
-				\item FirstVRの接続と学習\\
-					端末とFirstVRを接続し、測定するsample数でジェスチャをしていない状態とジェスチャしている状態を学習させた．
-				\item FirstVRの測定\\
-					ジェスチャをしていない状態の筋変位センサの値を1回測定し，手を握るジェスチャのセンサ値の変化量を5回測定した。
-				\item FirstVRのジェスチャ保持特性の検証\\
-					ノイズの少なかったsample数を選出し、ジェスチャ状態で手の角度を上下左右に動かした場合のジェスチャ状態の変化を
-					動画に撮影して検証した．
-			\end{enumerate}
+		本研究で構成するシミュレータの入力感度を検証するため,実験協力者として電子工学科の31名に以下の手順でFirstVRの評価を行った.
+		また,ジェスチャ状態は物体保持のアニメーションと同期させるため,じゃんけんのグーのジェスチャを学習させた.
+		\begin{enumerate}
+			\item 装着位置の決定\\
+				FirstVRの動作原理より，赤外線で筋変位を取得しているため，かなり密着させて装着する必要がある．
+				そのため本研究では，筋肉量が一番多い位置を肘から前腕の1/4程度の距離と推定し，被験者の肘から手首までの長さを測定し,
+				肘を原点に1/4の距離(約7cm)で装着した
+			\item FirstVRの接続と学習\\
+				端末とFirstVRを接続し,測定するsample数でジェスチャをしていない状態とジェスチャしている状態を学習させた．
+				\begin{figure}[H]
+				\centering
+				\includegraphics[width = 8cm]{../figs/IMG_5202.PNG}
+				\caption{FirstVRの性能評価の様子}
+				\label{fig:firstVRtest}
+				\end{figure}
+			\item FirstVRの測定\\
+				ジェスチャをしていない状態の筋変位センサの値を1回測定し，手を握るジェスチャのセンサ値の変化量を5回測定した.
+			\item FirstVRのジェスチャ保持特性の検証\\
+				ノイズの少なかったsample数を選出し,ジェスチャ状態で手の角度を上下左右に動かした場合のジェスチャ状態の変化を
+				動画に撮影して検証した．
+		\end{enumerate}
 
-	\section{評価}
-		FirstVRで筋変位を測定した14チャンネル光変位センサの測定値を用いてジェスチャ認識の精度を確認するため,
+		ノイズの判定方法は実際の腕の動作とアプリケーションの表示が異なる場合にノイズと判定した.
+		sample数の選出はノイズの回数が同数だった場合はシミュレータの負荷軽減のためにsample数が少ない方を選出した.
+
+		最終的なsample数の選定方法としてFirstVRで筋変位を測定した14チャンネル光変位センサの測定値を用いてジェスチャ認識の精度を確認するため,
 		各被験者・各sample数ごとの評価指標として総変化量$X$を定めた．総変化量の算出は測定回数s:1～5,チャンネル数r:0～13としてジェスチャ状態で測定した筋変位センサの値を$M_{{s}{r}}$
 		とジェスチャしていない状態の筋変位センサの値$N_{r}$とすると
 		\begin{equation}
 			X = \frac{1}{5} \sum_{s = 1}^{5} \sum_{r = 0}^{13} |N_{r} - M_{{s}{r}}|
 		\end{equation}
-		と示すことができる．
-		この評価指標を用いて各sample数ごとに分散を調べることにより，どのsample数をシミュレータで用いるかを検討した．
+		と示すことができる．この評価指標を用いて各sample数ごとに分散を調べることにより，どのsample数をシミュレータで用いるかを検討した．
+	
+	\section{シミュレータの構成}
+		Blenderで処理したVHをUnityにインポートし,保持可能オブジェクトを球体,円柱,立方体の3つ用意し,
+		大別してplayer,stage,UIの構成にした.構成図は後日書きます.
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width = 12cm]{../figs/fieldup.png}
+		\caption{シミュレータ構成代替図}
+		\label{fig:simuraterconst}
+		\end{figure}
+		playerオブジェクトには右腕オブジェクトのRightArm,左腕オブジェクトのLeftArmとマウスカーソルを追従するtargetオブジェクトを含んでいる.
+		また,各Armオブジェクトの掌にはColliderオブジェクトを配置して衝突判定を作成した.
+
 		
+	\section{シミュレータの定性評価}
+		電子工学科学生10名に協力していただき,PC版シミュレータとiOS版シミュレータの2種類を操作説明の後,
+		5分程度体験していただき,各シミュレータの①没入感②操作性③入力遅延の3項目について6段階の定性評価
+		アンケート調査を行った.評価点数が高いほどそれぞれの項目において高得点の評価となるように設定している.
+
 \chapter{研究結果}
 	
 	\section{VHの3Dモデル構成}
-		3Dスキャナで取り込んだ左腕3Dモデルと実際の左腕の比較を図\refeq{fig:hikaku}に示す。
+		3Dスキャナで取り込んだ左腕3Dモデルと実際の左腕の比較を図\refeq{fig:hikaku}に示す.
 
 		\begin{figure}[H]
 		\centering
@@ -451,9 +537,9 @@
 
 		\vspace{-10pt}
 
-		実際の左腕と比較して、手の甲の表現や筋の出方の表現がとても精巧に再現されているように感じられる。
-		しかし、多少腕周りの太さが細くなっているようにも見られる。また、図\refeq{fig:smoothingbefor}取り込んだ直後の3Dモデルでは撮影
-		時のノイズが含まれているため、Blenderのスムージング機能を用いて図\refeq{fig:smoothingafter}のように3Dモデルを平滑化した。
+		実際の左腕と比較して,手の甲の表現や筋の出方の表現がとても精巧に再現されているように感じられる.
+		しかし,多少腕周りの太さが細くなっているようにも見られる.また,図\refeq{fig:smoothingbefor}取り込んだ直後の3Dモデルでは撮影
+		時のノイズが含まれているため,Blenderのスムージング機能を用いて図\refeq{fig:smoothingafter}のように3Dモデルを平滑化した.
 
 		\begin{figure}[H]
 		\centering
@@ -474,12 +560,12 @@
 		\label{fig:smoothing}
 		\end{figure}
 
-		図\refeq{fig:smoothing}より、図\refeq{fig:smoothingbefor}では小指や人差し指の先端部分のノイズが
-		見られるが、図\refeq{fig:smoothingafter}ではスムージング処理によりノイズが解消されていることが
+		図\refeq{fig:smoothing}より,図\refeq{fig:smoothingbefor}では小指や人差し指の先端部分のノイズが
+		見られるが,図\refeq{fig:smoothingafter}ではスムージング処理によりノイズが解消されていることが
 		わかる.
 
-		また、3DモデルをUnityにインポートする際、オブジェクト保持のアニメーションを作製するためにメッシュ
-		の制御を行う必要があるため、図\refeq{fig:bone}のようにボーンを配置した。
+		また,3DモデルをUnityにインポートする際,オブジェクト保持のアニメーションを作製するためにメッシュ
+		の制御を行う必要があるため,図\refeq{fig:bone}のようにボーンを配置した.
 		\begin{figure}[H]
 		\centering
 		\begin{minipage}{0.15\columnwidth}
@@ -495,24 +581,28 @@
 		\label{fig:bone}
 		\end{figure}
 
-		図\refeq{fig:bone}より、ボーンの配置は関節ごとに配置しており、各指の先端にはエンドボーンと呼ばれる
-		アニメーション制御用のボーンを追加している。このエンドボーンを移動させることでその指のボーンの変形
-		を自動的に補完されるようになっている。
-
-	\section{保持表現の作製}
+		図\refeq{fig:bone}より,ボーンの配置は関節ごとに配置しており,各指の先端にはエンドボーンと呼ばれる
+		アニメーション制御用のボーンを追加している.このエンドボーンを移動させることでその指のボーンの変形
+		を自動的に補完されるようになっている.
+\clearpage
+	\section{オブジェクト保持}
+		各オブジェクトごとの保持アニメーションを図\refeq{fig:spherehold}〜\refeq{fig:cubehold}に示す.
 
 		\begin{figure}[H]
 		\centering
 		\begin{minipage}{0.4\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/grapsphere_side.png}
+		\subcaption{球体保持アニメーション側面図}
 		\end{minipage}
 		\hspace{0.04\columnwidth}
-		\begin{minipage}{0.4\columnwidth}
+		\begin{minipage}{0.18\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/grapsphere_up.png}
+		\subcaption{球体保持アニメーション上面図}
 		\end{minipage}
-		\caption{}
+		\caption{球体オブジェクトの保持表現}
+		\label{fig:spherehold}
 		\end{figure}
 
 		\begin{figure}[H]
@@ -520,13 +610,16 @@
 		\begin{minipage}{0.4\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/grapcylinder_side.png}
+		\subcaption{円柱保持アニメーション側面図}
 		\end{minipage}
 		\hspace{0.04\columnwidth}
-		\begin{minipage}{0.4\columnwidth}
+		\begin{minipage}{0.2\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/grapcylinder_up.png}
+		\subcaption{円柱保持アニメーション上面図}
 		\end{minipage}
-		\caption{}
+		\caption{円柱オブジェクトの保持表現}
+		\label{fig:cylinderhold}
 		\end{figure}
 
 		\begin{figure}[H]
@@ -534,39 +627,59 @@
 		\begin{minipage}{0.4\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/grapcube_side.png}
+		\subcaption{立方体保持アニメーション側面図}
 		\end{minipage}
 		\hspace{0.04\columnwidth}
-		\begin{minipage}{0.4\columnwidth}
+		\begin{minipage}{0.2\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/grapcube_up.png}
+		\subcaption{立方体保持アニメーション上面図}
 		\end{minipage}
-		\caption{}
+		\caption{立方体オブジェクトの保持表現}
+		\label{fig:cubehold}
 		\end{figure}
 		
+		オブジェクトが静止状態の場合でも動いている場合でも衝突条件を見たせばオブジェクトを保持することができる.
+		実際にボールや水筒などの形の似たものを掴んでいる写真を参考にアニメーションを作製したため,
+		かなり現実に近い掴み方をしているように見える.
+		しかし,保持アニメーションを行う際,オブジェクトの位置はVHの位置に紐付けられるのだが,オブジェクトの回転までは制御していないので
+		円柱や立方体は保持する角度によって指や掌を貫通するような掴み方になってしまう.
 
 	\section{FirstVRの性能評価}
-
+		FirstVRを装着する様子を図\refeq{fig:FirsrVRfit}に示す.
 		\begin{figure}[H]
 		\centering
-		\includegraphics[width = 12cm]{../figs/IMG_1386.JPG}
+		\includegraphics[width = 10cm]{../figs/IMG_1386.JPG}
 		\caption{FirstVR装着方法}
-		\label{}
+		\label{fig:FirsrVRfit}
 		\end{figure}
+		机上に5cm四方のグリッド線が描かれたボードを用いて肘の設置店から手首までを測定し,
+		その1/4の距離にFirstVRを装着させた.図\refeq{fig:FirstVRevaluation}に測定時の様子を
+		示す.
 
 		\begin{figure}[H]
 		\centering
-		\begin{minipage}{0.4\columnwidth}
+		\begin{minipage}{0.45\columnwidth}
 		\centering
-		\includegraphics[width = \columnwidth]{../figs/IMG_5138.PNG}
+		\includegraphics[width = \columnwidth]{../figs/IMG_5200.PNG}
 		\end{minipage}
 		\hspace{0.04\columnwidth}
-		\begin{minipage}{0.4\columnwidth}
+		\begin{minipage}{0.45\columnwidth}
 		\centering
-		\includegraphics[width = \columnwidth]{../figs/IMG_5139.PNG}
+		\includegraphics[width = \columnwidth]{../figs/IMG_5201.PNG}
 		\end{minipage}
 		\caption{FirstVR性能評価の様子}
+		\label{fig:FirstVRevaluation}
 		\end{figure}
 		
+		図\refeq{fig:FirstVRevaluation}のようにジェスチャ状態を1回,ジェスチャしていない状態を5回
+		測定し,それを各sample数で繰り返した.全員分のデータは記載することができないため付録にあるQRコードから
+		FVRDataFilesを開いてもらうと各被験者のデータが閲覧できるようになっている.
+		データの傾向としては,ジェスチャ状態の登録の際,強く握りすぎない方がジェスチャ認識のノイズが低減した.
+
+\clearpage
+
+		FirstVRの性能評価用アプリケーションの構成を図\refeq{}
 		\begin{figure}[H]
 		\centering
 		\begin{minipage}{0.75\columnwidth}
@@ -579,6 +692,7 @@
 		\includegraphics[width = \columnwidth]{../figs/IMG_1867.PNG}
 		\end{minipage}
 		\caption{FirstVR性能評価用アプリケーションの構成}
+		\label{fig:FirstVRapplication}
 		\end{figure}
 
 		
@@ -675,35 +789,95 @@
 	\section{シミュレータの定性評価}
 		\begin{figure}[H]
 		\centering
-		\includegraphics[width = 12cm]{../figs/IMG_5132.JPG}
+		\includegraphics[width = 8cm]{../figs/IMG_5132.JPG}
 		\caption{PC版シミュレータ定性評価の様子}
-		\label{fig:evaluation}
+		\label{fig:evaluationPC}
 		\end{figure}
 
 		\begin{figure}[H]
 		\centering
-		\includegraphics[width = 12cm]{../figs/IMG_6323.jpg}
+		\includegraphics[width = 8cm]{../figs/IMG_6323.jpg}
 		\caption{iOS版シミュレータ定性評価の様子}
-		\label{}
+		\label{fig:evaluationiOS}
 		\end{figure}
 
-\chapter{まとめ}
-	PC版シミュレータとiOS版シミュレータの2種類を作成
-	先行研究のシミュレータと同じものは再現できなかったが
-	入力インターフェースと3Dモデルおよびオブジェクト保持アニメーション
-	の違いから
-\chapter{今後の課題}
-	FirstVRの性能評価が不十分
-	ジェスチャ判別の閾値についてsample数以外の観点で調べるべき
-	・装着位置
-	・筋肉量
-	・男女比の均衡
-	・学習時間の違い
-	・ノイズを定量的に測定する方法の検討
+		\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.75\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/PC-1.png}
+		\end{minipage}
+		\hspace{0.04\columnwidth}
+		\begin{minipage}{0.75\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/iOS-1.png}
+		\end{minipage}
+		\caption{没入感の評価比較}
+		\end{figure}
+
+		\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.75\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/PC-2.png}
+		\end{minipage}
+		\hspace{0.04\columnwidth}
+		\begin{minipage}{0.75\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/iOS-2.png}
+		\end{minipage}
+		\caption{操作性の評価比較}
+		\end{figure}
+
+		\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.75\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/PC-3.png}
+		\end{minipage}
+		\hspace{0.04\columnwidth}
+		\begin{minipage}{0.75\columnwidth}
+		\centering
+		\includegraphics[width = \columnwidth]{../figs/iOS-3.png}
+		\end{minipage}
+		\caption{操作遅延の評価比較}
+		\end{figure}
+
+\chapter{まとめと今後の課題}
+	本研究ではPC版のシミュレータとiOS版のシミュレータの2種類を作製し,健常者に
+	体験してもらい,その定性評価を行うことでFirstVRを用いたシミュレータの方が没入感
+	が高い傾向があることを示した.しかし,操作性の点ではキーボード・マウスと明確な
+	差は見受けられず,遅延に関してはPC版の方が少ないという課題点も見つかった.
+	また,表示するモニターの違いで没入感が違ったという意見も挙げられており,
+	実験方法を再検討する必要がある.
+
+	今後の課題としては,FirstVRの性能評価が不十分であったため,シミュレータのオブジェクト保持
+	状態がノイズで保持されていない場合が多く,操作性の評価が低くなってしまったと考えられる.
+	そのため,FirstVRの条件を以下に挙げる.
+	\begin{itemize}
+		\item 装着位置
+		\item 使用者の筋肉量
+		\item 学習時間
+		\item 学習回数
+	\end{itemize}
+	これらの観点から条件を分けて実験を行う必要がある.
+	また,FirstVRの内部回路の学習システムについての理解が不足しているため
+	どのような条件が最適なのかということについては公式HPのリファレンスを詳しく調べていく必要が
+	あると考えられる.加えて,FirstVRがスマートフォンデバイスでしか使用できない点についても
+	BLE通信のスクリプトファイルを解読することでPCとの通信ができる可能性もある.
+	そして,当初の目標であったオブジェクトの違いによる訓練効果の評価については
+	作成したシミュレータのオブジェクトの機能を引き継いだままモデルだけ置き換えて
+	シミュレータを実装することで定性評価を行うことは可能であると考える.
+	定量的なデータを取得するためには脳波測定を用いての測定やシミュレータと現実空間の
+	移動量の誤差などを検討していくことになるだろう.
+	最後に,シミュレータの没入感をあげる方法として,VRゴーグルを用いたシステムにできると
+	より訓練効果などに影響を与えられるのではないかと思われる.
 \clearpage
 
 \chapter*{謝辞}
-一年間丁寧に指導していただいた戸崎先生，および同研究室の村岡氏
+\addcontentsline{toc}{chapter}{謝辞}
+一年間丁寧に指導していただいた戸崎哲也教授，および同研究室の村岡君に深く感謝いたします.
+また,実験に協力いただいた電子工学科の31名にも感謝いたします.
 
 \begin{thebibliography}{99}
 
@@ -720,6 +894,7 @@
 
 	\bibitem{ref:3}
 	mediVR.Inc.,https://www.medivr.jp/
+	閲覧日 2023/07/04
 	
 
 	\bibitem{ref:4}
@@ -735,10 +910,12 @@
 	H2L.Inc.,Tokyo106-0032,Japan;satoshi.hosono@h2l.jp
 
 	\bibitem{ref:7}
-
+	JEOL,``平滑化(スムージング)''\\
+	https://www.jeol.co.jp/words/emterms/20121023.094657.html\#gsc.tab=0
 
 \end{thebibliography}
 \chapter*{付録}
+\addcontentsline{toc}{chapter}{付録}
 
 %ページ番号をローマ数字で表示
 \pagenumbering{roman}
