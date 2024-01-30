@@ -13,6 +13,7 @@
 \usepackage{subcaption}
 \usepackage{float}
 \usepackage{listings,jvlisting}
+
 \lstset{
 	basicstyle={\ttfamily},
 	identifierstyle={\small},
@@ -138,49 +139,49 @@
 	肢痛緩和効果に着目し3Dスキャナで取り込んだ仮想筋電義手3Dモデル
 	(VH:Virtual Hand)を用いたVRトレーニングシステムを構成し，VHの
 	見た目によって訓練効果に変化があるかを評価することを目的とする．
-	加えて,このトレーニングシステムのインタフェースに``FirstVR''
+	加えて,このトレーニングシステムのインタフェースに``FirstVR''\cite{ref:3}
 	を用いることで，実際の筋電義手や高価な筋電センサ使用することな
 	く，安価で訓練が行えると考えたため,FirstVRによる訓練効果の影響を
 	調べるために前段階として定性評価を行い,入力インターフェースに
 	よる没入感や操作性などの違いを調査することにした.
-	また，近年では``カグラ''\cite{ref:3}という医療機器は上肢機能障害者
+	また，近年では``カグラ''\cite{ref:4}という医療機器は上肢機能障害者
 	のリハビリテーションのために運用されるなどVRトレーニングシステムは
 	義手装具者以外にも需要が高まっている．本研究は2023年度，神戸高専
-	Digital Faburication Labに新規導入されたハンディ3Dスキャナ``Ein Scan HX''\cite{ref:4}の活用方法の一例として後続の研究に
+	Digital Faburication Labに新規導入されたハンディ3Dスキャナ``Ein Scan HX''\cite{ref:5}の活用方法の一例として後続の研究に
 	利用していただきたい.
 
 	本論文の構成として第2章,第3章で3Dモデルの製作やUnity・FirstVRについて
 	解説を行う.そして,第4章に研究手法を提示し,第5章に研究結果を示す.
-	
+
 \clearpage
 	\section{関連研究}
 		FirstVRを用いた関連研究としては足にFirstVRを装着することで足の筋変位による
-		足の接地状態の検出を行う研究\cite{ref:5}が行われている.この研究では
+		足の接地状態の検出を行う研究\cite{ref:6}が行われている.この研究では
 		図\refeq{fig:RR-FVRcalibration}の歩行状態を7段階に分割した姿勢をFirstVRにそれぞれ学習させ,加えてジャイロセ
 		ンサを用いてどの姿勢が足の接地状態(立脚期)の検出に最適なのかを調査されている.
 		\begin{figure}[H]
 		\centering
 		\includegraphics[width = 8cm]{../figs/sensors-21-01081-g004.jpg}
-		\caption{歩行位相検出アルゴリズムのキャリブレーション姿勢}
+		\caption{歩行位相検出アルゴリズムのキャリブレーション姿勢\\出典元:}
 		\label{fig:RR-FVRcalibration}
 		\end{figure}
-		
-		足の浮遊状態(遊脚期)の検出には体軸よりも足が後ろになっている状態が検出精度が高くなる
-		傾向にあるということが報告されており,その姿勢状態を学習させて被験者10名(男性6名,女性4名)
+
+		\cite{ref:6}によると，足の浮遊状態(遊脚期)の検出には体軸よりも足が後ろになっている状態が検出精度が高くなる
+		傾向にあるということが報告されており,その姿勢状態を学習させて実験協力者10名(男性6名,女性4名)
 		にトレッドミルを用いて歩行データを計測されていた.図\refeq{fig:RR-malefemale}に男女別の
 		遊脚期(Swing phase)と立脚期(Stance phase)の陽性率を示す.
 
 		\begin{figure}[H]
 		\centering
 		\includegraphics[width = 8cm]{../figs/sensors-21-01081-g010.jpg}
-		\caption{男性(左)と女性(右)の立脚期と遊脚期の陽性率}
+		\caption{男性(左)と女性(右)の立脚期と遊脚期の陽性率\\出典元:}
 		\label{fig:RR-malefemale}
 		\end{figure}
 
 		図\refeq{fig:RR-malefemale}の結果より,立脚期の検出精度中央値は90％であり,
 		歩行位相検出システムとして十分な結果を得られている.しかし,この方式では
 		女性の遊脚期の検出精度が低いことから個人の筋肉量に検出精度が依存している
-		といった課題が挙げられている.
+		といった課題がこの研究によって報告されている.
 
 
 
@@ -202,7 +203,7 @@
 		\end{figure}
 
 		\subsection{製品仕様}
-			\cite{ref:4}から参照したEinScanの製品仕様を図\refeq{fig:EinScan}に示す.
+			\cite{ref:4}から引用したEinScanの製品仕様を図\refeq{fig:EinScan}に示す.
 			\begin{table}[H]
 			\begin{center}
 			\caption{EinScan HXの製品仕様}
@@ -425,7 +426,7 @@
 	\end{tabular}
 	\end{center}
 	\end{table}
-	以下に本研究で使用したソフトウェアを表\refeq{tab:usesoft}に示す.
+	本研究で使用したソフトウェアを表\refeq{tab:usesoft}に示す.
 	\begin{table}[H]
 	\begin{center}
 	\caption{使用ソフトウェア}
@@ -464,7 +465,7 @@
 		\begin{enumerate}
 			\item 装着位置の決定\\
 				FirstVRの動作原理より，赤外線で筋変位を取得しているため，かなり密着させて装着する必要がある．
-				そのため本研究では，筋肉量が一番多い位置を肘から前腕の1/4程度の距離と推定し，被験者の肘から手首までの長さを測定し,
+				そのため本研究では，筋肉量が一番多い位置を肘から前腕の1/4程度の距離と推定し，実験協力者の肘から手首までの長さを測定し,
 				肘を原点に1/4の距離(約7cm)で装着した
 			\item FirstVRの接続と学習\\
 				端末とFirstVRを接続し,測定するsample数でジェスチャをしていない状態とジェスチャしている状態を学習させた．
@@ -475,7 +476,7 @@
 				\label{fig:firstVRtest}
 				\end{figure}
 			\item FirstVRの測定\\
-				ジェスチャをしていない状態の筋変位センサの値を1回測定し，手を握るジェスチャのセンサ値の変化量を5回測定した.
+				ジェスチャをしていない状態の筋変位センサの値を1回測定し，グーのジェスチャにおけるセンサ値の変化量を5回測定した.
 			\item FirstVRのジェスチャ保持特性の検証\\
 				ノイズの少なかったsample数を選出し,ジェスチャ状態で手の角度を上下左右に動かした場合のジェスチャ状態の変化を
 				動画に撮影して検証した．
@@ -484,14 +485,26 @@
 		ノイズの判定方法は実際の腕の動作とアプリケーションの表示が異なる場合にノイズと判定した.
 		sample数の選出はノイズの回数が同数だった場合はシミュレータの負荷軽減のためにsample数が少ない方を選出した.
 
-		最終的なsample数の選定方法としてFirstVRで筋変位を測定した14チャンネル光変位センサの測定値を用いてジェスチャ認識の精度を確認するため,
-		各被験者・各sample数ごとの評価指標として総変化量$X$を定めた．総変化量の算出は測定回数s:1～5,チャンネル数r:0～13としてジェスチャ状態で測定した筋変位センサの値を$M_{{s}{r}}$
-		とジェスチャしていない状態の筋変位センサの値$N_{r}$とすると
+		各実験協力者におけるジェスチャ認識率$G_{s}$は各sample数$D = 11$，ジェスチャ誤判定の回数$m$として，測定回数$s = 5$のとき式\refeq{eq:gestureprobability1}によって求められる．
 		\begin{equation}
+			\label{eq:gestureprobability1}
+			G_{r} = \left( 1-\frac{m}{D \times s} \right) \times 100 \, [％]
+		\end{equation}
+		また，各sample数におけるジェスチャ認識率は実験協力者$n = 31$として同様に式\refeq{eq:gestureprobability2}で求められる.
+		\begin{equation}
+			\label{eq:gestureprobability2}
+			G_{s} = \left( 1-\frac{m}{n \times s} \right) \times 100 \, [％]
+		\end{equation}
+		これらを用いて，ジェスチャの認識率を比較し，最適なsample数の検討を行った．
+		
+		加えて,FirstVRで筋変位を測定した14チャンネル光変位センサの測定値を用いてジェスチャ認識の精度を確認するため,
+		各実験協力者・各sample数ごとの評価指標として総変化量$X$を定めた．総変化量の算出は測定回数$s = 5$,チャンネル数$r = 14$としてジェスチャ状態で測定した筋変位センサの値を$M_{{s}{r}}$
+		とジェスチャしていない状態の筋変位センサの値$N_{r}$とすると式\refeq{eq:originaldata}と示すことができる．
+		\begin{equation}
+			\label{eq:originaldata}
 			X = \frac{1}{5} \sum_{s = 1}^{5} \sum_{r = 0}^{13} |N_{r} - M_{{s}{r}}|
 		\end{equation}
-		と示すことができる．この評価指標を用いて各sample数ごとに分散を調べることにより，どのsample数をシミュレータで用いるかを検討した．
-	
+		この評価指標を用いて各sample数ごとに分散を調べ，最適なsample数の検討を行った
 	\section{シミュレータの構成}
 		Blenderで処理したVHをUnityにインポートし,保持可能オブジェクトを球体,円柱,立方体の3つ用意し,
 		大別してplayer,stage,UIの構成にした.構成図は後日書きます.
@@ -674,7 +687,7 @@
 		
 		図\refeq{fig:FirstVRevaluation}のようにジェスチャ状態を1回,ジェスチャしていない状態を5回
 		測定し,それを各sample数で繰り返した.全員分のデータは記載することができないため付録にあるQRコードから
-		FVRDataFilesを開いてもらうと各被験者のデータが閲覧できるようになっている.
+		FVRDataFilesを開いてもらうと各実験協力者のデータが閲覧できるようになっている.
 		データの傾向としては,ジェスチャ状態の登録の際,強く握りすぎない方がジェスチャ認識のノイズが低減した.
 
 \clearpage
@@ -699,14 +712,81 @@
 		右側のResetボタン下部にある項目で学習させるsample数を設定でき,その右方には学習回数が記録される.
 		また,sample数の項目の下部には学習時間を設定することができる.
 		FirstVRの性能評価は簡易のために学習時間を1に固定してsample数のみを変化させた.
-		ジェスチャ判定時には画面右下のバーが白色から緑色に変化するため,筋変位センサの測定値は
-		バーの色が切り替わるタイミングに統一して測定した.
+		ジェスチャ判定時には画面右下のバーが白色から緑色に変化するため,ジェスチャをした瞬間の筋変位センサの値を測定し，
+		そのタイミングでバーの色が変化していなければジェスチャ認識ができていないものとした．
+
+\clearpage
+		各実験協力者におけるジェスチャ認識率を表\refeq{tab:gestureprobability1}に示す．
+		\begin{table}[H]
+		\begin{center}
+		\caption{各実験協力者におけるジェスチャ認識率}
+		\label{tab:gestureprobability1}
+		\begin{tabular}{cSS} \toprule
+		実験協力者& 誤検知回数累計\,[回] & ジェスチャ認識率\,[％] \\ \hline
+		1 & 4 & 92.73 \\
+		2 & 0 & 100.00 \\
+		3 & 1 & 98.18 \\
+		4 & 3 & 94.55 \\
+		5 & 0 & 100.00 \\
+		6 & 3 & 94.55 \\
+		7 & 0 & 100.00 \\
+		8 & 0 & 100.00 \\
+		9 & 4 & 92.73 \\
+		10 & 17 & 69.09 \\
+		11 & 0 & 100.00 \\
+		12 & 0 & 100.00 \\
+		14 & 0 & 100.00 \\
+		16 & 16 & 70.91 \\
+		17 & 0 & 100.00 \\
+		18 & 0 & 100.00 \\
+		19 & 2 & 96.36 \\
+		20 & 3 & 94.55 \\
+		21 & 27 & 50.91 \\
+		23 & 1 & 98.18 \\
+		24 & 3 & 94.55 \\
+		25 & 1 & 98.18 \\
+		26 & 0 & 100.00 \\
+		27 & 5 & 90.91 \\
+		28 & 7 & 87.27 \\
+		32 & 1 & 98.18 \\
+		34 & 0 & 100.00 \\
+		35 & 2 & 96.36 \\
+		36 & 1 & 98.18 \\
+		38 & 14 & 74.55 \\
+		41 & 4 & 92.73 \\ \bottomrule
+		\end{tabular}
+		\end{center}
+		\end{table}
+
+
+		各sample数ごとのジェスチャ認識率を表\refeq{tab:gestureprobability2}に示す．
+		\begin{table}[H]
+		\begin{center}
+		\caption{sample数ごとのジェスチャ認識率}
+		\label{tab:gestureprobability2}
+		\begin{tabular}{cSS} \toprule
+			sample数& 誤検知累計\,[回] & ジェスチャ認識率\,[％] \\ \hline
+			7 & 25 & 83.87 \\
+			10 & 15 & 90.32 \\
+			20 & 15 & 90.32 \\
+			30 & 9 & 94.19 \\
+			40 & 11 & 92.90 \\
+			50 & 12 & 92.26 \\
+			60 & 10 & 93.55 \\
+			70 & 5 & 96.77 \\
+			80 & 3 & 98.06 \\
+			90 & 8 & 94.84 \\
+			100 & 6 & 96.13 \\
+			計 & 119 & 93.02 \\ \bottomrule
+		\end{tabular}
+		\end{center}
+		\end{table}
 
 \clearpage
 		FirstVRのsample数における総変化量を表\refeq{tab:FVRdata}に示す.
 		\begin{table}[H]
 		\begin{center}
-		\caption{各被験者におけるsample数ごとの総変化量一覧}
+		\caption{各実験協力者におけるsample数ごとの総変化量一覧}
 		\label{tab:FVRdata}
 		\begin{tabular}{c|ccccccccccc} \toprule
 			num/sample & 7 & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100 \\ \hline
@@ -741,13 +821,14 @@
 			36 & 32.6 & 29.8 & 21.6 & 19.0 & 22.4 & 17.6 & 21.2 & 28.2 & 41.4 & 35.6 & 20.8 \\
 			38 & 23.2 & 8.0 & 13.6 & 23.2 & 21.2 & 25.4 & 24.0 & 12.6 & 16.0 & 24.4 & 17.8 \\
 			41 & 44.4 & 25.6 & 21.8 & 19.4 & 12.2 & 12.6 & 13.4 & 22.4 & 8.2 & 11.8 & 27.2 \\
+			標本分散&189.9 & 287.3 & 375.3 & 315.9 & 259.9 & 241.7 & 252.4 & 143.3 & 256.2 & 290.8 & 196.0 \\
 			\bottomrule
 		\end{tabular}
 		\end{center}
 		\end{table}
 
 		総変化量が10前後の数値ではFirstVRがジェスチャに対してほとんど応答していなかった.
-		この結果を用いて,同sample数における被験者ごとの数値の分散が少ないsample数が最適としたため,
+		この結果を用いて,同sample数における実験協力者ごとの数値の分散が少ないsample数が最適としたため,
 		図\refeq{fig:FVRdata}に各sample数の分散を示す.
 
 		\begin{figure}[H]
@@ -756,6 +837,8 @@
 		\caption{sample数ごとの総変化量分散}
 		\label{fig:FVRdata}
 		\end{figure}
+
+	
 
 	\section{シミュレータの構成}
 
@@ -854,7 +937,14 @@
 		\caption{操作遅延の評価比較}
 		\end{figure}
 
-\chapter{まとめと今後の課題}
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width = 12cm]{../figs/result.png}
+		\caption{シミュレータ定性評価のコメント}
+		\label{fig:comment}
+		\end{figure}
+
+\chapter{まとめと今後の展望}
 	本研究ではPC版のシミュレータとiOS版のシミュレータの2種類を作製し,健常者に
 	体験してもらい,その定性評価を行うことでFirstVRを用いたシミュレータの方が没入感
 	が高い傾向があることを示した.しかし,操作性の点ではキーボード・マウスと明確な
@@ -887,8 +977,8 @@
 
 \chapter*{謝辞}
 \addcontentsline{toc}{chapter}{謝辞}
-一年間丁寧に指導していただいた戸崎哲也教授，および同研究室の村岡君に深く感謝いたします.
-また,実験に協力いただいた電子工学科の31名にも感謝いたします.
+一年間丁寧に指導していただいた戸崎 哲也教授，および同研究室の村岡 永遠君に深く感謝いたします.
+また,実験に協力いただいた電子工学科の31名にも深く感謝いたします.
 
 \begin{thebibliography}{99}
 
@@ -904,21 +994,23 @@
 	Pain Med. 2019 May.
 
 	\bibitem{ref:3}
+	H2L.Inc.,Tokyo106-0032,Japan;satoshi.hosono@h2l.jp
+
+
+	\bibitem{ref:4}
 	mediVR.Inc.,https://www.medivr.jp/
 	閲覧日 2023/07/04
 	
-
-	\bibitem{ref:4}
-	株式会社サンステラ, https://www.einscan.jp/einscan-hx
 	
 	\bibitem{ref:5}
+	株式会社サンステラ, https://www.einscan.jp/einscan-hx
+
+
+	\bibitem{ref:6}
 	Tamon Miyake, et.al.``Gait Phase Detection Based on Muscle Deformation
 	with Static Standing-Based Calibration''.
 	MDPI. 2021 Feb
 
-
-	\bibitem{ref:6}
-	H2L.Inc.,Tokyo106-0032,Japan;satoshi.hosono@h2l.jp
 
 	\bibitem{ref:7}
 	JEOL,``平滑化(スムージング)''\\
