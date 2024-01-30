@@ -506,7 +506,7 @@
 
 		
 	\section{シミュレータの定性評価}
-		電子工学科学生10名に協力していただき,PC版シミュレータとiOS版シミュレータの2種類を操作説明の後,
+		電子工学科学生11名に協力していただき,PC版シミュレータとiOS版シミュレータの2種類を操作説明の後,
 		5分程度体験していただき,各シミュレータの①没入感②操作性③入力遅延の3項目について6段階の定性評価
 		アンケート調査を行った.評価点数が高いほどそれぞれの項目において高得点の評価となるように設定している.
 
@@ -679,24 +679,31 @@
 
 \clearpage
 
-		FirstVRの性能評価用アプリケーションの構成を図\refeq{}
+		FirstVRの性能評価用アプリケーションの構成を図\refeq{fig:FirstVRapplication}に示す．
 		\begin{figure}[H]
 		\centering
 		\begin{minipage}{0.75\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/IMG_1866.PNG}
+		\subcaption{ジェスチャ未判定時}
 		\end{minipage}
 		\hspace{0.04\columnwidth}
 		\begin{minipage}{0.75\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/IMG_1867.PNG}
+		\subcaption{ジェスチャ判定時}
 		\end{minipage}
 		\caption{FirstVR性能評価用アプリケーションの構成}
 		\label{fig:FirstVRapplication}
 		\end{figure}
+		右側のResetボタン下部にある項目で学習させるsample数を設定でき,その右方には学習回数が記録される.
+		また,sample数の項目の下部には学習時間を設定することができる.
+		FirstVRの性能評価は簡易のために学習時間を1に固定してsample数のみを変化させた.
+		ジェスチャ判定時には画面右下のバーが白色から緑色に変化するため,筋変位センサの測定値は
+		バーの色が切り替わるタイミングに統一して測定した.
 
-		
-
+\clearpage
+		FirstVRのsample数における総変化量を表\refeq{tab:FVRdata}に示す.
 		\begin{table}[H]
 		\begin{center}
 		\caption{各被験者におけるsample数ごとの総変化量一覧}
@@ -739,9 +746,13 @@
 		\end{center}
 		\end{table}
 
+		総変化量が10前後の数値ではFirstVRがジェスチャに対してほとんど応答していなかった.
+		この結果を用いて,同sample数における被験者ごとの数値の分散が少ないsample数が最適としたため,
+		図\refeq{fig:FVRdata}に各sample数の分散を示す.
+
 		\begin{figure}[H]
 		\centering
-		\includegraphics[width = 14cm]{../figs/FVRALL.png}
+		\includegraphics[width = 12cm]{../figs/FVRALL.png}
 		\caption{sample数ごとの総変化量分散}
 		\label{fig:FVRdata}
 		\end{figure}
@@ -803,12 +814,12 @@
 
 		\begin{figure}[H]
 		\centering
-		\begin{minipage}{0.75\columnwidth}
+		\begin{minipage}{0.45\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/PC-1.png}
 		\end{minipage}
 		\hspace{0.04\columnwidth}
-		\begin{minipage}{0.75\columnwidth}
+		\begin{minipage}{0.45\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/iOS-1.png}
 		\end{minipage}
@@ -817,12 +828,12 @@
 
 		\begin{figure}[H]
 		\centering
-		\begin{minipage}{0.75\columnwidth}
+		\begin{minipage}{0.45\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/PC-2.png}
 		\end{minipage}
 		\hspace{0.04\columnwidth}
-		\begin{minipage}{0.75\columnwidth}
+		\begin{minipage}{0.45\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/iOS-2.png}
 		\end{minipage}
@@ -831,12 +842,12 @@
 
 		\begin{figure}[H]
 		\centering
-		\begin{minipage}{0.75\columnwidth}
+		\begin{minipage}{0.45\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/PC-3.png}
 		\end{minipage}
 		\hspace{0.04\columnwidth}
-		\begin{minipage}{0.75\columnwidth}
+		\begin{minipage}{0.45\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/iOS-3.png}
 		\end{minipage}
