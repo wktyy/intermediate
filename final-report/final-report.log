@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.4.5)  31 JAN 2024 09:46
+This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.4.5)  31 JAN 2024 10:33
  system commands enabled.
  file:line:error style messages enabled.
 **/home/kawai/Soturon/report/intermediate/final-report/final-report
@@ -1178,7 +1178,7 @@ Package luatex.def Info: ../figs/IMG_1867.PNG  used on input line 726.
 <../figs/FVRALL.png, id=135, 578.379pt x 280.101pt>
 File: ../figs/FVRALL.png Graphic file (type png)
 <use ../figs/FVRALL.png>
-Package luatex.def Info: ../figs/FVRALL.png  used on input line 856.
+Package luatex.def Info: ../figs/FVRALL.png  used on input line 860.
 (luatex.def)             Requested size: 341.43306pt x 165.3479pt.
  [19
 
@@ -1186,40 +1186,40 @@ Package luatex.def Info: ../figs/FVRALL.png  used on input line 856.
 <../figs/PCnomal.png, id=139, 1927.2pt x 1084.05pt>
 File: ../figs/PCnomal.png Graphic file (type png)
 <use ../figs/PCnomal.png>
-Package luatex.def Info: ../figs/PCnomal.png  used on input line 869.
+Package luatex.def Info: ../figs/PCnomal.png  used on input line 873.
 (luatex.def)             Requested size: 340.1309pt x 191.31609pt.
 <../figs/PCmenu.png, id=140, 1927.2pt x 1084.05pt>
 File: ../figs/PCmenu.png Graphic file (type png)
 <use ../figs/PCmenu.png>
-Package luatex.def Info: ../figs/PCmenu.png  used on input line 874.
+Package luatex.def Info: ../figs/PCmenu.png  used on input line 878.
 (luatex.def)             Requested size: 340.1309pt x 191.31609pt.
 <../figs/iOSnomal.png, id=141, 1206.75844pt x 563.85657pt>
 File: ../figs/iOSnomal.png Graphic file (type png)
 <use ../figs/iOSnomal.png>
-Package luatex.def Info: ../figs/iOSnomal.png  used on input line 883.
+Package luatex.def Info: ../figs/iOSnomal.png  used on input line 887.
 (luatex.def)             Requested size: 340.1309pt x 158.91982pt.
 <../figs/iOSmenu.png, id=142, 1207.51125pt x 578.16pt>
 File: ../figs/iOSmenu.png Graphic file (type png)
 <use ../figs/iOSmenu.png>
-Package luatex.def Info: ../figs/iOSmenu.png  used on input line 889.
+Package luatex.def Info: ../figs/iOSmenu.png  used on input line 893.
 (luatex.def)             Requested size: 340.1309pt x 162.85411pt.
  [20<../figs/FVRALL.png><../figs/PCnomal.png><../figs/PCmenu.png>]
 <../figs/UnityObject.png, id=149, 286.82156pt x 564.60938pt>
 File: ../figs/UnityObject.png Graphic file (type png)
 <use ../figs/UnityObject.png>
-Package luatex.def Info: ../figs/UnityObject.png  used on input line 898.
+Package luatex.def Info: ../figs/UnityObject.png  used on input line 902.
 (luatex.def)             Requested size: 227.62204pt x 448.08693pt.
  [21<../figs/iOSnomal.png><../figs/iOSmenu.png>]
 warning  (file ../figs/IMG_5132.JPG) (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolution 300dpi x 300dpi
 <../figs/IMG_5132.JPG, id=155, 4047.12pt x 3035.34pt>
 File: ../figs/IMG_5132.JPG Graphic file (type jpg)
 <use ../figs/IMG_5132.JPG>
-Package luatex.def Info: ../figs/IMG_5132.JPG  used on input line 906.
+Package luatex.def Info: ../figs/IMG_5132.JPG  used on input line 910.
 (luatex.def)             Requested size: 227.62204pt x 170.6726pt.
 <../figs/IMG_6323.jpg, id=156, 4047.12pt x 3035.34pt>
 File: ../figs/IMG_6323.jpg Graphic file (type jpg)
 <use ../figs/IMG_6323.jpg>
-Package luatex.def Info: ../figs/IMG_6323.jpg  used on input line 913.
+Package luatex.def Info: ../figs/IMG_6323.jpg  used on input line 917.
 (luatex.def)             Requested size: 227.62204pt x 170.6726pt.
 [22<../figs/UnityObject.png><../figs/IMG_5132.JPG
 warning  (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolution 300dpi x 300dpi
@@ -1227,42 +1227,42 @@ warning  (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolut
 <../figs/PC-1.png, id=161, 602.25pt x 372.39125pt>
 File: ../figs/PC-1.png Graphic file (type png)
 <use ../figs/PC-1.png>
-Package luatex.def Info: ../figs/PC-1.png  used on input line 922.
+Package luatex.def Info: ../figs/PC-1.png  used on input line 926.
 (luatex.def)             Requested size: 204.07715pt x 126.18518pt.
 <../figs/iOS-1.png, id=162, 602.25pt x 372.39125pt>
 File: ../figs/iOS-1.png Graphic file (type png)
 <use ../figs/iOS-1.png>
-Package luatex.def Info: ../figs/iOS-1.png  used on input line 927.
+Package luatex.def Info: ../figs/iOS-1.png  used on input line 931.
 (luatex.def)             Requested size: 204.07715pt x 126.18518pt.
 <../figs/PC-2.png, id=163, 602.25pt x 372.39125pt>
 File: ../figs/PC-2.png Graphic file (type png)
 <use ../figs/PC-2.png>
-Package luatex.def Info: ../figs/PC-2.png  used on input line 936.
+Package luatex.def Info: ../figs/PC-2.png  used on input line 940.
 (luatex.def)             Requested size: 204.07715pt x 126.18518pt.
 <../figs/iOS-2.png, id=164, 602.25pt x 372.39125pt>
 File: ../figs/iOS-2.png Graphic file (type png)
 <use ../figs/iOS-2.png>
-Package luatex.def Info: ../figs/iOS-2.png  used on input line 941.
+Package luatex.def Info: ../figs/iOS-2.png  used on input line 945.
 (luatex.def)             Requested size: 204.07715pt x 126.18518pt.
 <../figs/PC-3.png, id=165, 602.25pt x 372.39125pt>
 File: ../figs/PC-3.png Graphic file (type png)
 <use ../figs/PC-3.png>
-Package luatex.def Info: ../figs/PC-3.png  used on input line 950.
+Package luatex.def Info: ../figs/PC-3.png  used on input line 954.
 (luatex.def)             Requested size: 204.07715pt x 126.18518pt.
 <../figs/iOS-3.png, id=166, 602.25pt x 372.39125pt>
 File: ../figs/iOS-3.png Graphic file (type png)
 <use ../figs/iOS-3.png>
-Package luatex.def Info: ../figs/iOS-3.png  used on input line 955.
+Package luatex.def Info: ../figs/iOS-3.png  used on input line 959.
 (luatex.def)             Requested size: 204.07715pt x 126.18518pt.
 <../figs/result.png, id=167, 432.86719pt x 169.38281pt>
 File: ../figs/result.png Graphic file (type png)
 <use ../figs/result.png>
-Package luatex.def Info: ../figs/result.png  used on input line 962.
+Package luatex.def Info: ../figs/result.png  used on input line 966.
 (luatex.def)             Requested size: 341.43306pt x 133.60934pt.
  [23<../figs/IMG_6323.jpg><../figs/PC-1.png><../figs/iOS-1.png><../figs/PC-2.png><../figs/iOS-2.png><../figs/PC-3.png><../figs/iOS-3.png>] [24<../figs/result.png>]
 第6章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 967--967
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 971--971
 ||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 6 |\JY3/mc/b/n/20.74 章 []| 
  []
 
@@ -1278,9 +1278,9 @@ Removing  `ltj.process_input_buffer' from `process_input_buffer'.
 Inserting `ltj.listings_unicode' in `process_input_buffer'.
 Inserting `ltj.process_input_buffer' in `process_input_buffer'.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 1047.
+(Font)              scaled to size 8.32242pt on input line 1051.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 1047.
+(Font)              scaled to size 8.32242pt on input line 1051.
  [1
 
 ] [2] [3] [4]
@@ -1306,7 +1306,7 @@ Here is how much of LuaTeX's memory you used:
  68 fonts using 64648991 bytes
  118i,12n,128p,1820b,798s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on final-report.pdf (37 pages, 36373967 bytes).
+Output written on final-report.pdf (37 pages, 36375043 bytes).
 
 PDF statistics: 296 PDF objects out of 1000 (max. 8388607)
  138 compressed objects within 2 object streams
