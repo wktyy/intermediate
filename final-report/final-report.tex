@@ -171,7 +171,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		ンサを用いてどの姿勢が足の接地状態(立脚期)の検出に最適なのかを調査されている.
 		\begin{figure}[H]
 		\centering
-		\includegraphics[width = 7cm]{../figs/sensors-21-01081-g004.jpg}
+		\includegraphics[width = 8cm]{../figs/sensors-21-01081-g004.jpg}
 		\rightline{文献\cite{ref:6}より引用}
 		\caption{歩行位相検出アルゴリズムのキャリブレーション姿勢}
 		\label{fig:RR-FVRcalibration}
@@ -186,7 +186,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 
 		\begin{figure}[H]
 		\centering
-		\includegraphics[width = 7cm]{../figs/sensors-21-01081-g010.jpg}
+		\includegraphics[width = 8cm]{../figs/sensors-21-01081-g010.jpg}
 		\rightline{文献\cite{ref:6}より引用}
 		\caption{男性(左)と女性(右)の立脚期と遊脚期の陽性率\\}
 		\label{fig:RR-malefemale}
@@ -232,7 +232,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 			\begin{center}
 			\caption{EinScan HXの製品仕様}
 			\label{tab:EinScan}
-			\begin{tabular}{c|cc} \toprule
+			\begin{tabular}{c|cc}
 				スキャン形式&Rapidスキャン&レーザースキャン\\ \hline
 				スキャン精度&0.05\,mm&0.04\,mm\\
 				ポイント間隔&0.25～3.00\,mm&0.05～3.00\,mm\\
@@ -246,7 +246,6 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 				データ出力形式&\multicolumn{2}{c}{STL,OBJ,PLY,ASC,3MF,P3}\\
 				本体サイズ&\multicolumn{2}{c}{108×110×237\,mm}\\
 				本体重量&\multicolumn{2}{c}{710\,g}\\
-				\bottomrule
 			\end{tabular}
 			\rightline{文献\cite{ref:4}から引用}
 			\end{center}
@@ -346,19 +345,24 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 			オブジェクト保持状態を表現するためにVHにオブジェクトごとの保持アニメーションを作製した.
 			Unityにおけるアニメーションは各オブジェクトの動きを記録し,再生フラグが立った場合にアニメーションが再生されるようになっている.
 			また,アニメーションを作製する際,初期状態とアニメーションした後のオブジェクトの位置を記録することで
-			自動的にその移動が補完されるようになっている.
+			自動的にその移動が補完されるようになっている.図\refeq{fig:animationclip}にアニメーションクリップ機能の画面を示す.
+
 			\begin{figure}[H]
 			\centering
 			\includegraphics[width = 12cm]{../figs/animationclip.png}
-			\caption{}
-			\label{}
+			\caption{アニメーションクリップ機能}
+			\label{fig:animationclip}
 			\end{figure}
+
+			複数のアニメーションの状態遷移を制御する役割としてアニメーター機能がUnityに備わっている.
+			図\refeq{fig:animater}ではシーンの実行直後に緑色ブロックのEntryからオレンジブロックのGrapSphereに遷移し,
+			アニメーションが実行され,赤色ブロックのEndに遷移する.加えてアニメーター機能では,遷移条件を付加することも可能である.
 
 			\begin{figure}[H]
 			\centering
 			\includegraphics[width = 12cm]{../figs/animaterexample.png}
-			\caption{}
-			\label{}
+			\caption{アニメーター機能}
+			\label{fig:animater}
 			\end{figure}
 			
 			図\refeq{fig:ObjectHold}にオブジェクト保持表現のアニメーションを示す.
@@ -700,11 +704,13 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		しかし,保持アニメーションを行う際,オブジェクトの位置はVHの位置に紐付けられるのだが,オブジェクトの回転までは制御していないので
 		円柱や立方体は保持する角度によって指や掌を貫通するような掴み方になってしまう.
 
+		アニメーター構成は図\refeq{fig:Handanimater}のようになっており,各アニメーションの遷移フラグとしてgrap\_sphere1,\\
+		grap\_cylinder1,grap\_cube1を用意した.何もしていない状態でnutralというアニメーションクリップをループ再生し続け,衝突判定とオブジェクト保持のフラグが両方立った場合に
 		\begin{figure}[H]
 		\centering
 		\includegraphics[width = 12cm]{../figs/Handanimater.png}
-		\caption{}
-		\label{}
+		\caption{アニメーター構成}
+		\label{fig:Handanimater}
 		\end{figure}
 
 	\section{FirstVRの性能評価}
@@ -765,6 +771,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		そのタイミングでバーの色が変化していなければジェスチャ認識ができていないものとした．
 
 \clearpage
+
 		各実験協力者におけるジェスチャ認識率を表\refeq{tab:gestureprobability1}に示す．
 		\begin{table}[H]
 		\begin{center}
