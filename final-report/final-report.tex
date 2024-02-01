@@ -1049,8 +1049,11 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 				PC版と同様に，メインメニューから遷移可能で,VHのトラッキングの速度を調整する機能である.
 			\item Calibrater\\
 				FirstVRのジェスチャ学習のために配置している.
-				
+				sample数や学習時間を変更することが可能で,本研究で最適とした
+				sample数7を用いて学習させる.
 			\item DebagTools\\
+				FirstVRのスワイプ方向や回転方向を確認できる．
+				また，筋変位センサの測定値を確認することも可能である.
 		\end{enumerate}
 
 	\section{シミュレータの定性評価}
@@ -1085,35 +1088,39 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\begin{minipage}{0.45\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/PC-1.png}
+		\subcaption{PC版アンケート結果}
 		\end{minipage}
 		\hspace{0.04\columnwidth}
 		\begin{minipage}{0.45\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/iOS-1.png}
+		\subcaption{iOS版アンケート結果}
 		\end{minipage}
 		\caption{没入感の評価比較}
 		\label{fig:botunyu}
 		\end{figure}
 		\vspace{-15pt}
-		PC版の平均値 3.36点 中央値は4点 最高値5点 最低値1点 標本分散
-		iOS版の平均値 3.90点 中央値は4点 最高値6点 最低値1点 標本分散
+		PC版の平均値 3.36点 中央値4点 最高値5点 最低値1点 標本分散
+		iOS版の平均値 3.90点 中央値4点 最高値6点 最低値1点 標本分散
 
 		\begin{figure}[H]
 		\centering
 		\begin{minipage}{0.45\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/PC-2.png}
+		\subcaption{PC版アンケート結果}
 		\end{minipage}
 		\hspace{0.04\columnwidth}
 		\begin{minipage}{0.45\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/iOS-2.png}
+		\subcaption{iOS版アンケート結果}
 		\end{minipage}
 		\caption{操作性の評価比較}
 		\label{fig:sousasei}
 		\end{figure}
-		PC版の平均値 3.09点 中央値は点 最高値5点 最低値1点 標本分散
-		iOS版の平均値 3.90点 中央値は4点 最高値6点 最低値1点 標本分散
+		PC版の平均値 3.09点 中央値3点 最高値5点 最低値2点 標本分散
+		iOS版の平均値 点 中央値3点 最高値6点 最低値1点 標本分散
 
 
 		\begin{figure}[H]
@@ -1121,11 +1128,13 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\begin{minipage}{0.45\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/PC-3.png}
+		\subcaption{PC版アンケート結果}
 		\end{minipage}
 		\hspace{0.04\columnwidth}
 		\begin{minipage}{0.45\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/iOS-3.png}
+		\subcaption{iOS版アンケート結果}
 		\end{minipage}
 		\caption{操作遅延の評価比較}
 		\label{fig:tien}
