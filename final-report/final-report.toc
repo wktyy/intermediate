@@ -19,7 +19,7 @@
 \contentsline {section}{\numberline {2.4}FirstVR}{8}{}%
 \contentsline {subsection}{\numberline {2.4.1}デバイス構成}{8}{}%
 \contentsline {subsection}{\numberline {2.4.2}トラッキング}{8}{}%
-\contentsline {subsection}{\numberline {2.4.3}ジェスチャ認識}{8}{}%
+\contentsline {subsection}{\numberline {2.4.3}ジェスチャ認識/キャリブレーション}{8}{}%
 \contentsline {chapter}{\numberline {第3章}研究手順}{9}{}%
 \contentsline {section}{\numberline {3.1}使用器具}{9}{}%
 \contentsline {section}{\numberline {3.2}VHの3Dモデル取り込み}{9}{}%
@@ -33,11 +33,11 @@
 \contentsline {section}{\numberline {4.2}オブジェクト保持}{13}{}%
 \contentsline {section}{\numberline {4.3}FirstVRの性能評価}{15}{}%
 \contentsline {section}{\numberline {4.4}シミュレータの構成}{21}{}%
-\contentsline {section}{\numberline {4.5}シミュレータの定性評価}{22}{}%
-\contentsline {chapter}{\numberline {第5章}考察}{24}{}%
-\contentsline {chapter}{\numberline {第6章}おわりに}{25}{}%
-\contentsline {chapter}{謝辞}{26}{}%
-\contentsline {chapter}{参考文献}{27}{}%
+\contentsline {section}{\numberline {4.5}シミュレータの定性評価}{23}{}%
+\contentsline {chapter}{\numberline {第5章}考察}{26}{}%
+\contentsline {chapter}{\numberline {第6章}おわりに}{27}{}%
+\contentsline {chapter}{謝辞}{28}{}%
+\contentsline {chapter}{参考文献}{29}{}%
 \contentsline {chapter}{付録}{i}{}%
 \contentsline {section}{\numberline {A.1}測定データ}{i}{}%
 \contentsline {section}{\numberline {A.2}ソースコード}{i}{}%

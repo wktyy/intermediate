@@ -110,6 +110,7 @@
 \begin{center}
 \LARGE (論文要旨)
 \end{center}
+
 上肢切断者が筋電義手を装着し,日常生活で扱えるようになるには相応の訓練が必要とされる.
 この筋電義手の訓練を代替するものとして,仮想筋電義手シミュレータが先行研究によって開発
 されてきた.本研究では,先行研究で一般的に使用されていた配布されている仮想筋電義手3Dモ
@@ -178,6 +179,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\begin{figure}[H]
 		\centering
 		\includegraphics[width = 8cm]{../figs/sensors-21-01081-g004.jpg}
+		\hspace{-32truemm}
 		\rightline{文献\cite{ref:6}より引用}
 		\caption{歩行位相検出アルゴリズムのキャリブレーション姿勢}
 		\label{fig:RR-FVRcalibration}
@@ -193,6 +195,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\begin{figure}[H]
 		\centering
 		\includegraphics[width = 8cm]{../figs/sensors-21-01081-g010.jpg}
+		\hspace{-32truemm}
 		\rightline{文献\cite{ref:6}より引用}
 		\caption{男性(左)と女性(右)の立脚期と遊脚期の陽性率\\}
 		\label{fig:RR-malefemale}
@@ -231,7 +234,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\caption{EinScan HX}
 		\label{fig:EinScan}
 		\end{figure}
-
+\vspace{-15pt}
 		\subsection{製品仕様}
 			文献\cite{ref:4}から引用したEinScanの製品仕様を図\refeq{fig:EinScan}に示す.
 			\begin{table}[H]
@@ -253,8 +256,9 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 				本体サイズ&\multicolumn{2}{c}{108×110×237\,mm}\\
 				本体重量&\multicolumn{2}{c}{710\,g}\\ \Hline
 			\end{tabular}
-			\rightline{文献\cite{ref:4}から引用}
 			\end{center}
+			\hspace{-32truemm}
+			\rightline{文献\cite{ref:4}から引用}
 			\end{table}
 			ここで，被写体長3D精度というのはスキャン時に取得するポイントの
 			最大累積誤差を示したもので，測定する点数が増える場合や
@@ -265,7 +269,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		である．本研究では``EinScan HX''によって出力した.obj形式の3Dモデルを
 		編集する目的で使用した．次項からは本研究で用いたBlenderの機能について解説する．
 		\subsection{スムージング}
-			スムージング機能とは，\cite{ref:7}によると3Dオブジェクト等の点群データにおいて,ノイズを削減するために
+			スムージング機能とは，文献\cite{ref:7}によると3Dオブジェクト等の点群データにおいて,ノイズを削減するために
 			近傍データを用いて平均化処理を行い,データ点列をスムーズになるようにすることである.
 			Blenderでは,この処理をペイントツールのようにオブジェクトをなぞるだけでその軌跡に従うように平均化処理が行われている.
 			スムージング処理のイメージ画像を図\refeq{fig:smoothingEX}に示す.
@@ -274,15 +278,18 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 			\begin{minipage}{0.25\columnwidth}
 			\centering
 			\includegraphics[width = \columnwidth]{../figs/SmoothingBeforCube.png}
+			\subcaption{スムージング処理前}
 			\end{minipage}
 			\hspace{0.04\columnwidth}
 			\begin{minipage}{0.25\columnwidth}
 			\centering
 			\includegraphics[width = \columnwidth]{../figs/SmoothingAfterCube.png}
+			\subcaption{スムージング処理後}
 			\end{minipage}
 			\caption{頂点数35000点の立方体オブジェクトのスムージング処理比較}
 			\label{fig:smoothingEX}
 			\end{figure}
+\vspace{-15pt}
 		\subsection{ボーン構成}
 			ボーンは，3Dオブジェクトを変形させる際に頂点の移動を制御する支柱の役割を果たす機能である．
 			Unityにインポートした後に物体保持のアニメーションを作成する際,VHの変形を制御するために用いている．
@@ -292,16 +299,18 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 			\begin{minipage}{0.3\columnwidth}
 			\centering
 			\includegraphics[width = \columnwidth]{../figs/bone1.png}
+			\subcaption{ボーン変形前}
 			\end{minipage}
 			\hspace{0.04\columnwidth}
 			\begin{minipage}{0.3\columnwidth}
 			\centering
 			\includegraphics[width = \columnwidth]{../figs/bonecheck.png}
+			\subcaption{ボーン変形後}
 			\end{minipage}
 			\caption{ボーンによるメッシュ変形制御}
 			\label{fig:bonecontrol}
 			\end{figure}
-
+\vspace{-15pt}
 
 	\section{Unity}
 		Unityは，Unity Technologies社が提供するゲーム制作を中心とした統合開発環境のことで,主にスマートフォン向けゲームの制作に用いられている.
@@ -326,26 +335,27 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 			\caption{シェーダーによる3Dモデルの違い}
 			\label{fig:Shader}
 			\end{figure}
-
+\vspace{-15pt}
 		\subsection{衝突判定}
 			本研究では衝突判定にUnityに標準搭載されているColliderコンポーネントとRaycastコンポーネントを用いた
 			衝突判定を行った．次項にそれぞれの衝突判定の違いについて解説する．
+
 			\subsubsection{Collider}
 				Colliderコンポーネントにはオブジェクトの被衝突領域を設定する役割があり，
 				異なる2つのオブジェクトに付加されたColliderの領域が重なることで衝突フラグを立てる.
 				本研究ではPC版シミュレータにこの方式の衝突判定を用いている．
 
-		\subsubsection{Raycast}
-			Raycastコンポーネントはオブジェクトの中心から任意方向・任意長さに直線を引き,その直線と
-			Colliderコンポーネントを持つオブジェクトの被衝突領域が重なると衝突フラグを立てる.
-			本研究ではiOS版シミュレータにこの方式の衝突判定を用いている.
+			\subsubsection{Raycast}
+				Raycastコンポーネントはオブジェクトの中心から任意方向・任意長さに直線を引き,その直線と
+				Colliderコンポーネントを持つオブジェクトの被衝突領域が重なると衝突フラグを立てる.
+				本研究ではiOS版シミュレータにこの方式の衝突判定を用いている.
 			\begin{figure}[H]
 			\centering
 			\includegraphics[width = 12cm]{../figs/raycast.png}
 			\caption{Raycastのイメージ図}
 			\label{fig:Raycast}
 			\end{figure}
-
+\vspace{-15pt}
 			図\refeq{fig:Raycast}のように左側の立方体オブジェクトの中心から射出されている赤い直線がRayである.
 			この直線と右側の球体オブジェクトを囲う黄緑の領域がColliderコンポーネントの被衝突領域となっている.
 			なお,図\refeq{fig:Raycast}のRayやColliderは表示されないようになっている.
@@ -362,7 +372,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 			\caption{アニメーションクリップ機能}
 			\label{fig:animationclip}
 			\end{figure}
-
+\vspace{-15pt}
 			複数のアニメーションの状態遷移を制御する役割としてアニメーター機能がUnityに備わっている.
 			図\refeq{fig:animater}の動作ではシーンの実行直後に緑色ブロックのEntryからオレンジブロックのGrapSphereに遷移し,
 			アニメーションが実行され,赤色ブロックのEndに遷移する.アニメーター機能では,遷移条件を付加することも可能である.
@@ -373,7 +383,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 			\caption{アニメーター機能}
 			\label{fig:animater}
 			\end{figure}
-
+\vspace{-15pt}
 		\subsection{ビルド}
 			本項ではUnityで構成したシミュレータのビルド方法について解説する.
 			以下にビルドの手順を示す.
@@ -395,7 +405,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 			\caption{BuildSettings画面}
 			\label{fig:BuildSettings}
 			\end{figure}
-
+\vspace{-15pt}
 			iOSに関してはビルド・実行方法が異なるため,以下に解説する.
 			\subsubsection{iOSのビルド方法}
 				本項では,iOS用アプリの実行手順を以下に示す.
@@ -420,7 +430,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		FirstVRはH2L株式会社\cite{ref:5}によって開発・製造されている筋変位センサを用いたウェアラブルデバイスである.
 		この製品は現状iOSとAndroidのみ対応しており,アプリケーション開発をする際はH2Lから公開されている``FirstVR sdk''というUnity開発用APIが公開されている
 		\subsection{デバイス構成}
-				FirstVRの外観を図\refeq{fig:FirstVR}に示す。
+				FirstVRの外観を図\refeq{fig:FirstVR}に示す.
 				\begin{figure}[H]
 				\centering
 				\begin{minipage}{0.75\columnwidth}
@@ -437,17 +447,17 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 				\caption{FirstVR}
 				\label{fig:FirstVR}
 				\end{figure}
+\vspace{-15pt}
 
-\vspace{-5pt}
-			裏面には筋変位センサが14チャンネル配置されており,ここから装着した筋肉の変位を
+			図\refeq{fig:FirstVR}(b)のように裏面には筋変位センサが14チャンネル配置されており,ここから装着した筋肉の変位を
 			測定している.筋変位センサは近赤外線を射出し肌表面に反射させることで距離を測定し,
 			その値を筋変位センサの測定値として出力している.
 
 		\subsection{トラッキング}
-			FirtVRには3軸ジャイロセンサと加速度センサが搭載されており，Unityで作製したアプリ上で測定値を
+			FirstVRには3軸ジャイロセンサと加速度センサが搭載されており，Unityで作製したアプリ上で測定値を
 			確認することができる．本研究ではこのジャイロセンサを用いて，腕のピッチ，ヨー，ロールの3軸の
 			回転をシミュレータに反映させている．
-		\subsection{ジェスチャ認識}
+		\subsection{ジェスチャ認識/キャリブレーション}
 			FirstVRのジェスチャ認識方法は,ジェスチャ状態と非ジェスチャ状態における筋変位センサの
 			各チャンネルごとの値をサンプリングし,機械学習させることでジェスチャ状態のセンサ値を
 			しきい値としてジェスチャ認識を行っている.
@@ -486,6 +496,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 	\end{tabular}
 	\end{center}
 	\end{table}
+\vspace{-15pt}
 	\section{VHの3Dモデル取り込み}
 		ハンディ3DスキャナであるEinScan HXを用いて左腕をスキャンする.
 		本研究では，VHにテクスチャを貼って用いることを前提としているため，
@@ -499,16 +510,23 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		平坦にする効果があるスムージング処理を行う.また,アニメーション作製のために処理後の3D
 		モデルにボーンを配置する.
 
-	
 	\section{オブジェクト保持表現}
 		オブジェクト保持表現としてUnityのアニメーション機能を用いて保持可能な
 		球体・円柱・立方体の3つのオブジェクトごとのアニメーションを作製し,アニメーションクリップ機能を用いて
 		ジェスチャをしていない状態と各アニメーションを衝突判定と入力インターフェースによって遷移させる.
 
-
 	\section{FirstVRの性能評価手法}
-		本研究で構成するシミュレータの入力感度を検証するため,実験協力者として電子工学科の31名に以下の手順でFirstVRの評価を行う.
+		本研究で構成するシミュレータの入力感度を検証するため,実験協力者として電子工学科の31名を対象に以下の手順でFirstVRの評価を行う.
 		また,ジェスチャ状態は物体保持のアニメーションと同期させるため,じゃんけんのグーのジェスチャを学習させる.
+		FirstVR性能評価の配置図を図\refeq{fig:firstVRtest}に示す.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width = 8cm]{../figs/IMG_5202.PNG}
+			\caption{FirstVRの性能評価の参考図}
+			\label{fig:firstVRtest}
+		\end{figure}
+		\vspace{-15pt}
+
 		\begin{enumerate}
 			\item 装着位置の決定\\
 				FirstVRの動作原理より，近赤外線で筋変位を取得しているため，かなり密着させて装着する必要がある．
@@ -516,12 +534,6 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 				肘を原点に1/4の距離(約7cm)で装着する.
 			\item FirstVRの接続と学習\\
 				端末とFirstVRを接続し,測定するsample数でジェスチャをしていない状態とジェスチャしている状態を学習させた．
-				\begin{figure}[H]
-				\centering
-				\includegraphics[width = 8cm]{../figs/IMG_5202.PNG}
-				\caption{FirstVRの性能評価の参考図}
-				\label{fig:firstVRtest}
-				\end{figure}
 			\item FirstVRの測定\\
 				ジェスチャをしていない状態の筋変位センサの値を1回測定し，グーのジェスチャにおけるセンサ値の変化量を5回測定した.
 			\item FirstVRのジェスチャ保持特性の検証\\
@@ -532,6 +544,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		ノイズの判定方法は実際の腕の動作とアプリケーションの表示が異なる場合にノイズと判定した.
 		sample数の選出はノイズの回数が同数だった場合はシミュレータの負荷軽減のためにsample数が少ない方を選出する.
 
+		FirstVRの評価基準としてジェスチャ認識率と独自の評価指標による性能評価を行なった．
 		各実験協力者におけるジェスチャ認識率$G_{r}$は各sample数$D = 11$，ジェスチャ誤判定の回数$m$として，測定回数$s = 5$のとき式\refeq{eq:gestureprobability1}によって求められる．
 		\begin{equation}
 			\label{eq:gestureprobability1}
@@ -555,17 +568,28 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		
 	\section{シミュレータの構成}
 		Blenderで処理したVHをUnityにインポートし,保持可能オブジェクトを球体,円柱,立方体の3つ用意し,
-		大別してPLAYER,STAGE,UIの構成にする.
+		大別してPLAYER,STAGE,UIの構成にする.シミュレータは入力インターフェースとしてキーボード・マウス
+		を用いるPC版と,FirstVRを用いるiOS版の2種類を構成した.
+		図\refeq{fig:simuraterconst}にシミュレータの構成図を示す.
+
 		\begin{figure}[H]
 		\centering
 		\includegraphics[width = 12cm]{../figs/IMG_0340.JPG}
 		\caption{シミュレータ構成図}
 		\label{fig:simuraterconst}
 		\end{figure}
-		playerオブジェクトには右腕オブジェクトのRightArm,左腕オブジェクトのLeftArmとマウスカーソルを追従するtargetオブジェクトを含める.
-		また,各Armオブジェクトの掌にはColliderオブジェクトを配置して衝突判定を作成する.
+		\vspace{-15pt}
+		PLAYERにはVHとして左手用にLeftHand,右手用にRightHandのオブジェクト
+		を配置し,画面表示用にCameraオブジェクトを追加した.STAGEには保持可能
+		オブジェクト(Object)として球体(sphere),円柱(cylinder),立方体(cube)
+		を配置し,オブジェクトが落下し続けないようにGroundを配置している.
+		UIには主に設定画面やオブジェクト位置のリセット,PLAYERの操作などのシミュレータを
+		快適に扱えるようにするBottansと,FirstVRの接続やキャリブレーション
+		設定を行うFVRが配置されている.それぞれのオブジェクトにはシミュレータ
+		空間上で物理演算を付与しているため,オブジェクトの落下や回転はリアル
+		に行われるようになっている.ここで,PC版にはFirstVRの接続が必要ないため,
+		UIのFVR部分は実装していない.各機能については4.4節にて後述する.
 
-		
 	\section{シミュレータの定性評価手法}
 		電子工学科学生11名に協力していただき,PC版シミュレータとiOS版シミュレータの2種類の操作説明を説明した後,
 		5分程度体験してもらい,各シミュレータにおいて以下の3項目について6段階リッカート尺度を用いた定性評価
@@ -578,7 +602,6 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		評価点数が高いほどそれぞれの項目において高得点の評価となるように設定し,調査結果に対して分析を行う.
 
 \chapter{研究結果}
-	
 	\section{VH\,(Virtual Hand)の3Dモデル構成}
 		3Dスキャナで取り込んだ左腕3Dモデルと実際の左腕の比較を図\refeq{fig:hikaku}に示す.
 
@@ -602,11 +625,11 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\label{fig:hikaku}
 		\end{figure}
 
-		\vspace{-10pt}
+		\vspace{-15pt}
 
 		実際の左腕と比較して,手の甲の表現や筋の出方の表現がとても精巧に再現されているように感じられる.
-		しかし,多少腕周りの太さが細くなっているようにも見られる.また,図\refeq{fig:smoothingbefor}取り込んだ直後の3Dモデルでは撮影
-		時のノイズが含まれているため,Blenderのスムージング機能を用いて図\refeq{fig:smoothingafter}のように3Dモデルを平滑化した.
+		しかし,多少腕周りの太さが細くなっているようにも見られる.また,図\refeq{fig:smoothing}(a)取り込んだ直後の3Dモデルでは撮影
+		時のノイズが含まれているため,Blenderのスムージング機能を用いて図\refeq{fig:smoothing}(b)のように3Dモデルを平滑化した.
 
 		\begin{figure}[H]
 		\centering
@@ -623,12 +646,13 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\subcaption{処理後画像}
 		\label{fig:smoothingafter}
 		\end{minipage}
-		\caption{スムージング処理前後の3Dモデル比較}
+		\caption{スムージング処理前後のVHモデル比較}
 		\label{fig:smoothing}
 		\end{figure}
+		\vspace{-15pt}
 
-		図\refeq{fig:smoothing}より,図\refeq{fig:smoothingbefor}では小指や人差し指の先端部分のノイズが
-		見られるが,図\refeq{fig:smoothingafter}ではスムージング処理によりノイズが解消されていることが
+		図\refeq{fig:smoothing}(a)では小指や人差し指の先端部分に測定ノイズによる3Dモデルの凹凸が
+		見られるが,図\refeq{fig:smoothing}(b)ではスムージング処理により平滑化されていることが
 		わかる.
 
 		また,3DモデルをUnityにインポートする際,オブジェクト保持のアニメーションを作製するためにメッシュ
@@ -640,12 +664,11 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\label{fig:meshbone}
 		\end{figure}
 
-		図\refeq{fig:meshbone}より,ボーンは関節を目安に配置しており,各指の先端にはエンドボーンと呼ばれる
-		アニメーション制御用のボーンを追加した.このエンドボーンを移動させることで各指のボーン変形
-		を自動的に補完するようになっている.
+		図\refeq{fig:meshbone}より,ボーンは関節を目安に配置しており,各指の先端にはエンドボーンと
+		呼ばれるアニメーション制御用のボーンを追加した.このエンドボーンを移動させることで各指の
+		ボーン変形を自動的に補完するようになっている.
 
 	\section{オブジェクト保持}
-
 		球体,円柱,立方体のオブジェクト3種類の保持アニメーションを図\refeq{fig:spherehold}〜\refeq{fig:cubehold}に示す.
 
 		\begin{figure}[H]
@@ -681,6 +704,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\caption{円柱オブジェクトの保持表現}
 		\label{fig:cylinderhold}
 		\end{figure}
+		\vspace{-15pt}
 
 		\begin{figure}[H]
 		\centering
@@ -698,15 +722,13 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\caption{立方体オブジェクトの保持表現}
 		\label{fig:cubehold}
 		\end{figure}
+		\vspace{-15pt}
 		
 		オブジェクトが静止状態の場合でも動いている場合でも衝突条件を見たせばオブジェクトを保持することができる.
 		実際にボールや水筒などの形の似たものを掴んでいる写真を参考にアニメーションを作製したため,
 		かなり現実に近い掴み方をしているように見える.
 		しかし,保持アニメーションを行う際,オブジェクトの位置はVHの位置に紐付けられるのだが,オブジェクトの回転までは制御していないので
-		円柱や立方体は保持する角度によって指や掌を貫通するような掴み方になる.
-
-
-		アニメーター構成は図\refeq{fig:Handanimater}のようになっており,
+		円柱や立方体は保持する角度によって指や掌を貫通するような掴み方になる.次に,アニメーター構成を図\refeq{fig:Handanimater}に示す.
 
 		\begin{figure}[H]
 		\centering
@@ -714,10 +736,11 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\caption{アニメーター構成}
 		\label{fig:Handanimater}
 		\end{figure}
+		\vspace{-15pt}
 
 		各アニメーションの遷移フラグとしてgrap\_sphere1,
 		grap\_cylinder1,grap\_cube1を用意した.ジェスチャをしていない状態でnutralというなにもアニメーションをしないクリップをループ再生し続け,
-		衝突判定とジェスチャ認識が同時に行われた場合に対応するオブジェクトのフラグを立てて,オブジェクト保持のアニメーションを再生する.
+		衝突判定とジェスチャ認識が同時に行われた場合に対応するオブジェクトのフラグを立てて,オブジェクト保持のアニメーションを再生させる.
 
 	\section{FirstVRの性能評価}
 		FirstVRを装着する様子を図\refeq{fig:FirsrVRfit}に示す.
@@ -727,6 +750,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\caption{FirstVR装着方法}
 		\label{fig:FirsrVRfit}
 		\end{figure}
+		\vspace{-15pt}
 		机上に5cm四方のグリッド線が描かれたボードを用いて肘の設置店から手首までを測定し,
 		その1/4の距離にFirstVRを装着させた.図\refeq{fig:FirstVRevaluation}に測定時の様子を
 		示す.
@@ -736,15 +760,18 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\begin{minipage}{0.45\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/IMG_5200.PNG}
+		\subcaption{ジェスチャしていない状態}
 		\end{minipage}
 		\hspace{0.04\columnwidth}
 		\begin{minipage}{0.45\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/IMG_5201.PNG}
+		\subcaption{ジェスチャ状態}
 		\end{minipage}
 		\caption{FirstVR性能評価の様子}
 		\label{fig:FirstVRevaluation}
 		\end{figure}
+		\vspace{-15pt}
 		
 		図\refeq{fig:FirstVRevaluation}のようにジェスチャ状態を1回,ジェスチャしていない状態を5回
 		測定し,それを各sample数で繰り返した.全員分のデータは記載することができないため付録にあるQRコードから
@@ -771,6 +798,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\caption{FirstVR性能評価用アプリケーションの構成}
 		\label{fig:FirstVRapplication}
 		\end{figure}
+		\vspace{-15pt}
 		図\refeq{fig:FVRnocalibration}の①で学習させるsample数を設定でき,②では学習時間を設定することができる.
 		また,ジェスチャしていない状態を学習させるときは③のボタン,ジェスチャ状態を学習させるときは④のボタンで
 		学習させることができる.学習が完了すると,①と②の右側のカウントが増えていく.
@@ -824,11 +852,12 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\end{tabular}
 		\end{center}
 		\end{table}
+		\vspace{-15pt}
 
 		表\refeq{tab:gestureprobability1}より,ジェスチャ誤検知の回数が極端に多い場合とほとんど誤検知がないというように分布していることがわかる.
 		また,10回以上誤検知が起きている実験協力者のデータでは特定のsample数によらずに誤検知が発生しているため,sample数によるジェスチャ認識率のデータ
 		含めてしまうとノイズによってデータが正しく求められないため除外した.
-
+\clearpage
 		各sample数ごとのジェスチャ認識率を表\refeq{tab:gestureprobability2}に示す．
 		\begin{table}[H]
 		\begin{center}
@@ -851,11 +880,11 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\end{tabular}
 		\end{center}
 		\end{table}
+		\vspace{-15pt}
 		表\refeq{tab:gestureprobability2}より,最低値93.33％,最高値100％のジェスチャ認識率だった.
 		したがって,96.66 ± 3.34％の範囲で変動していることがわかる.
 		しかし,どのsample数においてもジェスチャの認識率が90％を上回っているため,
 		このデータからどのsample数が最適か判定できなかった.
-
 \clearpage
 		FirstVRのsample数における総変化量を表\refeq{tab:FVRdata}に示す.
 		\begin{table}[H]
@@ -863,7 +892,8 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\caption{各実験協力者におけるsample数ごとの総変化量一覧}
 		\label{tab:FVRdata}
 		\begin{tabular}{c|ccccccccccc} \Hline
-			Person/sample & 7 & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100 \\ \hline
+			\multirow{2}{*}{Person}&\multicolumn{11}{c}{sample数}\\
+			& 7 & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100 \\ \hline
 			1 & 44.4 & 25.6 & 21.8 & 19.4 & 12.2 & 12.6 & 13.4 & 22.4 & 8.2 & 11.8 & 27.2 \\
 			2 & 37.0 & 23.4 & 30.2 & 17.2 & 27.2 & 31.8 & 45.4 & 26.2 & 29.4 & 19.2 & 18.2 \\
 			3 & 23.4 & 20.2 & 28.4 & 20.6 & 21.8 & 30.4 & 17.2 & 23.6 & 39.0 & 17.4 & 22.0 \\
@@ -900,26 +930,26 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\end{tabular}
 		\end{center}
 		\end{table}
+		\vspace{-15pt}
 
 		総変化量が10前後の数値ではFirstVRがジェスチャに対してほとんど応答していなかった.
-		この結果を用いて,同sample数における実験協力者ごとの数値の分散が少ないsample数が最適とした.
-
+		この結果を用いて,同じsample数における実験協力者ごとの数値の分散が少ないsample数が最適とした.
 \clearpage
-		図\refeq{fig:FVRdata}に各sample数の分散を示す.
+		表\refeq{tab:FVRdata}の各sample数における分散を図\refeq{fig:FVRdata}に示す.
 
 		\begin{figure}[H]
 		\centering
-		\includegraphics[width = 14cm]{../figs/FVRALL.png}
+		\includegraphics[width = 10cm]{../figs/FVRALL.png}
 		\caption{sample数ごとの総変化量分散}
 		\label{fig:FVRdata}
 		\end{figure}
-
+		\vspace{-15pt}
 		図\refeq{fig:FVRdata}より,標本分散はsample70が最も小さく,次いでsample7が分散が少なくなっていることがわかる.
 		ここで,sample数7,70,100以外のデータは分散がこの3種類よりも比較的大きく,外れ値も含んでいるため,安定して動作していると考えにくい.
 		また,この3種類の中で最もシミュレータに対する負荷が小さいデータとしてsample7を選定した.
-
+\clearpage
 	\section{シミュレータの構成}
-
+		PC版シミュレータの画面構成を図\refeq{fig:PCsimurate}に示す.
 		\begin{figure}[H]
 		\centering
 		\begin{minipage}{0.7\columnwidth}
@@ -934,7 +964,33 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\subcaption{メニュー起動時の画面構成}
 		\end{minipage}
 		\caption{PC版シミュレータの実行画面}
+		\label{fig:PCsimurate}
 		\end{figure}
+		\vspace{-15pt}
+
+		PC版シミュレータの各機能について以下に説明する.
+		\begin{enumerate}
+			\item VirtualHand\\
+				Blenderから取り込んだ3Dモデルで，掌部分にColliderを
+				配置して衝突判定を行う.マウスの移動に追従して腕の位置も変化する.
+			\item Object\\
+				球体(sphere),円柱(cylinder),立方体(cube)のオブジェクトを
+				保持可能オブジェクトとして配置した.各オブジェクトには衝突判定用にColliderを付加している.
+			\item メニュー起動ボタン\\
+				メインメニューを開くためのボタンである.
+			\item 俯瞰カメラ\\
+				シミュレータのオブジェクトを上から見下ろしたカメラである．
+				PLAYERやObjectの位置を確認できるように配置した.
+			\item メインメニュー\\
+				シミュレータ起動用のタイトル画面遷移や俯瞰カメラのON/OFF,
+				VHの左右切替を行うことができる.
+			\item オブジェクト設定\\
+				メインメニューから遷移可能で,VHのトラッキングの速度を調整する機能である.
+			\item カメラ設定\\
+				メインメニューから遷移可能で,右ボタン押下時の視点移動の速度を調整する機能である.
+		\end{enumerate}
+
+		iOS版シミュレータの画面構成を図\refeq{fig:iOSsimulate}に示す.
 
 		\begin{figure}[H]
 		\centering
@@ -952,9 +1008,52 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\caption{iOS版シミュレータの実行画面}
 		\label{fig:iOSsimulate}
 		\end{figure}
+		\vspace{-15pt}
+
+		iOS版シミュレータの各機能について以下に説明する.
+		\begin{enumerate}
+			\item VirtualHand\\
+				Blenderから取り込んだ3Dモデルで，掌部分にRaycastを
+				配置してObjectのColliderとの衝突判定を行う.
+				また，FirstVRのトラッキング機能により,実際の腕の
+				回転方向を追従する．
+			\item Object\\
+				PC版と同様に球体(sphere),円柱(cylinder),立方体(cube)のオブジェクトを
+				保持可能オブジェクトとして配置した.各オブジェクトには衝突判定用にColliderを付加している.
+			\item Controler\\
+				iOS版にはキーボードが接続されていないため,PLAYERの移動用に配置した．
+				上下左右に対応して前後左右にPLAYERが移動する.
+			\item 俯瞰カメラ\\
+				PC版と同様にシミュレータのオブジェクトを上から見下ろしたカメラである．
+				PLAYERやObjectの位置を確認できるように配置した.
+			\item FVRConcheck\\
+				FirstVRとiPhoneの接続確認用オブジェクトである.
+				接続できていないときはDisconnectedという表記とともにマーカーが赤色になる.
+				接続中にはConnectingとなり,マーカーが黄色に変化し,接続が確立すると
+				Connectedとなり,マーカーが緑色に変化する.
+			\item Bottans\\
+				Setting,Recet,Recenterのボタンが用意されており,
+				Settingボタンは,PC版同様にメインメニューを起動するためのボタンである.
+				また,Recetボタンは,Objectが移動した際に元の位置に戻すためのボタンである．
+				最後に，RecenterボタンはVHの回転情報とFirstVR本体の回転情報を全て初期値に戻し,回転を同期させるためのボタンである.
+			\item デバッグ用カメラ\\
+				立方体オブジェクトを中心に追従するカメラで,FirstVRの保持機能によってオブジェクトが
+				正しく移動しているか確認するために配置している.
+			\item 座標モニタ\\
+				立方体オブジェクトの座標を表示することでオブジェクト保持による
+				座標の移動が正常に行われているか確認するために表示している.
+			\item メインメニュー\\
+				PC版と同様に，シミュレータ起動用のタイトル画面遷移や俯瞰カメラのON/OFF,
+				VHの左右切替を行うことができる.
+			\item オブジェクト設定\\
+				PC版と同様に，メインメニューから遷移可能で,VHのトラッキングの速度を調整する機能である.
+			\item Calibrater\\
+				FirstVRのジェスチャ学習のために配置している.
+			\item DebagTools\\
+		\end{enumerate}
 
 	\section{シミュレータの定性評価}
-
+		PC版，iOS版シミュレータの定性評価の様子を図\refeq{fig:simuraterimage}に示す.
 		\begin{figure}[H]
 		\centering
 		\begin{minipage}{0.4\columnwidth}
@@ -967,7 +1066,18 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\includegraphics[width = \columnwidth]{../figs/IMG_6323.jpg}
 		\end{minipage}
 		\caption{シミュレータ定性評価の様子}
+		\label{fig:simuraterimage}
 		\end{figure}
+		\vspace{-15pt}
+
+		PC版ではキーボード・マウスを入力インターフェースとしているため,
+		左ボタン押下時にオブジェクト保持のフラグを立て,右ボタンを押下しながら
+		マウスを移動させることによって視点を動かすことができる.
+		iOS版ではiPhoneにシミュレータを表示させ,FirstVRのジェスチャ認識機能
+		によってじゃんけんのグーの状態を学習することでオブジェクト保持ができる.
+		この学習が終了してから約5分間シミュレータを評価した.
+
+		次に,アンケート調査の結果を図\refeq{fig:botunyu}～\refeq{fig:tien}に示す.
 
 		\begin{figure}[H]
 		\centering
@@ -981,9 +1091,11 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\includegraphics[width = \columnwidth]{../figs/iOS-1.png}
 		\end{minipage}
 		\caption{没入感の評価比較}
+		\label{fig:botunyu}
 		\end{figure}
-		PC版の平均値 3.36点 中央値は4点
-		iOS版の平均値 3.90点 中央値は4点
+		\vspace{-15pt}
+		PC版の平均値 3.36点 中央値は4点 最高値5点 最低値1点 標本分散
+		iOS版の平均値 3.90点 中央値は4点 最高値6点 最低値1点 標本分散
 
 		\begin{figure}[H]
 		\centering
@@ -997,9 +1109,11 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\includegraphics[width = \columnwidth]{../figs/iOS-2.png}
 		\end{minipage}
 		\caption{操作性の評価比較}
+		\label{fig:sousasei}
 		\end{figure}
-		PC版の平均値 3.09点 中央値 3点
-		iOS版 平均値 
+		PC版の平均値 3.09点 中央値は点 最高値5点 最低値1点 標本分散
+		iOS版の平均値 3.90点 中央値は4点 最高値6点 最低値1点 標本分散
+
 
 		\begin{figure}[H]
 		\centering
@@ -1013,7 +1127,11 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\includegraphics[width = \columnwidth]{../figs/iOS-3.png}
 		\end{minipage}
 		\caption{操作遅延の評価比較}
+		\label{fig:tien}
 		\end{figure}
+		\vspace{-15pt}
+		PC版の平均値 3.09点 中央値は3点 最高値5点 最低値2点 標本分散
+		iOS版の平均値 3.90点 中央値は4点 最高値6点 最低値1点 標本分散
 
 		\begin{figure}[H]
 		\centering
@@ -1021,6 +1139,7 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 		\caption{シミュレータ定性評価のコメント}
 		\label{fig:comment}
 		\end{figure}
+		\vspace{-15pt}
 
 \chapter{考察}
 	FirstVRを入力インターフェースとすることで実際の筋電義手を用いるより安価で
@@ -1045,26 +1164,20 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 	にグーのジェスチャを行った経験があるため,筋肉の動きを再現することが可能
 	かもしれないが,先天的に切断している場合はまずグーのジェスチャがどういう
 	筋肉の状態なのかということから訓練する必要がある.
-	\cite{ref:8}によると,上肢切断にはレベルが存在し,今回の実験で装着した位置はおよそ
+	文献\cite{ref:8}によると,上肢切断にはレベルが存在し,今回の実験で装着した位置はおよそ
 	前腕切断に相当する位置で,本シミュレータでFirstVRを用いることができるのは
 	手関節離断,前腕切断の2つである.FirstVRを上腕で用いることができるようになれば
 	肘関節切断や上腕切断の状態でもシミュレータが用いることができるようなる.
 	
-
-
-	
-
-	FirstVRを用いたシミュレータは\cite{ref:3}のカグラのようにVRゴーグルを用いて
+	FirstVRを用いたシミュレータは文献\cite{ref:3}のカグラのようにVRゴーグルを用いて
 	扱うことができればより訓練効果に影響があるのではないかと考えられる.
 	その際はiOS版に搭載しているコントローラボタンではなくiPhoneとFirstVRの距離や
-	iPhone自体のセンサを
+	iPhone自体のセンサを用いて移動や顔の振り向きを検知する必要がある.
 	
 	本研究では腕の3DモデルをEinScanHXによって作製したが,今後3Dスキャナが一般的に
 	普及して,体格が近い人の腕をスキャンできるようになると想定すると,そのデータを
 	シミュレータに用いるためにスムージングからボーン配置までを自動的に行えるアプリケーション
 	があればBlenderを用いて作業する工程を省略することができるようになる.
-	
-
 
 \chapter{おわりに}
 	本研究ではPC版のシミュレータとiOS版のシミュレータの2種類を作製し,健常者に
@@ -1149,12 +1262,10 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 \end{thebibliography}
 
 \chapter*{付録}
-
 %目次に付録を追加
 \addcontentsline{toc}{chapter}{付録}
 %ページ番号をローマ数字で表示
 \pagenumbering{roman}
-
 
 \appendix
 %章番号をアルファベットに変換
@@ -1169,8 +1280,10 @@ FirstVRのシステムとを比較した.まず,FirstVRのジェスチャ認識�
 	\caption{FVRDataFilesのQRコード}
 	\label{fig:QRcode}
 	\end{figure}
+	\vspace{-15pt}
 	
 \section{ソースコード}
+Unityで使用したスクリプトをソースコード\
 \begin{lstlisting}[caption = CalibrationManager, label = code:Calibration]
 using System.Collections;
 using System.Collections.Generic;

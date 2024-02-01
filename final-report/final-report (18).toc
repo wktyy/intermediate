@@ -1,0 +1,43 @@
+\contentsline {chapter}{\numberline {第1章}はじめに}{1}{}%
+\contentsline {section}{\numberline {1.1}研究背景}{1}{}%
+\contentsline {section}{\numberline {1.2}関連研究}{1}{}%
+\contentsline {section}{\numberline {1.3}研究目的}{2}{}%
+\contentsline {chapter}{\numberline {第2章}3Dモデルの製作}{3}{}%
+\contentsline {section}{\numberline {2.1}EinScan HX}{3}{}%
+\contentsline {subsection}{\numberline {2.1.1}製品仕様}{3}{}%
+\contentsline {section}{\numberline {2.2}Blender}{4}{}%
+\contentsline {subsection}{\numberline {2.2.1}スムージング}{4}{}%
+\contentsline {subsection}{\numberline {2.2.2}ボーン構成}{4}{}%
+\contentsline {section}{\numberline {2.3}Unity}{4}{}%
+\contentsline {subsection}{\numberline {2.3.1}シェーダー}{5}{}%
+\contentsline {subsection}{\numberline {2.3.2}衝突判定}{5}{}%
+\contentsline {subsubsection}{Collider}{5}{}%
+\contentsline {subsubsection}{Raycast}{5}{}%
+\contentsline {subsection}{\numberline {2.3.3}アニメーション}{6}{}%
+\contentsline {subsection}{\numberline {2.3.4}ビルド}{6}{}%
+\contentsline {subsubsection}{iOSのビルド方法}{7}{}%
+\contentsline {section}{\numberline {2.4}FirstVR}{8}{}%
+\contentsline {subsection}{\numberline {2.4.1}デバイス構成}{8}{}%
+\contentsline {subsection}{\numberline {2.4.2}トラッキング}{8}{}%
+\contentsline {subsection}{\numberline {2.4.3}ジェスチャ認識/キャリブレーション}{8}{}%
+\contentsline {chapter}{\numberline {第3章}研究手順}{9}{}%
+\contentsline {section}{\numberline {3.1}使用器具}{9}{}%
+\contentsline {section}{\numberline {3.2}VHの3Dモデル取り込み}{9}{}%
+\contentsline {section}{\numberline {3.3}VHのスムージング処理・ボーン配置}{9}{}%
+\contentsline {section}{\numberline {3.4}オブジェクト保持表現}{9}{}%
+\contentsline {section}{\numberline {3.5}FirstVRの性能評価手法}{10}{}%
+\contentsline {section}{\numberline {3.6}シミュレータの構成}{11}{}%
+\contentsline {section}{\numberline {3.7}シミュレータの定性評価手法}{11}{}%
+\contentsline {chapter}{\numberline {第4章}研究結果}{12}{}%
+\contentsline {section}{\numberline {4.1}VH\,(Virtual Hand)の3Dモデル構成}{12}{}%
+\contentsline {section}{\numberline {4.2}オブジェクト保持}{13}{}%
+\contentsline {section}{\numberline {4.3}FirstVRの性能評価}{15}{}%
+\contentsline {section}{\numberline {4.4}シミュレータの構成}{21}{}%
+\contentsline {section}{\numberline {4.5}シミュレータの定性評価}{23}{}%
+\contentsline {chapter}{\numberline {第5章}考察}{25}{}%
+\contentsline {chapter}{\numberline {第6章}おわりに}{26}{}%
+\contentsline {chapter}{謝辞}{27}{}%
+\contentsline {chapter}{参考文献}{28}{}%
+\contentsline {chapter}{付録}{i}{}%
+\contentsline {section}{\numberline {A.1}測定データ}{i}{}%
+\contentsline {section}{\numberline {A.2}ソースコード}{i}{}%
