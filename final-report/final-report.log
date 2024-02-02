@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.4.5)  2 FEB 2024 12:46
+This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.4.5)  2 FEB 2024 12:55
  system commands enabled.
  file:line:error style messages enabled.
 **/home/kawai/Soturon/report/intermediate/final-report/final-report
@@ -1215,7 +1215,7 @@ Package luatex.def Info: ../figs/IMG_5132.JPG  used on input line 1070.
 <../figs/IMG_6323.jpg, id=157, 4047.12pt x 3035.34pt>
 File: ../figs/IMG_6323.jpg Graphic file (type jpg)
 <use ../figs/IMG_6323.jpg>
-Package luatex.def Info: ../figs/IMG_6323.jpg  used on input line 1075.
+Package luatex.def Info: ../figs/IMG_6323.jpg  used on input line 1076.
 (luatex.def)             Requested size: 181.40038pt x 136.02861pt.
 [23<../figs/IMG_5132.JPG
 warning  (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolution 300dpi x 300dpi
@@ -1223,32 +1223,32 @@ warning  (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolut
 <../figs/PC-1.png, id=161, 602.25pt x 372.39125pt>
 File: ../figs/PC-1.png Graphic file (type png)
 <use ../figs/PC-1.png>
-Package luatex.def Info: ../figs/PC-1.png  used on input line 1095.
+Package luatex.def Info: ../figs/PC-1.png  used on input line 1097.
 (luatex.def)             Requested size: 204.07715pt x 126.18518pt.
 <../figs/iOS-1.png, id=162, 602.25pt x 372.39125pt>
 File: ../figs/iOS-1.png Graphic file (type png)
 <use ../figs/iOS-1.png>
-Package luatex.def Info: ../figs/iOS-1.png  used on input line 1101.
+Package luatex.def Info: ../figs/iOS-1.png  used on input line 1103.
 (luatex.def)             Requested size: 204.07715pt x 126.18518pt.
 <../figs/PC-2.png, id=163, 602.25pt x 372.39125pt>
 File: ../figs/PC-2.png Graphic file (type png)
 <use ../figs/PC-2.png>
-Package luatex.def Info: ../figs/PC-2.png  used on input line 1113.
+Package luatex.def Info: ../figs/PC-2.png  used on input line 1115.
 (luatex.def)             Requested size: 204.07715pt x 126.18518pt.
 <../figs/iOS-2.png, id=164, 602.25pt x 372.39125pt>
 File: ../figs/iOS-2.png Graphic file (type png)
 <use ../figs/iOS-2.png>
-Package luatex.def Info: ../figs/iOS-2.png  used on input line 1119.
+Package luatex.def Info: ../figs/iOS-2.png  used on input line 1121.
 (luatex.def)             Requested size: 204.07715pt x 126.18518pt.
 <../figs/PC-3.png, id=165, 602.25pt x 372.39125pt>
 File: ../figs/PC-3.png Graphic file (type png)
 <use ../figs/PC-3.png>
-Package luatex.def Info: ../figs/PC-3.png  used on input line 1130.
+Package luatex.def Info: ../figs/PC-3.png  used on input line 1132.
 (luatex.def)             Requested size: 204.07715pt x 126.18518pt.
 <../figs/iOS-3.png, id=166, 602.25pt x 372.39125pt>
 File: ../figs/iOS-3.png Graphic file (type png)
 <use ../figs/iOS-3.png>
-Package luatex.def Info: ../figs/iOS-3.png  used on input line 1136.
+Package luatex.def Info: ../figs/iOS-3.png  used on input line 1138.
 (luatex.def)             Requested size: 204.07715pt x 126.18518pt.
  [24
 
@@ -1256,14 +1256,14 @@ Package luatex.def Info: ../figs/iOS-3.png  used on input line 1136.
 <../figs/result.png, id=176, 432.86719pt x 169.38281pt>
 File: ../figs/result.png Graphic file (type png)
 <use ../figs/result.png>
-Package luatex.def Info: ../figs/result.png  used on input line 1176.
+Package luatex.def Info: ../figs/result.png  used on input line 1178.
 (luatex.def)             Requested size: 341.43306pt x 133.60934pt.
  [25
 
 <../figs/result.png>]
 第5章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 1190--1190
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 1192--1192
 ||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 5 |\JY3/mc/b/n/20.74 章 []| 
  []
 
@@ -1272,7 +1272,7 @@ Overfull \hbox (69.52936pt too wide) in paragraph at lines 1190--1190
 ]
 第6章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 1228--1228
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 1230--1230
 ||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 6 |\JY3/mc/b/n/20.74 章 []| 
  []
 
@@ -1287,16 +1287,16 @@ Overfull \hbox (69.52936pt too wide) in paragraph at lines 1228--1228
 <../figs/QRshare.png, id=194, 271.0125pt x 271.0125pt>
 File: ../figs/QRshare.png Graphic file (type png)
 <use ../figs/QRshare.png>
-Package luatex.def Info: ../figs/QRshare.png  used on input line 1325.
+Package luatex.def Info: ../figs/QRshare.png  used on input line 1327.
 (luatex.def)             Requested size: 170.71652pt x 170.72223pt.
 (load cache: extra_lmmono10-regular.luc)
 Removing  `ltj.process_input_buffer' from `process_input_buffer'.
 Inserting `ltj.listings_unicode' in `process_input_buffer'.
 Inserting `ltj.process_input_buffer' in `process_input_buffer'.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 1334.
+(Font)              scaled to size 8.32242pt on input line 1336.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 1334.
+(Font)              scaled to size 8.32242pt on input line 1336.
  [1
 
 <../figs/QRshare.png>] [2] [3] [4] [5]
@@ -1322,7 +1322,7 @@ Here is how much of LuaTeX's memory you used:
  68 fonts using 64648991 bytes
  118i,12n,128p,1820b,798s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on final-report.pdf (40 pages, 29302952 bytes).
+Output written on final-report.pdf (40 pages, 29303020 bytes).
 
 PDF statistics: 304 PDF objects out of 1000 (max. 8388607)
  144 compressed objects within 2 object streams
