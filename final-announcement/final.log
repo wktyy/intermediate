@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.4.5)  10 JAN 2024 09:26
+This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.4.5)  9 FEB 2024 14:22
  system commands enabled.
  file:line:error style messages enabled.
 **/home/kawai/Soturon/report/intermediate/final-announcement/final
@@ -713,32 +713,102 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 11.09656pt on input line 26.
 (load cache: extra_lmroman10-bold.luc)
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 37.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 31.
+(Font)              scaled to size 9.24713pt on input line 37.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 37.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 31.
+(Font)              scaled to size 9.24713pt on input line 37.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 55.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 55.
+<../figs/IMG_0340.jpg, id=1, 955.31906pt x 716.6775pt>
+File: ../figs/IMG_0340.jpg Graphic file (type jpg)
+<use ../figs/IMG_0340.jpg>
+Package luatex.def Info: ../figs/IMG_0340.jpg  used on input line 71.
+(luatex.def)             Requested size: 113.81102pt x 85.37425pt.
+<../figs/IMG_0345.JPG, id=2, 1673.25125pt x 940.51375pt>
+File: ../figs/IMG_0345.JPG Graphic file (type jpg)
+<use ../figs/IMG_0345.JPG>
+Package luatex.def Info: ../figs/IMG_0345.JPG  used on input line 89.
+(luatex.def)             Requested size: 98.88017pt x 55.56732pt.
+(load cache: extra_lmroman9-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 90.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 90.
+<../figs/IMG_1867.PNG, id=3, 1339.0025pt x 752.8125pt>
+File: ../figs/IMG_1867.PNG Graphic file (type png)
+<use ../figs/IMG_1867.PNG>
+Package luatex.def Info: ../figs/IMG_1867.PNG  used on input line 96.
+(luatex.def)             Requested size: 98.88017pt x 55.58548pt.
  [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-] (./final.aux))
+<../figs/IMG_0340.jpg>]
+<../figs/FVRALL.png, id=20, 578.379pt x 280.101pt>
+File: ../figs/FVRALL.png Graphic file (type png)
+<use ../figs/FVRALL.png>
+Package luatex.def Info: ../figs/FVRALL.png  used on input line 110.
+(luatex.def)             Requested size: 170.71652pt x 82.67181pt.
+<../figs/IMG_0341.JPG, id=21, 1674.255pt x 941.5175pt>
+File: ../figs/IMG_0341.JPG Graphic file (type jpg)
+<use ../figs/IMG_0341.JPG>
+Package luatex.def Info: ../figs/IMG_0341.JPG  used on input line 125.
+(luatex.def)             Requested size: 98.88017pt x 55.59789pt.
+<../figs/IMG_0344.JPG, id=22, 1673.25125pt x 781.92125pt>
+File: ../figs/IMG_0344.JPG Graphic file (type jpg)
+<use ../figs/IMG_0344.JPG>
+Package luatex.def Info: ../figs/IMG_0344.JPG  used on input line 131.
+(luatex.def)             Requested size: 98.88017pt x 46.19737pt.
+<../figs/PC-1.png, id=23, 602.25pt x 372.39125pt>
+File: ../figs/PC-1.png Graphic file (type png)
+<use ../figs/PC-1.png>
+Package luatex.def Info: ../figs/PC-1.png  used on input line 152.
+(luatex.def)             Requested size: 98.88017pt x 61.14075pt.
+<../figs/iOS-1.png, id=24, 602.25pt x 372.39125pt>
+File: ../figs/iOS-1.png Graphic file (type png)
+<use ../figs/iOS-1.png>
+Package luatex.def Info: ../figs/iOS-1.png  used on input line 158.
+(luatex.def)             Requested size: 98.88017pt x 61.14075pt.
+<../figs/PC-2.png, id=25, 602.25pt x 372.39125pt>
+File: ../figs/PC-2.png Graphic file (type png)
+<use ../figs/PC-2.png>
+Package luatex.def Info: ../figs/PC-2.png  used on input line 170.
+(luatex.def)             Requested size: 98.88017pt x 61.14075pt.
+<../figs/iOS-2.png, id=26, 602.25pt x 372.39125pt>
+File: ../figs/iOS-2.png Graphic file (type png)
+<use ../figs/iOS-2.png>
+Package luatex.def Info: ../figs/iOS-2.png  used on input line 176.
+(luatex.def)             Requested size: 98.88017pt x 61.14075pt.
+<../figs/PC-3.png, id=27, 602.25pt x 372.39125pt>
+File: ../figs/PC-3.png Graphic file (type png)
+<use ../figs/PC-3.png>
+Package luatex.def Info: ../figs/PC-3.png  used on input line 187.
+(luatex.def)             Requested size: 98.88017pt x 61.14075pt.
+<../figs/iOS-3.png, id=28, 602.25pt x 372.39125pt>
+File: ../figs/iOS-3.png Graphic file (type png)
+<use ../figs/iOS-3.png>
+Package luatex.def Info: ../figs/iOS-3.png  used on input line 193.
+(luatex.def)             Requested size: 98.88017pt x 61.14075pt.
+ [2<../figs/IMG_0345.JPG><../figs/IMG_1867.PNG><../figs/FVRALL.png><../figs/IMG_0341.JPG><../figs/IMG_0344.JPG><../figs/PC-1.png><../figs/iOS-1.png><../figs/PC-2.png><../figs/iOS-2.png><../figs/PC-3.png><../figs/iOS-3.png>] (./final.aux))
 
 Here is how much of LuaTeX's memory you used:
- 11828 strings out of 478278
- 125244,1977958 words of node,token memory allocated
- 1066 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 203 attribute, 57 glue_spec, 30 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:10,2:36016,3:440,4:260,5:46,6:60,7:4352,8:1,9:1542,10:15,11:42
- 31524 multiletter control sequences out of 65536+600000
- 51 fonts using 33209367 bytes
- 118i,8n,128p,1819b,401s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf>
-Output written on final.pdf (1 page, 75729 bytes).
+ 12013 strings out of 478278
+ 195703,1977958 words of node,token memory allocated
+ 1065 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 201 attribute, 58 glue_spec, 29 attribute_list, 1 write, 13 user_defined nodes
+   avail lists: 1:43,2:52332,3:592,4:612,5:87,6:118,7:5817,8:25,9:2592,10:22,11:32
+ 31637 multiletter control sequences out of 65536+600000
+ 76 fonts using 45993231 bytes
+ 118i,9n,128p,1819b,732s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on final.pdf (2 pages, 1108675 bytes).
 
-PDF statistics: 43 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+PDF statistics: 96 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
