@@ -52,7 +52,7 @@
 		本研究で構成するシミュレータの入力感度を検証するため,実験協力者として電子工学科5年生の学生31名(男性26名:女性5名)を対象に以下の手順でFirstVRの評価を行う.
 		また,ジェスチャ状態は物体保持のアニメーションと同期させるため,じゃんけんのグーのジェスチャを学習させる.
 		FirstVRで筋変位を測定した14チャンネル光変位センサの測定値を用いてジェスチャ認識の精度を確認するため,
-		各実験協力者・各sample数ごとの評価指標として総変化量$X$を定める.総変化量の算出は測定回数$s = 5$,チャンネル数$r = 14$としてジェスチャ状態で測定した筋変位センサの値を$M_{{s}{r}}$
+		各実験協力者および各sample数ごとの評価指標として総変化量$X$を定める.総変化量の算出は測定回数$s = 5$,チャンネル数$r = 14$としてジェスチャ状態で測定した筋変位センサの値を$M_{{s}{r}}$
 		とジェスチャしていない状態の筋変位センサの値$N_{r}$とすると式\refeq{eq:originaldata}と示すことができる.
 		この評価指標を用いて各sample数ごとに分散を調べ,最適なsample数の検討を行う.
 		\begin{equation}
@@ -64,34 +64,30 @@
 	\subsection{シミュレータの構成}
 		Blenderで処理したVHをUnityにインポートし,入力インターフェースとしてキーボード・マウス
 		を用いるPC版と,\,FirstVRを用いるiOS版の2種類を構成した.
-		図\refeq{fig:simuraterconst}にシミュレータの構成図を示す.
-
-		\begin{figure}[H]
-		\centering
-		\includegraphics[width = 4cm]{../figs/IMG_0340.jpg}
-		\caption{シミュレータ構成図}
-		\label{fig:simuraterconst}
-		\end{figure}
-		\vspace{-30pt}
 		
 	\subsection{シミュレータの定性評価手法}
-		電子工学科5年生の男性11名に協力していただき,\,PC版シミュレータとiOS版シミュレータの2種類の操作説明を説明した後,
-		5分程度体験してもらい,各シミュレータにおいての没入感,操作性,応答性の3項目について6段階リッカート尺度を用いた定性評価
+		電子工学科5年生の男性11名に協力していただき,\,PC版シミュレータとiOS版シミュレータの2種類の操作説明を行う.
+		その後,シミュレータを各5分程度体験してもらい,それぞれの没入感,操作性,応答性の3項目について6段階リッカート尺度を用いた定性評価
 		アンケート調査を行う.
 		評価点数が高いほどそれぞれの項目において高得点の評価となるように設定し,調査結果に対して分析を行う.
 
 \section{研究結果}
+		10回以上誤検知が起きている実験協力者のデータでは特定のsample数によらずに誤検知が発生しているため,\,sample数によるジェスチャ認識率のデータ
+		含めてしまうとノイズによってデータが正しく求められないため除外した.
+		また,総変化量の標本分散はsample70が最も小さく,次いでsample7,sample100の順に分散が少なくなることが得られた.
+		ここで,\,sample数7,70,100以外のデータは分散がこの3種類よりも比較的大きく,外れ値も含んでいるため,安定して動作していると考えにくい.
+		最終的に,この3種類の中で最もシミュレータに対する負荷が小さいデータとしてsample7を選定した.
 		FirstVRの性能評価用アプリケーションの構成を図\refeq{fig:FirstVRapplication}に示す.
 		\begin{figure}[H]
 		\centering
-		\begin{minipage}{0.45\columnwidth}
+		\begin{minipage}{0.9\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/IMG_0345.JPG}
 		\subcaption{ジェスチャ未判定時}
 		\label{fig:FVRnocalibration}
 		\end{minipage}
 		\hspace{0.04\columnwidth}
-		\begin{minipage}{0.45\columnwidth}
+		\begin{minipage}{0.9\columnwidth}
 		\centering
 		\includegraphics[width = \columnwidth]{../figs/IMG_1867.PNG}
 		\subcaption{ジェスチャ判定時}
@@ -101,38 +97,24 @@
 		\end{figure}
 		\vspace{-15pt}
 
-		10回以上誤検知が起きている実験協力者のデータでは特定のsample数によらずに誤検知が発生しているため,\,sample数によるジェスチャ認識率のデータ
-		含めてしまうとノイズによってデータが正しく求められないため除外した.
-		各sample数における総変化量の分散を図\refeq{fig:FVRdata}に示す.
-
-		\begin{figure}[H]
-		\centering
-		\includegraphics[width = 6cm]{../figs/FVRALL.png}
-		\caption{sample数ごとの総変化量分散}
-		\label{fig:FVRdata}
-		\end{figure}
-		\vspace{-15pt}
-		図\refeq{fig:FVRdata}より,標本分散はsample70が最も小さく,次いでsample7が分散が少なくなっていることがわかる.
-		ここで,\,sample数7,70,100以外のデータは分散がこの3種類よりも比較的大きく,外れ値も含んでいるため,安定して動作していると考えにくい.
-		また,この3種類の中で最もシミュレータに対する負荷が小さいデータとしてsample7を選定した.
 
 	\subsection{シミュレータの構成}
-		PC版シミュレータの画面構成を図\refeq{fig:PCsimurate}に示す.
+		各シミュレータの画面構成を図\refeq{fig:simurate}に示す.
 		\begin{figure}[H]
 		\centering
-		\begin{minipage}{0.45\columnwidth}
+		\begin{minipage}{0.9\columnwidth}
 		\centering
-		\includegraphics[width = \columnwidth]{../figs/IMG_0341.JPG}
-		\subcaption{通常時の構成}
+		\includegraphics[width = \columnwidth]{../figs/PCnomal.png}
+		\subcaption{PC版の画面構成}
 		\end{minipage}
 		\hspace{0.04\columnwidth}
-		\begin{minipage}{0.45\columnwidth}
+		\begin{minipage}{0.9\columnwidth}
 		\centering
-		\includegraphics[width = \columnwidth]{../figs/IMG_0344.JPG}
-		\subcaption{メニュー起動時の構成}
+		\includegraphics[width = \columnwidth]{../figs/iOSnomal.png}
+		\subcaption{iOS版の画面構成}
 		\end{minipage}
 		\caption{シミュレータの実行画面}
-		\label{fig:PCsimurate}
+		\label{fig:simurate}
 		\end{figure}
 		\vspace{-25pt}
 
@@ -142,63 +124,30 @@
 		学習などは必要なく,基本的な操作説明のあとにシミュレータを評価した.
 		iOS版ではiPhoneにシミュレータを表示させ,\,FirstVRのジェスチャ認識機能
 		によってじゃんけんのグーの状態を学習することでオブジェクト保持ができる.
-		この学習が終了してから約5分間シミュレータを評価した.
-		次に,アンケート調査の結果を図\refeq{fig:botunyu}～\refeq{fig:tien}に示す.
-
-		\begin{figure}[H]
-		\centering
-		\begin{minipage}{0.45\columnwidth}
-		\centering
-		\includegraphics[width = \columnwidth]{../figs/PC-1.png}
-		\subcaption{PC版アンケート結果}
-		\end{minipage}
-		\hspace{0.04\columnwidth}
-		\begin{minipage}{0.45\columnwidth}
-		\centering
-		\includegraphics[width = \columnwidth]{../figs/iOS-1.png}
-		\subcaption{iOS版アンケート結果}
-		\end{minipage}
-		\caption{没入感の評価比較}
-		\label{fig:botunyu}
-		\end{figure}
-		\vspace{-15pt}
+		この学習が終了してから約5分間シミュレータを評価した.アンケート結果を
+		表\refeq{tab:resoult}に示す．
 		
-		\begin{figure}[H]
-		\centering
-		\begin{minipage}{0.45\columnwidth}
-		\centering
-		\includegraphics[width = \columnwidth]{../figs/PC-2.png}
-		\subcaption{PC版アンケート結果}
-		\end{minipage}
-		\hspace{0.04\columnwidth}
-		\begin{minipage}{0.45\columnwidth}
-		\centering
-		\includegraphics[width = \columnwidth]{../figs/iOS-2.png}
-		\subcaption{iOS版アンケート結果}
-		\end{minipage}
-		\caption{操作性の評価比較}
-		\label{fig:sousasei}
-		\end{figure}
+		\vspace{-10pt}
+		\begin{table}[H]
+		\begin{center}
+		\caption{アンケート結果の統計}
+		\label{tab:resoult}
+		\begin{tabular}{cc|ccc} \Hline
+		&評価項目&平均点&中央値&分散\\ \hline
+		&没入感&3.36&4&1.14\\
+		PC&操作性&3.09&3&0.992\\
+		&応答性&3.54&4&2.07\\ \hline
+		&没入感&3.90&4&2.63\\
+		iOS&操作性&3.45&3&1.88\\
+		&応答性&2.82&2&2.33\\ \Hline
+		\end{tabular}
+		\end{center}
+		\end{table}
 
-		\begin{figure}[H]
-		\centering
-		\begin{minipage}{0.45\columnwidth}
-		\centering
-		\includegraphics[width = \columnwidth]{../figs/PC-3.png}
-		\subcaption{PC版アンケート結果}
-		\end{minipage}
-		\hspace{0.04\columnwidth}
-		\begin{minipage}{0.45\columnwidth}
-		\centering
-		\includegraphics[width = \columnwidth]{../figs/iOS-3.png}
-		\subcaption{iOS版アンケート結果}
-		\end{minipage}
-		\caption{操作遅延の評価比較}
-		\label{fig:tien}
-		\end{figure}
-		\vspace{-15pt}
+		表\refeq{tab:resoult}より,没入感,操作性の点ではiOS版の方が平均点が高くなっている
+		ことがわかる．しかし,分散は3項目全てにおいてPC版の方が少なくなっており,
+		iOS版はかなり評価点数に個人差があると読み取ることができる．
 
-		
 
 \section{おわりに}
 	本研究ではPC版のシミュレータとiOS版のシミュレータの2種類を作製し,健常者に
