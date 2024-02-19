@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.4.5)  19 FEB 2024 09:08
+This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.4.5)  19 FEB 2024 13:18
  system commands enabled.
  file:line:error style messages enabled.
 **/home/kawai/Soturon/report/intermediate/final-announcement/final
@@ -713,31 +713,31 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 11.09656pt on input line 26.
 (load cache: extra_lmroman10-bold.luc)
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 37.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 37.
+(Font)              scaled to size 9.24713pt on input line 35.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 37.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 37.
+(Font)              scaled to size 9.24713pt on input line 35.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 55.
+(Font)              scaled to size 6.47299pt on input line 52.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 55.
-<../figs/IMG_0345.JPG, id=1, 1673.25125pt x 940.51375pt>
-File: ../figs/IMG_0345.JPG Graphic file (type jpg)
-<use ../figs/IMG_0345.JPG>
-Package luatex.def Info: ../figs/IMG_0345.JPG  used on input line 85.
-(luatex.def)             Requested size: 197.76036pt x 111.149pt.
+(Font)              scaled to size 4.62357pt on input line 52.
+<../figs/IMG_1866.PNG, id=1, 1339.0025pt x 752.8125pt>
+File: ../figs/IMG_1866.PNG Graphic file (type png)
+<use ../figs/IMG_1866.PNG>
+Package luatex.def Info: ../figs/IMG_1866.PNG  used on input line 81.
+(luatex.def)             Requested size: 197.76036pt x 111.18246pt.
 (load cache: extra_lmroman9-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 86.
+(Font)              scaled to size 8.32242pt on input line 82.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 86.
+(Font)              scaled to size 8.32242pt on input line 82.
 <../figs/IMG_1867.PNG, id=2, 1339.0025pt x 752.8125pt>
 File: ../figs/IMG_1867.PNG Graphic file (type png)
 <use ../figs/IMG_1867.PNG>
-Package luatex.def Info: ../figs/IMG_1867.PNG  used on input line 92.
+Package luatex.def Info: ../figs/IMG_1867.PNG  used on input line 88.
 (luatex.def)             Requested size: 197.76036pt x 111.18246pt.
  [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -746,26 +746,26 @@ Package luatex.def Info: ../figs/IMG_1867.PNG  used on input line 92.
 <../figs/PCnomal.png, id=19, 1927.2pt x 1084.05pt>
 File: ../figs/PCnomal.png Graphic file (type png)
 <use ../figs/PCnomal.png>
-Package luatex.def Info: ../figs/PCnomal.png  used on input line 107.
+Package luatex.def Info: ../figs/PCnomal.png  used on input line 103.
 (luatex.def)             Requested size: 197.76036pt x 111.2399pt.
 <../figs/iOSnomal.png, id=20, 1206.75844pt x 563.85657pt>
 File: ../figs/iOSnomal.png Graphic file (type png)
 <use ../figs/iOSnomal.png>
-Package luatex.def Info: ../figs/iOSnomal.png  used on input line 113.
+Package luatex.def Info: ../figs/iOSnomal.png  used on input line 109.
 (luatex.def)             Requested size: 197.76036pt x 92.39563pt.
- [2<../figs/IMG_0345.JPG><../figs/IMG_1867.PNG><../figs/PCnomal.png><../figs/iOSnomal.png>] (./final.aux))
+ [2<../figs/IMG_1866.PNG><../figs/IMG_1867.PNG><../figs/PCnomal.png><../figs/iOSnomal.png>] (./final.aux))
 
 Here is how much of LuaTeX's memory you used:
  11916 strings out of 478278
- 244631,1977958 words of node,token memory allocated
+ 195703,1977958 words of node,token memory allocated
  1065 words of node memory still in use:
    10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 201 attribute, 58 glue_spec, 29 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:42,2:60420,3:490,4:432,5:88,6:62,7:6606,8:25,9:2904,10:23,11:26
+   avail lists: 1:39,2:55838,3:502,4:434,5:95,6:64,7:6269,8:25,9:2729,10:23,11:14
  31588 multiletter control sequences out of 65536+600000
  76 fonts using 45993231 bytes
  118i,9n,128p,1819b,732s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on final.pdf (2 pages, 2029011 bytes).
+Output written on final.pdf (2 pages, 1963261 bytes).
 
 PDF statistics: 83 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
