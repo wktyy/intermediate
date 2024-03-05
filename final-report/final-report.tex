@@ -175,8 +175,18 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 		解説を行う.そして,第4章に研究手法を提示し,第5章に研究結果を示す.
 
 	\section{関連研究}
-		\subsection{仮想筋電義手シミュレータ}
-			ああ
+		\subsection{仮想筋電義手シミュレータの訓練効果}
+		VRを利用した筋電義手操作トレーニングシステムの効果については\cite{ref:1}で報告されている.
+		この研究では筋電位(EMG:Electromyogram)を用いて腕の動作を検出し,
+		筋電義手操作トレーニングとして行われるBox and Block Test(BBT)トレーニングを用いて
+		実際の訓練効果に匹敵する訓練をVR環境下で実現することを目的として研究されている.
+		手法としてはEMG信号を用いた仮想筋電義手トレーニングシステムを構成し,タスク遂行能力・上肢運動制御能力・
+		筋力制御能力・手先動作制御能力の4つの観点から評価を行っている.
+
+
+
+		
+
 		\subsection{FirstVRでの足位検出}
 		FirstVRを用いた関連研究としては足にFirstVRを装着することで足の筋変位による
 		足の接地状態の検出を行う研究\cite{ref:6}が行われている.この研究では
@@ -194,7 +204,7 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 		文献\cite{ref:6}によると,足の浮遊状態(遊脚期)の検出には体軸よりも足が後ろになっている状態が検出精度が高くなる
 		傾向にあるということが報告されており,その姿勢状態を学習させて実験協力者10名(男性6名,女性4名)
 		にトレッドミルを用いて歩行データを計測されていた.
-\clearpage
+
 		文献\cite{ref:6}より引用した男女別の
 		遊脚期(Swing phase)と立脚期(Stance phase)の陽性率を図\refeq{fig:RR-malefemale}に示す.
 
@@ -311,13 +321,13 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 			ボーンによるメッシュ変形の様子を図\refeq{fig:bonecontrol}に示す.
 			\begin{figure}[H]
 			\centering
-			\begin{minipage}{0.3\columnwidth}
+			\begin{minipage}{0.25\columnwidth}
 			\centering
 			\includegraphics[width = \columnwidth]{../figs/bone1.png}
 			\subcaption{ボーン変形前}
 			\end{minipage}
 			\hspace{0.04\columnwidth}
-			\begin{minipage}{0.3\columnwidth}
+			\begin{minipage}{0.25\columnwidth}
 			\centering
 			\includegraphics[width = \columnwidth]{../figs/bonecheck.png}
 			\subcaption{ボーン変形後}
@@ -404,7 +414,8 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 \vspace{-15pt}
 	\section{FirstVR}
 		FirstVRはH2L株式会社\cite{ref:5}によって開発・製造されている筋変位センサを用いたウェアラブルデバイスである.
-		この製品は現状iOSとAndroidのみ対応しており,アプリケーション開発をする際はH2Lから公開されている``FirstVR sdk''というUnity開発用APIが公開されている
+		この製品は現状iOSとAndroidのみ対応しており,本研究では主にiOSと接続を行った.
+		また,開発H2Lから公開されている``FirstVR sdk''というUnity開発用APIが公開されている
 		\subsection{デバイス構成}
 				FirstVRの外観を図\refeq{fig:FirstVR}に示す.
 				\begin{figure}[H]
@@ -1223,7 +1234,6 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 	mediVR.Inc.,https://www.medivr.jp/
 	最終閲覧日 2023/01/31
 
-	
 
 
 	\bibitem{ref:6}
@@ -1278,7 +1288,7 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 		\end{enumerate}
 		以上の手順でUnityで作成したシーンのビルドが完了する.
 		Windows,\,LinuxなどのOSではビルドしたフォルダに実行ファイルが作成されているため,
-		そのファイルからシミュレータを実行することができる.また,\,AndroiOSに関しても,作成した実行ファイルを
+		そのファイルからシミュレータを実行することができる.また,\,AndroidOSに関しても,作成した実行ファイルを
 		AndroidOSに転送し,ファイル解凍することで実行できる.
 
 		\begin{figure}[H]
@@ -1304,10 +1314,10 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 					\item アプリ一覧からインストールしたアプリを実行する
 				\end{enumerate}
 				以上の手順でiOS用のシミュレータをビルドして実行できる.
-				この手順で一番重要なのが,6の手順でこれがなければアプリを実行してもMade by Unityのポップがでた
+				この手順で一番重要なのが,\,6の手順であり,これがなければアプリを実行してもMade by Unityのポップがでた
 				直後に動かなくなってしまう.これらのエラーはXcode上でログが残されているため,発生しているエラーを
-				解消すれば実行することができる.大抵の場合,端末側の権限付与ができておらずアプリが実行できないエラーが多発するため
-				よく確認をすること.
+				解消すれば実行することができる.大抵の場合,端末側の権限付与ができておらずアプリが実行できないケースが多いため
+				よく確認をすることが必要である.
 
 \clearpage
 \section{総変化量の測定値}
