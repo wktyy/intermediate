@@ -185,8 +185,6 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 
 
 
-		
-
 		\subsection{FirstVRでの足位検出システム}
 		FirstVRを用いた関連研究としては足にFirstVRを装着することで足の筋変位による
 		足の接地状態の検出を行う研究\cite{ref:6}が行われている.この研究では
@@ -415,7 +413,7 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 	\section{FirstVR}
 		FirstVRはH2L株式会社\cite{ref:5}によって開発・製造されている筋変位センサを用いたウェアラブルデバイスである.
 		この製品は現状iOSとAndroidのみ対応しており,本研究では主にiOSと接続を行った.
-		また,開発H2Lから公開されている``FirstVR sdk''というUnity開発用APIが公開されている
+		また,H2LからUnity開発用APIとして公開されている``FirstVR sdk''を用いた.
 		\subsection{デバイス構成}
 				FirstVRの外観を図\refeq{fig:FirstVR}に示す.
 				\begin{figure}[H]
@@ -441,16 +439,45 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 			その値を筋変位センサの測定値として出力している.
 
 		\subsection{デバイスの仕様}
-			デバイスの仕様をかくところ
-			
+			FirstVRの製品仕様を表\refeq{tab:FirstVR}に示す.
+			\begin{table}[H]
+			\begin{center}
+			\caption{FirstVRの製品仕様}
+			\label{tab:FirstVR}
+			\begin{tabular}{c|c} \Hline
+				内蔵センサ&14チャンネル工学筋変位センサ\\
+				&3軸ジャイロ,3軸加速度,3軸磁気\\ \hline
+				充電許容電圧&Micro-USB B,5V,500mA\\
+				対応端末&iOS,Android\\
+				推奨構成&iPhone7以降,GALAXY S8/S8+\\ \hline
+				本体サイズ&335\times\,80\times\,13\,mm\\
+				本体重量&62\,g\\ \Hline
+			\end{tabular}
+			\end{center}
+			\hspace{-32truemm}
+			\rightline{文献\cite{ref:3}から引用}
+			\end{table}
+			\vspace{-15pt}
 		\subsection{トラッキング}
 			FirstVRには3軸ジャイロセンサと加速度センサが搭載されており,\,Unityで作製したアプリ上で測定値を
 			確認することができる.本研究ではこのジャイロセンサを用いて,腕のピッチ,ヨー,ロールの3軸の
 			回転をシミュレータに反映させている.
 		\subsection{ジェスチャ認識/キャリブレーション}
 			FirstVRのジェスチャ認識方法は,ジェスチャ状態と非ジェスチャ状態における筋変位センサの
-			各チャンネルごとの値をサンプリングし,機械学習させることでジェスチャ状態のセンサ値を
-			しきい値としてジェスチャ認識を行っている.
+			各チャンネルごとの値をサンプリングし,機械学習をおこなうことでジェスチャ状態のセンサ値を
+			しきい値としてジェスチャ認識を行っている.\,FirstVR sdkに用意されているインターフェースを図\refeq{fig:gestureinterface}に示す.
+			\begin{figure}[H]
+			\centering
+			\includegraphics[width = 4cm]{../figs/FVRsdk.png}
+			\caption{ジェスチャ認識用インターフェース}
+			\label{fig:gestureinterface}
+			\end{figure}
+			\vspace{-15pt}
+			図\refeq{fig:gestureinterface}では,設定できる項目として,samples/sec(以降,sample数と表記)とRound Lengthの
+			2項目が用意されている.これは,\,FirstVRの筋変位センサの閾値を決定するためのサンプリング点数とサンプリング時間である.
+			また,学習させる手法としては,ジェスチャをしていない場合をSet NonTargetボタン,ジェスチャ状態をSet Targetボタンでサンプリングを行うことで,
+			ジェスチャの学習が完了する.ジェスチャ時には下部のバーが緑色に変色する.
+
 
 \chapter{研究手順}
 	\section{使用器具}
@@ -489,10 +516,10 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 \vspace{-15pt}
 	\section{VHの3Dモデル取り込み}
 		ハンディ3DスキャナであるEinScan HXを用いて左腕をスキャンする.
-		本研究では,VHにテクスチャを貼って用いることを前提としているため,
-		スキャン形式をRapidスキャンモードで,3Dモデルの精度を高めるために
-		頂点数を50万点で出力し,出力形式としてテクスチャがメッシュに割当
-		されているobj形式を選択する.
+		本研究では,\,VHにテクスチャを貼って用いることを前提としているため,
+		スキャン形式をRapidスキャンモード,\,3Dモデルの精度を高めるために
+		頂点数を50万点に設定する.また,出力形式としてテクスチャがメッシュに割当
+		されているobj形式を選択し,出力する.
 
 	\section{VHのスムージング処理・ボーン配置}
 		obj形式で取り込んだ3Dモデルは測定によるノイズが含まれており,特に掌と手の甲の境界線
@@ -508,11 +535,11 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 	\section{FirstVRの性能評価手法}
 		本研究で構成するシミュレータの入力感度を検証するため,実験協力者として電子工学科5年生の学生31名(男性26名:女性5名)を対象に以下の手順でFirstVRの評価を行う.
 		また,ジェスチャ状態は物体保持のアニメーションと同期させるため,じゃんけんのグーのジェスチャを学習させる.
-		FirstVR性能評価の配置図を図\refeq{fig:firstVRtest}に示す.
+		FirstVRの性能評価実験の様子を図\refeq{fig:firstVRtest}に示す.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width = 8cm]{../figs/IMG_5202.PNG}
-			\caption{FirstVRの性能評価の配置図}
+			\caption{FirstVRの性能評価実験の様子}
 			\label{fig:firstVRtest}
 		\end{figure}
 		\vspace{-15pt}
@@ -520,8 +547,8 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 		\begin{enumerate}
 			\item 装着位置の決定\\
 				FirstVRの動作原理より,近赤外線で筋変位を取得しているため,かなり腕と密着させて装着する必要がある.
-				そのため本研究では,腕の筋肉量が一番多い位置を肘から手首までの1/4程度の距離と推定し,実験協力者の肘から手首までの長さを測定し,
-				肘を原点に1/4の距離(約7\,cm)で装着する.
+				そのため本研究では,腕の筋肉量が一番多い位置を肘を始点として腕全体の1/4程度の距離と推定し,実験協力者の肘から手首までの長さを測定し,
+				腕の1/4の距離(約7cm前後)で装着する.
 			\item FirstVRの接続と学習\\
 				スマートフォン端末とFirstVRを接続し,測定するsample数でジェスチャをしていない状態とジェスチャしている状態を学習させた.
 			\item FirstVRの測定\\
@@ -532,15 +559,15 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 		\end{enumerate}
 
 		ノイズの判定方法は実際の腕の動作とアプリケーションの表示が異なる場合にノイズと判定した.
-		sample数の選出はノイズの回数が同数だった場合はシミュレータの負荷軽減のためにsample数が少ない方を選出する.
+		sample数の選出は,ノイズの回数が同数だった場合はシミュレータの負荷軽減のためにsample数が少ない方を選出する.
 
-		FirstVRの評価基準としてジェスチャ認識率と独自の評価指標による性能評価を行った.
-		各実験協力者におけるジェスチャ認識率$G_{r}$は各sample数$D = 11$,ジェスチャ誤判定の回数$m$として,測定回数$s = 5$のとき式\refeq{eq:gestureprobability1}によって求められる.
+		FirstVRの評価基準として,ジェスチャ認識率と独自の評価指標による性能評価を行った.
+		各実験協力者におけるジェスチャ認識率$G_{r}$は各sample数$D = 11$,ジェスチャ誤判定の回数$m$として,測定回数$s = 5$のとき,式(\refeq{eq:gestureprobability1})によって求められる.
 		\begin{equation}
 			\label{eq:gestureprobability1}
 			G_{r} = \left( 1-\frac{m}{D \times s} \right) \times 100 \, [\%]
 		\end{equation}
-		また,各sample数におけるジェスチャ認識率$G_{s}$は実験協力者$n = 31$として同様に式\refeq{eq:gestureprobability2}で求められる.
+		また,各sample数におけるジェスチャ認識率$G_{s}$は実験協力者$n = 31$として同様に式(\refeq{eq:gestureprobability2})で求められる.
 		\begin{equation}
 			\label{eq:gestureprobability2}
 			G_{s} = \left( 1-\frac{m}{n \times s} \right) \times 100 \, [\%]
@@ -549,7 +576,7 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 		
 		加えて,\,FirstVRで筋変位を測定した14チャンネル光変位センサの測定値を用いてジェスチャ認識の精度を確認するため,
 		各実験協力者・各sample数ごとの評価指標として総変化量$X$を定める.総変化量の算出は測定回数$s = 5$,チャンネル数$r = 14$としてジェスチャ状態で測定した筋変位センサの値を$M_{{s}{r}}$
-		とジェスチャしていない状態の筋変位センサの値$N_{r}$とすると式\refeq{eq:originaldata}と示すことができる.
+		とジェスチャしていない状態の筋変位センサの値$N_{r}$とすると式(\refeq{eq:originaldata})と示すことができる.
 		この評価指標を用いて各sample数ごとに分散を調べ,最適なsample数の検討を行う.
 		\begin{equation}
 			\label{eq:originaldata}
@@ -557,14 +584,14 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 		\end{equation}
 		
 	\section{シミュレータの構成}
-		Blenderで処理したVHをUnityにインポートし,保持可能オブジェクトとして球体,円柱,立方体の3個用意し,
+		Blenderで処理したVHをUnityにインポートし,保持可能オブジェクトとして球体,円柱,立方体の3個を用意し,
 		大別してPLAYER,STAGE,UIの構成にする.シミュレータは入力インターフェースとしてキーボード・マウス
 		を用いるPC版と,\,FirstVRを用いるiOS版の2種類を構成した.
 		図\refeq{fig:simuraterconst}にシミュレータの構成図を示す.
 
 		\begin{figure}[H]
 		\centering
-		\includegraphics[width = 12cm]{../figs/IMG_0340.JPG}
+		\includegraphics[width = 12cm]{../figs/IMG_0384.JPG}
 		\caption{シミュレータ構成図}
 		\label{fig:simuraterconst}
 		\end{figure}
@@ -731,7 +758,7 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 		\end{figure}
 		\vspace{-15pt}
 
-		各アニメーションの遷移フラグとしてgrap\_sphere1,\,grap\_cylinder1,\,grap\_cube1を用意した.
+		図\refeq{fig:Handanimater}において,各アニメーションの遷移フラグとしてgrap\_sphere1,\,grap\_cylinder1,\,grap\_cube1を用意した.
 		ジェスチャをしていない状態でnutralというなにもアニメーションをしないクリップをループ再生し続け,
 		衝突判定とジェスチャ認識が同時に行われた場合に対応するオブジェクトのフラグを立てて,オブジェクト保持のアニメーションを再生させる.
 
@@ -744,7 +771,7 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 		\label{fig:FirsrVRfit}
 		\end{figure}
 		\vspace{-15pt}
-		机上に5cm四方のグリッド線が描かれたボードを用いて肘の設置店から手首までを測定し,
+		机上に5cm四方のグリッド線が描かれたボードを用いて肘の設置点から手首までを測定し,
 		その1/4の距離にFirstVRを装着させた.図\refeq{fig:FirstVRevaluation}に測定時の様子を
 		示す.
 
@@ -847,9 +874,9 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 		\end{table}
 		\vspace{-5pt}
 
-		表\refeq{tab:gestureprobability1}より,ジェスチャ誤検知の回数が極端に多い場合とほとんど誤検知がないというように分布していることがわかる.
-		また,10回以上誤検知が起きている実験協力者のデータでは特定のsample数によらずに誤検知が発生しているため,\,sample数によるジェスチャ認識率のデータ
-		含めてしまうとノイズによってデータが正しく求められないため除外した.
+		表\refeq{tab:gestureprobability1}より,ジェスチャ誤検知の回数が極端に多い場合と,ほとんど誤検知がない場合に分布していることがわかる.
+		また,10回以上誤検知が起きている実験協力者の測定データでは特定のsample数によらずに誤検知が発生しているため,\,sample数によるジェスチャ認識率
+		含めてしまうとノイズによって最適sample数が正しく求められないため除外した.
 \clearpage
 		各sample数ごとのジェスチャ認識率を表\refeq{tab:gestureprobability2}に示す.
 		\begin{table}[H]
@@ -891,9 +918,9 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 		\label{fig:FVRdata}
 		\end{figure}
 		\vspace{-15pt}
-		図\refeq{fig:FVRdata}より,標本分散はsample70が最も小さく,次いでsample7が分散が少なくなっていることがわかる.
+		図\refeq{fig:FVRdata}より,標本分散はsample数70が最も小さく,次いでsample数7が分散が少なくなっていることがわかる.
 		ここで,\,sample数7,70,100以外のデータは分散がこの3種類よりも比較的大きく,外れ値も含んでいるため,安定して動作していると考えにくい.
-		また,この3種類の中で最もシミュレータに対する負荷が小さいデータとしてsample7を選定した.
+		また,この3種類の中で最もシミュレータに対する負荷が小さいデータとしてsample数7を選定した.
 \clearpage
 	\section{シミュレータの構成}
 		PC版シミュレータの画面構成を図\refeq{fig:PCsimurate}に示す.
@@ -981,7 +1008,7 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 				接続できていないときはDisconnectedという表記とともにマーカーが赤色になる.
 				接続中にはConnectingとなり,マーカーが黄色に変化し,接続が確立すると
 				Connectedとなり,マーカーが緑色に変化する.
-			\item Bottans\\
+			\item Buttans\\
 				Setting,Recet,Recenterのボタンが用意されており,
 				Settingボタンは,\,PC版同様にメインメニューを起動するためのボタンである.
 				また,\,Recetボタンは,\,Objectが移動した際に元の位置に戻すためのボタンである.
@@ -1168,7 +1195,7 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 	iPhone自体のセンサを用いて移動や顔の振り向きを検知する必要がある.
 	
 	本研究では腕の3DモデルをEinScanHXによって作製したが,今後3Dスキャナが一般的に
-	普及して,体格が近い人の腕をスキャンできるようになると想定すると,そのデータを
+	普及して,体格が近い人の腕をスキャンできるようになることを想定すると,そのデータを
 	シミュレータに用いるためにスムージングからボーン配置までを自動的に行えるアプリケーション
 	があればBlenderを用いて作業する工程を省略することができるようになる.
 
@@ -1199,7 +1226,7 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 	シミュレータを実装することで定性評価を行うことは可能であると考える.
 	定量的なデータを取得するためには脳波測定を用いての測定やシミュレータと現実空間の
 	移動量の誤差などを検討していくことになるだろう.
-	最後に,シミュレータの没入感をあげる方法として,VRゴーグルを用いたシステムにできると
+	最後に,シミュレータの没入感をあげる方法として,VRゴーグルを用いたシステムが構成できれば
 	より訓練効果などに影響を与えられるのではないかと思われる.
 \clearpage
 
@@ -1222,7 +1249,9 @@ FirstVRのシステムとを比較した.まず,\,FirstVRのジェスチャ認�
 	Pain Med. 2019 May.
 
 	\bibitem{ref:3}
-	H2L.Inc.,Tokyo106-0032,Japan;satoshi.hosono@h2l.jp
+	H2L.Inc.,Tokyo106-0032,Japan;satoshi.hosono@h2l.jp,
+	http://first-vr.com/specifications/
+	最終閲覧日 2023/01/31
 	
 
 	\bibitem{ref:4}
