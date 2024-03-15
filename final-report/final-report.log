@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.4.5)  14 MAR 2024 14:35
+This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.4.5)  15 MAR 2024 14:36
  system commands enabled.
  file:line:error style messages enabled.
 **/home/kawai/Soturon/report/intermediate/final-report/final-report
@@ -945,28 +945,28 @@ LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
 <../figs/sensors-21-01081-g004.jpg, id=16, 3090.54625pt x 2429.075pt>
 File: ../figs/sensors-21-01081-g004.jpg Graphic file (type jpg)
 <use ../figs/sensors-21-01081-g004.jpg>
-Package luatex.def Info: ../figs/sensors-21-01081-g004.jpg  used on input line 195.
+Package luatex.def Info: ../figs/sensors-21-01081-g004.jpg  used on input line 198.
 (luatex.def)             Requested size: 227.62204pt x 178.87401pt.
 [1
 
 
-<../figs/sensors-21-01081-g004.jpg>]
+]
 <../figs/sensors-21-01081-g010.jpg, id=22, 2382.9025pt x 1649.16125pt>
 File: ../figs/sensors-21-01081-g010.jpg Graphic file (type jpg)
 <use ../figs/sensors-21-01081-g010.jpg>
-Package luatex.def Info: ../figs/sensors-21-01081-g010.jpg  used on input line 211.
+Package luatex.def Info: ../figs/sensors-21-01081-g010.jpg  used on input line 214.
 (luatex.def)             Requested size: 227.62204pt x 157.52753pt.
- [2<../figs/sensors-21-01081-g010.jpg>]
+ [2<../figs/sensors-21-01081-g004.jpg><../figs/sensors-21-01081-g010.jpg>]
 第2章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 235--235
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 238--238
 ||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 2 |\JY3/mc/b/n/20.74 章 []| 
  []
 
 <../figs/EinScan.png, id=26, 451.6875pt x 451.6875pt>
 File: ../figs/EinScan.png Graphic file (type png)
 <use ../figs/EinScan.png>
-Package luatex.def Info: ../figs/EinScan.png  used on input line 247.
+Package luatex.def Info: ../figs/EinScan.png  used on input line 250.
 (luatex.def)             Requested size: 142.26378pt x 142.26163pt.
 [3
 
@@ -974,334 +974,334 @@ Package luatex.def Info: ../figs/EinScan.png  used on input line 247.
 <../figs/SmoothingBeforCube.png, id=32, 528.97626pt x 623.32875pt>
 File: ../figs/SmoothingBeforCube.png Graphic file (type png)
 <use ../figs/SmoothingBeforCube.png>
-Package luatex.def Info: ../figs/SmoothingBeforCube.png  used on input line 300.
+Package luatex.def Info: ../figs/SmoothingBeforCube.png  used on input line 303.
 (luatex.def)             Requested size: 116.87697pt x 137.72244pt.
 (load cache: extra_lmroman9-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 301.
+(Font)              scaled to size 8.32242pt on input line 304.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 301.
+(Font)              scaled to size 8.32242pt on input line 304.
 <../figs/SmoothingAfterCube.png, id=33, 528.97626pt x 623.32875pt>
 File: ../figs/SmoothingAfterCube.png Graphic file (type png)
 <use ../figs/SmoothingAfterCube.png>
-Package luatex.def Info: ../figs/SmoothingAfterCube.png  used on input line 306.
+Package luatex.def Info: ../figs/SmoothingAfterCube.png  used on input line 309.
 (luatex.def)             Requested size: 116.87697pt x 137.72244pt.
 <../figs/bone1.png, id=34, 506.89375pt x 529.98pt>
 File: ../figs/bone1.png Graphic file (type png)
 <use ../figs/bone1.png>
-Package luatex.def Info: ../figs/bone1.png  used on input line 324.
+Package luatex.def Info: ../figs/bone1.png  used on input line 327.
 (luatex.def)             Requested size: 116.87697pt x 122.20012pt.
 <../figs/bonecheck.png, id=35, 506.89375pt x 529.98pt>
 File: ../figs/bonecheck.png Graphic file (type png)
 <use ../figs/bonecheck.png>
-Package luatex.def Info: ../figs/bonecheck.png  used on input line 330.
+Package luatex.def Info: ../figs/bonecheck.png  used on input line 333.
 (luatex.def)             Requested size: 116.87697pt x 122.20012pt.
  [4<../figs/SmoothingBeforCube.png><../figs/SmoothingAfterCube.png><../figs/bone1.png><../figs/bonecheck.png>]
 <../figs/NomalShader.png, id=44, 682.55pt x 363.3575pt>
 File: ../figs/NomalShader.png Graphic file (type png)
 <use ../figs/NomalShader.png>
-Package luatex.def Info: ../figs/NomalShader.png  used on input line 352.
+Package luatex.def Info: ../figs/NomalShader.png  used on input line 355.
 (luatex.def)             Requested size: 187.00029pt x 99.54936pt.
 <../figs/ReflexShader.png, id=45, 682.55pt x 363.3575pt>
 File: ../figs/ReflexShader.png Graphic file (type png)
 <use ../figs/ReflexShader.png>
-Package luatex.def Info: ../figs/ReflexShader.png  used on input line 358.
+Package luatex.def Info: ../figs/ReflexShader.png  used on input line 361.
 (luatex.def)             Requested size: 187.00029pt x 99.54936pt.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 369.
+(Font)              scaled to size 9.24713pt on input line 372.
 (load cache: extra_lmsans10-regular.luc)
 <../figs/raycast.png, id=46, 770.88pt x 325.215pt>
 File: ../figs/raycast.png Graphic file (type png)
 <use ../figs/raycast.png>
-Package luatex.def Info: ../figs/raycast.png  used on input line 380.
+Package luatex.def Info: ../figs/raycast.png  used on input line 383.
 (luatex.def)             Requested size: 341.43306pt x 144.03789pt.
  [5<../figs/NomalShader.png><../figs/ReflexShader.png>]
 <../figs/animationclip.png, id=53, 824.07875pt x 473.77pt>
 File: ../figs/animationclip.png Graphic file (type png)
 <use ../figs/animationclip.png>
-Package luatex.def Info: ../figs/animationclip.png  used on input line 397.
+Package luatex.def Info: ../figs/animationclip.png  used on input line 400.
 (luatex.def)             Requested size: 341.43306pt x 196.2928pt.
 <../figs/animaterexample.png, id=54, 860.21375pt x 461.725pt>
 File: ../figs/animaterexample.png Graphic file (type png)
 <use ../figs/animaterexample.png>
-Package luatex.def Info: ../figs/animaterexample.png  used on input line 408.
+Package luatex.def Info: ../figs/animaterexample.png  used on input line 411.
 (luatex.def)             Requested size: 341.43306pt x 183.27061pt.
  [6<../figs/raycast.png><../figs/animationclip.png>]
 <../figs/IMG_0337.JPG, id=60, 1672.2475pt x 596.2275pt>
 File: ../figs/IMG_0337.JPG Graphic file (type jpg)
 <use ../figs/IMG_0337.JPG>
-Package luatex.def Info: ../figs/IMG_0337.JPG  used on input line 423.
+Package luatex.def Info: ../figs/IMG_0337.JPG  used on input line 426.
 (luatex.def)             Requested size: 350.6309pt x 125.01132pt.
 <../figs/IMG_0336.JPG, id=61, 1672.2475pt x 626.34pt>
 File: ../figs/IMG_0336.JPG Graphic file (type jpg)
 <use ../figs/IMG_0336.JPG>
-Package luatex.def Info: ../figs/IMG_0336.JPG  used on input line 429.
+Package luatex.def Info: ../figs/IMG_0336.JPG  used on input line 432.
 (luatex.def)             Requested size: 350.6309pt x 131.32501pt.
  [7<../figs/animaterexample.png><../figs/IMG_0337.JPG><../figs/IMG_0336.JPG>]
 <../figs/FVRsdk.png, id=66, 268.75406pt x 549.55313pt>
 File: ../figs/FVRsdk.png Graphic file (type png)
 <use ../figs/FVRsdk.png>
-Package luatex.def Info: ../figs/FVRsdk.png  used on input line 471.
+Package luatex.def Info: ../figs/FVRsdk.png  used on input line 474.
 (luatex.def)             Requested size: 113.81102pt x 232.72263pt.
  [8<../figs/FVRsdk.png>]
 第3章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 482--482
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 485--485
 ||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 3 |\JY3/mc/b/n/20.74 章 []| 
  []
 
 <../figs/IMG_5202.PNG, id=71, 1567.8575pt x 1130.2225pt>
 File: ../figs/IMG_5202.PNG Graphic file (type png)
 <use ../figs/IMG_5202.PNG>
-Package luatex.def Info: ../figs/IMG_5202.PNG  used on input line 541.
+Package luatex.def Info: ../figs/IMG_5202.PNG  used on input line 544.
 (luatex.def)             Requested size: 227.62204pt x 164.07639pt.
 [9
 
 ] [10<../figs/IMG_5202.PNG>]
-<../figs/IMG_0384.JPG, id=82, 1244.65pt x 1003.75pt>
-File: ../figs/IMG_0384.JPG Graphic file (type jpg)
-<use ../figs/IMG_0384.JPG>
-Package luatex.def Info: ../figs/IMG_0384.JPG  used on input line 594.
-(luatex.def)             Requested size: 341.43306pt x 275.35054pt.
- [11<../figs/IMG_0384.jpg>] [12]
+<../figs/IMG_0384.png, id=82, 933.4875pt x 657.95813pt>
+File: ../figs/IMG_0384.png Graphic file (type png)
+<use ../figs/IMG_0384.png>
+Package luatex.def Info: ../figs/IMG_0384.png  used on input line 597.
+(luatex.def)             Requested size: 341.43306pt x 240.64967pt.
+ [11<../figs/IMG_0384.png>]
 第4章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 623--623
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 627--627
 ||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 4 |\JY3/mc/b/n/20.74 章 []| 
  []
 
-<../figs/SmoothingBeforALL.png, id=90, 209.78375pt x 781.92125pt>
+<../figs/SmoothingBeforALL.png, id=87, 209.78375pt x 781.92125pt>
 File: ../figs/SmoothingBeforALL.png Graphic file (type png)
 <use ../figs/SmoothingBeforALL.png>
-Package luatex.def Info: ../figs/SmoothingBeforALL.png  used on input line 631.
+Package luatex.def Info: ../figs/SmoothingBeforALL.png  used on input line 635.
 (luatex.def)             Requested size: 51.42615pt x 191.6738pt.
-<../figs/IMG_5145.jpg, id=91, 1910.13625pt x 4044.10875pt>
+<../figs/IMG_5145.jpg, id=88, 1910.13625pt x 4044.10875pt>
 File: ../figs/IMG_5145.jpg Graphic file (type jpg)
 <use ../figs/IMG_5145.jpg>
-Package luatex.def Info: ../figs/IMG_5145.jpg  used on input line 638.
+Package luatex.def Info: ../figs/IMG_5145.jpg  used on input line 642.
 (luatex.def)             Requested size: 93.50014pt x 197.89772pt.
-<../figs/SmoothingBeforRear.png, id=92, 501.875pt x 767.86874pt>
+<../figs/SmoothingBeforRear.png, id=89, 501.875pt x 767.86874pt>
 File: ../figs/SmoothingBeforRear.png Graphic file (type png)
 <use ../figs/SmoothingBeforRear.png>
-Package luatex.def Info: ../figs/SmoothingBeforRear.png  used on input line 657.
+Package luatex.def Info: ../figs/SmoothingBeforRear.png  used on input line 661.
 (luatex.def)             Requested size: 140.25378pt x 214.59169pt.
-<../figs/SmoothingAfterRear.png, id=93, 562.1pt x 832.10875pt>
+<../figs/SmoothingAfterRear.png, id=90, 562.1pt x 832.10875pt>
 File: ../figs/SmoothingAfterRear.png Graphic file (type png)
 <use ../figs/SmoothingAfterRear.png>
-Package luatex.def Info: ../figs/SmoothingAfterRear.png  used on input line 664.
+Package luatex.def Info: ../figs/SmoothingAfterRear.png  used on input line 668.
 (luatex.def)             Requested size: 149.60594pt x 221.46004pt.
-[13
+[12
 
 <../figs/SmoothingBeforALL.png><../figs/IMG_5145.jpg><../figs/SmoothingBeforRear.png><../figs/SmoothingAfterRear.png>]
-<../figs/meshbone.png, id=100, 340.27126pt x 732.7375pt>
+<../figs/meshbone.png, id=97, 340.27126pt x 732.7375pt>
 File: ../figs/meshbone.png Graphic file (type png)
 <use ../figs/meshbone.png>
-Package luatex.def Info: ../figs/meshbone.png  used on input line 682.
+Package luatex.def Info: ../figs/meshbone.png  used on input line 686.
 (luatex.def)             Requested size: 113.81102pt x 245.08005pt.
-<../figs/grapsphere_side.png, id=101, 643.40375pt x 343.2825pt>
+<../figs/grapsphere_side.png, id=98, 643.40375pt x 343.2825pt>
 File: ../figs/grapsphere_side.png Graphic file (type png)
 <use ../figs/grapsphere_side.png>
-Package luatex.def Info: ../figs/grapsphere_side.png  used on input line 698.
+Package luatex.def Info: ../figs/grapsphere_side.png  used on input line 702.
 (luatex.def)             Requested size: 187.00029pt x 99.76936pt.
-<../figs/grapsphere_up.png, id=102, 215.80624pt x 319.1925pt>
+<../figs/grapsphere_up.png, id=99, 215.80624pt x 319.1925pt>
 File: ../figs/grapsphere_up.png Graphic file (type png)
 <use ../figs/grapsphere_up.png>
-Package luatex.def Info: ../figs/grapsphere_up.png  used on input line 704.
+Package luatex.def Info: ../figs/grapsphere_up.png  used on input line 708.
 (luatex.def)             Requested size: 84.14798pt x 124.4602pt.
-<../figs/grapcylinder_side.png, id=103, 592.2125pt x 325.215pt>
+<../figs/grapcylinder_side.png, id=100, 592.2125pt x 325.215pt>
 File: ../figs/grapcylinder_side.png Graphic file (type png)
 <use ../figs/grapcylinder_side.png>
-Package luatex.def Info: ../figs/grapcylinder_side.png  used on input line 715.
+Package luatex.def Info: ../figs/grapcylinder_side.png  used on input line 719.
 (luatex.def)             Requested size: 187.00029pt x 102.69138pt.
-<../figs/grapcylinder_up.png, id=104, 327.2225pt x 391.4625pt>
+<../figs/grapcylinder_up.png, id=101, 327.2225pt x 391.4625pt>
 File: ../figs/grapcylinder_up.png Graphic file (type png)
 <use ../figs/grapcylinder_up.png>
-Package luatex.def Info: ../figs/grapcylinder_up.png  used on input line 721.
+Package luatex.def Info: ../figs/grapcylinder_up.png  used on input line 725.
 (luatex.def)             Requested size: 93.50014pt x 111.85468pt.
- [14
+ [13
 
 <../figs/meshbone.png><../figs/grapsphere_side.png><../figs/grapsphere_up.png>]
-<../figs/grapcube_side.png, id=111, 471.7625pt x 306.14375pt>
+<../figs/grapcube_side.png, id=108, 471.7625pt x 306.14375pt>
 File: ../figs/grapcube_side.png Graphic file (type png)
 <use ../figs/grapcube_side.png>
-Package luatex.def Info: ../figs/grapcube_side.png  used on input line 733.
+Package luatex.def Info: ../figs/grapcube_side.png  used on input line 737.
 (luatex.def)             Requested size: 187.00029pt x 121.35287pt.
-<../figs/grapcube_up.png, id=112, 273.02pt x 392.46625pt>
+<../figs/grapcube_up.png, id=109, 273.02pt x 392.46625pt>
 File: ../figs/grapcube_up.png Graphic file (type png)
 <use ../figs/grapcube_up.png>
-Package luatex.def Info: ../figs/grapcube_up.png  used on input line 739.
+Package luatex.def Info: ../figs/grapcube_up.png  used on input line 743.
 (luatex.def)             Requested size: 93.50014pt x 134.40689pt.
-<../figs/Handanimater.png, id=113, 860.21375pt x 461.725pt>
+<../figs/Handanimater.png, id=110, 860.21375pt x 461.725pt>
 File: ../figs/Handanimater.png Graphic file (type png)
 <use ../figs/Handanimater.png>
-Package luatex.def Info: ../figs/Handanimater.png  used on input line 755.
+Package luatex.def Info: ../figs/Handanimater.png  used on input line 759.
 (luatex.def)             Requested size: 284.52756pt x 152.72198pt.
-<../figs/IMG_1386.JPG, id=114, 4047.12pt x 3035.34pt>
+<../figs/IMG_1386.JPG, id=111, 4047.12pt x 3035.34pt>
 File: ../figs/IMG_1386.JPG Graphic file (type jpg)
 <use ../figs/IMG_1386.JPG>
-Package luatex.def Info: ../figs/IMG_1386.JPG  used on input line 769.
+Package luatex.def Info: ../figs/IMG_1386.JPG  used on input line 773.
 (luatex.def)             Requested size: 284.52756pt x 213.3755pt.
- [15<../figs/grapcylinder_side.png><../figs/grapcylinder_up.png><../figs/grapcube_side.png><../figs/grapcube_up.png><../figs/Handanimater.png>]
-<../figs/IMG_5200.PNG, id=123, 1786.675pt x 1136.245pt>
+ [14<../figs/grapcylinder_side.png><../figs/grapcylinder_up.png><../figs/grapcube_side.png><../figs/grapcube_up.png><../figs/Handanimater.png>]
+<../figs/IMG_5200.PNG, id=120, 1786.675pt x 1136.245pt>
 File: ../figs/IMG_5200.PNG Graphic file (type png)
 <use ../figs/IMG_5200.PNG>
-Package luatex.def Info: ../figs/IMG_5200.PNG  used on input line 782.
+Package luatex.def Info: ../figs/IMG_5200.PNG  used on input line 786.
 (luatex.def)             Requested size: 210.3771pt x 133.77753pt.
-<../figs/IMG_5201.PNG, id=124, 1759.57375pt x 1130.2225pt>
+<../figs/IMG_5201.PNG, id=121, 1759.57375pt x 1130.2225pt>
 File: ../figs/IMG_5201.PNG Graphic file (type png)
 <use ../figs/IMG_5201.PNG>
-Package luatex.def Info: ../figs/IMG_5201.PNG  used on input line 788.
+Package luatex.def Info: ../figs/IMG_5201.PNG  used on input line 792.
 (luatex.def)             Requested size: 210.3771pt x 135.12071pt.
- [16<../figs/IMG_1386.JPG><../figs/IMG_5200.PNG><../figs/IMG_5201.PNG>]
-<../figs/IMG_0345.JPG, id=128, 1673.25125pt x 940.51375pt>
+ [15<../figs/IMG_1386.JPG><../figs/IMG_5200.PNG><../figs/IMG_5201.PNG>]
+<../figs/IMG_0345.JPG, id=125, 1673.25125pt x 940.51375pt>
 File: ../figs/IMG_0345.JPG Graphic file (type jpg)
 <use ../figs/IMG_0345.JPG>
-Package luatex.def Info: ../figs/IMG_0345.JPG  used on input line 808.
+Package luatex.def Info: ../figs/IMG_0345.JPG  used on input line 812.
 (luatex.def)             Requested size: 327.25407pt x 183.9376pt.
-<../figs/IMG_1867.PNG, id=129, 1339.0025pt x 752.8125pt>
+<../figs/IMG_1867.PNG, id=126, 1339.0025pt x 752.8125pt>
 File: ../figs/IMG_1867.PNG Graphic file (type png)
 <use ../figs/IMG_1867.PNG>
-Package luatex.def Info: ../figs/IMG_1867.PNG  used on input line 815.
+Package luatex.def Info: ../figs/IMG_1867.PNG  used on input line 819.
 (luatex.def)             Requested size: 327.25407pt x 183.98694pt.
- [17
+ [16
 
-<../figs/IMG_0345.JPG><../figs/IMG_1867.PNG>] [18
+<../figs/IMG_0345.JPG><../figs/IMG_1867.PNG>] [17
 
 ]
-<../figs/FVRALL.png, id=137, 578.379pt x 280.101pt>
+<../figs/FVRALL.png, id=133, 578.379pt x 280.101pt>
 File: ../figs/FVRALL.png Graphic file (type png)
 <use ../figs/FVRALL.png>
-Package luatex.def Info: ../figs/FVRALL.png  used on input line 916.
+Package luatex.def Info: ../figs/FVRALL.png  used on input line 920.
 (luatex.def)             Requested size: 284.52756pt x 137.7892pt.
- [19
+ [18
 
 <../figs/FVRALL.png>]
-<../figs/IMG_0341.JPG, id=142, 1674.255pt x 941.5175pt>
+<../figs/IMG_0341.JPG, id=139, 1674.255pt x 941.5175pt>
 File: ../figs/IMG_0341.JPG Graphic file (type jpg)
 <use ../figs/IMG_0341.JPG>
-Package luatex.def Info: ../figs/IMG_0341.JPG  used on input line 931.
+Package luatex.def Info: ../figs/IMG_0341.JPG  used on input line 935.
 (luatex.def)             Requested size: 327.25407pt x 184.01898pt.
-<../figs/IMG_0342.JPG, id=143, 1674.255pt x 941.5175pt>
+<../figs/IMG_0342.JPG, id=140, 1674.255pt x 941.5175pt>
 File: ../figs/IMG_0342.JPG Graphic file (type jpg)
 <use ../figs/IMG_0342.JPG>
-Package luatex.def Info: ../figs/IMG_0342.JPG  used on input line 937.
+Package luatex.def Info: ../figs/IMG_0342.JPG  used on input line 941.
 (luatex.def)             Requested size: 327.25407pt x 184.01898pt.
-LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 948.
+LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 952.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 948.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 952.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 948.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 952.
 (load cache: extra_lmroman7-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 948.
- [20
+(Font)              scaled to size 6.47299pt on input line 952.
+ [19
 
 <../figs/IMG_0341.JPG><../figs/IMG_0342.JPG>]
-<../figs/IMG_0344.JPG, id=149, 1673.25125pt x 781.92125pt>
+<../figs/IMG_0344.JPG, id=146, 1673.25125pt x 781.92125pt>
 File: ../figs/IMG_0344.JPG Graphic file (type jpg)
 <use ../figs/IMG_0344.JPG>
-Package luatex.def Info: ../figs/IMG_0344.JPG  used on input line 975.
+Package luatex.def Info: ../figs/IMG_0344.JPG  used on input line 979.
 (luatex.def)             Requested size: 327.25407pt x 152.92145pt.
-<../figs/IMG_0343.JPG, id=150, 1673.25125pt x 800.9925pt>
+<../figs/IMG_0343.JPG, id=147, 1673.25125pt x 800.9925pt>
 File: ../figs/IMG_0343.JPG Graphic file (type jpg)
 <use ../figs/IMG_0343.JPG>
-Package luatex.def Info: ../figs/IMG_0343.JPG  used on input line 981.
+Package luatex.def Info: ../figs/IMG_0343.JPG  used on input line 985.
 (luatex.def)             Requested size: 327.25407pt x 156.65123pt.
- [21
+ [20
 
 <../figs/IMG_0344.JPG><../figs/IMG_0343.JPG>]
 warning  (file ../figs/IMG_5132.JPG) (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolution 300dpi x 300dpi
-<../figs/IMG_5132.JPG, id=154, 4047.12pt x 3035.34pt>
+<../figs/IMG_5132.JPG, id=151, 4047.12pt x 3035.34pt>
 File: ../figs/IMG_5132.JPG Graphic file (type jpg)
 <use ../figs/IMG_5132.JPG>
-Package luatex.def Info: ../figs/IMG_5132.JPG  used on input line 1042.
+Package luatex.def Info: ../figs/IMG_5132.JPG  used on input line 1046.
 (luatex.def)             Requested size: 187.00029pt x 140.24333pt.
-<../figs/IMG_6323.jpg, id=155, 4047.12pt x 3035.34pt>
+<../figs/IMG_6323.jpg, id=152, 4047.12pt x 3035.34pt>
 File: ../figs/IMG_6323.jpg Graphic file (type jpg)
 <use ../figs/IMG_6323.jpg>
-Package luatex.def Info: ../figs/IMG_6323.jpg  used on input line 1048.
+Package luatex.def Info: ../figs/IMG_6323.jpg  used on input line 1052.
 (luatex.def)             Requested size: 187.00029pt x 140.24333pt.
-[22<../figs/IMG_5132.JPG
+[21<../figs/IMG_5132.JPG
 warning  (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolution 300dpi x 300dpi
 ><../figs/IMG_6323.jpg>]
-<../figs/PC-1.png, id=159, 602.25pt x 372.39125pt>
+<../figs/PC-1.png, id=156, 602.25pt x 372.39125pt>
 File: ../figs/PC-1.png Graphic file (type png)
 <use ../figs/PC-1.png>
-Package luatex.def Info: ../figs/PC-1.png  used on input line 1069.
+Package luatex.def Info: ../figs/PC-1.png  used on input line 1073.
 (luatex.def)             Requested size: 210.3771pt x 130.08318pt.
-<../figs/iOS-1.png, id=160, 602.25pt x 372.39125pt>
+<../figs/iOS-1.png, id=157, 602.25pt x 372.39125pt>
 File: ../figs/iOS-1.png Graphic file (type png)
 <use ../figs/iOS-1.png>
-Package luatex.def Info: ../figs/iOS-1.png  used on input line 1075.
+Package luatex.def Info: ../figs/iOS-1.png  used on input line 1079.
 (luatex.def)             Requested size: 210.3771pt x 130.08318pt.
-<../figs/PC-2.png, id=161, 602.25pt x 372.39125pt>
+<../figs/PC-2.png, id=158, 602.25pt x 372.39125pt>
 File: ../figs/PC-2.png Graphic file (type png)
 <use ../figs/PC-2.png>
-Package luatex.def Info: ../figs/PC-2.png  used on input line 1087.
+Package luatex.def Info: ../figs/PC-2.png  used on input line 1091.
 (luatex.def)             Requested size: 210.3771pt x 130.08318pt.
-<../figs/iOS-2.png, id=162, 602.25pt x 372.39125pt>
+<../figs/iOS-2.png, id=159, 602.25pt x 372.39125pt>
 File: ../figs/iOS-2.png Graphic file (type png)
 <use ../figs/iOS-2.png>
-Package luatex.def Info: ../figs/iOS-2.png  used on input line 1093.
+Package luatex.def Info: ../figs/iOS-2.png  used on input line 1097.
 (luatex.def)             Requested size: 210.3771pt x 130.08318pt.
-<../figs/PC-3.png, id=163, 602.25pt x 372.39125pt>
+<../figs/PC-3.png, id=160, 602.25pt x 372.39125pt>
 File: ../figs/PC-3.png Graphic file (type png)
 <use ../figs/PC-3.png>
-Package luatex.def Info: ../figs/PC-3.png  used on input line 1104.
+Package luatex.def Info: ../figs/PC-3.png  used on input line 1108.
 (luatex.def)             Requested size: 210.3771pt x 130.08318pt.
-<../figs/iOS-3.png, id=164, 602.25pt x 372.39125pt>
+<../figs/iOS-3.png, id=161, 602.25pt x 372.39125pt>
 File: ../figs/iOS-3.png Graphic file (type png)
 <use ../figs/iOS-3.png>
-Package luatex.def Info: ../figs/iOS-3.png  used on input line 1110.
+Package luatex.def Info: ../figs/iOS-3.png  used on input line 1114.
 (luatex.def)             Requested size: 210.3771pt x 130.08318pt.
- [23
+ [22
 
 <../figs/PC-1.png><../figs/iOS-1.png><../figs/PC-2.png><../figs/iOS-2.png><../figs/PC-3.png><../figs/iOS-3.png>]
-<../figs/result.png, id=174, 432.86719pt x 169.38281pt>
+<../figs/result.png, id=171, 432.86719pt x 169.38281pt>
 File: ../figs/result.png Graphic file (type png)
 <use ../figs/result.png>
-Package luatex.def Info: ../figs/result.png  used on input line 1150.
+Package luatex.def Info: ../figs/result.png  used on input line 1154.
 (luatex.def)             Requested size: 341.43306pt x 133.60934pt.
- [24
+ [23
 
 <../figs/result.png>]
 第5章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 1164--1164
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 1168--1168
 ||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 5 |\JY3/mc/b/n/20.74 章 []| 
  []
 
-[25
+[24
 
 ]
 第6章
 
-Overfull \hbox (69.52936pt too wide) in paragraph at lines 1202--1202
+Overfull \hbox (69.52936pt too wide) in paragraph at lines 1206--1206
 ||\JY3/mc/b/n/20.74 第 \TU/lmr/bx/n/20.74 6 |\JY3/mc/b/n/20.74 章 []| 
  []
 
-[26
+[25
+
+] [26
+
 
 ] [27
 
-
-] [28
-
 ]
-<../figs/QRshare.png, id=192, 271.0125pt x 271.0125pt>
+<../figs/QRshare.png, id=188, 271.0125pt x 271.0125pt>
 File: ../figs/QRshare.png Graphic file (type png)
 <use ../figs/QRshare.png>
-Package luatex.def Info: ../figs/QRshare.png  used on input line 1301.
+Package luatex.def Info: ../figs/QRshare.png  used on input line 1305.
 (luatex.def)             Requested size: 170.71652pt x 170.72223pt.
-<../figs/BuildSettings.png, id=193, 481.04718pt x 453.94594pt>
+<../figs/BuildSettings.png, id=189, 481.04718pt x 453.94594pt>
 File: ../figs/BuildSettings.png Graphic file (type png)
 <use ../figs/BuildSettings.png>
-Package luatex.def Info: ../figs/BuildSettings.png  used on input line 1325.
+Package luatex.def Info: ../figs/BuildSettings.png  used on input line 1329.
 (luatex.def)             Requested size: 284.52756pt x 268.5046pt.
  [1
 
@@ -1312,9 +1312,9 @@ Removing  `ltj.process_input_buffer' from `process_input_buffer'.
 Inserting `ltj.listings_unicode' in `process_input_buffer'.
 Inserting `ltj.process_input_buffer' in `process_input_buffer'.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 1406.
+(Font)              scaled to size 8.32242pt on input line 1410.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 1406.
+(Font)              scaled to size 8.32242pt on input line 1410.
  [4] [5] [6] [7]
 Removing  `ltj.listings_unicode' from `process_input_buffer'. [8]
 Removing  `ltj.process_input_buffer' from `process_input_buffer'.
@@ -1330,18 +1330,18 @@ Removing  `ltj.listings_unicode' from `process_input_buffer'. [10] (./final-repo
 
 Here is how much of LuaTeX's memory you used:
  15332 strings out of 478278
- 746627,1977958 words of node,token memory allocated
- 1370 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 256 attribute, 95 glue_spec, 34 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:41,2:97492,3:579,4:16299,5:9837,6:112,7:11606,8:25,9:21788,10:51,11:993
+ 746618,1977958 words of node,token memory allocated
+ 1346 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 245 attribute, 95 glue_spec, 33 attribute_list, 1 write, 13 user_defined nodes
+   avail lists: 1:40,2:97492,3:576,4:16299,5:9837,6:113,7:11606,8:25,9:21788,10:51,11:993
  34622 multiletter control sequences out of 65536+600000
  71 fonts using 64905735 bytes
  118i,12n,128p,1820b,798s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf>{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on final-report.pdf (41 pages, 29302455 bytes).
+Output written on final-report.pdf (40 pages, 29329350 bytes).
 
-PDF statistics: 321 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
+PDF statistics: 317 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
